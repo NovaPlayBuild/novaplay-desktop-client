@@ -329,7 +329,7 @@ class GlobalConfigV0 extends GlobalConfig {
         epicId: account_id,
         name: userName
       },
-      wineCrossoverBottle: 'HyperPlay',
+      wineCrossoverBottle: 'NovaPlay',
       winePrefix: isWindows ? '' : defaultWinePrefix,
       wineVersion: defaultWine,
       enableEsync: isMac,
