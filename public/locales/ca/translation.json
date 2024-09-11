@@ -19,7 +19,7 @@
     },
     "box": {
         "cache-cleared": {
-            "message": "S'ha buidat la memòria cau de l'HyperPlay.",
+            "message": "S'ha buidat la memòria cau de l'NovaPlay.",
             "title": "S'ha esborrat la memòria cau"
         },
         "choose": "Tria",
@@ -67,7 +67,7 @@
             },
             "update": {
                 "title": "Update Error",
-                "message": "Alguna cosa va anar malament amb l'actualització! Desinstal·leu i torneu a instal·lar HyperPlay."
+                "message": "Alguna cosa va anar malament amb l'actualització! Desinstal·leu i torneu a instal·lar NovaPlay."
             },
             "wine-not-found": {
                 "invalid": "The selected wine version was not found. Install it or select a different version in the game's settings{{newline}}Version: {{version}}{{newline}}Path: {{path}}",
@@ -89,11 +89,11 @@
                 "changelog": "Obre el registre de canvis",
                 "detail": "Voleu descarregar l'actualització en segon pla?",
                 "message": "Hi ha una versió nova disponible.",
-                "message-finished": "Voleu reiniciar el HyperPlay ara?",
-                "title": "HyperPlay Games Launcher",
+                "message-finished": "Voleu reiniciar el NovaPlay ara?",
+                "title": "NovaPlay Games Launcher",
                 "title-finished": "L'actualització s'ha completat.",
-                "appUpdated": "HyperPlay es va actualitzar",
-                "appUpdated-message": "HyperPlay es va actualitzar. Vols actualitzar HyperPlay ara?"
+                "appUpdated": "NovaPlay es va actualitzar",
+                "appUpdated-message": "NovaPlay es va actualitzar. Vols actualitzar NovaPlay ara?"
             }
         },
         "no": "NO",
@@ -109,8 +109,8 @@
         },
         "reset-app": {
             "question": {
-                "message": "Are you sure you want to reset HyperPlay? This will remove all Settings and Caching but won't remove your Installed games or your Epic credentials. Portable versions (AppImage, WinPortable, ...) of HyperPlay needs to be restarted manually afterwards.",
-                "title": "Reset HyperPlay"
+                "message": "Are you sure you want to reset NovaPlay? This will remove all Settings and Caching but won't remove your Installed games or your Epic credentials. Portable versions (AppImage, WinPortable, ...) of NovaPlay needs to be restarted manually afterwards.",
+                "title": "Reset NovaPlay"
             }
         },
         "runexe": {
@@ -155,7 +155,7 @@
                 "message-gptk": "Per poder executar jocs utilitzant el kit d'eines de porteria Apple Gaming cal actualitzar el vostre macOS a 14 (Sonoma) o superior. {{newline}} Hem trobat el vi al vostre sistema, voleu continuar llançant amb {{foundWine}} ?"
             },
             "rosetta": {
-                "message": "HyperPlay requereix Rosetta per funcionar correctament en macOS amb xips Apple Silicon. Si us plau, instal·leu-lo des del terminal de macOS utilitzant l'ordre següent: \"softwareupdate --install-rosetta\" i reinicia HyperPlay. ",
+                "message": "NovaPlay requereix Rosetta per funcionar correctament en macOS amb xips Apple Silicon. Si us plau, instal·leu-lo des del terminal de macOS utilitzant l'ordre següent: \"softwareupdate --install-rosetta\" i reinicia NovaPlay. ",
                 "title": "Rosetta no trobat"
             }
         },
@@ -264,7 +264,7 @@
         "esync": "Esync té com a objectiu reduir sobrecàrregues del Wineserver en jocs intensius en CPU. Si s'activa, podria millorar el rendiment.",
         "fsync": "Fsync té com a objectiu reduir sobrecàrregues del Wineserver en jocs intensius en CPU. Si s'activa, podria millorar el rendiment en versions de Linux compatibles.",
         "game_language": {
-            "fallback": "Deixeu-ho en blanc per usar l'idioma del HyperPlay.",
+            "fallback": "Deixeu-ho en blanc per usar l'idioma del NovaPlay.",
             "in_game_config": "No tots els jocs suporten aquesta configuració. En alguns s'ha de configurar l'idioma quan s'executa el programa.",
             "valid_codes": "Els codis de llenguatge vàlids depenen del joc."
         },
@@ -280,18 +280,18 @@
         "preferSystemLibs": "Les versions personalitzades del Wine (Wine-GE, Wine-Lutris) s'envien amb les seves dependències de biblioteques. Quan s'activa aquesta opció, s'ignoraran les biblioteques enviades i Wine carregarà les biblioteques del sistema. Avís! Es poden produir problemes si no es compleixen les dependències.",
         "primerun": "Fes servir la targeta de gràfics dedicada per renderitzar el joc en sistemes de diverses GPU. Només cal en portàtils o ordinadors de sobretaula que tenen una GPU headless per renderitzar, com ara NVIDIA Optimus o AMD Crossfire.",
         "steam_path": {
-            "info": "This path lets HyperPlay determine what version of Proton Steam uses, for adding non-Steam games to Steam."
+            "info": "This path lets NovaPlay determine what version of Proton Steam uses, for adding non-Steam games to Steam."
         },
         "steamruntime": "Biblioteques personalitzades que proporciona l'Steam per executar jocs en Linux i en Windows (Proton). Si s'activa, pot millorar la compatibilitat.",
         "sync": {
-            "part1": "L'HyperPlay prova d'endevinar el directori on es desen les partides, i això funcionarà a la majoria de casos. En cas que el directori no sigui el correcte, utilitza la caixa per a canviar-lo.",
-            "part2": "Si canvies el directori del prefix del Wine o del Proton, hauràs de comprovar de nou la ruta perquè el Proton empra un prefix (/pfx) i nom d'usuari (steamuser) diferent. Així doncs, pots suprimir la ruta actual, sortir de la configuració de sincronització i tornar-hi de nou perquè l'HyperPlay pugui esbrinar el directori de nou amb el prefix correcte.",
+            "part1": "L'NovaPlay prova d'endevinar el directori on es desen les partides, i això funcionarà a la majoria de casos. En cas que el directori no sigui el correcte, utilitza la caixa per a canviar-lo.",
+            "part2": "Si canvies el directori del prefix del Wine o del Proton, hauràs de comprovar de nou la ruta perquè el Proton empra un prefix (/pfx) i nom d'usuari (steamuser) diferent. Així doncs, pots suprimir la ruta actual, sortir de la configuració de sincronització i tornar-hi de nou perquè l'NovaPlay pugui esbrinar el directori de nou amb el prefix correcte.",
             "part3": "Sincronització manual: Tria «Baixa» per a baixar les partides desades al núvol. «Puja» per a pujar les dades locals al núvol. «Força la baixada» i «Força la pujada» ignorarà la versió local o del núvol.",
             "part4": "«Sincronitza les partides desades automàticament» sincronitzarà les dades cada vegada que iniciïs un joc i quan acabis de jugar."
         },
         "vkd3d": "VKD3D és una capa de traducció basada en Vulkan per a jocs que fan servir DirectX 12. Si s'habilitat, la compatibilitat pot millorar significativament. No té cap efecte en jocs que emprin DirectX més antics.",
         "wine": {
-            "part1": "L'HyperPlay cerca les versions del Wine, Proton i CrossOver als directoris següents:",
+            "part1": "L'NovaPlay cerca les versions del Wine, Proton i CrossOver als directoris següents:",
             "part2": "Per a altres llocs, utilitza un enllaç simbòlic (symlink) a algun d'aquests directoris"
         },
         "disable_logs": "Activeu aquesta casella de selecció per desactivar la majoria de les escriptures als fitxers de registre (la informació crítica sempre es registra). Assegureu-vos de desactivar aquesta configuració abans d'informar de qualsevol problema.",
@@ -299,12 +299,12 @@
         "msync": "Msync té com a objectiu reduir la sobrecàrrega del servidor de vi en els jocs intensius de CPU. Habilitar pot millorar el rendiment en diversos jocs."
     },
     "info": {
-        "hyperplay": {
+        "novaplay": {
             "beta": "Beta",
             "click-to-see-changelog": "Click to see changelog",
             "newReleases": "Hi ha una actualització disponible!",
             "stable": "Estable",
-            "version": "HyperPlay Version"
+            "version": "NovaPlay Version"
         },
         "save-sync": {
             "searching": "Trying to detect the correct save folder"
@@ -391,7 +391,7 @@
         },
         "moved": "Ha finalitzat el desplaçament",
         "moving": "S'està movent el joc...",
-        "new-hyperplay-version": "Hi ha una nova versió del HyperPlay!",
+        "new-novaplay-version": "Hi ha una nova versió del NovaPlay!",
         "refresh": {
             "error": "No s'ha pogut aconseguir el llistat de versions, potser per les restriccions de l'API del GitHub. Proveu-ho més tard."
         },
@@ -446,7 +446,7 @@
     "other": {
         "gogdl-version": "Versió del GOGDL: ",
         "legendary-version": "Versió del Legendary: ",
-        "weblate": "Ajuda a traduir l'HyperPlay.",
+        "weblate": "Ajuda a traduir l'NovaPlay.",
         "nile-version": "Versió Nile: "
     },
     "Other": "Other",
@@ -491,7 +491,7 @@
         "autosync": "Sincronitza automàticament les partides desades",
         "autovkd3d": "Instal·la/Actualitza el VKD3D al prefix automàticament",
         "change-target-exe": "Selecciona un EXE alternatiu a executar",
-        "checkForUpdatesOnStartup": "Comprova si hi ha actualitzacions del HyperPlay a l'inici",
+        "checkForUpdatesOnStartup": "Comprova si hi ha actualitzacions del NovaPlay a l'inici",
         "crossover-version": "Versió híbrida (crossover)",
         "custom_themes_path": "Custom Themes Path",
         "customWineProton": "Rutes del Wine o Proton personalitzades",
@@ -499,7 +499,7 @@
         "default-install-path": "Ruta d'instal·lació predefinida",
         "default-steam-path": "Camí de l'Steam per defecte",
         "defaultWinePrefix": "Directori de prefixos Wine nous",
-        "disable_controller": "Desactiva la navegació del HyperPlay amb el controlador",
+        "disable_controller": "Desactiva la navegació del NovaPlay amb el controlador",
         "discordRPC": "Activa la Discord Rich Presence",
         "download-no-https": "Descarrega jocs sense HTTPS (útil per CDNs com ara LanCache)",
         "egs-sync": "Sincronitza amb l'Epic Games instal·lat",
@@ -545,8 +545,8 @@
             "last-log": "Últim registre",
             "no-file": "No s'ha trobat cap registre",
             "show-in-folder": "Obre la carpeta del registre",
-            "instructions-part-01": "Si et trobes amb algun problema mentre utilitzes HyperPlay, tenim dues àrees designades per informar els teus problemes al nostre Discord Server. Si vostè és un jugador, si us plau informeu-vos de qualsevol problema visitant el player-support-forum. Si vostè és un dev joc, si us plau informeu qualsevol problema visitant el dev-support-forum.",
-            "join-hyperplay-discord": "Discord",
+            "instructions-part-01": "Si et trobes amb algun problema mentre utilitzes NovaPlay, tenim dues àrees designades per informar els teus problemes al nostre Discord Server. Si vostè és un jugador, si us plau informeu-vos de qualsevol problema visitant el player-support-forum. Si vostè és un dev joc, si us plau informeu qualsevol problema visitant el dev-support-forum.",
+            "join-novaplay-discord": "Discord",
             "instructions-part-02": "Si us plau, introdueix dins de la caixa de text els caràcters que veu a la imatge de sota. Això és requerit per evitar enviaments automàtics. El nostre equip de suport farà un seguiment dels dos canals i farà tot el possible per respondre al seu problema el més ràpid possible. Gràcies per la vostra paciència i comprensió mentre treballem per resoldre qualsevol problema que pugueu trobar."
         },
         "mangohud": "Activa el Mangohud (cal que el Mangohud estigui instal·lat)",
@@ -561,7 +561,7 @@
         },
         "maxRecentGames": "Jugats fa poc a mostrar",
         "maxworkers": "Nombre màxim de Workers en baixar",
-        "minimize-on-launch": "Minimitza el HyperPlay després d'executar un joc",
+        "minimize-on-launch": "Minimitza el NovaPlay després d'executar un joc",
         "offlinemode": "Executa el joc sense connexió",
         "prefered_language": "Idioma preferit (codi de l'idioma)",
         "preferSystemLibs": "Dóna preferència a les biblioteques del sistema",
@@ -596,7 +596,7 @@
         "alt-nile-bin": "Trieu un binari alternatiu del Nil",
         "autodxvknvapi": "Instal·la/Actualitza el DXVK-NVAPI al prefix automàticament",
         "msync": "Activa l'Esync",
-        "autoLaunchHyperPlay": "Auto Launch Hyper Juga",
+        "autoLaunchNovaPlay": "Auto Launch Hyper Juga",
         "dxvkfpslimit": "Límit FPS (DX9, 10 i 11)",
         "steamId": "Steam ID"
     },
@@ -605,7 +605,7 @@
             "installing": "S'està instal·lant el BattlEye Runtime...",
             "name": "Antitrampes BattlEye Runtime"
         },
-        "clear-cache": "Esborra la memòria cau de l'HyperPlay",
+        "clear-cache": "Esborra la memòria cau de l'NovaPlay",
         "copiedToClipboard": "S'ha copiat al porta-retalls.",
         "copyToClipboard": "Copia tota la configuració al porta-retalls",
         "default_hint": "Changes in this section only apply as default values when installing games. If you want to change the settings of an already installed game, use the Settings button in the game page.",
@@ -638,7 +638,7 @@
             "accounts": "Comptes"
         },
         "open-config-file": "Obre el fitxer de configuració",
-        "reset-hyperplay": "Restableix l'HyperPlay",
+        "reset-novaplay": "Restableix l'NovaPlay",
         "saves": {
             "label": "Ubicació de les desades:",
             "warning": "La funció de desar al núvol està en versió beta. Si us plau, feu una còpia de seguretat de les vostres partides desades abans de sincronitzar-les, per si quelcom sortís malament."
@@ -757,7 +757,7 @@
     "amazon": "Amazon",
     "Amazon Games": "Jocs d'Amazon",
     "analytics": "Estadístiques",
-    "hyperplay": {
+    "novaplay": {
         "misc": "Mai",
         "logOut": "Tanca sessió",
         "turnAnalyticsOn": "Activa",
@@ -778,7 +778,7 @@
                         "learnMore": "Apreneu-ne més",
                         "createNewWallet": "Crear una nova cartera d'extensió MM",
                         "details": "Els navegadors de sota ja tenen instal·lat MetaMask. Trieu el que voleu importar.",
-                        "useRecoveryPhraseInfo": "Aquest lloc web utilitza galetes per millorar la vostra experiència. Podeu desactivar-lo si ho voleu. Accepto Més informació La teva frase de recuperació secreta s'emmagatzema localment a MetaMask i mai es comparteix amb HyperPlay.",
+                        "useRecoveryPhraseInfo": "Aquest lloc web utilitza galetes per millorar la vostra experiència. Podeu desactivar-lo si ho voleu. Accepto Més informació La teva frase de recuperació secreta s'emmagatzema localment a MetaMask i mai es comparteix amb NovaPlay.",
                         "orWord": "OR",
                         "title": "Seleccioneu el navegador per importar de",
                         "useRecoveryPhrase": "Importar utilitzant la frase de recuperació secreta",
@@ -799,7 +799,7 @@
                         "skip": "Vés al contingut"
                     },
                     "scan": {
-                        "details": "Crear un canal de comunicació xifrat. Les teves claus mai seran compartides amb HyperPlay.",
+                        "details": "Crear un canal de comunicació xifrat. Les teves claus mai seran compartides amb NovaPlay.",
                         "dontHaveWallet": "No tens cartera?",
                         "updateWarning": "Tenir problemes? Fes que MetaMask estigui actualitzat.",
                         "getMetamask": "MetaMask",
@@ -812,19 +812,19 @@
             "terms": "condicions del servei",
             "welcome": {
                 "text": {
-                    "construction": "HyperPlay està en construcció.",
+                    "construction": "NovaPlay està en construcció.",
                     "communityCTA_2": "comunitat. Junts, donem forma al futur del joc!",
-                    "bugs": "Si us plau, tingui en compte que HyperPlay és una alfa pública. Encara hi ha moltes característiques\nen desenvolupament, i hi haurà errors.",
+                    "bugs": "Si us plau, tingui en compte que NovaPlay és una alfa pública. Encara hi ha moltes característiques\nen desenvolupament, i hi haurà errors.",
                     "communityCTA_1": "Ens encantarà la teva opinió i t'apuntes a nosaltres",
-                    "description": "HyperPlay és un joc de llançament i agregador de la botiga de jocs\nfutur. Amb HyperPlay, podeu portar la vostra cartera, fitxes i actius\nen cada joc. HyperPlay suporta tota la biblioteca de l’Epicentre\nBotiga, GOG i la nostra pròpia botiga HyperPlay. En utilitzar HyperPlay, vostè accepta\nals nostres"
+                    "description": "NovaPlay és un joc de llançament i agregador de la botiga de jocs\nfutur. Amb NovaPlay, podeu portar la vostra cartera, fitxes i actius\nen cada joc. NovaPlay suporta tota la biblioteca de l’Epicentre\nBotiga, GOG i la nostra pròpia botiga NovaPlay. En utilitzar NovaPlay, vostè accepta\nals nostres"
                 },
                 "title": "Benvinguts a Hyper Juga Early Access!"
             },
             "analytics": {
-                "hyperplayWill": "HyperPlay:",
-                "body": "HyperPlay vol recopilar dades d'ús per entendre millor com interactuen els nostres usuaris amb l'aplicació. Aquesta informació ens ajuda a entendre com s'utilitza l'aplicació i ens permet fer HyperPlay encara millor per a vostè.",
+                "novaplayWill": "NovaPlay:",
+                "body": "NovaPlay vol recopilar dades d'ús per entendre millor com interactuen els nostres usuaris amb l'aplicació. Aquesta informació ens ajuda a entendre com s'utilitza l'aplicació i ens permet fer NovaPlay encara millor per a vostè.",
                 "neverCollectIP": " recollir la seva adreça IP completa;",
-                "title": "Ajuda'ns a millorar HyperPlay!",
+                "title": "Ajuda'ns a millorar NovaPlay!",
                 "anonymized": "Enviar clic anònim i la interacció del joc;",
                 "neverCollectPersonal": " recollir claus, adreces, saldos, hashes, o qualsevol informació personal;",
                 "neverSellData": " vendre dades per obtenir beneficis. Ever!",
@@ -852,7 +852,7 @@
         "discordApp": "Discord",
         "folder": "Carpeta",
         "copyUrl": "Copia l'URL",
-        "linkSteamAccountDescription": "Inicia sessió a Steam per enllaçar el teu compte HyperPlay.",
+        "linkSteamAccountDescription": "Inicia sessió a Steam per enllaçar el teu compte NovaPlay.",
         "syncing": "Sincronització...",
         "viewPortfolio": "Veure cartera",
         "accesscodes": {
@@ -945,7 +945,7 @@
         "warningTitle": "Important",
         "warningMessage": "La càrrega lateral d'un joc és una característica destinada a desenvolupadors i usuaris d'energia experimentats. La càrrega lateral d'un instal·lador que conté malware podria comprometre el seu ordinador i conduir a robatori de fons."
     },
-    "hyperplayOverlay": {
+    "novaplayOverlay": {
         "description": {
             "CONFIRMED": "La transacció es va confirmar amb èxit!",
             "FAILED": "L'operació s'ha cancel·lat o no s'ha enviat",
@@ -958,8 +958,8 @@
             "FAILED": "Cancel·lat la xarxa personalitzada"
         },
         "greeting": {
-            "description": "HyperPlay Overlay està a punt! Premsa {{overlayKeyMod}} + X per mostrar o ocultar-lo.",
-            "title": "HyperPlay Overlay"
+            "description": "NovaPlay Overlay està a punt! Premsa {{overlayKeyMod}} + X per mostrar o ocultar-lo.",
+            "title": "NovaPlay Overlay"
         },
         "signatureRequest": {
             "CONFIRMED": "Signatura",
@@ -1010,7 +1010,7 @@
         },
         "g7CreditsModal": {
             "title": "Guanyar els crèdits Game7",
-            "description": "Submergeix-te als millors jocs d'HyperPlay amb l'excitant joc Streak Challenges. Cada activitat t'anima a participar amb un joc diferent, mostrant el millor dels jocs web3. El teu temps de joc!"
+            "description": "Submergeix-te als millors jocs d'NovaPlay amb l'excitant joc Streak Challenges. Cada activitat t'anima a participar amb un joc diferent, mostrant el millor dels jocs web3. El teu temps de joc!"
         }
     },
     "accounts": "comptes",
@@ -1023,8 +1023,8 @@
     },
     "importGameErrorTitle": "Error de joc d'importació",
     "overlay": {
-        "EXTERNAL_WALLET_CONNECTED": "Estàs connectat a HyperPlay amb una cartera externa.",
-        "WALLET_DISCONNECTED": "No teniu una cartera connectada a HyperPlay."
+        "EXTERNAL_WALLET_CONNECTED": "Estàs connectat a NovaPlay amb una cartera externa.",
+        "WALLET_DISCONNECTED": "No teniu una cartera connectada a NovaPlay."
     },
     "achievements": {
         "progress": {
