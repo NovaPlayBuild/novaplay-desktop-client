@@ -1,4 +1,4 @@
-import { getChainMetadataSync } from '@hyperplay/chains'
+import { getChainMetadataSync } from '@novaplay/chains'
 import { Reward } from 'common/types'
 import { TFunction } from 'i18next'
 
