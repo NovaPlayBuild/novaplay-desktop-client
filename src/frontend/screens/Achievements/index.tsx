@@ -1,8 +1,8 @@
 import React from 'react'
 import walletState from 'frontend/state/WalletState'
-import { AchievementCard, AchievementSummaryTable } from '@hyperplay/ui'
+import { AchievementCard, AchievementSummaryTable } from '@novaplay/ui'
 import { NavLink } from 'react-router-dom'
-import { StatusIconState } from '@hyperplay/ui/dist/components/AchievementCard/components/StatusIcon'
+import { StatusIconState } from '@novaplay/ui/dist/components/AchievementCard/components/StatusIcon'
 import { useTranslation } from 'react-i18next'
 import { observer } from 'mobx-react-lite'
 import AchievementState, {
@@ -166,9 +166,9 @@ export default observer(function Achievements(): JSX.Element {
         }
         tabs={tabs}
         messageModalProps={{
-          title: t('hyperplay.achievements.noAchievements.oops', 'Oops!'),
+          title: t('novaplay.achievements.noAchievements.oops', 'Oops!'),
           message: t(
-            'hyperplay.achievements.noAchievements.doubleCheckMessage',
+            'novaplay.achievements.noAchievements.doubleCheckMessage',
             `It looks like we couldn't find any games in your Steam account at the moment. Just a quick reminder to double-check that your game details are set to public. This way, we can access your achievements and provide you with the best experience.`
           )
         }}
