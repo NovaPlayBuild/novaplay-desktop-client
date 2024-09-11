@@ -19,7 +19,7 @@
     },
     "box": {
         "cache-cleared": {
-            "message": "HyperPlay Cache Was Cleared!",
+            "message": "NovaPlay Cache Was Cleared!",
             "title": "Cache Cleared"
         },
         "choose": "Selecteer",
@@ -67,7 +67,7 @@
             },
             "update": {
                 "title": "Update Error",
-                "message": "Er ging iets mis met de update! Gelieve handmatig ongeïnstalleerd en herinstall HyperPlay."
+                "message": "Er ging iets mis met de update! Gelieve handmatig ongeïnstalleerd en herinstall NovaPlay."
             },
             "wine-not-found": {
                 "invalid": "The selected wine version was not found. Install it or select a different version in the game's settings{{newline}}Version: {{version}}{{newline}}Path: {{path}}",
@@ -89,11 +89,11 @@
                 "changelog": "Open changelog",
                 "detail": "Do you want to download the update in the background?",
                 "message": "There is a new Version available!",
-                "message-finished": "Do you want to restart HyperPlay now?",
-                "title": "HyperPlay Games Launcher",
+                "message-finished": "Do you want to restart NovaPlay now?",
+                "title": "NovaPlay Games Launcher",
                 "title-finished": "Update Finished",
-                "appUpdated": "HyperPlay werd geüpload",
-                "appUpdated-message": "HyperPlay werd bijgewerkt. Wil je nu een update en HyperPlay herstellen?"
+                "appUpdated": "NovaPlay werd geüpload",
+                "appUpdated-message": "NovaPlay werd bijgewerkt. Wil je nu een update en NovaPlay herstellen?"
             }
         },
         "no": "NEE",
@@ -109,8 +109,8 @@
         },
         "reset-app": {
             "question": {
-                "message": "Are you sure you want to reset HyperPlay? This will remove all Settings and Caching but won't remove your Installed games or your Epic credentials. Portable versions (AppImage, WinPortable, ...) of HyperPlay needs to be restarted manually afterwards.",
-                "title": "Reset HyperPlay"
+                "message": "Are you sure you want to reset NovaPlay? This will remove all Settings and Caching but won't remove your Installed games or your Epic credentials. Portable versions (AppImage, WinPortable, ...) of NovaPlay needs to be restarted manually afterwards.",
+                "title": "Reset NovaPlay"
             }
         },
         "runexe": {
@@ -150,7 +150,7 @@
             "title": "Warning",
             "rosetta": {
                 "title": "Rosetta niet gevonden",
-                "message": "HyperPlay vereist Rosetta om rechtstreeks met Apple Silicon chips te rennen. Gelieve het te installeren van de MacOS terminal met het volgende bevel: \"Software-update --intall-rosetta\" en herstart HyperPlay. "
+                "message": "NovaPlay vereist Rosetta om rechtstreeks met Apple Silicon chips te rennen. Gelieve het te installeren van de MacOS terminal met het volgende bevel: \"Software-update --intall-rosetta\" en herstart NovaPlay. "
             },
             "wine-change": {
                 "title": "Wijn niet gevonden!",
@@ -223,7 +223,7 @@
         "ETA": "Geschatte tijd"
     },
     "epic": {
-        "offline-notification-body": "HyperPlay will not work probably!",
+        "offline-notification-body": "NovaPlay will not work probably!",
         "offline-notification-title": "offline"
     },
     "Epic Games": "Epic Games",
@@ -263,7 +263,7 @@
         "esync": "Esync aims to reduce wineserver overhead in CPU-intensive games. Enabling may improve performance.",
         "fsync": "Fsync aims to reduce wineserver overhead in CPU-intensive games. Enabling may improve performance on supported Linux kernels.",
         "game_language": {
-            "fallback": "Leave blank to use HyperPlay's language.",
+            "fallback": "Leave blank to use NovaPlay's language.",
             "in_game_config": "Not all games support this configuration, some have in-game language setting.",
             "valid_codes": "Valid language codes are game-dependant."
         },
@@ -279,18 +279,18 @@
         "preferSystemLibs": "Custom Wine versions (Wine-GE, Wine-Lutris) are shipped with their library dependencies. By enabling this option, these shipped libraries will be ignored and Wine will load system libraries instead. Warning! Issues may occur if dependencies are not met.",
         "primerun": "Use dedicated graphics card to render game on multi-GPU systems. Only needed on gaming laptops or desktops that use a headless GPU for rendering (NVIDIA Optimus, AMD CrossFire)",
         "steam_path": {
-            "info": "This path lets HyperPlay determine what version of Proton Steam uses, for adding non-Steam games to Steam."
+            "info": "This path lets NovaPlay determine what version of Proton Steam uses, for adding non-Steam games to Steam."
         },
         "steamruntime": "Custom libraries provided by Steam to help run Linux and Windows (Proton) games. Enabling might improve compatibility.",
         "sync": {
-            "part1": "HyperPlay probeert de juiste opslagmap te raden en dit zal over het algemeen werken. wanneer dit niet werkt, gebruik de overschijf-box om het te wijzigen.",
-            "part2": "Als je de prefix map voor Wine of Proton wijzigt, moet u het pad opnieuw controleren sinds Proton een ander prefix (/pfx) en gebruikersnaam (steamuser) gebruikt. u kunt dus het huidige pad wissen dat u uitkomt uit de pagina Synchronisatie-instellingen en weer terug te gaan voor HyperPlay om de map alweer met het juiste voorvoegsel te raden.",
+            "part1": "NovaPlay probeert de juiste opslagmap te raden en dit zal over het algemeen werken. wanneer dit niet werkt, gebruik de overschijf-box om het te wijzigen.",
+            "part2": "Als je de prefix map voor Wine of Proton wijzigt, moet u het pad opnieuw controleren sinds Proton een ander prefix (/pfx) en gebruikersnaam (steamuser) gebruikt. u kunt dus het huidige pad wissen dat u uitkomt uit de pagina Synchronisatie-instellingen en weer terug te gaan voor NovaPlay om de map alweer met het juiste voorvoegsel te raden.",
             "part3": "Handmatige synchronisatie: Kies 'Downloaden' om de spel saves te downloaden die zijn opgeslagen in de cloud. 'Upload' om de lokale saves te uploaden naar de cloud. 'Force Download' en 'Force Upload' negeert de versie die lokaal of in de cloud is.",
             "part4": "Automatishe synchronisatie van saves synchroniseerd elke keer wanneer u een spel start of afsluit."
         },
         "vkd3d": "VKD3D is a Vulkan-based translational layer for DirectX 12 games. Enabling may improve compatibility significantly. Has no effect on older DirectX games.",
         "wine": {
-            "part1": "HyperPlay zoekt naar versies van Wine, Proton en CrossOver op de volgende mappen:",
+            "part1": "NovaPlay zoekt naar versies van Wine, Proton en CrossOver op de volgende mappen:",
             "part2": "Voor andere locaties moet je een symbolische link begruiken naar een van deze mappen"
         },
         "dxvkfpslimit": "Zette een kappenkast voor DXVK spelletjes",
@@ -299,12 +299,12 @@
         "disable_logs": "Toggle deze checkbox op om de meeste schrijvers uit te schakelen om bestanden te loggen. Zorg dat je deze set afzet voordat je iets aangeeft."
     },
     "info": {
-        "hyperplay": {
+        "novaplay": {
             "beta": "Beta",
             "click-to-see-changelog": "Click to see changelog",
             "newReleases": "Update Available!",
             "stable": "Stable",
-            "version": "HyperPlay Version"
+            "version": "NovaPlay Version"
         },
         "save-sync": {
             "searching": "Trying to detect the correct save folder (click to cancel)"
@@ -391,7 +391,7 @@
         },
         "moved": "Klaar met verplaatsing",
         "moving": "Moving Game",
-        "new-hyperplay-version": "A new HyperPlay version was released!",
+        "new-novaplay-version": "A new NovaPlay version was released!",
         "refresh": {
             "error": "Couldn't fetch releases from upstream, maybe because of Github API restrictions! Try again later."
         },
@@ -446,7 +446,7 @@
     "other": {
         "gogdl-version": "GOGDL Version: ",
         "legendary-version": "Legendary Versie: ",
-        "weblate": "Help met het vertalen van HyperPlay.",
+        "weblate": "Help met het vertalen van NovaPlay.",
         "nile-version": "Nijlversie: "
     },
     "Other": "Other",
@@ -491,7 +491,7 @@
         "autosync": "Automatisch Synchroniseren van saves",
         "autovkd3d": "Auto Install/Update VKD3D on Prefix",
         "change-target-exe": "Selecteer een alternatieve EXE om uit te voeren",
-        "checkForUpdatesOnStartup": "Check for HyperPlay Updates on Startup",
+        "checkForUpdatesOnStartup": "Check for NovaPlay Updates on Startup",
         "crossover-version": "Crossover/Wine Version",
         "custom_themes_path": "Custom Themes Path",
         "customWineProton": "Aangepaste wijn- of protonpaden",
@@ -499,7 +499,7 @@
         "default-install-path": "Standaard installatie pad",
         "default-steam-path": "Default Steam path",
         "defaultWinePrefix": "Set Folder for new Wine Prefixes",
-        "disable_controller": "Disable HyperPlay navigation using controller",
+        "disable_controller": "Disable NovaPlay navigation using controller",
         "discordRPC": "\"Discord Rich Presence\" inschakelen",
         "download-no-https": "Download games without HTTPS (useful for CDNs e.g. LanCache)",
         "egs-sync": "Synchronisatie met geïnstalleerde Epic Games",
@@ -540,13 +540,13 @@
         "log": {
             "copy-to-clipboard": "Copy log content to clipboard",
             "current-log": "Current Log",
-            "instructions": "If you encounter any issues while using HyperPlay, we have two designated areas to report your issues in our Discord Server. If you're a player, please report any problems by visiting the player-support-forum. If you are a game dev, please report any problems by visiting the dev-support-forum.{{newLine}} {{newLine}} To help us diagnose and fix the problem as quickly as possible, please provide as much information as possible, including a copy of your logs. Our support team will monitor both channels and do their best to respond to your issue as quickly as possible. Thank you for your patience and understanding while we work to resolve any problems you may encounter.{{newLine}}",
+            "instructions": "If you encounter any issues while using NovaPlay, we have two designated areas to report your issues in our Discord Server. If you're a player, please report any problems by visiting the player-support-forum. If you are a game dev, please report any problems by visiting the dev-support-forum.{{newLine}} {{newLine}} To help us diagnose and fix the problem as quickly as possible, please provide as much information as possible, including a copy of your logs. Our support team will monitor both channels and do their best to respond to your issue as quickly as possible. Thank you for your patience and understanding while we work to resolve any problems you may encounter.{{newLine}}",
             "instructions_title": "How to report a problem?",
             "last-log": "Last Log",
             "no-file": "No log file found",
             "show-in-folder": "Show log file in folder",
-            "instructions-part-01": "Als je problemen tegenkomt terwijl je HyperPlay gebruikt, hebben we twee ontworpen gebieden om je problemen in onze Discord Server te melden. Als je een speler bent, meld je dan problemen door de speler-support-forum te bezoeken. Als je een speldev bent, meld je dan problemen door het Dev-supportforum te bezoeken.",
-            "join-hyperplay-discord": "Welkom bij onze Discord",
+            "instructions-part-01": "Als je problemen tegenkomt terwijl je NovaPlay gebruikt, hebben we twee ontworpen gebieden om je problemen in onze Discord Server te melden. Als je een speler bent, meld je dan problemen door de speler-support-forum te bezoeken. Als je een speldev bent, meld je dan problemen door het Dev-supportforum te bezoeken.",
+            "join-novaplay-discord": "Welkom bij onze Discord",
             "instructions-part-02": "Om ons te helpen en het probleem zo snel mogelijk te repareren, geef zoveel mogelijk informatie, inclusief een kopie van je logboeken. Ons ondersteuningsteam zal beide kanalen monitoren en hun best doen om zo snel mogelijk te reageren op jouw probleem. Bedankt voor je geduld en begrip terwijl we werken om problemen op te lossen die je tegenkomt."
         },
         "mangohud": "Schakel Mangohud in (Mangohud moet zijn geïnstalleerd)",
@@ -561,7 +561,7 @@
         },
         "maxRecentGames": "Recente spellen om te tonen",
         "maxworkers": "Maximale hoeveelheid van werkers tijdens het downloaden",
-        "minimize-on-launch": "Minimize HyperPlay After Game Launch",
+        "minimize-on-launch": "Minimize NovaPlay After Game Launch",
         "offlinemode": "Spel offline draaien",
         "prefered_language": "Prefered Language (Language Code)",
         "preferSystemLibs": "Prefer system libraries",
@@ -594,7 +594,7 @@
         "addgamestoapplications": "Voeg automatisch games toe aan applicaties",
         "showMetalOverlay": "Statistieken-overlay weergeven",
         "alt-nile-bin": "Kies een alternatief Nijlbinair getal",
-        "autoLaunchHyperPlay": "Auto Launch Hyper Speel",
+        "autoLaunchNovaPlay": "Auto Launch Hyper Speel",
         "dxvkfpslimit": "Limit FPS (DX9, 10 en 11)",
         "autodxvknvapi": "Auto Install/Update DXVK-NVAPI op Prefix",
         "steamId": "Steam ID",
@@ -605,7 +605,7 @@
             "installing": "Installing BattlEye Runtime...",
             "name": "BattlEye AntiCheat Runtime"
         },
-        "clear-cache": "Clear HyperPlay Cache",
+        "clear-cache": "Clear NovaPlay Cache",
         "copiedToClipboard": "Copied to Clipboard!",
         "copyToClipboard": "Copy All Setting to Clipboard",
         "default_hint": "Changes in this section only apply as default values when installing games. If you want to change the settings of an already installed game, use the Settings button in the game page.",
@@ -638,7 +638,7 @@
             "systemInformation": "S_ysteem informatie"
         },
         "open-config-file": "Open Config File",
-        "reset-hyperplay": "Reset HyperPlay",
+        "reset-novaplay": "Reset NovaPlay",
         "saves": {
             "label": "Save Location:",
             "warning": "Cloud Saves feature is in Beta, please backup your saves before syncing (in case something goes wrong)"
@@ -756,21 +756,21 @@
     "Amazon Games": "Amazon-spellen",
     "amazon": "Amazone",
     "prime-gaming": "Prime-gaming",
-    "hyperplay": {
+    "novaplay": {
         "onboarding": {
             "walletSelection": {
                 "screens": {
                     "scan": {
                         "getMetamask": "Haal MetaMask",
                         "updateWarning": "Heb je problemen? Zorg ervoor dat MetaMask een afspraakje heeft.",
-                        "details": "Maak een versleutelde communicatiekanaal. Je sleutels zullen nooit gedeeld worden met HyperPlay.",
+                        "details": "Maak een versleutelde communicatiekanaal. Je sleutels zullen nooit gedeeld worden met NovaPlay.",
                         "title": "Scan QR ",
                         "dontHaveWallet": "Heeft Don een portemonnee?"
                     },
                     "import": {
                         "createNewWallet": "Creëer nieuwe MM verlengings portemonnee",
                         "orWord": "OF",
-                        "useRecoveryPhraseInfo": "Dit kenmerk wordt aanbevolen voor geavanceerde gebruikers en ontwikkelaars. Je geheime herstellende uitdrukking wordt opgeslagen in MetaMask en nooit gedeeld met HyperPlay.",
+                        "useRecoveryPhraseInfo": "Dit kenmerk wordt aanbevolen voor geavanceerde gebruikers en ontwikkelaars. Je geheime herstellende uitdrukking wordt opgeslagen in MetaMask en nooit gedeeld met NovaPlay.",
                         "cantFindProfile": "Kan je je browserprofiel niet vinden?",
                         "details": "De browsers beneden hebben MetaMask al geïnstalleerd. Kies de enige die je wilt importeren.",
                         "title": "Selecteer de browser om te importeren",
@@ -802,18 +802,18 @@
                 "neverCollectIP": " pak je IP-adres;",
                 "optOut": "Altijd toestaan dat je opt-out via de settings;",
                 "privacyCaption": "Deze gegevens zijn gefrustreerd en is daarom anoniem voor de doelen van generaal Data Beschermingsregelgeving 2016/679. Voor meer informatie in relatie met onze privacy praktijken, zie alsjeblieft onze ",
-                "title": "Help ons HyperPlay te verbeteren!",
-                "hyperplayWill": "HyperPlay zal:",
-                "body": "HyperPlay wil gebruiksgegevens verzamelen om beter te begrijpen hoe onze gebruikers met de aanvraag communiceren. Deze informatie helpt ons te begrijpen hoe je de app gebruikt en laat ons HyperPlay nog beter voor je maken.",
+                "title": "Help ons NovaPlay te verbeteren!",
+                "novaplayWill": "NovaPlay zal:",
+                "body": "NovaPlay wil gebruiksgegevens verzamelen om beter te begrijpen hoe onze gebruikers met de aanvraag communiceren. Deze informatie helpt ons te begrijpen hoe je de app gebruikt en laat ons NovaPlay nog beter voor je maken.",
                 "neverCollectPersonal": " sleutels verzamelen, adressen, evenwichten, hashes, of persoonlijke informatie;"
             },
             "welcome": {
                 "text": {
                     "communityCTA_1": "We zouden je feedback leuk vinden en je bij ons laten komen",
                     "communityCTA_2": "gemeenschap. Samen, laten we de toekomst van het spel vormen!",
-                    "bugs": "Let op dat HyperPlay een publieke alfa is. Veel kenmerken zijn nog steeds\nin ontwikkeling, en er zullen insecten zijn.",
-                    "construction": "HyperPlay staat onder de bouw.",
-                    "description": "HyperPlay is een spelwerper en game shop aggregator van de\ntoekomst. Met HyperPlay kun je je portemonnee, token en activa dragen.\nin elke wedstrijd. HyperPlay steunt de hele bibliotheek van de Epic\nGestolen, GG, en onze eigen HyperPlay winkel. Door HyperPlay te gebruiken, ben je het ermee eens."
+                    "bugs": "Let op dat NovaPlay een publieke alfa is. Veel kenmerken zijn nog steeds\nin ontwikkeling, en er zullen insecten zijn.",
+                    "construction": "NovaPlay staat onder de bouw.",
+                    "description": "NovaPlay is een spelwerper en game shop aggregator van de\ntoekomst. Met NovaPlay kun je je portemonnee, token en activa dragen.\nin elke wedstrijd. NovaPlay steunt de hele bibliotheek van de Epic\nGestolen, GG, en onze eigen NovaPlay winkel. Door NovaPlay te gebruiken, ben je het ermee eens."
                 },
                 "title": "Welkom in Hyper Speel Early Access!"
             },
@@ -839,7 +839,7 @@
             "addThisGame": "Voeg dit spel toe",
             "freeMints": "Vrije munten"
         },
-        "linkSteamAccountDescription": "Meld je aan Steam om je HyperPlay account te linken.",
+        "linkSteamAccountDescription": "Meld je aan Steam om je NovaPlay account te linken.",
         "linkSteamAccountTitle": "Link Steam Account",
         "viewPortfolio": "View portfolio",
         "analyticsOn": "Analytica wordt aangezet",
@@ -885,7 +885,7 @@
         "turnAnalyticsOn": "Inschakelen",
         "viewFullscreen": "View fullscreen"
     },
-    "hyperplayOverlay": {
+    "novaplayOverlay": {
         "signatureRequest": {
             "INITIATED": "Signature verzoek in afwachting",
             "FAILED": "Signature onderbroken",
@@ -897,7 +897,7 @@
             "FAILED": "Custom Token verzoek geannuleerd"
         },
         "greeting": {
-            "description": "HyperPlay Overlay is klaar! Druk 34X X om het te laten zien of te verbergen.",
+            "description": "NovaPlay Overlay is klaar! Druk 34X X om het te laten zien of te verbergen.",
             "title": "QuaperPlay Overlay"
         },
         "description": {
@@ -980,8 +980,8 @@
         "quests": "Quest",
         "playstreak": {
             "signInWarning": {
-                "client": "Je bent momenteel niet ingelogd, speelsporen zullen niet worden gevolgd. login alsjeblieft naar HyperPlay via de top rechtstreeks om vooruitgang te volgen.",
-                "overlay": "Je bent momenteel niet ingelogd, speelsporen zullen niet worden gevolgd. Verlaat het spel en login naar HyperPlay via de top rechtstreeks om vooruitgang te volgen."
+                "client": "Je bent momenteel niet ingelogd, speelsporen zullen niet worden gevolgd. login alsjeblieft naar NovaPlay via de top rechtstreeks om vooruitgang te volgen.",
+                "overlay": "Je bent momenteel niet ingelogd, speelsporen zullen niet worden gevolgd. Verlaat het spel en login naar NovaPlay via de top rechtstreeks om vooruitgang te volgen."
             }
         },
         "noneFound": {
@@ -989,7 +989,7 @@
             "title": "Geen vragen gevonden."
         },
         "g7CreditsModal": {
-            "description": "Dive in HyperPlay's topspelletjes met spannende Play Streak Challenges. Elke activiteit moedigt je aan om je aan te vallen met een ander spel, het beste van Web3 spel te laten zien. Je speeltijd is belangrijk!",
+            "description": "Dive in NovaPlay's topspelletjes met spannende Play Streak Challenges. Elke activiteit moedigt je aan om je aan te vallen met een ander spel, het beste van Web3 spel te laten zien. Je speeltijd is belangrijk!",
             "title": "Earn Game7 Credits"
         }
     },
@@ -1021,8 +1021,8 @@
     "importGameErrorMessageExecutable": "Game Uitvoerbaar niet gevonden, importeren is niet mogelijk",
     "exit_game": "Verlaat Game",
     "overlay": {
-        "EXTERNAL_WALLET_CONNECTED": "Je bent verbonden met HyperPlay met een externe portemonnee.",
-        "WALLET_DISCONNECTED": "Je hebt geen portemonnee verbonden met HyperPlay."
+        "EXTERNAL_WALLET_CONNECTED": "Je bent verbonden met NovaPlay met een externe portemonnee.",
+        "WALLET_DISCONNECTED": "Je hebt geen portemonnee verbonden met NovaPlay."
     },
     "dlcs": {
         "label": "Select DLCs om te installeren:"
