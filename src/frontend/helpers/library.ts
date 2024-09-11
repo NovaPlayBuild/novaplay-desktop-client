@@ -191,7 +191,7 @@ const launch = async ({
   if (hasUpdate && !authState.isQaModeActive) {
     const { ignoreGameUpdates } = await window.api.requestGameSettings(appName)
 
-    if (ignoreGameUpdates && runner !== 'hyperplay') {
+    if (ignoreGameUpdates && runner !== 'novaplay') {
       return window.api.launch({
         appName,
         runner,
@@ -223,7 +223,7 @@ const launch = async ({
             {
               text: t('box.no'),
               onClick: async () => {
-                if (runner === 'hyperplay') {
+                if (runner === 'novaplay') {
                   return showDialogModal({
                     message: t(
                       'gamepage:box.update.message-cancel',
@@ -280,7 +280,7 @@ const updateGame = async (gameInfo: GameInfo) => {
 export const epicCategories = ['all', 'legendary', 'epic']
 export const gogCategories = ['all', 'gog']
 export const sideloadedCategories = ['all', 'sideload']
-export const hyperPlayCategories = ['all', 'hyperplay']
+export const hyperPlayCategories = ['all', 'novaplay']
 
 export { install, launch, repair, updateGame }
 
@@ -308,9 +308,9 @@ export async function getSigner(): Promise<ethers.Signer> {
 export async function createSiweMessage(
   signerAddress: string
 ): Promise<SiweMessage> {
-  const domain = window.location.host ? window.location.host : 'hyperplay'
+  const domain = window.location.host ? window.location.host : 'novaplay'
   const origin = window.location.origin.startsWith('file://')
-    ? 'file://hyperplay'
+    ? 'file://novaplay'
     : window.location.origin
 
   const statementRes = await axios.get(
