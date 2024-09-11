@@ -60,7 +60,7 @@ async function installQueueElement(params: InstallParams): Promise<{
     }
   })
 
-  const startingStatus = runner === 'hyperplay' ? 'preparing' : 'installing'
+  const startingStatus = runner === 'novaplay' ? 'preparing' : 'installing'
 
   sendFrontendMessage('gameStatusUpdate', {
     appName,
