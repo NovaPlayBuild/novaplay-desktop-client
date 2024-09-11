@@ -6,7 +6,7 @@ import { execFile } from 'child_process'
 import { access, constants, unlink, writeFile } from 'graceful-fs'
 import checkDiskSpace, {
   getFirstExistingParentPath
-} from '@hyperplay/check-disk-space'
+} from '@novaplay/check-disk-space'
 import { logError, LogPrefix, logWarning } from 'backend/logger/logger'
 import { getFileSize } from 'backend/utils'
 import path from 'path'
