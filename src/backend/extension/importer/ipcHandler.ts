@@ -1,16 +1,16 @@
 import { dialog, ipcMain } from 'electron'
 import { trackEvent } from 'backend/metrics/metrics'
-import { hpApi } from 'backend/utils/hyperplay_api'
+import { hpApi } from 'backend/utils/novaplay_api'
 import store from './store'
 import { configFolder } from 'backend/constants'
 
 ipcMain.handle('getMetaMaskImportOptions', async () => {
-  const extensionImporter = await import('@hyperplay/extension-importer')
+  const extensionImporter = await import('@novaplay/extension-importer')
   return extensionImporter.getAvailableMetaMaskImports(configFolder)
 })
 
 ipcMain.on('createNewMetaMaskWallet', async (e, mmInitMethod) => {
-  const extensionImporter = await import('@hyperplay/extension-importer')
+  const extensionImporter = await import('@novaplay/extension-importer')
   await extensionImporter.createNewMetaMaskWallet(hpApi)
 
   trackEvent({
@@ -21,7 +21,7 @@ ipcMain.on('createNewMetaMaskWallet', async (e, mmInitMethod) => {
 })
 
 ipcMain.handle('importMetaMask', async (ev, mmInitMethod, dbPath, browser) => {
-  const extensionImporter = await import('@hyperplay/extension-importer')
+  const extensionImporter = await import('@novaplay/extension-importer')
   const success = await extensionImporter.importMetaMask(
     hpApi,
     mmInitMethod,
@@ -45,6 +45,6 @@ ipcMain.handle('getImportFolderPath', async () => {
 })
 
 ipcMain.handle('getExtensionId', async () => {
-  const extensionImporter = await import('@hyperplay/extension-importer')
+  const extensionImporter = await import('@novaplay/extension-importer')
   return extensionImporter.getExtensionId()
 })
