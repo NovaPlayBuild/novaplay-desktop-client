@@ -8,7 +8,7 @@ export async function postPlaySessionTime(
 ) {
   logInfo(
     `Posting play session for project id ${appName}. Time played in seconds was ${playSessionInSeconds}`,
-    LogPrefix.HyperPlay
+    LogPrefix.NovaPlay
   )
   const cookieString = await getPartitionCookies({
     partition: 'persist:auth',
@@ -34,6 +34,6 @@ export async function postPlaySessionTime(
       null,
       4
     )}`,
-    LogPrefix.HyperPlay
+    LogPrefix.NovaPlay
   )
 }
