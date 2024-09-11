@@ -1,9 +1,9 @@
 import React from 'react'
 
 import WalletInfoStyles from './index.module.scss'
-import WalletOptionIcon from 'frontend/assets/hyperplay/WalletOptionsIcon.png'
-import WalletIcon from 'frontend/assets/hyperplay/WalletIcon.png'
-import { Button } from '@hyperplay/ui'
+import WalletOptionIcon from 'frontend/assets/novaplay/WalletOptionsIcon.png'
+import WalletIcon from 'frontend/assets/novaplay/WalletIcon.png'
+import { Button } from '@novaplay/ui'
 import { t } from 'i18next'
 
 interface InfoTextProps {
@@ -39,49 +39,49 @@ const WalletInfoScreen = (props: WalletInfoScreenProps) => {
     <div className={WalletInfoStyles.walletInfoScreen}>
       <div className={`title ${WalletInfoStyles.title}`}>
         {t(
-          'hyperplay.onboarding.walletSelection.screens.info.title',
+          'novaplay.onboarding.walletSelection.screens.info.title',
           `What is a wallet?`
         )}
       </div>
       <InfoText
         icon={WalletOptionIcon}
         title={t(
-          'hyperplay.onboarding.walletSelection.screens.info.digitalAssets.title',
+          'novaplay.onboarding.walletSelection.screens.info.digitalAssets.title',
           `A Home for your Digital Assets`
         )}
         details={t(
-          'hyperplay.onboarding.walletSelection.screens.info.digitalAssets.details',
+          'novaplay.onboarding.walletSelection.screens.info.digitalAssets.details',
           `Wallets are used to send, receive, store, and display digital assets like tokens and NFTs.`
         )}
       />
       <InfoText
         icon={WalletIcon}
         title={t(
-          'hyperplay.onboarding.walletSelection.screens.info.login.title',
+          'novaplay.onboarding.walletSelection.screens.info.login.title',
           `A New Way to Log In`
         )}
         details={t(
-          'hyperplay.onboarding.walletSelection.screens.info.login.details',
+          'novaplay.onboarding.walletSelection.screens.info.login.details',
           `An alternative to creating new accounts and passwords on every website, just connect your wallet instead.`
         )}
       />
       <div className={`caption-sm ${WalletInfoStyles.caption}`}>
         {t(
-          'hyperplay.onboarding.walletSelection.screens.info.createWalletDescription',
+          'novaplay.onboarding.walletSelection.screens.info.createWalletDescription',
           `Click in “Create a wallet” below if you do not have a wallet or want to create a new one:`
         )}
       </div>
       <div className={WalletInfoStyles.actionButtonContainer}>
         <Button type="tertiary" onClick={props.skipClicked}>
           {t(
-            'hyperplay.onboarding.walletSelection.screens.info.skip',
+            'novaplay.onboarding.walletSelection.screens.info.skip',
             `Skip for now`
           )}
         </Button>
         {!props.mmInitialized ? (
           <Button onClick={props.createWalletClicked}>
             {t(
-              'hyperplay.onboarding.walletSelection.screens.info.createWalletCTA',
+              'novaplay.onboarding.walletSelection.screens.info.createWalletCTA',
               `Create a wallet`
             )}
           </Button>
