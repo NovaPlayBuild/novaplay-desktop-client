@@ -12,7 +12,7 @@ import { NavLink } from 'react-router-dom'
 import { InstallModal } from 'frontend/screens/Library/components'
 import UninstallModal from 'frontend/components/UI/UninstallModal'
 import libraryState from 'frontend/state/libraryState'
-import { LoadingSpinner } from '@hyperplay/ui'
+import { LoadingSpinner } from '@novaplay/ui'
 
 interface Props {
   appName: string
@@ -219,7 +219,7 @@ export default function GamesSubmenu({
     return <LoadingSpinner className="link button is-text is-link" />
   }
 
-  const isHyperPlayGame = runner === 'hyperplay'
+  const isNovaPlayGame = runner === 'novaplay'
   const showDlcsItem = onShowDlcs && runner === 'legendary' && isInstalled
 
   return (
@@ -264,7 +264,7 @@ export default function GamesSubmenu({
                     : t('submenu.addToSteam', 'Add to Steam')}
                 </button>
               )}
-              {!isSideloaded && !isHyperPlayGame && (
+              {!isSideloaded && !isNovaPlayGame && (
                 <button
                   onClick={async () => handleUpdate()}
                   className="link button is-text is-link"
@@ -273,7 +273,7 @@ export default function GamesSubmenu({
                   {t('button.force_update', 'Force Update if Available')}
                 </button>
               )}
-              {!isSideloaded && !isHyperPlayGame && (
+              {!isSideloaded && !isNovaPlayGame && (
                 <button
                   onClick={async () => handleMoveInstall()}
                   className="link button is-text is-link"
@@ -281,7 +281,7 @@ export default function GamesSubmenu({
                   {t('submenu.move', 'Move Game')}
                 </button>
               )}{' '}
-              {!isSideloaded && !isHyperPlayGame && (
+              {!isSideloaded && !isNovaPlayGame && (
                 <button
                   onClick={async () => handleChangeInstall()}
                   className="link button is-text is-link"
@@ -289,7 +289,7 @@ export default function GamesSubmenu({
                   {t('submenu.change', 'Change Install Location')}
                 </button>
               )}{' '}
-              {!isSideloaded && !isHyperPlayGame && (
+              {!isSideloaded && !isNovaPlayGame && (
                 <button
                   onClick={async () => handleRepair(appName)}
                   className="link button is-text is-link"
@@ -329,7 +329,7 @@ export default function GamesSubmenu({
               {t('submenu.protondb', 'Check Compatibility')}
             </button>
           )}
-          {!isSideloaded && !isHyperPlayGame && (
+          {!isSideloaded && !isNovaPlayGame && (
             <button
               onClick={() => setShowExtraInfo(true)}
               className="link button is-text is-link"
