@@ -5,7 +5,7 @@ import {
   GameSettings,
   ExecResult,
   InstallArgs,
-  HyperPlayInstallInfo,
+  NovaPlayInstallInfo,
   UpdateArgs
 } from 'common/types'
 import { GOGCloudSavesLocation, GogInstallInfo } from './gog'
@@ -70,7 +70,7 @@ export interface LibraryManager {
     lang?: string,
     channelNameToInstall?: string
   ) => Promise<
-    LegendaryInstallInfo | GogInstallInfo | HyperPlayInstallInfo | undefined
+    LegendaryInstallInfo | GogInstallInfo | NovaPlayInstallInfo | undefined
   >
   listUpdateableGames: () => Promise<string[]>
   changeGameInstallPath: (appName: string, newPath: string) => Promise<void>
