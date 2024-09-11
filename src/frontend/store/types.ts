@@ -1,4 +1,4 @@
-import { TransactionToastProps } from '@hyperplay/ui'
+import { TransactionToastProps } from '@novaplay/ui'
 
 export interface InitializableStore {
   init(): void | Promise<void>
