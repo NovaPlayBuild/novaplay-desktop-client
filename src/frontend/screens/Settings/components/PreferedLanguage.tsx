@@ -14,7 +14,7 @@ const PreferedLanguage = () => {
     <InfoBox text="infobox.help">
       {t(
         'help.game_language.fallback',
-        "Leave blank to use HyperPlay's language."
+        "Leave blank to use NovaPlay's language."
       )}
       <br />
       {t(
