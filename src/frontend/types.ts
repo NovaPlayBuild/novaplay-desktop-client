@@ -11,7 +11,7 @@ import {
   DownloadManagerState
 } from 'common/types'
 
-export type Category = 'all' | 'legendary' | 'gog' | 'sideload' | 'hyperplay'
+export type Category = 'all' | 'legendary' | 'gog' | 'sideload' | 'novaplay'
 
 export type Platform = 'win' | 'mac' | 'linux' | 'browser'
 
