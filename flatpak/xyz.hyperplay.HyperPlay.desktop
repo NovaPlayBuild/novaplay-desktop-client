@@ -1,10 +1,10 @@
 [Desktop Entry]
-Name=HyperPlay
-Exec=hyperplay-run %u
+Name=NovaPlay
+Exec=novaplay-run %u
 Terminal=false
 Type=Application
-Icon=xyz.hyperplay.HyperPlay
-StartupWMClass=HyperPlay
+Icon=xyz.novaplay.NovaPlay
+StartupWMClass=NovaPlay
 Comment=Web3 game launcher from the future
-MimeType=x-scheme-handler/hyperplay;
+MimeType=x-scheme-handler/novaplay;
 Categories=Game;
