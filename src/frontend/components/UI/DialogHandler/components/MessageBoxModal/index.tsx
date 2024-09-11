@@ -9,7 +9,7 @@ import {
 import classNames from 'classnames'
 import { useTranslation } from 'react-i18next'
 import { DialogType, ButtonOptions } from 'common/types'
-import { Button } from '@hyperplay/ui'
+import { Button } from '@novaplay/ui'
 
 interface MessageBoxModalProps {
   title: string
