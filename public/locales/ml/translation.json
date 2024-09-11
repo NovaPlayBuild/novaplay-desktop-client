@@ -83,8 +83,8 @@
                 "changelog": "Open changelog",
                 "detail": "Do you want to download the update in the background?",
                 "message": "There is a new Version available!",
-                "message-finished": "Do you want to restart HyperPlay now?",
-                "title": "HyperPlay Games Launcher",
+                "message-finished": "Do you want to restart NovaPlay now?",
+                "title": "NovaPlay Games Launcher",
                 "title-finished": "Update Finished"
             }
         },
@@ -101,8 +101,8 @@
         },
         "reset-app": {
             "question": {
-                "message": "Are you sure you want to reset HyperPlay? This will remove all Settings and Caching but won't remove your Installed games or your Epic credentials. Portable versions (AppImage, WinPortable, ...) of HyperPlay needs to be restarted manually afterwards.",
-                "title": "Reset HyperPlay"
+                "message": "Are you sure you want to reset NovaPlay? This will remove all Settings and Caching but won't remove your Installed games or your Epic credentials. Portable versions (AppImage, WinPortable, ...) of NovaPlay needs to be restarted manually afterwards.",
+                "title": "Reset NovaPlay"
             }
         },
         "runexe": {
@@ -198,7 +198,7 @@
         "ETA": "കണക്കാക്കിയ സമയം"
     },
     "epic": {
-        "offline-notification-body": "HyperPlay will not work probably!",
+        "offline-notification-body": "NovaPlay will not work probably!",
         "offline-notification-title": "offline"
     },
     "Epic Games": "എപിക് ഗെയിംസ്",
@@ -238,7 +238,7 @@
         "esync": "Esync aims to reduce wineserver overhead in CPU-intensive games. Enabling may improve performance.",
         "fsync": "Fsync aims to reduce wineserver overhead in CPU-intensive games. Enabling may improve performance on supported Linux kernels.",
         "game_language": {
-            "fallback": "Leave blank to use HyperPlay's language.",
+            "fallback": "Leave blank to use NovaPlay's language.",
             "in_game_config": "Not all games support this configuration, some have in-game language setting.",
             "valid_codes": "Valid language codes are game-dependant."
         },
@@ -254,7 +254,7 @@
         "preferSystemLibs": "Custom Wine versions (Wine-GE, Wine-Lutris) are shipped with their library dependencies. By enabling this option, these shipped libraries will be ignored and Wine will load system libraries instead. Warning! Issues may occur if dependencies are not met.",
         "primerun": "Use dedicated graphics card to render game on multi-GPU systems. Only needed on gaming laptops or desktops that use a headless GPU for rendering (NVIDIA Optimus, AMD CrossFire)",
         "steam_path": {
-            "info": "This path lets HyperPlay determine what version of Proton Steam uses, for adding non-Steam games to Steam."
+            "info": "This path lets NovaPlay determine what version of Proton Steam uses, for adding non-Steam games to Steam."
         },
         "steamruntime": "Custom libraries provided by Steam to help run Linux and Windows (Proton) games. Enabling might improve compatibility.",
         "sync": {
@@ -271,12 +271,12 @@
         "msync": "Fsync aims to reduce wineserver overhead in CPU-intensive games. Enabling may improve performance on supported Linux kernels."
     },
     "info": {
-        "hyperplay": {
+        "novaplay": {
             "beta": "Beta",
             "click-to-see-changelog": "Click to see changelog",
             "newReleases": "Update Available!",
             "stable": "Stable",
-            "version": "HyperPlay Version"
+            "version": "NovaPlay Version"
         },
         "save-sync": {
             "searching": "Trying to detect the correct save folder (click to cancel)"
@@ -356,7 +356,7 @@
         },
         "moved": "മാറ്റിക്കഴിഞ്ഞു",
         "moving": "Moving Game",
-        "new-hyperplay-version": "A new HyperPlay version was released!",
+        "new-novaplay-version": "A new NovaPlay version was released!",
         "refresh": {
             "error": "Couldn't fetch releases from upstream, maybe because of Github API restrictions! Try again later."
         },
@@ -453,7 +453,7 @@
         "autosync": "താനേസൂക്ഷിക്കപ്പെട്ട ഒന്നിപ്പിക്കലുകള്",
         "autovkd3d": "Auto Install/Update VKD3D on Prefix",
         "change-target-exe": "ഓടിക്കുവാനായി പകരംവയ്ക്കാവുന്ന ഒരു EXE തിരഞ്ഞെടുക്കൂ",
-        "checkForUpdatesOnStartup": "Check for HyperPlay Updates on Startup",
+        "checkForUpdatesOnStartup": "Check for NovaPlay Updates on Startup",
         "crossover-version": "Crossover/Wine Version",
         "custom_themes_path": "Custom Themes Path",
         "customWineProton": "ഇഷ്ടാനുസൃതം ചേര്ത്ത വൈന്/പ്രോട്ടോണ് അറകള്",
@@ -461,7 +461,7 @@
         "default-install-path": "തനത് സ്ഥാപനയിടം",
         "default-steam-path": "Default Steam path",
         "defaultWinePrefix": "Set Folder for new Wine Prefixes",
-        "disable_controller": "Disable HyperPlay navigation using controller",
+        "disable_controller": "Disable NovaPlay navigation using controller",
         "discordRPC": "ഡിസ്കോര്ഡ് റിച്ച് പ്രെസന്സ് വക്കൂ",
         "download-no-https": "Download games without HTTPS (useful for CDNs e.g. LanCache)",
         "egs-sync": "സ്ഥാപിച്ച എപിക് ഗെയിംസുമായി ഒന്നിപ്പിക്കുക",
@@ -502,7 +502,7 @@
         "log": {
             "copy-to-clipboard": "Copy log content to clipboard",
             "current-log": "Current Log",
-            "instructions": "If you encounter any issues while using HyperPlay, we have two designated areas to report your issues in our Discord Server. If you're a player, please report any problems by visiting the player-support-forum. If you are a game dev, please report any problems by visiting the dev-support-forum.{{newLine}} {{newLine}} To help us diagnose and fix the problem as quickly as possible, please provide as much information as possible, including a copy of your logs. Our support team will monitor both channels and do their best to respond to your issue as quickly as possible. Thank you for your patience and understanding while we work to resolve any problems you may encounter.{{newLine}}",
+            "instructions": "If you encounter any issues while using NovaPlay, we have two designated areas to report your issues in our Discord Server. If you're a player, please report any problems by visiting the player-support-forum. If you are a game dev, please report any problems by visiting the dev-support-forum.{{newLine}} {{newLine}} To help us diagnose and fix the problem as quickly as possible, please provide as much information as possible, including a copy of your logs. Our support team will monitor both channels and do their best to respond to your issue as quickly as possible. Thank you for your patience and understanding while we work to resolve any problems you may encounter.{{newLine}}",
             "instructions_title": "How to report a problem?",
             "last-log": "Last Log",
             "no-file": "No log file found",
@@ -520,7 +520,7 @@
         },
         "maxRecentGames": "അടുത്തിടെയുള്ള പതിവ് കളികള്",
         "maxworkers": "ഇറക്കിയെടുക്കുമ്പോള് പണിയുന്നവരുടെ പരമാവധി എണ്ണം",
-        "minimize-on-launch": "Minimize HyperPlay After Game Launch",
+        "minimize-on-launch": "Minimize NovaPlay After Game Launch",
         "offlinemode": "ഓഫ്ലൈനില് കളിക്കുക",
         "prefered_language": "Prefered Language (Language Code)",
         "preferSystemLibs": "Prefer system libraries",
@@ -561,7 +561,7 @@
             "installing": "Installing BattlEye Runtime...",
             "name": "BattlEye AntiCheat Runtime"
         },
-        "clear-cache": "Clear HyperPlay Cache",
+        "clear-cache": "Clear NovaPlay Cache",
         "copiedToClipboard": "Copied to Clipboard!",
         "copyToClipboard": "Copy All Setting to Clipboard",
         "default_hint": "Changes in this section only apply as default values when installing games. If you want to change the settings of an already installed game, use the Settings button in the game page.",
@@ -593,7 +593,7 @@
             "accounts": "അക്കൗണ്ടുകൾ"
         },
         "open-config-file": "Open Config File",
-        "reset-hyperplay": "Reset HyperPlay",
+        "reset-novaplay": "Reset NovaPlay",
         "saves": {
             "label": "Save Location:",
             "warning": "Cloud Saves feature is in Beta, please backup your saves before syncing (in case something goes wrong)"
@@ -696,7 +696,7 @@
         "beta": "ബീറ്റ",
         "main": "പ്രധാന"
     },
-    "hyperplay": {
+    "novaplay": {
         "gamecard": {
             "paused": "താല്‍ക്കാലികമായി നിര്‍ത്തിയിരിക്കുന്നു"
         },
