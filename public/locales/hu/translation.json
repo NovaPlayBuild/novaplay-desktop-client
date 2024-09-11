@@ -19,7 +19,7 @@
     },
     "box": {
         "cache-cleared": {
-            "message": "HyperPlay gyorsítótár törölve.",
+            "message": "NovaPlay gyorsítótár törölve.",
             "title": "Gyorsítótár törölve"
         },
         "choose": "Kiválasztás",
@@ -67,7 +67,7 @@
             },
             "update": {
                 "title": "Update Error",
-                "message": "Valami rosszul ment a frissítéssel! Kérjük, manuálisan telepítse és újratelepítse a HyperPlay-t."
+                "message": "Valami rosszul ment a frissítéssel! Kérjük, manuálisan telepítse és újratelepítse a NovaPlay-t."
             },
             "wine-not-found": {
                 "invalid": "The selected wine version was not found. Install it or select a different version in the game's settings{{newline}}Version: {{version}}{{newline}}Path: {{path}}",
@@ -89,11 +89,11 @@
                 "changelog": "Open changelog",
                 "detail": "Do you want to download the update in the background?",
                 "message": "There is a new Version available!",
-                "message-finished": "Do you want to restart HyperPlay now?",
-                "title": "HyperPlay Games Launcher",
+                "message-finished": "Do you want to restart NovaPlay now?",
+                "title": "NovaPlay Games Launcher",
                 "title-finished": "Update Finished",
-                "appUpdated": "HyperPlay frissített",
-                "appUpdated-message": "A HyperPlay frissült. Szeretné frissíteni és újraindítani a HyperPlay-t?"
+                "appUpdated": "NovaPlay frissített",
+                "appUpdated-message": "A NovaPlay frissült. Szeretné frissíteni és újraindítani a NovaPlay-t?"
             }
         },
         "no": "NEM",
@@ -109,8 +109,8 @@
         },
         "reset-app": {
             "question": {
-                "message": "Are you sure you want to reset HyperPlay? This will remove all Settings and Caching but won't remove your Installed games or your Epic credentials. Portable versions (AppImage, WinPortable, ...) of HyperPlay needs to be restarted manually afterwards.",
-                "title": "Reset HyperPlay"
+                "message": "Are you sure you want to reset NovaPlay? This will remove all Settings and Caching but won't remove your Installed games or your Epic credentials. Portable versions (AppImage, WinPortable, ...) of NovaPlay needs to be restarted manually afterwards.",
+                "title": "Reset NovaPlay"
             }
         },
         "runexe": {
@@ -156,7 +156,7 @@
             },
             "rosetta": {
                 "title": "Rosetta nem talált",
-                "message": "A HyperPlay megköveteli Rosetta, hogy megfelelően futtassa a macOS-t az Apple Silicon chipekkel. Kérjük, telepítse a macOS terminálból a következő parancs használatával: \"softwareupdate --install-rosetta\" és indítsa újra a HyperPlay-t. "
+                "message": "A NovaPlay megköveteli Rosetta, hogy megfelelően futtassa a macOS-t az Apple Silicon chipekkel. Kérjük, telepítse a macOS terminálból a következő parancs használatával: \"softwareupdate --install-rosetta\" és indítsa újra a NovaPlay-t. "
             }
         },
         "wineprefix": "Wine prefix mappa kiválasztása",
@@ -264,7 +264,7 @@
         "esync": "Az Esync célja, hogy csökkentse a wineserver súlyát a CPU igényes játékokkal. A bekapcsolása növelheti a teljesítményt.",
         "fsync": "Fsync aims to reduce wineserver overhead in CPU-intensive games. Enabling may improve performance on supported Linux kernels.",
         "game_language": {
-            "fallback": "Leave blank to use HyperPlay's language.",
+            "fallback": "Leave blank to use NovaPlay's language.",
             "in_game_config": "Not all games support this configuration, some have in-game language setting.",
             "valid_codes": "Valid language codes are game-dependant."
         },
@@ -280,18 +280,18 @@
         "preferSystemLibs": "Custom Wine versions (Wine-GE, Wine-Lutris) are shipped with their library dependencies. By enabling this option, these shipped libraries will be ignored and Wine will load system libraries instead. Warning! Issues may occur if dependencies are not met.",
         "primerun": "Use dedicated graphics card to render game on multi-GPU systems. Only needed on gaming laptops or desktops that use a headless GPU for rendering (NVIDIA Optimus, AMD CrossFire)",
         "steam_path": {
-            "info": "This path lets HyperPlay determine what version of Proton Steam uses, for adding non-Steam games to Steam."
+            "info": "This path lets NovaPlay determine what version of Proton Steam uses, for adding non-Steam games to Steam."
         },
         "steamruntime": "Custom libraries provided by Steam to help run Linux and Windows (Proton) games. Enabling might improve compatibility.",
         "sync": {
-            "part1": "A HyperPlay megpróbálja megtalálni a megfelelő mentési mappát, és ez esetek többségében működik. Abban az esetben, ha a mappa nem megfelelő, használd a felülírás dobozt, hogy megváltoztasd.",
-            "part2": "Abban az esetben, ha megváltoztatod a Wine vagy Proton prefix mappáját, ismét ellenőrizned kell az útvonalat, mivel a Proton más prefix-et (/pfx) és felhasználónevet (steamuser) használ. Tehát egyszerűen kitörölheted az útvonalat, lépj ki a szinkronizálási beállítások oldalból és lépj vissza ahhoz, hogy a HyperPlay mégegyszer megpróbálja megtalálni a mappát a megfelelő prefix-el.",
+            "part1": "A NovaPlay megpróbálja megtalálni a megfelelő mentési mappát, és ez esetek többségében működik. Abban az esetben, ha a mappa nem megfelelő, használd a felülírás dobozt, hogy megváltoztasd.",
+            "part2": "Abban az esetben, ha megváltoztatod a Wine vagy Proton prefix mappáját, ismét ellenőrizned kell az útvonalat, mivel a Proton más prefix-et (/pfx) és felhasználónevet (steamuser) használ. Tehát egyszerűen kitörölheted az útvonalat, lépj ki a szinkronizálási beállítások oldalból és lépj vissza ahhoz, hogy a NovaPlay mégegyszer megpróbálja megtalálni a mappát a megfelelő prefix-el.",
             "part3": "Manuális szinkronizálás: válaszd a letöltést, hogy letöltsd a játékmentéseket, amiket a felhőben tárolsz. Válaszd a feltöltést, hogy feltöltsd a helyieket a felhőbe. Kényszerített letöltés és kényszerített feltöltés figyelmen kívül fogja hagyni a helyi vagy a felhőben lévő fájlok verzióját.",
             "part4": "A mentések automatikus szinkronizálása szinkronizálni fogja a mentéseket minden alkalommal, amikor elindítod a játékot és miután befejezted a játszást."
         },
         "vkd3d": "VKD3D is a Vulkan-based translational layer for DirectX 12 games. Enabling may improve compatibility significantly. Has no effect on older DirectX games.",
         "wine": {
-            "part1": "A HyperPlay a Wine, Proton és CrossOver verzióit a következő mappákban keresi:",
+            "part1": "A NovaPlay a Wine, Proton és CrossOver verzióit a következő mappákban keresi:",
             "part2": "Más hely esetén, használj egy szimbolikus linket az egyik mappához"
         },
         "msync": "A Msync célja, hogy csökkentse a borszervezőt a CPU-intenzív játékokban. Az engedélyezés javíthatja a teljesítményt több játékon.",
@@ -299,12 +299,12 @@
         "dxvknvapi": "A DXVK-NVAPI a DXVK és a linux natív NVAPI felett épített NVAPI végrehajtása, lehetővé teszi a DLSS használatát Nvidia GPU-kon."
     },
     "info": {
-        "hyperplay": {
+        "novaplay": {
             "beta": "Beta",
             "click-to-see-changelog": "Click to see changelog",
             "newReleases": "Update Available!",
             "stable": "Stable",
-            "version": "HyperPlay Version"
+            "version": "NovaPlay Version"
         },
         "save-sync": {
             "searching": "Trying to detect the correct save folder (click to cancel)"
@@ -391,7 +391,7 @@
         },
         "moved": "Áthelyezés befejezve",
         "moving": "Moving Game",
-        "new-hyperplay-version": "A new HyperPlay version was released!",
+        "new-novaplay-version": "A new NovaPlay version was released!",
         "refresh": {
             "error": "Couldn't fetch releases from upstream, maybe because of Github API restrictions! Try again later."
         },
@@ -446,7 +446,7 @@
     "other": {
         "gogdl-version": "GOGDL Version: ",
         "legendary-version": "Legendary verzió: ",
-        "weblate": "Segíts lefordítani a HyperPlay-ot.",
+        "weblate": "Segíts lefordítani a NovaPlay-ot.",
         "nile-version": "Nile verzió: "
     },
     "Other": "Other",
@@ -491,7 +491,7 @@
         "autosync": "Mentések automatikus szinkronizálása",
         "autovkd3d": "A VKD3D automatikus telepítése/frissítése a prefixen",
         "change-target-exe": "Válassz egy alternatív EXE fájlt a futtatáshoz",
-        "checkForUpdatesOnStartup": "Check for HyperPlay Updates on Startup",
+        "checkForUpdatesOnStartup": "Check for NovaPlay Updates on Startup",
         "crossover-version": "Crossover/Wine Version",
         "custom_themes_path": "Custom Themes Path",
         "customWineProton": "Egyéni Wine/Proton útvonalak",
@@ -499,7 +499,7 @@
         "default-install-path": "Alapértelmezett telepítési útvonal",
         "default-steam-path": "Default Steam path",
         "defaultWinePrefix": "Mappa beállítása új Wine prefixeknek",
-        "disable_controller": "Disable HyperPlay navigation using controller",
+        "disable_controller": "Disable NovaPlay navigation using controller",
         "discordRPC": "Discord Rich Presence engedélyezése",
         "download-no-https": "Download games without HTTPS (useful for CDNs e.g. LanCache)",
         "egs-sync": "Szinkronizálás a telepített Epic Gamesszel",
@@ -540,13 +540,13 @@
         "log": {
             "copy-to-clipboard": "Napló tartalmának vágólapra másolása",
             "current-log": "Jelenlegi napló",
-            "instructions": "If you encounter any issues while using HyperPlay, we have two designated areas to report your issues in our Discord Server. If you're a player, please report any problems by visiting the player-support-forum. If you are a game dev, please report any problems by visiting the dev-support-forum.{{newLine}} {{newLine}} To help us diagnose and fix the problem as quickly as possible, please provide as much information as possible, including a copy of your logs. Our support team will monitor both channels and do their best to respond to your issue as quickly as possible. Thank you for your patience and understanding while we work to resolve any problems you may encounter.{{newLine}}",
+            "instructions": "If you encounter any issues while using NovaPlay, we have two designated areas to report your issues in our Discord Server. If you're a player, please report any problems by visiting the player-support-forum. If you are a game dev, please report any problems by visiting the dev-support-forum.{{newLine}} {{newLine}} To help us diagnose and fix the problem as quickly as possible, please provide as much information as possible, including a copy of your logs. Our support team will monitor both channels and do their best to respond to your issue as quickly as possible. Thank you for your patience and understanding while we work to resolve any problems you may encounter.{{newLine}}",
             "instructions_title": "How to report a problem?",
             "last-log": "Utolsó napló",
             "no-file": "Nem található naplófájl",
             "show-in-folder": "Naplófájl megjelenítése mappában",
-            "instructions-part-01": "Ha bármilyen kérdéssel találkozik a HyperPlay használatával, két kijelölt területünk van a Discord Serverünkben. Ha Ön játékos, kérjük, jelentsen be minden problémát a játékos-support-fórum látogatásával. Ha egy játék dev, kérjük, jelentsen be minden problémát, ha látogasson el a dev-support-fórum.",
-            "join-hyperplay-discord": "Csatlakozz a Discordhoz",
+            "instructions-part-01": "Ha bármilyen kérdéssel találkozik a NovaPlay használatával, két kijelölt területünk van a Discord Serverünkben. Ha Ön játékos, kérjük, jelentsen be minden problémát a játékos-support-fórum látogatásával. Ha egy játék dev, kérjük, jelentsen be minden problémát, ha látogasson el a dev-support-fórum.",
+            "join-novaplay-discord": "Csatlakozz a Discordhoz",
             "instructions-part-02": "Annak érdekében, hogy a lehető leggyorsabban diagnosztizáljuk és javítsuk a problémát, kérjük, a lehető legtöbb információt, beleértve a naplók másolatát is. Támogató csapatunk figyelemmel kíséri mind a csatornákat, és a lehető leggyorsabban reagál a kérdésre. Köszönöm türelmeteket és megértésteket, miközben dolgozunk, hogy megoldunk minden problémát, amivel találkozhatunk."
         },
         "mangohud": "Mangohud engedélyezése (a Mangohudnak telepítve kell lennie)",
@@ -561,7 +561,7 @@
         },
         "maxRecentGames": "Nemrég játszottak megjelenítése",
         "maxworkers": "Maximum dolgozók száma letöltéskor",
-        "minimize-on-launch": "Minimize HyperPlay After Game Launch",
+        "minimize-on-launch": "Minimize NovaPlay After Game Launch",
         "offlinemode": "Játék futtatása offline",
         "prefered_language": "Prefered Language (Language Code)",
         "preferSystemLibs": "Prefer system libraries",
@@ -597,7 +597,7 @@
         "msync": "Esync engedélyezése",
         "dxvkfpslimit": "Limit FPS (DX9, 10 és 11)",
         "autodxvknvapi": "Auto Install/Update DXVK-NVAPI Prefix",
-        "autoLaunchHyperPlay": "Auto Launch Hyper Játék",
+        "autoLaunchNovaPlay": "Auto Launch Hyper Játék",
         "steamId": "Steam ID"
     },
     "settings": {
@@ -605,7 +605,7 @@
             "installing": "Installing BattlEye Runtime...",
             "name": "BattlEye AntiCheat Runtime"
         },
-        "clear-cache": "HyperPlay gyorsítótár törlése",
+        "clear-cache": "NovaPlay gyorsítótár törlése",
         "copiedToClipboard": "Vágólapra másolva!",
         "copyToClipboard": "Összes beállítás másolása a vágólapra",
         "default_hint": "Changes in this section only apply as default values when installing games. If you want to change the settings of an already installed game, use the Settings button in the game page.",
@@ -638,7 +638,7 @@
             "accounts": "Fiókok"
         },
         "open-config-file": "Open Config File",
-        "reset-hyperplay": "HyperPlay visszaállítása",
+        "reset-novaplay": "NovaPlay visszaállítása",
         "saves": {
             "label": "Save Location:",
             "warning": "Cloud Saves feature is in Beta, please backup your saves before syncing (in case something goes wrong)"
@@ -757,7 +757,7 @@
     "Amazon Games": "Amazon Games",
     "prime-gaming": "Prime Gaming",
     "analytics": "Analitika",
-    "hyperplay": {
+    "novaplay": {
         "turnAnalyticsOn": "Bekapcsolás",
         "copyUrl": "URL másolása",
         "browserImport": {
@@ -771,7 +771,7 @@
                         "learnMore": "További információ…",
                         "details": "Az alábbi böngészők már telepítették a MetaMask-ot. Válassza ki azt, amit importálni szeretne.",
                         "orWord": "VAGY",
-                        "useRecoveryPhraseInfo": "Ez a funkció ajánlott a fejlett felhasználók és a fejlesztők számára. A titkos helyreállítási kifejezést a MetaMaskban tároljuk, és soha nem osztjuk meg a HyperPlay-nal.",
+                        "useRecoveryPhraseInfo": "Ez a funkció ajánlott a fejlett felhasználók és a fejlesztők számára. A titkos helyreállítási kifejezést a MetaMaskban tároljuk, és soha nem osztjuk meg a NovaPlay-nal.",
                         "title": "Válassza ki a böngészőt importálni",
                         "useRecoveryPhrase": "Import használata titkos helyreállítási kifejezés",
                         "cantFindProfile": "Nem találja meg a böngésző profilját?",
@@ -793,7 +793,7 @@
                     },
                     "scan": {
                         "dontHaveWallet": "Nincs pénztárcája?",
-                        "details": "Készítsen titkosított kommunikációs csatornát. A kulcsokat soha nem fogják megosztani a HyperPlay-szel.",
+                        "details": "Készítsen titkosított kommunikációs csatornát. A kulcsokat soha nem fogják megosztani a NovaPlay-szel.",
                         "getMetamask": "Get MetaMask",
                         "title": "Scan QR with ",
                         "updateWarning": "Kérdések? Győződjön meg róla, hogy a MetaMask naprakész."
@@ -805,12 +805,12 @@
             "terms": "Általános Szerződési Feltételek",
             "analytics": {
                 "privacyPolicyHere": "Adatvédelmi politika itt.",
-                "title": "Segíts nekünk javítani HyperPlay!",
+                "title": "Segíts nekünk javítani NovaPlay!",
                 "neverCollectPersonal": " gyűjtsön kulcsokat, címeket, egyensúlyokat, hashokat vagy bármilyen személyes információt;",
                 "neverSellData": " adatok eladása nyereségért. Ever!",
-                "body": "A HyperPlay szeretné összegyűjteni a használati adatokat, hogy jobban megértse, hogyan kapcsolódik a felhasználóink az alkalmazáshoz. Ez az információ segít megérteni, hogyan használja az alkalmazást, és lehetővé teszi számunkra, hogy a HyperPlay még jobb legyen az Ön számára.",
+                "body": "A NovaPlay szeretné összegyűjteni a használati adatokat, hogy jobban megértse, hogyan kapcsolódik a felhasználóink az alkalmazáshoz. Ez az információ segít megérteni, hogyan használja az alkalmazást, és lehetővé teszi számunkra, hogy a NovaPlay még jobb legyen az Ön számára.",
                 "anonymized": "Küldj anonimizált kattintást és játék interakciót;",
-                "hyperplayWill": "HyperPlay:",
+                "novaplayWill": "NovaPlay:",
                 "optOut": "Mindig engedje meg, hogy opt-out keresztül Beállítások;",
                 "neverCollectIP": " összegyűjti teljes IP-címét;",
                 "privacyCaption": "Ezeket az adatokat összesítették, ezért névtelen az (EU) 2016/679 általános adatvédelmi rendelet alkalmazásában. További információ adatvédelmi gyakorlatunkkal kapcsolatban, kérjük, lásd a miénket "
@@ -822,10 +822,10 @@
             "welcome": {
                 "text": {
                     "communityCTA_2": "közösség. Együtt formáljuk a játék jövőjét!",
-                    "construction": "A HyperPlay építkezés alatt áll.",
+                    "construction": "A NovaPlay építkezés alatt áll.",
                     "communityCTA_1": "Szeretjük a visszajelzéseket, és csatlakozunk hozzánk",
-                    "description": "HyperPlay egy játék indító és játékbolt aggregátor a\njövő. A HyperPlay segítségével hordozhatja a pénztárcáját, a tokeneket és az eszközöket\nminden játék. A HyperPlay támogatja az Epic teljes könyvtárát\nÜzlet, GOG és saját HyperPlay áruházunk. A HyperPlay használatával egyetért\na mi",
-                    "bugs": "Kérjük, vegye figyelembe, hogy a HyperPlay egy nyilvános alfa. Sok jellemző még mindig\na fejlődésben, és lesznek hibák."
+                    "description": "NovaPlay egy játék indító és játékbolt aggregátor a\njövő. A NovaPlay segítségével hordozhatja a pénztárcáját, a tokeneket és az eszközöket\nminden játék. A NovaPlay támogatja az Epic teljes könyvtárát\nÜzlet, GOG és saját NovaPlay áruházunk. A NovaPlay használatával egyetért\na mi",
+                    "bugs": "Kérjük, vegye figyelembe, hogy a NovaPlay egy nyilvános alfa. Sok jellemző még mindig\na fejlődésben, és lesznek hibák."
                 },
                 "title": "Üdvözöljük a Hyper Játssz korai hozzáférést!"
             },
@@ -879,7 +879,7 @@
         "viewPortfolio": "Portfólió",
         "currentWallet": "Jelenlegi pénztárca",
         "linkSteamAccountCta": "Menj Steam alá",
-        "linkSteamAccountDescription": "Jelölje be a Steam-t, hogy kapcsolja össze a HyperPlay fiókját.",
+        "linkSteamAccountDescription": "Jelölje be a Steam-t, hogy kapcsolja össze a NovaPlay fiókját.",
         "linkSteamAccountTitle": "Link Steam fiók",
         "viewItem": "{{item}}",
         "analyticsOff": "Az analitika kikapcsolódik",
@@ -943,8 +943,8 @@
         "quests": "Küldetések",
         "playstreak": {
             "signInWarning": {
-                "overlay": "Jelenleg nincs bejelentkezve, a streak haladást nem követik nyomon. Kérjük, hagyja ki a játékot, és jelentkezzen be a HyperPlay-ba a jobboldali leálláson keresztül a haladás nyomon követéséhez.",
-                "client": "Jelenleg nem vagy bejelentkezve, a streak haladást nem követik nyomon. Kérjük, jelentkezzen be a HyperPlay-ba a jobboldali leálláson keresztül a haladás nyomon követéséhez."
+                "overlay": "Jelenleg nincs bejelentkezve, a streak haladást nem követik nyomon. Kérjük, hagyja ki a játékot, és jelentkezzen be a NovaPlay-ba a jobboldali leálláson keresztül a haladás nyomon követéséhez.",
+                "client": "Jelenleg nem vagy bejelentkezve, a streak haladást nem követik nyomon. Kérjük, jelentkezzen be a NovaPlay-ba a jobboldali leálláson keresztül a haladás nyomon követéséhez."
             }
         },
         "noneFound": {
@@ -952,7 +952,7 @@
             "message": "Nem találtak kereséseket."
         },
         "g7CreditsModal": {
-            "description": "Dive into HyperPlay top játékok izgalmas játék Streak kihívásokkal. Minden tevékenység arra ösztönzi Önt, hogy vegyen részt egy másik játék, bemutatva a legjobb web3 játék. A játékidő számít!",
+            "description": "Dive into NovaPlay top játékok izgalmas játék Streak kihívásokkal. Minden tevékenység arra ösztönzi Önt, hogy vegyen részt egy másik játék, bemutatva a legjobb web3 játék. A játékidő számít!",
             "title": "Earn Game7 Hitelek"
         }
     },
@@ -962,7 +962,7 @@
     },
     "ALL": "ÖSSZES",
     "profile": "Profil",
-    "hyperplayOverlay": {
+    "novaplayOverlay": {
         "txnRequest": {
             "FAILED": "A tranzakció megszakadt",
             "INITIATED": "Tranzakciós kérés függvény",
@@ -989,8 +989,8 @@
             "CONFIRMED": "Custom Token hozzáadott"
         },
         "greeting": {
-            "description": "A HyperPlay Overlay készen áll! Press {{overlayKeyMod}} + X megmutatni vagy elrejteni.",
-            "title": "HyperPlay Overlay"
+            "description": "A NovaPlay Overlay készen áll! Press {{overlayKeyMod}} + X megmutatni vagy elrejteni.",
+            "title": "NovaPlay Overlay"
         },
         "description": {
             "PENDING": "Várja a blockchain megerősítését. Tudni fogjuk, mikor megerősített",
@@ -1001,8 +1001,8 @@
     },
     "importGameErrorTitle": "Import Game hiba",
     "overlay": {
-        "EXTERNAL_WALLET_CONNECTED": "Ön csatlakozik a HyperPlay-hoz egy külső pénztárcával.",
-        "WALLET_DISCONNECTED": "Nincs olyan pénztárcád, amely a HyperPlay-hoz kapcsolódik."
+        "EXTERNAL_WALLET_CONNECTED": "Ön csatlakozik a NovaPlay-hoz egy külső pénztárcával.",
+        "WALLET_DISCONNECTED": "Nincs olyan pénztárcád, amely a NovaPlay-hoz kapcsolódik."
     },
     "back_to_game": "Vissza a játékhoz",
     "gameUpdateNotifications": {
