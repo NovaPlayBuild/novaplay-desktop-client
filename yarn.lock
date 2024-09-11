@@ -1233,42 +1233,42 @@
   resolved "https://registry.yarnpkg.com/@humanwhocodes/object-schema/-/object-schema-2.0.3.tgz#4a2868d75d6d6963e423bcf90b7fd1be343409d3"
   integrity sha512-93zYdMES/c1D69yZiKDBj0V24vqNzB/koF26KPaagAfd3P/4gUlh3Dys5ogAK+Exi9QyzlD8x/08Zt7wIKcDcA==
 
-"@hyperplay/chains@^0.3.0":
+"@novaplay/chains@^0.3.0":
   version "0.3.0"
-  resolved "https://registry.yarnpkg.com/@hyperplay/chains/-/chains-0.3.0.tgz#f0cc73e1fde33678328249e40bf0d02bccd14625"
+  resolved "https://registry.yarnpkg.com/@novaplay/chains/-/chains-0.3.0.tgz#f0cc73e1fde33678328249e40bf0d02bccd14625"
   integrity sha512-7FcQSR6bIZnfJXpwDHEX4tcjMJQw/oW97h6qT+Q0eDsMdipa9m6ZJm3hybqq9asLpxlX0BV5cn01S8nRHOg9Pg==
   dependencies:
     axios "^1.4.0"
     viem "^2.17.3"
 
-"@hyperplay/check-disk-space@^3.5.2":
+"@novaplay/check-disk-space@^3.5.2":
   version "3.5.2"
-  resolved "https://registry.yarnpkg.com/@hyperplay/check-disk-space/-/check-disk-space-3.5.2.tgz#367caa30fec5494e2714891aefcb021aa1fc7e2f"
+  resolved "https://registry.yarnpkg.com/@novaplay/check-disk-space/-/check-disk-space-3.5.2.tgz#367caa30fec5494e2714891aefcb021aa1fc7e2f"
   integrity sha512-OIkScg+XHEIIHzjDijWE/DdYNANAeMJqFzHi0Y7MsBTVlemCXYHzopehDJMqzx8QM5XL6qPBO4CFttpnyQV9pQ==
 
-"@hyperplay/extension-importer@^0.0.4":
+"@novaplay/extension-importer@^0.0.4":
   version "0.0.4"
-  resolved "https://registry.yarnpkg.com/@hyperplay/extension-importer/-/extension-importer-0.0.4.tgz#13ffda448d186c73a521885d04a232c3a160d247"
+  resolved "https://registry.yarnpkg.com/@novaplay/extension-importer/-/extension-importer-0.0.4.tgz#13ffda448d186c73a521885d04a232c3a160d247"
   integrity sha512-xdHwOVcXrnrIofdf7om42VScOXhMjdlTpPGLpk/q0oK54kRwFFlZrYSyLidyIA80kScy1bHzlQN78n9pvi5KRA==
   dependencies:
-    "@hyperplay/utils" "^0.0.9"
+    "@novaplay/utils" "^0.0.9"
     classic-level "^1.4.1"
     fs-extra "^11.2.0"
     graceful-fs "^4.2.11"
 
-"@hyperplay/extension-provider@^0.0.6":
+"@novaplay/extension-provider@^0.0.6":
   version "0.0.6"
-  resolved "https://registry.yarnpkg.com/@hyperplay/extension-provider/-/extension-provider-0.0.6.tgz#46b21dc46ca3bdf790c10a61765cbe316c4718d1"
+  resolved "https://registry.yarnpkg.com/@novaplay/extension-provider/-/extension-provider-0.0.6.tgz#46b21dc46ca3bdf790c10a61765cbe316c4718d1"
   integrity sha512-4frPXLptZur9l94djdIZtY7k6jTTvGEiTA6fBBfcvGqlHqJV6lH+1nPPjddWRg/G5DE6YwWdl2hQzTiSKXf65g==
   dependencies:
-    "@hyperplay/utils" "^0.0.12"
+    "@novaplay/utils" "^0.0.12"
     fs-extra "^11.2.0"
     graceful-fs "^4.2.11"
     zod "^3.23.8"
 
-"@hyperplay/mock-backend@^0.0.1":
+"@novaplay/mock-backend@^0.0.1":
   version "0.0.1"
-  resolved "https://registry.yarnpkg.com/@hyperplay/mock-backend/-/mock-backend-0.0.1.tgz#5987f4860fac890a2ee77b174a89e8664d0cc8c6"
+  resolved "https://registry.yarnpkg.com/@novaplay/mock-backend/-/mock-backend-0.0.1.tgz#5987f4860fac890a2ee77b174a89e8664d0cc8c6"
   integrity sha512-e+Opn7x/2axWJvnQ0Vm0/QYgObjhxNs90m/KKcBSpYT45v4slIQW54Af/trjlkDVK3S2YQuZ4mbvMV1ona05JA==
   dependencies:
     "@types/cors" "^2.8.13"
@@ -1278,17 +1278,17 @@
     express "^4.18.2"
     stream-throttle "^0.1.3"
 
-"@hyperplay/overlay@^0.0.6":
+"@novaplay/overlay@^0.0.6":
   version "0.0.6"
-  resolved "https://registry.yarnpkg.com/@hyperplay/overlay/-/overlay-0.0.6.tgz#c25bc205917dfc0c17c9b95a525cea08960a3680"
+  resolved "https://registry.yarnpkg.com/@novaplay/overlay/-/overlay-0.0.6.tgz#c25bc205917dfc0c17c9b95a525cea08960a3680"
   integrity sha512-y9GON2QFoJybfElUhv8P9eDPwRXLyHzcCvr2GLPY685Yww8ryGlnpj8LevpLqirz71PqrR2p5P9wmUTybi9KMg==
   dependencies:
-    "@hyperplay/utils" "^0.0.14"
+    "@novaplay/utils" "^0.0.14"
     mobx "^6.12.3"
 
-"@hyperplay/providers@^0.0.5":
+"@novaplay/providers@^0.0.5":
   version "0.0.5"
-  resolved "https://registry.yarnpkg.com/@hyperplay/providers/-/providers-0.0.5.tgz#0cfa9783fc7cbca14722545a936f872e1ea3d4cd"
+  resolved "https://registry.yarnpkg.com/@novaplay/providers/-/providers-0.0.5.tgz#0cfa9783fc7cbca14722545a936f872e1ea3d4cd"
   integrity sha512-USAJZwuOiXHiUjTRTCj891ZsxLn4tXklw8rgkEjIYndmWNdjNjrjdH8KDw3k4TCK1ZjezcEZRA21e2UR0vCxiQ==
   dependencies:
     "@metamask/sdk" "^0.18.5"
@@ -1296,9 +1296,9 @@
     "@walletconnect/ethereum-provider" "^2.12.2"
     qrcode "^1.5.3"
 
-"@hyperplay/proxy-server@^0.0.11":
+"@novaplay/proxy-server@^0.0.11":
   version "0.0.11"
-  resolved "https://registry.yarnpkg.com/@hyperplay/proxy-server/-/proxy-server-0.0.11.tgz#c73c6334c327eaedb4c87d13abd6b410ab36dab1"
+  resolved "https://registry.yarnpkg.com/@novaplay/proxy-server/-/proxy-server-0.0.11.tgz#c73c6334c327eaedb4c87d13abd6b410ab36dab1"
   integrity sha512-IhR5cum3M2FiC7AlTLXzjBG+Kg7jiF3N2Bx4bNciFwSLMtZ7rvHSdr3DSwcS3wyhplkBydCs0Qv+QfVg38jbsw==
   dependencies:
     "@mysten/sui.js" "^0.48.1"
@@ -1309,35 +1309,35 @@
     supertest "^6.3.3"
     zod "^3.22.4"
 
-"@hyperplay/ui@1.7.6":
+"@novaplay/ui@1.7.6":
   version "1.7.6"
-  resolved "https://registry.yarnpkg.com/@hyperplay/ui/-/ui-1.7.6.tgz#e9487ff3834ea8b4d6c67304a94d2607ab349bd0"
+  resolved "https://registry.yarnpkg.com/@novaplay/ui/-/ui-1.7.6.tgz#e9487ff3834ea8b4d6c67304a94d2607ab349bd0"
   integrity sha512-Kn/hyAeDqbUl3Gp6N3IRYBceI2OTSfdhvW07TjYHgv8X0vngsSq9S0jCFaNgl3Bu4wZnwmgkzyCnazPfFuQ5dg==
 
-"@hyperplay/utils@^0.0.12":
+"@novaplay/utils@^0.0.12":
   version "0.0.12"
-  resolved "https://registry.yarnpkg.com/@hyperplay/utils/-/utils-0.0.12.tgz#4ce7a97268f862deae99363d2d8029ee80003cc0"
+  resolved "https://registry.yarnpkg.com/@novaplay/utils/-/utils-0.0.12.tgz#4ce7a97268f862deae99363d2d8029ee80003cc0"
   integrity sha512-EQ7i/OPlF8Se1DsLWvyrEf1Bv20wNnKpT7U+t6KolDudolhAnMNMvjnpcDc431ctWxpi9PZbYjNcwhkGdpo9ww==
   dependencies:
     bignumber.js "^9.1.2"
 
-"@hyperplay/utils@^0.0.14":
+"@novaplay/utils@^0.0.14":
   version "0.0.14"
-  resolved "https://registry.yarnpkg.com/@hyperplay/utils/-/utils-0.0.14.tgz#7420bdb67214c24086ed8463a9cabc30a7023192"
+  resolved "https://registry.yarnpkg.com/@novaplay/utils/-/utils-0.0.14.tgz#7420bdb67214c24086ed8463a9cabc30a7023192"
   integrity sha512-eWn3jVTBBH2ki5+etZQs77hH4qVpphSINjBRW8AJ5oNtUXCqrPFS+eFimfUyzi+Kwl2/ef9lQ1QD3SEe/1BRZA==
   dependencies:
     bignumber.js "^9.1.2"
 
-"@hyperplay/utils@^0.0.16":
+"@novaplay/utils@^0.0.16":
   version "0.0.16"
-  resolved "https://registry.yarnpkg.com/@hyperplay/utils/-/utils-0.0.16.tgz#92520b12b2870260c34d7e76195713a5b0be2acc"
+  resolved "https://registry.yarnpkg.com/@novaplay/utils/-/utils-0.0.16.tgz#92520b12b2870260c34d7e76195713a5b0be2acc"
   integrity sha512-2k0kTePgNfgnW2kDM5ZkQv1Q+K24EQRipyr5ECgNtaWmJrF11It/OZ0Yjsdr+cK/zEiFmCCNWet+kqGqGt80JQ==
   dependencies:
     bignumber.js "^9.1.2"
 
-"@hyperplay/utils@^0.0.9":
+"@novaplay/utils@^0.0.9":
   version "0.0.9"
-  resolved "https://registry.yarnpkg.com/@hyperplay/utils/-/utils-0.0.9.tgz#80836cfde5c4d63e41f5df809ae2e80314600c5a"
+  resolved "https://registry.yarnpkg.com/@novaplay/utils/-/utils-0.0.9.tgz#80836cfde5c4d63e41f5df809ae2e80314600c5a"
   integrity sha512-gMAa6gdFXfLrJUjPAD2is06qNo4MHzpb6Cbzt4xfNd7wI9chOblQ+piwTI1oFWs44GgfacsMq6i5esNly3hELg==
   dependencies:
     bignumber.js "^9.1.2"
