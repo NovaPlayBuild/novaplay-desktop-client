@@ -48,7 +48,7 @@ export default function ErrorComponent({ message }: { message: string }) {
               <FontAwesomeIcon className="Dialog__CloseIcon" icon={faTrash} />
             </div>
             <span className="button-icon-text">
-              {t('settings.clear-cache', 'Clear HyperPlay Cache')}
+              {t('settings.clear-cache', 'Clear NovaPlay Cache')}
             </span>
           </div>
         </button>
@@ -65,7 +65,7 @@ export default function ErrorComponent({ message }: { message: string }) {
               />
             </div>
             <span className="button-icon-text">
-              {t('settings.reset-hyperplay', 'Reset HyperPlay')}
+              {t('settings.reset-novaplay', 'Reset NovaPlay')}
             </span>
           </div>
         </button>
