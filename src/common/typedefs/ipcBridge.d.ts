@@ -1,10 +1,10 @@
 import {
-  HyperPlayInstallInfo,
+  NovaPlayInstallInfo,
   DownloadManagerState,
   Achievement,
   SummaryAchievement,
   LDEnv,
-  HyperPlayRelease,
+  NovaPlayRelease,
   PointsClaimReturn,
   GenericApiResponse,
   Quest,
@@ -54,7 +54,7 @@ import {
   MetaMaskInitMethod,
   ImportableBrowser,
   MetaMaskImportOptions
-} from '@hyperplay/utils'
+} from '@novaplay/utils'
 
 /**
  * Some notes here:
@@ -64,7 +64,7 @@ import {
  *    I've decided against that to keep it in line with the `AsyncIPCFunctions`
  *    interface
  */
-interface HyperPlaySyncIPCFunctions {
+interface NovaPlaySyncIPCFunctions {
   /* eslint-disable-next-line  @typescript-eslint/no-explicit-any */
   extensionOnEvent: (topic: string, ...args: any[]) => void
   /* eslint-disable-next-line  @typescript-eslint/no-explicit-any */
@@ -80,7 +80,7 @@ interface HyperPlaySyncIPCFunctions {
   reloadApp: () => void
   createNewMetaMaskWallet: (mmInitMethod: MetaMaskInitMethod) => void
   enableOnEvents: (topic: string) => void
-  addHyperPlayShortcut: (gameId: string) => void
+  addNovaPlayShortcut: (gameId: string) => void
   ignoreExitToTray: () => void
   setQaToken: (qaToken: string) => void
   removeFromLibrary: (appName: string) => void
@@ -101,7 +101,7 @@ interface HyperPlaySyncIPCFunctions {
   navigate: (route: string) => void
 }
 
-interface SyncIPCFunctions extends HyperPlaySyncIPCFunctions {
+interface SyncIPCFunctions extends NovaPlaySyncIPCFunctions {
   setZoomFactor: (zoomFactor: string) => void
   changeLanguage: (language: string) => void
   notify: (args: { title: string; body: string }) => void
@@ -172,7 +172,7 @@ interface RequestArguments {
   readonly params?: readonly unknown[] | object
 }
 
-interface HyperPlayAsyncIPCFunctions {
+interface NovaPlayAsyncIPCFunctions {
   //chrome.windows
   chromeWindowsCreate: (
     options: chrome.windows.CreateData
@@ -253,7 +253,7 @@ interface HyperPlayAsyncIPCFunctions {
   getAchievementsStats: (options: PlayerOptions) => Promise<AchievementsStats>
   syncAchievements: (options: PlayerOptions) => Promise<string>
   getSyncProgress: (requestId: string) => Promise<number>
-  checkHyperPlayAccessCode: (
+  checkNovaPlayAccessCode: (
     licenseConfigId: number,
     accessCode: string
   ) => Promise<LicenseConfigValidateResult>
@@ -281,7 +281,7 @@ interface HyperPlayAsyncIPCFunctions {
   getUserPlayStreak: (questId: number) => Promise<UserPlayStreak>
   getSteamGameMetadata: (gameId: number) => Promise<unknown>
   confirmRewardClaim: (params: ConfirmClaimParams) => Promise<void>
-  getHyperPlayListings: () => Promise<Record<string, HyperPlayRelease>>
+  getNovaPlayListings: () => Promise<Record<string, NovaPlayRelease>>
   getQuestRewardSignature: (
     address: `0x${string}`,
     rewardId: number,
@@ -300,7 +300,7 @@ interface HyperPlayAsyncIPCFunctions {
   getEpicListingUrl: (appName: string) => Promise<string>
 }
 
-interface AsyncIPCFunctions extends HyperPlayAsyncIPCFunctions {
+interface AsyncIPCFunctions extends NovaPlayAsyncIPCFunctions {
   addToDMQueue: (element: DMQueueElement) => Promise<void>
   kill: (appName: string, runner: Runner) => Promise<void>
   checkDiskSpace: (folder: string) => Promise<DiskSpaceData>
@@ -332,7 +332,7 @@ interface AsyncIPCFunctions extends HyperPlayAsyncIPCFunctions {
     installPlatform: InstallPlatform,
     channelNameToInstall?: string
   ) => Promise<
-    LegendaryInstallInfo | GogInstallInfo | HyperPlayInstallInfo | null
+    LegendaryInstallInfo | GogInstallInfo | NovaPlayInstallInfo | null
   >
   getUserInfo: () => Promise<UserInfo | undefined>
   isLoggedIn: () => boolean
@@ -388,7 +388,7 @@ interface AsyncIPCFunctions extends HyperPlayAsyncIPCFunctions {
   }) => Promise<void>
   launchApp: (
     appName: string,
-    runner: 'sideload' | 'hyperplay'
+    runner: 'sideload' | 'novaplay'
   ) => Promise<boolean>
   isNative: (args: { appName: string; runner: Runner }) => boolean
   getLogContent: (appNameOrRunner: string) => string
