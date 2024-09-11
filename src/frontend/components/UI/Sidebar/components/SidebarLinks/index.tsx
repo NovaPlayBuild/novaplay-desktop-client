@@ -5,7 +5,7 @@ import ContextProvider from 'frontend/state/ContextProvider'
 import './index.css'
 import QuitButton from '../QuitButton'
 import { SHOW_EXTERNAL_LINK_DIALOG_STORAGE_KEY } from 'frontend/components/UI/ExternalLinkDialog'
-import { Images } from '@hyperplay/ui'
+import { Images } from '@novaplay/ui'
 import libraryState from 'frontend/state/libraryState'
 import { observer } from 'mobx-react-lite'
 import storeAuthState from 'frontend/state/storeAuthState'
@@ -86,7 +86,7 @@ export default observer(function SidebarLinks() {
                   disabled: isOffline
                 })
               }
-              to={isOffline ? '/library' : '/hyperplaystore'}
+              to={isOffline ? '/library' : '/novaplaystore'}
               title={
                 isOffline
                   ? t('Please connect to the internet to access the stores')
