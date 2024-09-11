@@ -7,7 +7,7 @@ import {
   removeFromQueue,
   resumeCurrentDownload
 } from './downloadqueue'
-import { cancelExtraction } from 'backend/storeManagers/hyperplay/games'
+import { cancelExtraction } from 'backend/storeManagers/novaplay/games'
 
 ipcMain.handle('addToDMQueue', async (e, element) => {
   await addToQueue(element)
