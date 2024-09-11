@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import styles from './index.module.scss'
-import { Button } from '@hyperplay/ui'
+import { Button } from '@novaplay/ui'
 import authState from 'frontend/state/authState'
 
 const QaAuthHandler = function () {
