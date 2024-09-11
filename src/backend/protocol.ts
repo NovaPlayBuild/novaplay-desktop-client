@@ -5,22 +5,22 @@ import { getInfo } from './utils'
 import { GameInfo, Runner } from 'common/types'
 import { getMainWindow, sendFrontendMessage } from './main_window'
 import { icon } from './constants'
-import { getGameInfo } from 'backend/storeManagers/hyperplay/games'
-import { addGameToLibrary } from 'backend/storeManagers/hyperplay/library'
+import { getGameInfo } from 'backend/storeManagers/novaplay/games'
+import { addGameToLibrary } from 'backend/storeManagers/novaplay/library'
 import { getHpOverlay } from './overlay'
 
 type Command = 'ping' | 'launch' | 'otp-deeplink'
 
-const RUNNERS = ['hyperplay', 'legendary', 'gog', 'sideload']
+const RUNNERS = ['novaplay', 'legendary', 'gog', 'sideload']
 
 /**
  * Handles a protocol request
  * @param args The args to search
  * @example
- * handleProtocol(['hyperplay://ping'])
+ * handleProtocol(['novaplay://ping'])
  * // => 'Received ping! Arg: undefined'
- * handleProtocol(['hyperplay://launch/hyperplay/<account_id>/<project_id>'])
- * // => 'Received launch! Runner: hyperplay, Arg: 123'
+ * handleProtocol(['novaplay://launch/novaplay/<account_id>/<project_id>'])
+ * // => 'Received launch! Runner: novaplay, Arg: 123'
  **/
 export async function handleProtocol(args: string[]) {
   const mainWindow = getMainWindow()
@@ -67,15 +67,15 @@ export async function handleOtp(otp: string | null) {
  * @param args The args to search
  * @returns The url if found, undefined otherwise
  * @example
- * getUrl(['hyperplay://ping'])
- * // => 'hyperplay://ping'
- * getUrl(['hyperplay://launch/hyperplay/123'])
- * // => 'hyperplay://launch/hyperplay/123'
- * getUrl(['hyperplay://launch/legendary/123'])
- * // => 'hyperplay://launch/legendary/123'
+ * getUrl(['novaplay://ping'])
+ * // => 'novaplay://ping'
+ * getUrl(['novaplay://launch/novaplay/123'])
+ * // => 'novaplay://launch/novaplay/123'
+ * getUrl(['novaplay://launch/legendary/123'])
+ * // => 'novaplay://launch/legendary/123'
  **/
 function getUrl(args: string[]): string | undefined {
-  return args.find((arg) => arg.startsWith('hyperplay://'))
+  return args.find((arg) => arg.startsWith('novaplay://'))
 }
 
 /**
@@ -83,11 +83,11 @@ function getUrl(args: string[]): string | undefined {
  * @param url The url to parse
  * @returns A tuple of [Command, Runner?, string?]
  * @example
- * parseUrl('hyperplay://ping')
+ * parseUrl('novaplay://ping')
  * // => ['ping', undefined, undefined]
- * parseUrl('hyperplay://launch/hyperplay/123')
- * // => ['launch', 'hyperplay', '123']
- * parseUrl('hyperplay://launch/legendary/123')
+ * parseUrl('novaplay://launch/novaplay/123')
+ * // => ['launch', 'novaplay', '123']
+ * parseUrl('novaplay://launch/legendary/123')
  * // => ['launch', 'legendary', '123']
  **/
 export function parseUrl(url: string): [Command, Runner?, string?, string?] {
@@ -95,7 +95,7 @@ export function parseUrl(url: string): [Command, Runner?, string?, string?] {
 
   const urlObject = new URL(url)
 
-  // TODO: https://github.com/HyperPlay-Gaming/hyperplay-desktop-client/issues/654
+  // TODO: https://github.com/NovaPlay-Gaming/novaplay-desktop-client/issues/654
   const splitCommand = fullCommand.split('/')
   const hasRunner = RUNNERS.includes(splitCommand[1] as Runner)
   if (hasRunner) {
@@ -129,8 +129,8 @@ async function handlePing(arg: string) {
  * @param arg The game to launch
  * @param mainWindow The main window
  * @example
- * handleLaunch('hyperplay', '123')
- * // => 'Received launch! Runner: hyperplay, Arg: 123'
+ * handleLaunch('novaplay', '123')
+ * // => 'Received launch! Runner: novaplay, Arg: 123'
  * handleLaunch('legendary', '123')
  * // => 'Received launch! Runner: legendary, Arg: 123'
  **/
@@ -196,20 +196,20 @@ async function findGame(
   projectId = ''
 ): Promise<GameInfo | null> {
   // If the runner is specified, only search for that runner
-  const runnersToSearch = runner ? [runner, 'hyperplay'] : RUNNERS
+  const runnersToSearch = runner ? [runner, 'novaplay'] : RUNNERS
 
   // Search for the game in the runners specified in runnersToSearch and return the first one found (if any)
   for (const currentRunner of runnersToSearch) {
-    const run = (currentRunner as Runner) || 'hyperplay'
+    const run = (currentRunner as Runner) || 'novaplay'
     // handle hp games that are not on the library
 
-    if (run === 'hyperplay') {
+    if (run === 'novaplay') {
       try {
         getGameInfo(projectId)
       } catch (error) {
         logInfo(
           `Game ${projectId} not found in library. Adding it...`,
-          LogPrefix.HyperPlay
+          LogPrefix.NovaPlay
         )
         await addGameToLibrary(projectId)
         return getGameInfo(projectId)
