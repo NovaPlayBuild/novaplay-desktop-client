@@ -1,6 +1,6 @@
 import React from 'react'
 import './index.css'
-import { Menu } from '@hyperplay/ui'
+import { Menu } from '@novaplay/ui'
 
 export interface Item {
   label: string
