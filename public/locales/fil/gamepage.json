@@ -93,11 +93,11 @@
         "options": "Mga Pagpipilian sa Paglunsad..."
     },
     "not_logged_in": {
-        "epic": "Hindi ka naka-log in gamit ang isang Epic account sa HyperPlay. Huwag gamitin ang page ng store para mag-login, i-click na lang ang sumusunod na button:",
-        "gog": "Hindi ka naka-log in gamit ang isang GOG account sa HyperPlay. Huwag gamitin ang page ng store para mag-login, i-click na lang ang sumusunod na button:",
+        "epic": "Hindi ka naka-log in gamit ang isang Epic account sa NovaPlay. Huwag gamitin ang page ng store para mag-login, i-click na lang ang sumusunod na button:",
+        "gog": "Hindi ka naka-log in gamit ang isang GOG account sa NovaPlay. Huwag gamitin ang page ng store para mag-login, i-click na lang ang sumusunod na button:",
         "login": "Mag log in",
         "title": "Hindi ka naka-login",
-        "amazon": "Hindi ka naka-log in gamit ang isang Amazon account sa HyperPlay. Huwag gamitin ang page ng store para mag-login, i-click na lang ang sumusunod na button:"
+        "amazon": "Hindi ka naka-log in gamit ang isang Amazon account sa NovaPlay. Huwag gamitin ang page ng store para mag-login, i-click na lang ang sumusunod na button:"
     },
     "status": {
         "notSupported": "Hindi suportado",
