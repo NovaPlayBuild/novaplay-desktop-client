@@ -2,11 +2,11 @@ import { TFunction } from 'i18next'
 
 export function getAchievementNavTranslations(t: TFunction) {
   return {
-    addThisGameText: t('hyperplay.achievements.addThisGame', 'Add this game'),
+    addThisGameText: t('novaplay.achievements.addThisGame', 'Add this game'),
     gamesToMintLabelText: t(
-      'hyperplay.achievements.gamesToMint',
+      'novaplay.achievements.gamesToMint',
       'Games to mint'
     ),
-    freeMintsLabel: t('hyperplay.achievements.freeMints', 'Free Mints')
+    freeMintsLabel: t('novaplay.achievements.freeMints', 'Free Mints')
   }
 }
