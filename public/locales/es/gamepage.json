@@ -164,8 +164,8 @@
         "options": "Opciones de Arranque..."
     },
     "not_logged_in": {
-        "epic": "No has iniciado sesión con una cuenta de Epic en HyperPlay. No utilices la página de la tienda para iniciar sesión, haz clic en el siguiente botón:",
-        "gog": "No has iniciado sesión con una cuenta de GOG en HyperPlay. No utilices la página de la tienda para iniciar sesión, haz clic en el siguiente botón:",
+        "epic": "No has iniciado sesión con una cuenta de Epic en NovaPlay. No utilices la página de la tienda para iniciar sesión, haz clic en el siguiente botón:",
+        "gog": "No has iniciado sesión con una cuenta de GOG en NovaPlay. No utilices la página de la tienda para iniciar sesión, haz clic en el siguiente botón:",
         "login": "Log in",
         "title": "No has iniciado sesión",
         "amazon": "No has iniciado sesión con una cuenta de Amazon en Hyperplay. No utilices la página de la tienda para iniciar sesión, haz clic en el siguiente botón en su lugar:"
@@ -245,7 +245,7 @@
         "verify": "Verificar y reparar",
         "extraInfo": "Información adicional"
     },
-    "hyperplay": {
+    "novaplay": {
         "gamecard": {
             "paused": "Pausado",
             "extracting": "Extrayendo...",
