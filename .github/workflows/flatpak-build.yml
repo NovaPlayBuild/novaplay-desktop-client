@@ -58,12 +58,12 @@ jobs:
       - name: Build Flatpak
         uses: flatpak/flatpak-github-actions/flatpak-builder@v6
         with:
-          bundle: hyperplay.flatpak
-          manifest-path: flatpak-build/xyz.hyperplay.HyperPlay.yml
+          bundle: novaplay.flatpak
+          manifest-path: flatpak-build/xyz.novaplay.NovaPlay.yml
           cache-key: flatpak-builder-${{ github.sha }}
       - name: Upload tar xz
         uses: actions/upload-artifact@v3
         with:
           name: linux-tar-xz
-          path: dist/hyperplay*.tar.xz
+          path: dist/novaplay*.tar.xz
           retention-days: 14
