@@ -1,9 +1,9 @@
 import { useQuery, useQueryClient } from '@tanstack/react-query'
 import useGetQuest from './useGetQuest'
-import { getDecimalNumberFromAmount } from '@hyperplay/utils'
+import { getDecimalNumberFromAmount } from '@novaplay/utils'
 import { getRewardCategory } from 'frontend/helpers/getRewardCategory'
 import { useTranslation } from 'react-i18next'
-import { QuestReward } from '@hyperplay/ui'
+import { QuestReward } from '@novaplay/ui'
 
 export function useGetRewards(questId: number | null) {
   const questResult = useGetQuest(questId)
