@@ -6,48 +6,48 @@ type ModalText = Record<string, Record<TRANSACTION_STATE, () => string>>
 const signatureRequestTexts = {
   [TRANSACTION_STATE.INITIATED]: () =>
     t(
-      'hyperplayOverlay.signatureRequest.INITIATED',
+      'novaplayOverlay.signatureRequest.INITIATED',
       'Signature request pending'
     ),
   [TRANSACTION_STATE.PENDING]: () => '',
   [TRANSACTION_STATE.FAILED]: () =>
-    t('hyperplayOverlay.signatureRequest.FAILED', 'Signature interrupted'),
+    t('novaplayOverlay.signatureRequest.FAILED', 'Signature interrupted'),
   [TRANSACTION_STATE.CONFIRMED]: () =>
-    t('hyperplayOverlay.signatureRequest.CONFIRMED', 'Signature submitted')
+    t('novaplayOverlay.signatureRequest.CONFIRMED', 'Signature submitted')
 }
 
 const txnRequestTexts = {
   [TRANSACTION_STATE.INITIATED]: () =>
-    t('hyperplayOverlay.txnRequest.INITIATED', 'Transaction request pending'),
+    t('novaplayOverlay.txnRequest.INITIATED', 'Transaction request pending'),
   [TRANSACTION_STATE.PENDING]: () =>
-    t('hyperplayOverlay.txnRequest.PENDING', 'Transaction submitted'),
+    t('novaplayOverlay.txnRequest.PENDING', 'Transaction submitted'),
   [TRANSACTION_STATE.FAILED]: () =>
-    t('hyperplayOverlay.txnRequest.FAILED', 'Transaction interrupted'),
+    t('novaplayOverlay.txnRequest.FAILED', 'Transaction interrupted'),
   [TRANSACTION_STATE.CONFIRMED]: () =>
-    t('hyperplayOverlay.txnRequest.CONFIRMED', 'Transaction confirmed')
+    t('novaplayOverlay.txnRequest.CONFIRMED', 'Transaction confirmed')
 }
 
 const chainTexts = {
   [TRANSACTION_STATE.INITIATED]: () =>
-    t('hyperplayOverlay.chainRequest.INITIATED', 'Custom network request'),
+    t('novaplayOverlay.chainRequest.INITIATED', 'Custom network request'),
   [TRANSACTION_STATE.PENDING]: () => '',
   [TRANSACTION_STATE.FAILED]: () =>
-    t('hyperplayOverlay.chainRequest.FAILED', 'Custom network canceled'),
+    t('novaplayOverlay.chainRequest.FAILED', 'Custom network canceled'),
   [TRANSACTION_STATE.CONFIRMED]: () =>
-    t('hyperplayOverlay.chainRequest.CONFIRMED', 'Custom network added')
+    t('novaplayOverlay.chainRequest.CONFIRMED', 'Custom network added')
 }
 
 const walletWatchTexts = {
   [TRANSACTION_STATE.INITIATED]: () =>
     t(
-      'hyperplayOverlay.walletWatch.INITIATED',
+      'novaplayOverlay.walletWatch.INITIATED',
       'Add custom token request pending'
     ),
   [TRANSACTION_STATE.PENDING]: () => '',
   [TRANSACTION_STATE.FAILED]: () =>
-    t('hyperplayOverlay.walletWatch.FAILED', 'Custom token request canceled'),
+    t('novaplayOverlay.walletWatch.FAILED', 'Custom token request canceled'),
   [TRANSACTION_STATE.CONFIRMED]: () =>
-    t('hyperplayOverlay.walletWatch.CONFIRMED', 'Custom token added')
+    t('novaplayOverlay.walletWatch.CONFIRMED', 'Custom token added')
 }
 
 export const TITLE: ModalText = {
@@ -67,27 +67,27 @@ export const TITLE: ModalText = {
 export const DESCRIPTION: Record<TRANSACTION_STATE, () => string> = {
   [TRANSACTION_STATE.INITIATED]: () =>
     t(
-      'hyperplayOverlay.description.INITIATED',
+      'novaplayOverlay.description.INITIATED',
       'A wallet confirmation is pending in your mobile wallet'
     ),
   [TRANSACTION_STATE.PENDING]: () =>
     t(
-      'hyperplayOverlay.description.PENDING',
+      'novaplayOverlay.description.PENDING',
       "Waiting for blockchain confirmation. We'll let you know when it's confirmed"
     ),
   [TRANSACTION_STATE.FAILED]: () =>
     t(
-      'hyperplayOverlay.description.FAILED',
+      'novaplayOverlay.description.FAILED',
       'The transaction was canceled or not submitted, please try again'
     ),
   [TRANSACTION_STATE.CONFIRMED]: () =>
     t(
-      'hyperplayOverlay.description.CONFIRMED',
+      'novaplayOverlay.description.CONFIRMED',
       'The transaction was successfully confirmed!'
     )
 }
 
-// todo: import from hyperplay/ui package
+// todo: import from novaplay/ui package
 export type statusType =
   | 'pending'
   | 'submitted'
@@ -114,9 +114,9 @@ interface NOTIFICATION_TYPE {
 
 export const EXTENSION_NOTIFICATION: NOTIFICATION_TYPE = {
   TITLE: () =>
-    t('hyperplayOverlay.extensionNotification.TITLE', 'Transaction requested'),
+    t('novaplayOverlay.extensionNotification.TITLE', 'Transaction requested'),
   DESCRIPTION: (isMac: boolean) => {
-    return t('hyperplayOverlay.extensionNotification.DESCRIPTION', {
+    return t('novaplayOverlay.extensionNotification.DESCRIPTION', {
       defaultValue: 'Press {{overlayKeyMod}} + X to see this transaction',
       overlayKeyMod: isMac ? 'Option' : 'Alt'
     })
@@ -125,11 +125,11 @@ export const EXTENSION_NOTIFICATION: NOTIFICATION_TYPE = {
 }
 
 export const INITIAL_TOAST: NOTIFICATION_TYPE = {
-  TITLE: () => t('hyperplayOverlay.greeting.title', 'HyperPlay Overlay'),
+  TITLE: () => t('novaplayOverlay.greeting.title', 'NovaPlay Overlay'),
   DESCRIPTION: (isMac: boolean) => {
-    return t('hyperplayOverlay.greeting.description', {
+    return t('novaplayOverlay.greeting.description', {
       defaultValue:
-        'HyperPlay Overlay is ready! Press {{overlayKeyMod}} + X to show or hide it.',
+        'NovaPlay Overlay is ready! Press {{overlayKeyMod}} + X to show or hide it.',
       overlayKeyMod: isMac ? 'Option' : 'Alt'
     })
   },
