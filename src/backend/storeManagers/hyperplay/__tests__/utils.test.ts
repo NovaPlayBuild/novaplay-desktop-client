@@ -1,5 +1,5 @@
 import * as HpStoreUtils from '../utils'
-import { GameInfo, HyperPlayRelease } from '../../../../common/types'
+import { GameInfo, NovaPlayRelease } from '../../../../common/types'
 jest.mock('electron')
 jest.mock('../../../logger/logger')
 jest.mock('../../../logger/logfile')
@@ -7,18 +7,18 @@ jest.mock('../../../logger/logfile')
 const TESTS_ENABLED = false
 const testIf = (condition: boolean) => (condition ? test : test.skip)
 
-describe('backend/storeManagers/hyperplay/utils.ts', () => {
+describe('backend/storeManagers/novaplay/utils.ts', () => {
   testIf(!TESTS_ENABLED)('should do nothing', function () {
-    console.log('hyperplay utils tests skipped')
+    console.log('novaplay utils tests skipped')
   })
 
   testIf(TESTS_ENABLED)(
-    'getGameInfoFromHpRelease and getHyperPlayStoreRelease should not throw for every game',
+    'getGameInfoFromHpRelease and getNovaPlayStoreRelease should not throw for every game',
     async () => {
       // cast so that we get types in this file
-      const releaseMap = (await HpStoreUtils.getHyperPlayReleaseMap()) as Map<
+      const releaseMap = (await HpStoreUtils.getNovaPlayReleaseMap()) as Map<
         string,
-        HyperPlayRelease
+        NovaPlayRelease
       >
       for (const [projectId, release] of releaseMap.entries()) {
         // just testing if it throws, can add zod type checking for validation as well in the future
@@ -47,7 +47,7 @@ describe('backend/storeManagers/hyperplay/utils.ts', () => {
 
         // check that individual listing endpoint doesn't throw and matches the bulk listings endpoint data
         /* eslint-disable-next-line */
-        const individualRelease = await HpStoreUtils.getHyperPlayStoreRelease(
+        const individualRelease = await HpStoreUtils.getNovaPlayStoreRelease(
           projectId
         )
         expect(release).toEqual(individualRelease)
@@ -57,9 +57,9 @@ describe('backend/storeManagers/hyperplay/utils.ts', () => {
   )
 
   testIf(TESTS_ENABLED)(
-    'loadEpicHyperPlayGameInfoMap should not throw',
+    'loadEpicNovaPlayGameInfoMap should not throw',
     async () => {
-      await HpStoreUtils.loadEpicHyperPlayGameInfoMap()
+      await HpStoreUtils.loadEpicNovaPlayGameInfoMap()
     }
   )
 })
