@@ -267,7 +267,7 @@ async function getQuestRewardSignature(
   })
   if (!result.ok) {
     const errMsg = await result.text()
-    logError(errMsg, LogPrefix.HyperPlay)
+    logError(errMsg, LogPrefix.NovaPlay)
     throw errMsg
   }
   const resultJson = await result.json()
