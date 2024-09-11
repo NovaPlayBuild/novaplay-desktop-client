@@ -19,7 +19,7 @@
     },
     "box": {
         "cache-cleared": {
-            "message": "Đã xoá bộ nhớ đệm của HyperPlay.",
+            "message": "Đã xoá bộ nhớ đệm của NovaPlay.",
             "title": "Đã xoá bộ nhớ đệm"
         },
         "choose": "Chọn",
@@ -83,8 +83,8 @@
                 "changelog": "Mở changelog",
                 "detail": "Bạn có muốn tải bản cập nhật chạy nền không?",
                 "message": "Có phiên bản mới!",
-                "message-finished": "Bạn có muốn khởi động lại HyperPlay không?",
-                "title": "HyperPlay Games Launcher",
+                "message-finished": "Bạn có muốn khởi động lại NovaPlay không?",
+                "title": "NovaPlay Games Launcher",
                 "title-finished": "Cập nhật hoàn tất"
             }
         },
@@ -101,8 +101,8 @@
         },
         "reset-app": {
             "question": {
-                "message": "Are you sure you want to reset HyperPlay? This will remove all Settings and Caching but won't remove your Installed games or your Epic credentials. Portable versions (AppImage, WinPortable, ...) of HyperPlay needs to be restarted manually afterwards.",
-                "title": "Reset HyperPlay"
+                "message": "Are you sure you want to reset NovaPlay? This will remove all Settings and Caching but won't remove your Installed games or your Epic credentials. Portable versions (AppImage, WinPortable, ...) of NovaPlay needs to be restarted manually afterwards.",
+                "title": "Reset NovaPlay"
             }
         },
         "runexe": {
@@ -238,7 +238,7 @@
         "esync": "Esync aims to reduce wineserver overhead in CPU-intensive games. Enabling may improve performance.",
         "fsync": "Fsync aims to reduce wineserver overhead in CPU-intensive games. Enabling may improve performance on supported Linux kernels.",
         "game_language": {
-            "fallback": "Để trống để dùng ngôn ngữ mặc định của HyperPlay",
+            "fallback": "Để trống để dùng ngôn ngữ mặc định của NovaPlay",
             "in_game_config": "Không phải game nào cũng hỗ trợ cấu hình này, một số game có cài đặt ngôn ngữ riêng trong game",
             "valid_codes": "Mã ngôn ngữ phụ thuộc vào từng game."
         },
@@ -254,29 +254,29 @@
         "preferSystemLibs": "Custom Wine versions (Wine-GE, Wine-Lutris) are shipped with their library dependencies. By enabling this option, these shipped libraries will be ignored and Wine will load system libraries instead. Warning! Issues may occur if dependencies are not met.",
         "primerun": "Use dedicated graphics card to render game on multi-GPU systems. Only needed on gaming laptops or desktops that use a headless GPU for rendering (NVIDIA Optimus, AMD CrossFire)",
         "steam_path": {
-            "info": "This path lets HyperPlay determine what version of Proton Steam uses, for adding non-Steam games to Steam."
+            "info": "This path lets NovaPlay determine what version of Proton Steam uses, for adding non-Steam games to Steam."
         },
         "steamruntime": "Custom libraries provided by Steam to help run Linux and Windows (Proton) games. Enabling might improve compatibility.",
         "sync": {
-            "part1": "HyperPlay đang tìm thư mục lưu, đa phần đều đúng. Trong trường hợp HyperPlay tìm sai, hãy sử dụng ô ghi đè để thay đổi.",
-            "part2": "Trong trường hợp bạn thay đổi thư mục prefix cho Wine hoặc Proton, bạn sẽ cần kiểm tra lại đường dẫn vì Proton sử dụng prefix (/pfx) và tên người dùng (steamuser) khác. Bạn có thể xóa đường dẫn hiện tại, thoát khỏi trang cài đặt đồng bộ và quay lại lần nữa để HyperPlay tìm thư mục với prefix đúng.",
+            "part1": "NovaPlay đang tìm thư mục lưu, đa phần đều đúng. Trong trường hợp NovaPlay tìm sai, hãy sử dụng ô ghi đè để thay đổi.",
+            "part2": "Trong trường hợp bạn thay đổi thư mục prefix cho Wine hoặc Proton, bạn sẽ cần kiểm tra lại đường dẫn vì Proton sử dụng prefix (/pfx) và tên người dùng (steamuser) khác. Bạn có thể xóa đường dẫn hiện tại, thoát khỏi trang cài đặt đồng bộ và quay lại lần nữa để NovaPlay tìm thư mục với prefix đúng.",
             "part3": "Đồng bộ thủ công: Chọn Tải xuống để tải xuống các trò chơi được lưu trên Đám mây. Tải lên để tải game trong máy lên đám mây. Buộc Tải xuống và Buộc Tải lên sẽ bỏ qua phiên bản trong máy hoặc trên đám mây.",
             "part4": "Đồng bộ lưu tự động sẽ đồng bộ các bản sao lưu mỗi lần bạn bắt đầu và kết thúc chơi game."
         },
         "vkd3d": "VKD3D is a Vulkan-based translational layer for DirectX 12 games. Enabling may improve compatibility significantly. Has no effect on older DirectX games.",
         "wine": {
-            "part1": "HyperPlay tìm kiếm các phiên bản Wine, Proton và CrossOver trong các thư mục sau:",
+            "part1": "NovaPlay tìm kiếm các phiên bản Wine, Proton và CrossOver trong các thư mục sau:",
             "part2": "Đối với vị trí khác, sử dụng biểu tượng liên kết với một trong những thư mục này"
         },
         "msync": "Esync aims to reduce wineserver overhead in CPU-intensive games. Enabling may improve performance."
     },
     "info": {
-        "hyperplay": {
+        "novaplay": {
             "beta": "Beta",
             "click-to-see-changelog": "Click to see changelog",
             "newReleases": "Update Available!",
             "stable": "Stable",
-            "version": "HyperPlay Version"
+            "version": "NovaPlay Version"
         },
         "save-sync": {
             "searching": "Trying to detect the correct save folder (click to cancel)"
@@ -356,7 +356,7 @@
         },
         "moved": "Di chuyển hoàn tất",
         "moving": "Đang di chuyển Game",
-        "new-hyperplay-version": "A new HyperPlay version was released!",
+        "new-novaplay-version": "A new NovaPlay version was released!",
         "refresh": {
             "error": "Không thể tìm nạp các bản phát hành từ server, có thể do các hạn chế của API Github! Thử lại sau."
         },
@@ -409,7 +409,7 @@
     "other": {
         "gogdl-version": "Phiên bản GOGDL: ",
         "legendary-version": "Phiên bản Legendary ",
-        "weblate": "Giúp dịch HyperPlay.",
+        "weblate": "Giúp dịch NovaPlay.",
         "nile-version": "Phiên bản sông Nile: "
     },
     "Other": "Other",
@@ -453,7 +453,7 @@
         "autosync": "Tự động đồng bộ bản sao lưu",
         "autovkd3d": "Tự động cài đặt/cập nhật DXVK trên prefix",
         "change-target-exe": "Chọn một EXE thay thế để chạy",
-        "checkForUpdatesOnStartup": "Check for HyperPlay Updates on Startup",
+        "checkForUpdatesOnStartup": "Check for NovaPlay Updates on Startup",
         "crossover-version": "Crossover/Wine Version",
         "custom_themes_path": "Custom Themes Path",
         "customWineProton": "Đường dẫn Wine/Proton tùy chọn",
@@ -461,7 +461,7 @@
         "default-install-path": "Thư mục cài mặc định",
         "default-steam-path": "Default Steam path",
         "defaultWinePrefix": "Đặt thư mục cho prefix mới của Wine",
-        "disable_controller": "Tắt điều hướng HyperPlay bằng cần điều khiển",
+        "disable_controller": "Tắt điều hướng NovaPlay bằng cần điều khiển",
         "discordRPC": "Bật tính năng Discord Rich Presence",
         "download-no-https": "Download games without HTTPS (useful for CDNs e.g. LanCache)",
         "egs-sync": "Đồng bộ với Game Epic đã cài",
@@ -520,7 +520,7 @@
         },
         "maxRecentGames": "Hiển thị số game đã chơi gần đây",
         "maxworkers": "Số lượng tối đa khi tải xuống",
-        "minimize-on-launch": "Thu nhỏ HyperPlay sau khi khởi chạy trò chơi",
+        "minimize-on-launch": "Thu nhỏ NovaPlay sau khi khởi chạy trò chơi",
         "offlinemode": "Chạy game oflline",
         "prefered_language": "Ngôn ngữ ưa thích (Mã ngôn ngữ)",
         "preferSystemLibs": "Prefer system libraries",
@@ -561,7 +561,7 @@
             "installing": "Installing BattlEye Runtime...",
             "name": "BattlEye AntiCheat Runtime"
         },
-        "clear-cache": "Xóa bộ nhớ đệm của HyperPlay",
+        "clear-cache": "Xóa bộ nhớ đệm của NovaPlay",
         "copiedToClipboard": "Đã sao chép vào bộ nhớ tạm!",
         "copyToClipboard": "Sao chép toàn bộ cài đặt vào bộ nhớ tạm",
         "default_hint": "Changes in this section only apply as default values when installing games. If you want to change the settings of an already installed game, use the Settings button in the game page.",
@@ -594,7 +594,7 @@
             "systemInformation": "Thông tin hệ thống"
         },
         "open-config-file": "Mở tệp cấu hình",
-        "reset-hyperplay": "Đặt lại HyperPlay",
+        "reset-novaplay": "Đặt lại NovaPlay",
         "saves": {
             "label": "Save Location:",
             "warning": "Cloud Saves feature is in Beta, please backup your saves before syncing (in case something goes wrong)"
@@ -701,7 +701,7 @@
         "alpha": "Alpha",
         "beta": "Beta"
     },
-    "hyperplay": {
+    "novaplay": {
         "buttons": {
             "agree": "Tôi đồng ý.",
             "noThanks": "Không cảm ơn"
@@ -762,7 +762,7 @@
     "accounts": "Người",
     "ALL": "TẤT CẢ",
     "analytics": "Phân tích",
-    "hyperplayOverlay": {
+    "novaplayOverlay": {
         "txnRequest": {
             "FAILED": "Bản dịch bị gián đoạn."
         }
