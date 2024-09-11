@@ -31,7 +31,7 @@ class GameUpdateState {
           const licenseId =
             gameInfo.channels[gameInfo.install.channelName].license_config.id
           const cachedCodeCanBeUsedAgain =
-            await window.api.checkHyperPlayAccessCode(
+            await window.api.checkNovaPlayAccessCode(
               licenseId,
               cachedAccessCodeForInstalledGame
             )
