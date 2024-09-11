@@ -66,13 +66,13 @@ jobs:
 
       - name: Upload build file to Signpath
         run: |
-          $exePath = Get-ChildItem -Path ./dist -Filter "HyperPlay*.exe" | Select-Object -ExpandProperty FullName
-          $exeName = Get-ChildItem -Path ./dist -Filter "HyperPlay*.exe" | Select-Object -ExpandProperty Name
+          $exePath = Get-ChildItem -Path ./dist -Filter "NovaPlay*.exe" | Select-Object -ExpandProperty FullName
+          $exeName = Get-ChildItem -Path ./dist -Filter "NovaPlay*.exe" | Select-Object -ExpandProperty Name
           Submit-SigningRequest `
             -InputArtifactPath $exePath `
             -CIUserToken  "${{ secrets.SIGNPATH_TOKEN }}"`
             -OrganizationId "${{ secrets.SIGNPATH_ORG_ID }}" `
-            -ProjectSlug "HyperPlay_Win_x64" `
+            -ProjectSlug "NovaPlay_Win_x64" `
             -SigningPolicySlug "Release_Signing" `
             -OutputArtifactPath "signed/$exeName" `
             -WaitForCompletion `
@@ -83,7 +83,7 @@ jobs:
 
       - name: Update latest.yml
         run: |
-          $exePath = Get-ChildItem -Path signed -Filter "HyperPlay*.exe" | Select-Object -ExpandProperty FullName
+          $exePath = Get-ChildItem -Path signed -Filter "NovaPlay*.exe" | Select-Object -ExpandProperty FullName
           $sha512 = Get-FileHash -Path $exePath -Algorithm SHA512 | Select-Object -ExpandProperty Hash
           $size = (Get-Item $exePath).Length
           $latestYml = Get-Content -Path dist/latest.yml -Raw | ConvertFrom-Yaml
@@ -98,4 +98,4 @@ jobs:
           token: ${{ secrets.WORKFLOW_TOKEN }}
           draft: true
           allowUpdates: true
-          artifacts: 'signed/latest.yml,signed/HyperPlay*.exe,dist/*.blockmap'
+          artifacts: 'signed/latest.yml,signed/NovaPlay*.exe,dist/*.blockmap'
