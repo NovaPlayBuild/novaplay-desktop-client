@@ -4,7 +4,7 @@ import {
   QuestLog,
   QuestLogInfo,
   QuestLogTranslations
-} from '@hyperplay/ui'
+} from '@novaplay/ui'
 import useGetQuests from 'frontend/hooks/useGetQuests'
 import styles from './index.module.scss'
 import { useTranslation } from 'react-i18next'
