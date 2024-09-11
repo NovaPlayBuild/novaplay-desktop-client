@@ -1,9 +1,9 @@
-import * as HyperPlayGameManager from 'backend/storeManagers/hyperplay/games'
+import * as NovaPlayGameManager from 'backend/storeManagers/novaplay/games'
 import * as SideloadGameManager from 'backend/storeManagers/sideload/games'
 import * as GOGGameManager from 'backend/storeManagers/gog/games'
 import * as LegendaryGameManager from 'backend/storeManagers/legendary/games'
 
-import * as HyperPlayLibraryManager from 'backend/storeManagers/hyperplay/library'
+import * as NovaPlayLibraryManager from 'backend/storeManagers/novaplay/library'
 import * as SideloadLibraryManager from 'backend/storeManagers/sideload/library'
 import * as GOGLibraryManager from 'backend/storeManagers/gog/library'
 import * as LegendaryLibraryManager from 'backend/storeManagers/legendary/library'
@@ -15,7 +15,7 @@ import { addToQueue } from 'backend/downloadmanager/downloadqueue'
 import { DMQueueElement, GameInfo, Runner } from 'common/types'
 import { ipcMain } from 'electron'
 import { sendFrontendMessage } from 'backend/main_window'
-import { loadEpicHyperPlayGameInfoMap } from './hyperplay/utils'
+import { loadEpicNovaPlayGameInfoMap } from './novaplay/utils'
 
 import { notify } from '../dialog/dialog'
 import i18next from 'i18next'
@@ -24,14 +24,14 @@ import { wait } from 'backend/utils'
 const MAX_GAMES_UPDATE_NOTIFICATIONS = 3
 
 export const gameManagerMap: Record<Runner, GameManager> = {
-  hyperplay: HyperPlayGameManager,
+  novaplay: NovaPlayGameManager,
   sideload: SideloadGameManager,
   gog: GOGGameManager,
   legendary: LegendaryGameManager
 }
 
 export const libraryManagerMap: Record<Runner, LibraryManager> = {
-  hyperplay: HyperPlayLibraryManager,
+  novaplay: NovaPlayLibraryManager,
   legendary: LegendaryLibraryManager,
   gog: GOGLibraryManager,
   sideload: SideloadLibraryManager
@@ -73,12 +73,12 @@ export async function autoUpdate(runner: Runner, gamesToUpdate: string[]) {
     }
 
     /**
-     * Ignore auto update for access code gated HyperPlay games to keep user from having to
+     * Ignore auto update for access code gated NovaPlay games to keep user from having to
      * enter another one time use code in the update modal, which would block other games from updating.
      */
     if (
-      runner === 'hyperplay' &&
-      HyperPlayGameManager.gameIsAccessCodeGated(appName)
+      runner === 'novaplay' &&
+      NovaPlayGameManager.gameIsAccessCodeGated(appName)
     ) {
       logInfo(
         `Ignoring auto-update for ${gameInfo.title} because it is access code gated.`,
@@ -103,18 +103,18 @@ export async function autoUpdate(runner: Runner, gamesToUpdate: string[]) {
 
 let notificationsSent = false
 
-// We only check hyperplay games for updates
+// We only check novaplay games for updates
 export async function sendGameUpdatesNotifications() {
   if (notificationsSent) {
     return
   }
   notificationsSent = true
   const gamesToUpdate: string[] = []
-  const allGames = await libraryManagerMap.hyperplay.listUpdateableGames()
+  const allGames = await libraryManagerMap.novaplay.listUpdateableGames()
   const gamesToCheck = allGames.slice(0, MAX_GAMES_UPDATE_NOTIFICATIONS)
 
   const gameSettings = await Promise.all(
-    gamesToCheck.map(async (game) => gameManagerMap.hyperplay.getSettings(game))
+    gamesToCheck.map(async (game) => gameManagerMap.novaplay.getSettings(game))
   )
 
   const notifiableGames = gamesToCheck.filter(async (_game, index) => {
@@ -128,7 +128,7 @@ export async function sendGameUpdatesNotifications() {
     return
   }
 
-  const leadGameInfo = gameManagerMap.hyperplay.getGameInfo(gamesToUpdate[0])
+  const leadGameInfo = gameManagerMap.novaplay.getGameInfo(gamesToUpdate[0])
 
   const title = i18next.t(
     'gameUpdateNotifications.title',
@@ -157,9 +157,9 @@ export async function sendGameUpdatesNotifications() {
 export async function initStoreManagers() {
   await LegendaryLibraryManager.initLegendaryLibraryManager()
   await GOGLibraryManager.refresh()
-  loadEpicHyperPlayGameInfoMap()
+  loadEpicNovaPlayGameInfoMap()
 }
 
 ipcMain.once('frontendReady', async () => {
-  sendFrontendMessage('refreshLibrary', 'hyperplay')
+  sendFrontendMessage('refreshLibrary', 'novaplay')
 })
