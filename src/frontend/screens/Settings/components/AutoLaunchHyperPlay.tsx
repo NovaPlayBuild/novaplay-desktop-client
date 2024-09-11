@@ -3,11 +3,11 @@ import { ToggleSwitch } from 'frontend/components/UI'
 import useSetting from 'frontend/hooks/useSetting'
 import { useTranslation } from 'react-i18next'
 
-const AutoLaunchHyperPlay = () => {
+const AutoLaunchNovaPlay = () => {
   const { t } = useTranslation()
 
-  const [autoLaunchHyperPlay, setAutoLaunchHyperPlay] = useSetting(
-    'autoLaunchHyperPlay',
+  const [autoLaunchNovaPlay, setAutoLaunchNovaPlay] = useSetting(
+    'autoLaunchNovaPlay',
     true
   )
 
@@ -16,7 +16,7 @@ const AutoLaunchHyperPlay = () => {
       const platform = await window.api.getPlatform()
       // currently set as opt in on mac
       if (platform === 'darwin') {
-        setAutoLaunchHyperPlay(false)
+        setAutoLaunchNovaPlay(false)
       }
     }
     init()
@@ -24,15 +24,15 @@ const AutoLaunchHyperPlay = () => {
 
   return (
     <ToggleSwitch
-      htmlId="AutoLaunchHyperPlay"
-      value={autoLaunchHyperPlay}
+      htmlId="AutoLaunchNovaPlay"
+      value={autoLaunchNovaPlay}
       handleChange={() => {
-        setAutoLaunchHyperPlay(!autoLaunchHyperPlay)
+        setAutoLaunchNovaPlay(!autoLaunchNovaPlay)
         window.api.updateAutoLaunch()
       }}
-      title={t('setting.autoLaunchHyperPlay', 'Auto Launch HyperPlay')}
+      title={t('setting.autoLaunchNovaPlay', 'Auto Launch NovaPlay')}
     />
   )
 }
 
-export default AutoLaunchHyperPlay
+export default AutoLaunchNovaPlay
