@@ -6,7 +6,7 @@ const process = require('process')
 const [nodeExe, scriptPath, ...args] = process.argv
 
 const resetExtensionScript =
-  './node_modules/@hyperplay/extension-importer/src/resetExtension.js'
+  './node_modules/@novaplay/extension-importer/src/resetExtension.js'
 if (existsSync(resetExtensionScript)) {
   console.log('spawning pkg', resetExtensionScript, args)
   const command = platform() === 'win32' ? 'yarn.cmd' : 'yarn'
