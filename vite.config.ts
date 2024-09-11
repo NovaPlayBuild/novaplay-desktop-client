@@ -17,47 +17,47 @@ const srcAliases = ['backend', 'frontend', 'common'].map((aliasName) => {
 
 // only set alias if the proxy-server optional package was not added
 try {
-  statSync(join(__dirname, 'node_modules', '@hyperplay', 'proxy-server'))
+  statSync(join(__dirname, 'node_modules', '@novaplay', 'proxy-server'))
 } catch (err) {
   srcAliases.push(
     {
-      find: '@hyperplay/providers',
+      find: '@novaplay/providers',
       replacement: join(__dirname, 'src', 'empty.js')
     },
     {
-      find: '@hyperplay/proxy-server',
+      find: '@novaplay/proxy-server',
       replacement: join(__dirname, 'src', 'empty.js')
     },
     {
-      find: '@hyperplay/extension-importer',
+      find: '@novaplay/extension-importer',
       replacement: join(__dirname, 'src', 'empty.js')
     },
     {
-      find: '@hyperplay/extension-provider',
+      find: '@novaplay/extension-provider',
       replacement: join(__dirname, 'src', 'empty.js')
     },
     {
-      find: '@hyperplay/overlay',
+      find: '@novaplay/overlay',
       replacement: join(__dirname, 'src', 'empty.js')
     }
   )
 }
 
-const dependenciesToNotExternalize = ['@hyperplay/check-disk-space']
+const dependenciesToNotExternalize = ['@novaplay/check-disk-space']
 
 const preloads = [
   'src/backend/preload.ts',
   'src/backend/proxy/providerPreload.ts',
-  'src/backend/hyperplay_store_preload.ts',
+  'src/backend/novaplay_store_preload.ts',
   'src/backend/webview_style_preload.ts',
   'src/backend/auth_provider_preload.ts'
 ]
 
 // only set alias if the extension-provider optional package was added
 try {
-  statSync(join(__dirname, 'node_modules', '@hyperplay', 'extension-provider'))
+  statSync(join(__dirname, 'node_modules', '@novaplay', 'extension-provider'))
   preloads.push(
-    'node_modules/@hyperplay/extension-provider/src/extensionPreload.ts'
+    'node_modules/@novaplay/extension-provider/src/extensionPreload.ts'
   )
 } catch (err) {}
 
