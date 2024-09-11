@@ -278,20 +278,20 @@ export interface GameClosed {
   sensitiveProperties?: never
 }
 
-export interface HyperPlayLaunched {
-  event: 'HyperPlay Launched'
+export interface NovaPlayLaunched {
+  event: 'NovaPlay Launched'
   properties?: never
   sensitiveProperties?: never
 }
 
-export interface HyperPlaySummonQuestFailed {
-  event: 'HyperPlay Summon Quest Failed'
+export interface NovaPlaySummonQuestFailed {
+  event: 'NovaPlay Summon Quest Failed'
   properties?: never
   sensitiveProperties?: never
 }
 
-export interface HyperPlaySummonQuestSucceeded {
-  event: 'HyperPlay Summon Quest Succeeded'
+export interface NovaPlaySummonQuestSucceeded {
+  event: 'NovaPlay Summon Quest Succeeded'
   properties?: never
   sensitiveProperties?: never
 }
@@ -367,9 +367,9 @@ export type PossibleMetricPayloads =
   | GameInstallCanceled
   | GameInstallPaused
   | GameInstallResumed
-  | HyperPlayLaunched
-  | HyperPlaySummonQuestFailed
-  | HyperPlaySummonQuestSucceeded
+  | NovaPlayLaunched
+  | NovaPlaySummonQuestFailed
+  | NovaPlaySummonQuestSucceeded
   | QuestViewed
   | RewardClaimStarted
   | RewardClaimSuccess
