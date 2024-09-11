@@ -5,7 +5,7 @@
         "wineprefix": "Vælg Wine Prefix mappe",
         "no": "NEJ",
         "cache-cleared": {
-            "message": "HyperPlay cache ryddet.",
+            "message": "NovaPlay cache ryddet.",
             "title": "Cache ryddet"
         },
         "choose-egs-prefix": "Vælg Prefix hvor EGS er installeret",
@@ -46,7 +46,7 @@
                 "title": "Wine Ikke Fundet"
             },
             "zstd": {
-                "message": "ZSTD ikke fundet, venligst installer det og genstart HyperPlay"
+                "message": "ZSTD ikke fundet, venligst installer det og genstart NovaPlay"
             },
             "add": {
                 "steam": {
@@ -61,7 +61,7 @@
                 }
             },
             "uncaught-exception": {
-                "message": "En ufanget undtagelse opstod:{{newLine}}{{error}}{{newLine}}{{newLine}}HyperPlay vil blive lukket! Rapporter undtagelsen på vores Github-lager.",
+                "message": "En ufanget undtagelse opstod:{{newLine}}{{error}}{{newLine}}{{newLine}}NovaPlay vil blive lukket! Rapporter undtagelsen på vores Github-lager.",
                 "title": "Ufanget undtagelse opstod!"
             },
             "winetricks": {
@@ -83,11 +83,11 @@
                 "changelog": "Åben changelog",
                 "detail": "Vil du hente opdateringen i baggrunden?",
                 "message": "Der er en ny version tilgængelig!",
-                "message-finished": "Vil du genstarte HyperPlay nu?",
-                "title": "HyperPlay Games Launcher",
+                "message-finished": "Vil du genstarte NovaPlay nu?",
+                "title": "NovaPlay Games Launcher",
                 "title-finished": "Opdatering Færdig",
-                "appUpdated": "HyperPlay blev opdateret",
-                "appUpdated-message": "HyperPlay blev opdateret. Vil du opdatere og genstarte HyperPlay nu?"
+                "appUpdated": "NovaPlay blev opdateret",
+                "appUpdated-message": "NovaPlay blev opdateret. Vil du opdatere og genstarte NovaPlay nu?"
             }
         },
         "ok": "OK",
@@ -100,10 +100,10 @@
             "title": "Afslut",
             "message": "Der er uafgjorte handlinger, er du sikker?"
         },
-        "reset-hyperplay": {
+        "reset-novaplay": {
             "question": {
-                "title": "Nulstil HyperPlay",
-                "message": "Er du sikker på, at du vil nulstille HyperPlay? Dette fjerner alle indstillinger og cache, men vil ikke fjerne dine installerede spil eller dine Epic legitimation"
+                "title": "Nulstil NovaPlay",
+                "message": "Er du sikker på, at du vil nulstille NovaPlay? Dette fjerner alle indstillinger og cache, men vil ikke fjerne dine installerede spil eller dine Epic legitimation"
             }
         },
         "runexe": {
@@ -143,7 +143,7 @@
             },
             "title": "Advarsel",
             "rosetta": {
-                "message": "HyperPlay kræver Rosetta kører korrekt på macOS med Apple Silicon chips. Installer den fra macOS-terminalen ved hjælp af følgende kommando: \"softwareupdate --install-rosetta\" og genstart HyperPlay. ",
+                "message": "NovaPlay kræver Rosetta kører korrekt på macOS med Apple Silicon chips. Installer den fra macOS-terminalen ved hjælp af følgende kommando: \"softwareupdate --install-rosetta\" og genstart NovaPlay. ",
                 "title": "Rosetta ikke fundet"
             },
             "wine-change": {
@@ -164,8 +164,8 @@
         },
         "reset-app": {
             "question": {
-                "message": "Er du sikker på, at du vil nulstille HyperPlay? Dette fjerner alle indstillinger og Caching, men fjerner ikke dine installerede spil eller dine Epic legitimationsoplysninger. Bærbare versioner (AppImage, WinPortable, ...) af HyperPlay skal genstartes manuelt bagefter.",
-                "title": "Nulstil HyperPlay"
+                "message": "Er du sikker på, at du vil nulstille NovaPlay? Dette fjerner alle indstillinger og Caching, men fjerner ikke dine installerede spil eller dine Epic legitimationsoplysninger. Bærbare versioner (AppImage, WinPortable, ...) af NovaPlay skal genstartes manuelt bagefter.",
+                "title": "Nulstil NovaPlay"
             }
         }
     },
@@ -182,7 +182,7 @@
     },
     "info": {
         "version": "Wine Version",
-        "hyperplay": {
+        "novaplay": {
             "version": "Heroisk version",
             "beta": "Beta",
             "newReleases": "Opdatering tilgængelig!",
@@ -242,8 +242,8 @@
             "part6": " skal kaldes efter startkommandoen, for eksempel: "
         },
         "sync": {
-            "part2": "Hvis du ændrer præfiksmappen for Wine eller Proton, skal du tjekke stien igen, da Proton bruger et andet præfiks (/pfx) og brugernavn (steamuser). Så du kan simpelthen slette den aktuelle sti for at komme ud af siden med synkroniseringsindstillinger og komme tilbage igen, så HyperPlay kan gætte mappen en gang til med det rigtige præfiks.",
-            "part1": "HyperPlay forsøger at gætte den rigtige gemmemappe, og dette vil fungere i de fleste tilfælde. Hvis mappen er forkert, skal du bruge tilsidesættelsesboksen til at ændre den.",
+            "part2": "Hvis du ændrer præfiksmappen for Wine eller Proton, skal du tjekke stien igen, da Proton bruger et andet præfiks (/pfx) og brugernavn (steamuser). Så du kan simpelthen slette den aktuelle sti for at komme ud af siden med synkroniseringsindstillinger og komme tilbage igen, så NovaPlay kan gætte mappen en gang til med det rigtige præfiks.",
+            "part1": "NovaPlay forsøger at gætte den rigtige gemmemappe, og dette vil fungere i de fleste tilfælde. Hvis mappen er forkert, skal du bruge tilsidesættelsesboksen til at ændre den.",
             "part3": "Manuel synkronisering: Vælg Download for at downloade spil, der er gemt i skyen. Upload for at uploade de lokale til skyen. Force Download og Force Upload ignorerer den version, der er lokalt eller i skyen.",
             "part4": "Synkronisering gemmer Automatisk vil synkronisere gemmerne hver gang du starter et spil og efter at have spillet færdig."
         },
@@ -257,7 +257,7 @@
         "resizablebar": "NVIDIAs Resizable Bar hjælper med at booste framerate ved at få CPU'en til at få adgang til hele grafikbufferen. Aktivering kan forbedre ydeevnen for Vulkan-baserede spil.",
         "vkd3d": "VKD3D er et Vulkan-baseret translationslag til DirectX 12-spil. Aktivering kan forbedre kompatibiliteten betydeligt. Har ingen effekt på ældre DirectX-spil.",
         "game_language": {
-            "fallback": "Lad stå tomt for at bruge HyperPlays sprog.",
+            "fallback": "Lad stå tomt for at bruge NovaPlays sprog.",
             "in_game_config": "Ikke alle spil understøtter denne konfiguration, nogle har sprogindstilling i spillet.",
             "valid_codes": "Gyldige sprogkoder er spilafhængige."
         },
@@ -267,7 +267,7 @@
         "dxvknvapi": "DXVK-NVAPI er en implementering af NVAPI bygget på toppen af DXVK og linux indfødte NVAPI, det giver mulighed for brugen af DLSS på Nvidia GPU'er.",
         "msync": "Msync har til formål at reducere vinserver overhead i CPU-intensive spil. Aktivering kan forbedre ydeevnen på flere spil.",
         "steam_path": {
-            "info": "Denne sti lader HyperPlay bestemme, hvilken version af Proton Steam bruger, for at tilføje ikke-Steam spil til Steam."
+            "info": "Denne sti lader NovaPlay bestemme, hvilken version af Proton Steam bruger, for at tilføje ikke-Steam spil til Steam."
         },
         "custom_themes_path": "Brug ikke CSS-filer fra ikke-trustede kilder. Når du er i tvivl, skal du bede om en anmeldelse i vores Discord kanal.",
         "custom_themes_wiki": "Tjek wikien for flere detaljer om at tilføje brugerdefinerede temaer. Klik her.",
@@ -317,7 +317,7 @@
             "paused": "Opdater pause",
             "stopped": "Opdater stoppede"
         },
-        "new-hyperplay-version": "En ny HyperPlay-version blev frigivet!"
+        "new-novaplay-version": "En ny NovaPlay-version blev frigivet!"
     },
     "Plugins": "Plugins",
     "Projects": "Projekter",
@@ -340,8 +340,8 @@
             "copy-to-clipboard": "Kopier logindhold til udklipsholder",
             "current-log": "Aktuel log",
             "instructions": "Tilmeld dig vores Discord og se efter den kanal, der matcher dit operativsystem. Del indholdet af logfilerne, der vises her, og inkluder en klar beskrivelse af problemet med alle relevante oplysninger og detaljer.",
-            "join-hyperplay-discord": "Bliv medlem af vores Discord",
-            "instructions-part-01": "Hvis du støder på problemer, mens du bruger HyperPlay, har vi to udpegede områder til at rapportere dine problemer i vores Discord Server. Hvis du er spiller, bedes du rapportere problemer ved at besøge spiller-support-forum. Hvis du er et spil dev, bedes du rapportere eventuelle problemer ved at besøge dev-support-forum.",
+            "join-novaplay-discord": "Bliv medlem af vores Discord",
+            "instructions-part-01": "Hvis du støder på problemer, mens du bruger NovaPlay, har vi to udpegede områder til at rapportere dine problemer i vores Discord Server. Hvis du er spiller, bedes du rapportere problemer ved at besøge spiller-support-forum. Hvis du er et spil dev, bedes du rapportere eventuelle problemer ved at besøge dev-support-forum.",
             "instructions-part-02": "For at hjælpe os med at diagnosticere og løse problemet så hurtigt som muligt, bedes du give så mange oplysninger som muligt, herunder en kopi af dine logfiler. Vores supportteam vil overvåge begge kanaler og gøre deres bedste for at reagere på dit problem så hurtigt som muligt. Tak for din tålmodighed og forståelse, mens vi arbejder for at løse eventuelle problemer, du måtte støde på."
         },
         "mangohud": "Aktiver Mangohud (Mangohud skal installeres)",
@@ -442,7 +442,7 @@
         "alt-nile-bin": "Vælg en alternativ Nile Binær",
         "steamId": "Steam-id",
         "autodxvknvapi": "Automatisk installation/Opdater DXVK-NVAPI på Prefix",
-        "autoLaunchHyperPlay": "Auto Launch Hyper Afspil spil",
+        "autoLaunchNovaPlay": "Auto Launch Hyper Afspil spil",
         "msync": "Aktiver Esync"
     },
     "wine": {
@@ -489,7 +489,7 @@
             }
         },
         "open-config-file": "Åbn Config File",
-        "reset-hyperplay": "Nulstil HyperPlay",
+        "reset-novaplay": "Nulstil NovaPlay",
         "saves": {
             "warning": "Cloud Saves-funktionen er i beta, vær venlig at sikkerhedskopiere dine gemmer før synkronisering (i tilfælde af at noget går galt)",
             "label": "Gem placering:"
@@ -624,7 +624,7 @@
     "other": {
         "gogdl-version": "GOGDL-version: ",
         "legendary-version": "Legendarisk version: ",
-        "weblate": "Hjælp med at oversætte HyperPlay.",
+        "weblate": "Hjælp med at oversætte NovaPlay.",
         "nile-version": "Nile version: "
     },
     "platforms": {
@@ -813,7 +813,7 @@
     "dlcs": {
         "label": "Vælg DLC'er for at installere:"
     },
-    "hyperplay": {
+    "novaplay": {
         "onboarding": {
             "walletSelection": {
                 "screens": {
@@ -836,7 +836,7 @@
                         "cantFindProfile": "Kan du ikke finde din browserprofil?",
                         "title": "Vælg browseren for at importere fra",
                         "useRecoveryPhrase": "Import ved hjælp af Secret Recovery-sætningen",
-                        "useRecoveryPhraseInfo": "Denne funktion anbefales til avancerede brugere og udviklere. Din hemmelige opsving sætning gemmes lokalt i MetaMask og aldrig delt med HyperPlay.",
+                        "useRecoveryPhraseInfo": "Denne funktion anbefales til avancerede brugere og udviklere. Din hemmelige opsving sætning gemmes lokalt i MetaMask og aldrig delt med NovaPlay.",
                         "createNewWallet": "Opret ny MM forlænger tegnebog",
                         "learnMore": "Mere info",
                         "orWord": "ELLER"
@@ -846,7 +846,7 @@
                         "updateWarning": "Har du problemer? Sørg for, at MetaMask er opdateret.",
                         "getMetamask": "Få MetaMask",
                         "title": "Scan QR med Scan QR ",
-                        "details": "Opret en krypteret kommunikationskanal. Dine nøgler vil aldrig blive delt med HyperPlay."
+                        "details": "Opret en krypteret kommunikationskanal. Dine nøgler vil aldrig blive delt med NovaPlay."
                     }
                 },
                 "pleaseConnect": "Tilslut din tegnebog, eller download Metamask mobil-app for at få\nstartede:",
@@ -854,10 +854,10 @@
             },
             "analytics": {
                 "privacyCaption": "Disse data er aggregeret og er derfor anonyme til brug af den generelle forordning om databeskyttelse (EU) 2016/679. For mere information i forhold til vores praksis for beskyttelse af personlige oplysninger, se vores ",
-                "title": "Hjælp os med at forbedre HyperPlay!",
-                "hyperplayWill": "HyperPlay vil:",
+                "title": "Hjælp os med at forbedre NovaPlay!",
+                "novaplayWill": "NovaPlay vil:",
                 "anonymized": "Send anonymiseret klik & spil interaktion;",
-                "body": "HyperPlay vil gerne indsamle brugsdata for bedre at forstå, hvordan vores brugere interagerer med programmet. Disse oplysninger hjælper os med at forstå, hvordan du bruger appen og lader os gøre HyperPlay endnu bedre for dig.",
+                "body": "NovaPlay vil gerne indsamle brugsdata for bedre at forstå, hvordan vores brugere interagerer med programmet. Disse oplysninger hjælper os med at forstå, hvordan du bruger appen og lader os gøre NovaPlay endnu bedre for dig.",
                 "neverSellData": " sælge data til overskud. nogensinde!",
                 "optOut": "Altid tillade dig at fravælge via Indstillinger;",
                 "neverCollectIP": " indsamle din fulde IP-adresse;",
@@ -874,10 +874,10 @@
             },
             "welcome": {
                 "text": {
-                    "construction": "HyperPlay er under opbygning.",
+                    "construction": "NovaPlay er under opbygning.",
                     "communityCTA_1": "Vi vil elske din feedback og få dig til at deltage i os i vores",
-                    "bugs": "Bemærk venligst, at HyperPlay er en offentlig alpha. Mange funktioner er stadig\ni udvikling, og der vil være bugs.",
-                    "description": "HyperPlay er en spil launcher og spil butik aggregator fra\nfremtid. Med HyperPlay kan du bære din tegnebog, poletter og aktiver\nind i hvert spil. HyperPlay understøtter hele biblioteket af Epic\nStore, GOG og vores egen HyperPlay butik. Ved at bruge HyperPlay accepterer du\ntil vores",
+                    "bugs": "Bemærk venligst, at NovaPlay er en offentlig alpha. Mange funktioner er stadig\ni udvikling, og der vil være bugs.",
+                    "description": "NovaPlay er en spil launcher og spil butik aggregator fra\nfremtid. Med NovaPlay kan du bære din tegnebog, poletter og aktiver\nind i hvert spil. NovaPlay understøtter hele biblioteket af Epic\nStore, GOG og vores egen NovaPlay butik. Ved at bruge NovaPlay accepterer du\ntil vores",
                     "communityCTA_2": "fællesskab. Lad os sammen forme fremtiden for spil!"
                 },
                 "title": "Velkommen til Hyper Afspil Tidlig adgang!"
@@ -895,7 +895,7 @@
             }
         },
         "linkSteamAccountCta": "Gå til Steam-tegn",
-        "linkSteamAccountDescription": "Log på Steam for at forbinde din HyperPlay-konto.",
+        "linkSteamAccountDescription": "Log på Steam for at forbinde din NovaPlay-konto.",
         "linkSteamAccountTitle": "Link Steam-konto",
         "accesscodes": {
             "error": {
@@ -942,7 +942,7 @@
         "syncing": "Synkroniserer...",
         "viewFullscreen": "Se fuld skærm"
     },
-    "hyperplayOverlay": {
+    "novaplayOverlay": {
         "chainRequest": {
             "CONFIRMED": "Tilpasset netværk tilføjet",
             "FAILED": "Tilpasset netværk annulleret",
@@ -955,8 +955,8 @@
             "INITIATED": "En tegnebog bekræftelse er afhængigt af din mobile tegnebog"
         },
         "greeting": {
-            "description": "HyperPlay Overlay er klar! Tryk på {{overlayKeyMod}} + X at vise eller skjule det.",
-            "title": "HyperPlay Overlay"
+            "description": "NovaPlay Overlay er klar! Tryk på {{overlayKeyMod}} + X at vise eller skjule det.",
+            "title": "NovaPlay Overlay"
         },
         "walletWatch": {
             "CONFIRMED": "Tilpasset token tilføjet",
@@ -1058,15 +1058,15 @@
         }
     },
     "overlay": {
-        "EXTERNAL_WALLET_CONNECTED": "Du er forbundet til HyperPlay med en ekstern tegnebog.",
-        "WALLET_DISCONNECTED": "Du har ikke en tegnebog, der er forbundet til HyperPlay."
+        "EXTERNAL_WALLET_CONNECTED": "Du er forbundet til NovaPlay med en ekstern tegnebog.",
+        "WALLET_DISCONNECTED": "Du har ikke en tegnebog, der er forbundet til NovaPlay."
     },
     "quests": {
         "quests": "Quests",
         "playstreak": {
             "signInWarning": {
-                "client": "Du er i øjeblikket ikke logget ind, spille streak fremskridt vil ikke blive sporet. Log ind på HyperPlay via den øverste højre dropdown for at spore fremskridt.",
-                "overlay": "Du er i øjeblikket ikke logget ind, spille streak fremskridt vil ikke blive sporet. Afslut spillet og log ind på HyperPlay via den øverste højre dropdown for at spore fremgang."
+                "client": "Du er i øjeblikket ikke logget ind, spille streak fremskridt vil ikke blive sporet. Log ind på NovaPlay via den øverste højre dropdown for at spore fremskridt.",
+                "overlay": "Du er i øjeblikket ikke logget ind, spille streak fremskridt vil ikke blive sporet. Afslut spillet og log ind på NovaPlay via den øverste højre dropdown for at spore fremgang."
             }
         },
         "noneFound": {
@@ -1075,7 +1075,7 @@
         },
         "g7CreditsModal": {
             "title": "Optjen spil7 Credits",
-            "description": "Dyk ned i HyperPlay's top spil med spændende Play Streak Challenges. Hver aktivitet opfordrer dig til at engagere sig med et andet spil, der viser det bedste af web3 spil. Din spilletid betyder noget!"
+            "description": "Dyk ned i NovaPlay's top spil med spændende Play Streak Challenges. Hver aktivitet opfordrer dig til at engagere sig med et andet spil, der viser det bedste af web3 spil. Din spilletid betyder noget!"
         }
     },
     "importGameErrorMessage": "Ikke en gyldig spilmappe, import af spil er ikke muligt",
