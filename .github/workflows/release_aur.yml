@@ -20,28 +20,28 @@ jobs:
       - name: Download Package
         run: |
           set -x
-          latest_version=$(curl -s https://api.github.com/repos/HyperPlay-Gaming/hyperplay-desktop-client/releases/latest | jq -r .tag_name)
+          latest_version=$(curl -s https://api.github.com/repos/NovaPlay-Gaming/novaplay-desktop-client/releases/latest | jq -r .tag_name)
           version_without_v=$(echo $latest_version | cut -c 2-)
-          wget https://github.com/HyperPlay-Gaming/hyperplay-desktop-client/releases/download/${latest_version}/hyperplay-${version_without_v}.pacman -O hyperplay.pacman
+          wget https://github.com/NovaPlay-Gaming/novaplay-desktop-client/releases/download/${latest_version}/novaplay-${version_without_v}.pacman -O novaplay.pacman
           set +x
         if: ${{ success() }}
 
       - name: Update PKGBUILD
         run: |
           set -x
-          latest_version=$(curl -s https://api.github.com/repos/HyperPlay-Gaming/hyperplay-desktop-client/releases/latest | jq -r .tag_name)
+          latest_version=$(curl -s https://api.github.com/repos/NovaPlay-Gaming/novaplay-desktop-client/releases/latest | jq -r .tag_name)
           pkgver=${latest_version#v}
           pkgrel=1
-          url="https://github.com/HyperPlay-Gaming/hyperplay-desktop-client"
-          _filename=hyperplay-${pkgver}.pacman
+          url="https://github.com/NovaPlay-Gaming/novaplay-desktop-client"
+          _filename=novaplay-${pkgver}.pacman
           source=("$url/releases/download/$latest_version/$_filename")
-          md5sums=($(md5sum hyperplay.pacman | cut -d' ' -f1))
+          md5sums=($(md5sum novaplay.pacman | cut -d' ' -f1))
 
           cat <<EOF > PKGBUILD
           # Maintainer: flaviofearn <flavioislima@gmail.com>
-          # Maintainer: blingus <brett@hyperplay.xyz>
+          # Maintainer: blingus <brett@novaplay.xyz>
 
-          pkgname=hyperplay
+          pkgname=novaplay
           pkgver=$pkgver
           pkgrel=$pkgrel
           pkgdesc="An open source Web3 gaming platform."
@@ -58,7 +58,7 @@ jobs:
           package() {
             tar -xJv -C "\$pkgdir" -f "\$srcdir/\$_filename" usr opt
             mkdir "\$pkgdir/usr/bin"
-            ln -s "/opt/HyperPlay/hyperplay" "\$pkgdir/usr/bin/hyperplay"
+            ln -s "/opt/NovaPlay/novaplay" "\$pkgdir/usr/bin/novaplay"
           }
 
           # vim:set ts=2 sw=2 et: syntax=sh
@@ -71,7 +71,7 @@ jobs:
       - name: Publish AUR package
         uses: KSXGitHub/github-actions-deploy-aur@v2.7.2
         with:
-          pkgname: hyperplay
+          pkgname: novaplay
           pkgbuild: ./PKGBUILD
           commit_username: ${{ secrets.AUR_USERNAME }}
           commit_email: ${{ secrets.AUR_EMAIL }}
