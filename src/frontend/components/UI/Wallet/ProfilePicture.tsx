@@ -1,5 +1,5 @@
 import React from 'react'
-import { Disconnected } from 'frontend/assets/hyperplay'
+import { Disconnected } from 'frontend/assets/novaplay'
 import Blockies from 'react-blockies'
 import styles from './index.module.scss'
 
