@@ -158,11 +158,11 @@
         "options": "Launch Options..."
     },
     "not_logged_in": {
-        "epic": "HyperPlayにEpicアカウントでログインしていません。ストアページを使用してログインせず、代わりに次のボタンをクリックしてください:",
-        "gog": "HyperPlayにGOGアカウントでログインしていません。ストアページを使用してログインせず、代わりに次のボタンをクリックしてください:",
+        "epic": "NovaPlayにEpicアカウントでログインしていません。ストアページを使用してログインせず、代わりに次のボタンをクリックしてください:",
+        "gog": "NovaPlayにGOGアカウントでログインしていません。ストアページを使用してログインせず、代わりに次のボタンをクリックしてください:",
         "login": "ログイン",
         "title": "ログインしていません",
-        "amazon": "You are not logged in with an Epic account in HyperPlay. Don't use the store page to login, click the following button instead:"
+        "amazon": "You are not logged in with an Epic account in NovaPlay. Don't use the store page to login, click the following button instead:"
     },
     "report_problem": "Report a problem running this game",
     "sdl": {
