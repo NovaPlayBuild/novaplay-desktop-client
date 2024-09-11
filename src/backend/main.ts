@@ -74,7 +74,7 @@ import {
   fontsStore,
   gamesConfigPath,
   githubURL,
-  hyperplaySite,
+  novaplaySite,
   icon,
   installed,
   isCLIFullscreen,
@@ -124,10 +124,10 @@ import {
   getMainWindow,
   sendFrontendMessage
 } from './main_window'
-import { addGameToLibrary } from './storeManagers/hyperplay/library'
+import { addGameToLibrary } from './storeManagers/novaplay/library'
 
-import * as HyperPlayGameManager from 'backend/storeManagers/hyperplay/games'
-import * as HyperPlayLibraryManager from 'backend/storeManagers/hyperplay/library'
+import * as NovaPlayGameManager from 'backend/storeManagers/novaplay/games'
+import * as NovaPlayLibraryManager from 'backend/storeManagers/novaplay/library'
 import * as GOGLibraryManager from 'backend/storeManagers/gog/library'
 import {
   getGOGPlaytime,
@@ -171,7 +171,7 @@ import './ipcHandlers'
 import './ipcHandlers/checkDiskSpace'
 
 import { metricsAreEnabled, trackEvent } from './metrics/metrics'
-import { hpLibraryStore } from './storeManagers/hyperplay/electronStore'
+import { hpLibraryStore } from './storeManagers/novaplay/electronStore'
 import { libraryStore as sideloadLibraryStore } from 'backend/storeManagers/sideload/electronStores'
 import { backendEvents } from 'backend/backend_events'
 import { PROVIDERS } from 'common/types/proxy-types'
@@ -181,19 +181,19 @@ import 'backend/utils/auto_launch'
 import { hrtime } from 'process'
 import {
   getEpicListingUrl,
-  getHyperPlayReleaseObject
-} from './storeManagers/hyperplay/utils'
+  getNovaPlayReleaseObject
+} from './storeManagers/novaplay/utils'
 import { postPlaySessionTime } from './utils/quests'
 
-import { gameIsEpicForwarderOnHyperPlay } from './utils/shouldOpenOverlay'
+import { gameIsEpicForwarderOnNovaPlay } from './utils/shouldOpenOverlay'
 
 async function startProxyServer() {
   try {
-    const proxyServer = await import('@hyperplay/proxy-server')
+    const proxyServer = await import('@novaplay/proxy-server')
     proxyServer.initServer(undefined)
-    logInfo('Proxy server started', LogPrefix.HyperPlay)
+    logInfo('Proxy server started', LogPrefix.NovaPlay)
   } catch (err) {
-    logError(`Error starting proxy server ${err}`, LogPrefix.HyperPlay)
+    logError(`Error starting proxy server ${err}`, LogPrefix.NovaPlay)
   }
 }
 
@@ -222,7 +222,7 @@ import {
 import { uuid } from 'short-uuid'
 import { LDEnvironmentId, ldOptions } from './ldconstants'
 import getPartitionCookies from './utils/get_partition_cookies'
-import { runWineCommandOnGame } from 'backend/storeManagers/hyperplay/games'
+import { runWineCommandOnGame } from 'backend/storeManagers/novaplay/games'
 import { formatSystemInfo, getSystemInfo } from './utils/systeminfo'
 
 let ldMainClient: LDElectron.LDElectronMainClient
@@ -256,7 +256,7 @@ ipcMain.on('focusMainWindow', () => {
   mainWindow?.focus()
 })
 
-async function completeHyperPlayQuest() {
+async function completeNovaPlayQuest() {
   const completeHpSummonQuestIsActive = ldMainClient.variation(
     'complete-hp-summon-quest',
     false
@@ -264,14 +264,14 @@ async function completeHyperPlayQuest() {
   if (!completeHpSummonQuestIsActive) {
     return
   }
-  logInfo('Completing HyperPlay Quest', LogPrefix.Backend)
+  logInfo('Completing NovaPlay Quest', LogPrefix.Backend)
   try {
     const cookieString = await getPartitionCookies({
       partition: 'persist:auth',
       url: DEV_PORTAL_URL
     })
 
-    const response = await fetch(`${DEV_PORTAL_URL}/api/hyperplay-quest`, {
+    const response = await fetch(`${DEV_PORTAL_URL}/api/novaplay-quest`, {
       method: 'POST',
       headers: {
         Cookie: cookieString
@@ -287,22 +287,22 @@ async function completeHyperPlayQuest() {
         LogPrefix.Backend
       )
       trackEvent({
-        event: 'HyperPlay Summon Quest Failed'
+        event: 'NovaPlay Summon Quest Failed'
       })
       return
     }
 
     trackEvent({
-      event: 'HyperPlay Summon Quest Succeeded'
+      event: 'NovaPlay Summon Quest Succeeded'
     })
   } catch (err) {
-    logError(`Error completing Summon quest ${err}`, LogPrefix.HyperPlay)
+    logError(`Error completing Summon quest ${err}`, LogPrefix.NovaPlay)
     trackEvent({
-      event: 'HyperPlay Summon Quest Failed'
+      event: 'NovaPlay Summon Quest Failed'
     })
   }
 
-  logInfo(`Completed HyperPlay Summon task`, LogPrefix.Backend)
+  logInfo(`Completed NovaPlay Summon task`, LogPrefix.Backend)
 }
 
 async function initializeWindow(): Promise<BrowserWindow> {
@@ -320,8 +320,8 @@ async function initializeWindow(): Promise<BrowserWindow> {
     logInfo(
       [
         isSteamDeckGameMode
-          ? 'HyperPlay started via Steam-Deck gamemode.'
-          : 'HyperPlay started with --fullscreen',
+          ? 'NovaPlay started via Steam-Deck gamemode.'
+          : 'NovaPlay started with --fullscreen',
         'Switching to fullscreen'
       ],
       LogPrefix.Backend
@@ -330,7 +330,7 @@ async function initializeWindow(): Promise<BrowserWindow> {
   }
 
   mainWindow.setIcon(icon)
-  app.setAppUserModelId('HyperPlay')
+  app.setAppUserModelId('NovaPlay')
   app.commandLine?.appendSwitch('enable-spatial-navigation')
 
   mainWindow.on('close', async (e) => {
@@ -420,7 +420,7 @@ const processZoomForScreen = (zoomFactor: number) => {
 }
 
 if (!gotTheLock) {
-  logInfo('HyperPlay is already running, quitting this instance')
+  logInfo('NovaPlay is already running, quitting this instance')
   app.quit()
 } else {
   app.on('second-instance', async (event, argv) => {
@@ -437,7 +437,7 @@ if (!gotTheLock) {
   })
   app.whenReady().then(async () => {
     trackEvent({
-      event: 'HyperPlay Launched'
+      event: 'NovaPlay Launched'
     })
 
     initStoreManagers()
@@ -455,9 +455,9 @@ if (!gotTheLock) {
       path.join(__dirname, '../preload/auth_provider_preload.js')
     ])
 
-    const hpStoreSession = session.fromPartition('persist:hyperplaystore')
+    const hpStoreSession = session.fromPartition('persist:novaplaystore')
     hpStoreSession.setPreloads([
-      path.join(__dirname, '../preload/hyperplay_store_preload.js'),
+      path.join(__dirname, '../preload/novaplay_store_preload.js'),
       path.join(__dirname, '../preload/webview_style_preload.js')
     ])
     const epicStoreSession = session.fromPartition('persist:epicstore')
@@ -471,8 +471,8 @@ if (!gotTheLock) {
       hpOverlay?.toggleOverlay ??
       (() =>
         logInfo(
-          'Cannot toggle overlay without @hyperplay/overlay package',
-          LogPrefix.HyperPlay
+          'Cannot toggle overlay without @novaplay/overlay package',
+          LogPrefix.NovaPlay
         ))
     const openOverlayAccelerator = 'Alt+X'
     globalShortcut.register(openOverlayAccelerator, toggle)
@@ -508,7 +508,7 @@ if (!gotTheLock) {
       }
 
       //update metadata for all hp store games in library on launch
-      HyperPlayLibraryManager.refresh()
+      NovaPlayLibraryManager.refresh()
     })
 
     // Make sure lock is not present when starting up
@@ -600,12 +600,12 @@ if (!gotTheLock) {
       })
     }
 
-    protocol.registerStringProtocol('hyperplay', (request, callback) => {
+    protocol.registerStringProtocol('novaplay', (request, callback) => {
       handleProtocol([request.url])
       callback('Operation initiated.')
     })
-    if (!app.isDefaultProtocolClient('hyperplay')) {
-      if (app.setAsDefaultProtocolClient('hyperplay')) {
+    if (!app.isDefaultProtocolClient('novaplay')) {
+      if (app.setAsDefaultProtocolClient('novaplay')) {
         logInfo('Registered protocol with OS.', LogPrefix.Backend)
       } else {
         logWarning('Failed to register protocol with OS.', LogPrefix.Backend)
@@ -666,11 +666,11 @@ if (!gotTheLock) {
 
     initTrayIcon(mainWindow)
 
-    // Call checkGameUpdates for HyperPlay games every hour
+    // Call checkGameUpdates for NovaPlay games every hour
     const checkGameUpdatesInterval = 1 * 60 * 60 * 1000
     setInterval(async () => {
       try {
-        await checkGameUpdates(['hyperplay'])
+        await checkGameUpdates(['novaplay'])
       } catch (error) {
         logError(`Error checking game updates: ${error}`, LogPrefix.Backend)
       }
@@ -872,7 +872,7 @@ ipcMain.on('clearCache', (event, showDialog, fromVersionChange = false) => {
     title: i18next.t('box.cache-cleared.title', 'Cache Cleared'),
     message: i18next.t(
       'box.cache-cleared.message',
-      'HyperPlay Cache Was Cleared!'
+      'NovaPlay Cache Was Cleared!'
     ),
     type: 'MESSAGE',
     buttons: [{ text: i18next.t('box.ok', 'Ok') }]
@@ -884,7 +884,7 @@ ipcMain.on('resetApp', async () => {
 })
 
 ipcMain.on('resetExtension', async () => {
-  const extensionImporter = await import('@hyperplay/extension-importer')
+  const extensionImporter = await import('@novaplay/extension-importer')
   extensionImporter.resetExtension(hpApi)
   ipcMain.emit('ignoreExitToTray')
   app.quit()
@@ -900,8 +900,8 @@ ipcMain.handle('isGameAvailable', async (e, args) => {
 })
 
 ipcMain.handle('appIsInLibrary', async (event, appName, runner) => {
-  if (runner !== 'hyperplay') return false
-  return HyperPlayGameManager.appIsInLibrary(appName)
+  if (runner !== 'novaplay') return false
+  return NovaPlayGameManager.appIsInLibrary(appName)
 })
 
 ipcMain.on('goToGamePage', async (event, appName) => {
@@ -1067,7 +1067,7 @@ ipcMain.on('toggleVKD3D', (event, { appName, action }) => {
 
 ipcMain.handle('writeConfig', (event, { appName, config }) => {
   logInfo(
-    `Writing config for ${appName === 'default' ? 'HyperPlay' : appName}`,
+    `Writing config for ${appName === 'default' ? 'NovaPlay' : appName}`,
     LogPrefix.Backend
   )
   const oldConfig =
@@ -1160,7 +1160,7 @@ async function syncPlaySession(appName: string, runner: Runner) {
   tsStore.set(`${appName}.totalPlayed`, Number(totalPlaytime))
 
   const game = gameManagerMap[runner].getGameInfo(appName)
-  const { hyperPlayListing } = await gameIsEpicForwarderOnHyperPlay(game)
+  const { hyperPlayListing } = await gameIsEpicForwarderOnNovaPlay(game)
   postPlaySessionTime(
     hyperPlayListing?.project_id || appName,
     parseInt((sessionPlaytimeInMs / BigInt(1000)).toString())
@@ -1213,7 +1213,7 @@ ipcMain.handle(
     })
 
     // purposefully not awaiting this
-    completeHyperPlayQuest()
+    completeNovaPlayQuest()
 
     if (autoSyncSaves && isOnline()) {
       sendFrontendMessage('gameStatusUpdate', {
@@ -1520,7 +1520,7 @@ ipcMain.handle(
 )
 
 ipcMain.on('removeFromLibrary', (event, appName) => {
-  HyperPlayLibraryManager.removeFromLibrary(appName)
+  NovaPlayLibraryManager.removeFromLibrary(appName)
 })
 
 ipcMain.handle('repair', async (event, appName, runner) => {
@@ -1777,9 +1777,9 @@ ipcMain.handle(
 )
 
 ipcMain.handle(
-  'checkHyperPlayAccessCode',
+  'checkNovaPlayAccessCode',
   async (_e, licenseConfigId: number, accessCode: string) => {
-    return HyperPlayGameManager.validateAccessCode({
+    return NovaPlayGameManager.validateAccessCode({
       accessCode,
       licenseConfigId
     })
@@ -2015,7 +2015,7 @@ backendEvents.on(
   }
 )
 
-ipcMain.on('openHyperplaySite', async () => openUrlOrFile(hyperplaySite))
+ipcMain.on('openHyperplaySite', async () => openUrlOrFile(novaplaySite))
 
 ipcMain.on('reloadApp', async () => {
   for (const win of BrowserWindow.getAllWindows()) {
@@ -2043,7 +2043,7 @@ ipcMain.handle('unhideGame', async (_e, gameId) => {
   const hiddenGames = configStore.get('games.hidden', [])
   const newHiddenGames = hiddenGames.filter(({ appName }) => appName !== gameId)
   configStore.set('games.hidden', newHiddenGames)
-  sendFrontendMessage('refreshLibrary', 'hyperplay')
+  sendFrontendMessage('refreshLibrary', 'novaplay')
 })
 
 function watchLibraryChanges() {
@@ -2053,7 +2053,7 @@ function watchLibraryChanges() {
   )
   hpLibraryStore.onDidChange('games', (newValue) => {
     for (const win of BrowserWindow.getAllWindows()) {
-      win.webContents.send('onLibraryChanged', 'hyperplay', newValue)
+      win.webContents.send('onLibraryChanged', 'novaplay', newValue)
     }
   })
 }
@@ -2082,8 +2082,8 @@ ipcMain.on('toggleOverlay', async () => {
   hpOverlay?.toggleOverlay()
 })
 
-ipcMain.handle('getHyperPlayListings', async () => {
-  const listingsMap = await getHyperPlayReleaseObject()
+ipcMain.handle('getNovaPlayListings', async () => {
+  const listingsMap = await getNovaPlayReleaseObject()
   return JSON.parse(JSON.stringify(listingsMap))
 })
 /*
@@ -2092,4 +2092,4 @@ ipcMain.handle('getHyperPlayListings', async () => {
 
 import './storeManagers/legendary/eos_overlay/ipc_handler'
 import { initExtension } from './extension/importer'
-import { hpApi } from './utils/hyperplay_api'
+import { hpApi } from './utils/novaplay_api'
