@@ -316,11 +316,11 @@ async function addNonSteamGame(props: {
 
     const { runner, app_name } = props.gameInfo
 
-    args.push(`"hyperplay://launch/${runner}/${app_name}"`)
+    args.push(`"novaplay://launch/${runner}/${app_name}"`)
 
     newEntry.LaunchOptions = args.join(' ')
     if (isFlatpak) {
-      newEntry.LaunchOptions = `run gg.hyperplay.hp ${newEntry.LaunchOptions}`
+      newEntry.LaunchOptions = `run gg.novaplay.hp ${newEntry.LaunchOptions}`
     }
     newEntry.IsHidden = false
     newEntry.AllowDesktopConfig = true
