@@ -16,15 +16,15 @@ test.describe('api e2e test', function () {
   // let page: Page
   test('renders the first page', async () => {
     const title = await page.title()
-    expect(title).toBe('HyperPlay')
+    expect(title).toBe('NovaPlay')
   })
 
   test('gets app, legendary, and gog versions', async () => {
     const appVersion = await page.evaluate(async () => {
       return window.api.getAppVersion()
     })
-    console.log('HyperPlay Version: ', appVersion)
-    // check that hyperplay version is newer or equal to 0.2.0
+    console.log('NovaPlay Version: ', appVersion)
+    // check that novaplay version is newer or equal to 0.2.0
     expect(compareVersions(appVersion, '0.2.0')).toBeGreaterThanOrEqual(0)
 
     let legendaryVersion = await page.evaluate(async () => {
