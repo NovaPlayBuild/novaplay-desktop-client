@@ -13,7 +13,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faSyncAlt } from '@fortawesome/free-solid-svg-icons'
 import { WineVersionInfo, Type, WineManagerUISettings } from 'common/types'
 import libraryState from 'frontend/state/libraryState'
-import { Tabs } from '@hyperplay/ui'
+import { Tabs } from '@novaplay/ui'
 
 const WineItem = lazy(
   async () => import('frontend/screens/WineManager/components/WineItem')
