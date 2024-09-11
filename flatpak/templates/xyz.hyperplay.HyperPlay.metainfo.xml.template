@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <component type="desktop-application">
 	<id>
-		xyz.hyperplay.HyperPlay
+		xyz.novaplay.NovaPlay
 	</id>
 	<name>
-		HyperPlay
+		NovaPlay
 	</name>
 	<summary>
 		Web3 game launcher from the future. Carry your wallet, NFTs, tokens, and achievements into every game.
 	</summary>
 	<url type="homepage">
-		https://hyperplay.xyz
+		https://novaplay.xyz
 	</url>
 	<url type="bugtracker">
-		https://github.com/HyperPlay-Gaming/hyperplay-desktop-client/issues
+		https://github.com/NovaPlay-Gaming/novaplay-desktop-client/issues
 	</url>
 	<url type="vcs-browser">
-		https://github.com/HyperPlay-Gaming/hyperplay-desktop-client
+		https://github.com/NovaPlay-Gaming/novaplay-desktop-client
 	</url>
 	<metadata_license>
 		CC0-1.0
@@ -29,7 +29,7 @@
 			A web3- compatible game launcher from the future. Carry your wallet, NFTs, tokens, and achievements into every game.
 		</p>
 		<p>
-			HyperPlay allows players to carry their MetaMask or WalletConnect wallet to native or browser based games. Games can request transactions or signatures with a simple REST API call that supports every wallet to manage wallet interactions seamlessly.
+			NovaPlay allows players to carry their MetaMask or WalletConnect wallet to native or browser based games. Games can request transactions or signatures with a simple REST API call that supports every wallet to manage wallet interactions seamlessly.
 		</p>
 		<p>
 			You can also access your Epic and GOG games and play them using Proton or Wine which can be downloaded directly from the interface. DXVK, VKD3D, and Winetricks are also included to play Windows Games.
@@ -67,7 +67,7 @@
 		</content_attribute>
 	</content_rating>
 	<launchable type="desktop-id">
-		xyz.hyperplay.HyperPlay.desktop
+		xyz.novaplay.NovaPlay.desktop
 	</launchable>
 	<screenshots>
 		<screenshot type="default">
@@ -96,7 +96,7 @@
 		</screenshot>
 	</screenshots>
 	<releases>
-		<release version="${hyperplay-version}" date="${hyperplay-release-date}">
+		<release version="${novaplay-version}" date="${novaplay-release-date}">
 			<description>
 				<p>
 					General
