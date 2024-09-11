@@ -9,10 +9,10 @@ import { getHpOverlay } from 'backend/overlay'
 
 async function init() {
   try {
-    const providers = await import('@hyperplay/providers')
+    const providers = await import('@novaplay/providers')
     providers.initBackendEvents(backendEvents, trackEvent)
   } catch (err) {
-    logError(`Error initializing providers ${err}`, LogPrefix.HyperPlay)
+    logError(`Error initializing providers ${err}`, LogPrefix.NovaPlay)
   }
 }
 
@@ -25,7 +25,7 @@ ipcMain?.handle(
     providerSelection: PROVIDERS,
     isBootstrapping = false
   ): Promise<string> {
-    const extensionProvider = await import('@hyperplay/extension-provider')
+    const extensionProvider = await import('@novaplay/extension-provider')
     const hpOverlay = await getHpOverlay()
     /* eslint-disable-next-line @typescript-eslint/no-explicit-any */
     const api: any = {
@@ -35,13 +35,13 @@ ipcMain?.handle(
       logInfo,
       extensionProvider: extensionProvider.extensionProvider
     }
-    const providers = await import('@hyperplay/providers')
+    const providers = await import('@novaplay/providers')
     const baseUri = await providers.getConnectionUri(
       providerSelection,
       isBootstrapping,
       api
     )
-    const proxyServer = await import('@hyperplay/proxy-server')
+    const proxyServer = await import('@novaplay/proxy-server')
     proxyServer.setProvider(providers.provider)
     return baseUri
   }
@@ -70,7 +70,7 @@ ipcMain.on('enableOnEvents', (ev, topic) => {
 // so we catch and return the error object, then check and rethrow in preload
 ipcMain.handle('providerRequest', async (ev, args) => {
   try {
-    const providers = await import('@hyperplay/providers')
+    const providers = await import('@novaplay/providers')
     // this will actually call request on the wrapped EIP1193 provider, not the deprecated send method
     const result = await providers.provider.send(
       args.method,
@@ -83,7 +83,7 @@ ipcMain.handle('providerRequest', async (ev, args) => {
 })
 
 ipcMain.handle('sendRequest', async (ev, args: unknown[]) => {
-  const providers = await import('@hyperplay/providers')
+  const providers = await import('@novaplay/providers')
   // this will actually call request on the wrapped EIP1193 provider, not the deprecated send method
   const [method, ...rest] = args
   const result = await providers.provider.send(method as string, rest)
@@ -94,7 +94,7 @@ ipcMain.handle(
   'sendAsyncRequest',
   /* eslint-disable-next-line */
   async (ev, payload: any, callback: JsonRpcCallback) => {
-    const providers = await import('@hyperplay/providers')
+    const providers = await import('@novaplay/providers')
     const result = await providers.provider.send(
       payload.method,
       payload.params !== undefined ? payload.params : []
@@ -105,12 +105,12 @@ ipcMain.handle(
 )
 
 ipcMain.on('copyWalletConnectBaseURIToClipboard', async () => {
-  const providers = await import('@hyperplay/providers')
+  const providers = await import('@novaplay/providers')
   if (providers.baseUri) clipboard.writeText(providers.baseUri)
 })
 
 ipcMain.handle('getConnectedProvider', async () => {
-  const providers = await import('@hyperplay/providers')
+  const providers = await import('@novaplay/providers')
   return providers.connectedProvider
 })
 
@@ -119,6 +119,6 @@ ipcMain.handle('getCurrentWeb3Provider', async () => {
 })
 
 ipcMain.handle('callOrSendContract', async (e, ...args) => {
-  const proxyServer = await import('@hyperplay/proxy-server')
+  const proxyServer = await import('@novaplay/proxy-server')
   return proxyServer.callOrSendContract(...args)
 })
