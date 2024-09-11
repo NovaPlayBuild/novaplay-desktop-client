@@ -90,7 +90,7 @@ export default React.memo(function InstallModal({
     listingMarketplaceUrl = gameInfo.networks[0].marketplace_urls[0]
   }
   const hpPlatforms = Object.keys(channelPlatforms) as AppPlatforms[]
-  const isHpGame = runner === 'hyperplay'
+  const isHpGame = runner === 'novaplay'
 
   const isLinuxNative = isHpGame
     ? hpPlatforms.some((p) => getPlatformName(p) === 'Linux')
@@ -185,7 +185,7 @@ export default React.memo(function InstallModal({
   useEffect(() => {
     async function validateAccessCode() {
       if (selectedChannel?.channel_id !== undefined) {
-        const result = await window.api.checkHyperPlayAccessCode(
+        const result = await window.api.checkNovaPlayAccessCode(
           selectedChannel?.license_config.id,
           accessCode
         )
@@ -196,7 +196,7 @@ export default React.memo(function InstallModal({
           setErrorText('')
           setSuccessText(
             t(
-              'hyperplay.accesscodes.success.validation',
+              'novaplay.accesscodes.success.validation',
               'Success! Access code is valid'
             )
           )
@@ -204,7 +204,7 @@ export default React.memo(function InstallModal({
           setSuccessText('')
           setErrorText(
             t(
-              'hyperplay.accesscodes.error.validation',
+              'novaplay.accesscodes.error.validation',
               'Access code is invalid'
             )
           )
@@ -259,14 +259,14 @@ export default React.memo(function InstallModal({
               platformToInstall={platformToInstall}
               setPlatformToInstall={setPlatformToInstall}
             />
-            {runner === 'hyperplay' && numberOfChannels > 1 ? (
+            {runner === 'novaplay' && numberOfChannels > 1 ? (
               <ChannelNameSelection
                 channelNameToInstall={channelNameToInstall}
                 setChannelNameToInstall={setChannelNameToInstall}
                 gameInfo={gameInfo}
               />
             ) : null}
-            {runner === 'hyperplay' && channelRequiresAccessCode ? (
+            {runner === 'novaplay' && channelRequiresAccessCode ? (
               <TextInputField
                 placeholder={'Enter access code'}
                 value={accessCode}
