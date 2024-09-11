@@ -77,7 +77,7 @@ function LogSettings() {
   const [logFileContent, setLogFileContent] = useState<string>('')
   const [logFileExist, setLogFileExist] = useState<boolean>(false)
   const [showLogOf, setShowLogOf] = useState<string>(
-    appName === 'default' ? 'hyperplay' : appName
+    appName === 'default' ? 'novaplay' : appName
   )
   const [refreshing, setRefreshing] = useState<boolean>(true)
   const [copiedLog, setCopiedLog] = useState<boolean>(false)
@@ -132,7 +132,7 @@ function LogSettings() {
       <p className="report-problem-instructions">
         {t(
           'setting.log.instructions-part-01',
-          "If you encounter any issues while using HyperPlay, we have two designated areas to report your issues in our Discord Server. If you're a player, please report any problems by visiting the player-support-forum. If you are a game dev, please report any problems by visiting the dev-support-forum."
+          "If you encounter any issues while using NovaPlay, we have two designated areas to report your issues in our Discord Server. If you're a player, please report any problems by visiting the player-support-forum. If you are a game dev, please report any problems by visiting the dev-support-forum."
         )}{' '}
         <br />
         <br />
@@ -144,7 +144,7 @@ function LogSettings() {
       <div className="logs-wrapper">
         <span className="log-buttongroup">
           {[
-            ['HyperPlay', 'hyperplay'],
+            ['NovaPlay', 'novaplay'],
             ['Epic/Legendary', 'legendary'],
             ['GOG', 'gogdl']
           ].map((log) => {
@@ -240,7 +240,7 @@ function LogSettings() {
           </a>
           <a
             onClick={handleDiscordLink}
-            title={t('setting.log.join-hyperplay-discord', 'Join our Discord')}
+            title={t('setting.log.join-novaplay-discord', 'Join our Discord')}
             className="button is-footer"
           >
             <div className="button-icontext-flex">
@@ -248,7 +248,7 @@ function LogSettings() {
                 <FontAwesomeIcon icon={faDiscord} />
               </div>
               <span className="button-icon-text">
-                {t('setting.log.join-hyperplay-discord', 'Join our Discord')}
+                {t('setting.log.join-novaplay-discord', 'Join our Discord')}
               </span>
             </div>
           </a>
