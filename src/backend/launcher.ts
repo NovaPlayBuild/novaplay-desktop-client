@@ -297,7 +297,7 @@ function setupEnvVars(gameSettings: GameSettings) {
 /**
  * Maps Wine-related settings to environment variables
  * @param gameSettings The GameSettings to get the environment variables for
- * @param gameId If Proton and the Steam Runtime are used, the SteamGameId variable will be set to `hyperplay-gameId`
+ * @param gameId If Proton and the Steam Runtime are used, the SteamGameId variable will be set to `novaplay-gameId`
  * @returns A Record that can be passed to execAsync/spawn
  */
 function setupWineEnvVars(
@@ -415,7 +415,7 @@ function setupWineEnvVars(
     ret.STEAM_COMPAT_APP_ID = '0'
     ret.SteamAppId = ret.STEAM_COMPAT_APP_ID
     // This sets the name of the log file given when setting PROTON_LOG=1
-    ret.SteamGameId = `hyperplay-${gameId}`
+    ret.SteamGameId = `novaplay-${gameId}`
     ret.PROTON_LOG_DIR = flatPakHome
 
     // Only set WINEDEBUG if PROTON_LOG is set since Proton will also log if just WINEDEBUG is set
@@ -934,7 +934,7 @@ async function callRunner(
       try {
         if (shouldOpenOverlay) hpOverlay?.closeOverlay()
       } catch (err) {
-        logError(`Error closing overlay: ${err}`, LogPrefix.HyperPlay)
+        logError(`Error closing overlay: ${err}`, LogPrefix.NovaPlay)
       }
       errorHandler({
         error: `${stdout.join().concat(stderr.join())}`,
