@@ -24,7 +24,7 @@ import WineManager from '../WineManager'
 import AccountSettings from './sections/AccountSettings'
 import { observer } from 'mobx-react-lite'
 import DeviceState from 'frontend/state/DeviceState'
-import { Tabs, getTabsClassNames } from '@hyperplay/ui'
+import { Tabs, getTabsClassNames } from '@novaplay/ui'
 import { useFlags } from 'launchdarkly-react-client-sdk'
 
 export const defaultWineVersion: WineInstallation = {
