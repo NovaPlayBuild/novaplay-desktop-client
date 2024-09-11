@@ -38,7 +38,7 @@
                 "generic": "שגיאה ארעה! נסו לצאת ולהכנס שוב לחשבון הEpic שלכם. {{newline}}  {{error}}"
             },
             "ubisoft-connect": {
-                "message": "התקנת Ubisoft Connect בתוך הprefix של המשחק הזה נכשלה. בדקו את עמוד הוויקי שלנו בhttps://github.com/HyperPlay-Games-Launcher/HyperPlayGamesLauncher/wiki/How-to-install-Ubisoft-Connect-on-Linux-and-Mac על מנת להתקין את זה ידנית.",
+                "message": "התקנת Ubisoft Connect בתוך הprefix של המשחק הזה נכשלה. בדקו את עמוד הוויקי שלנו בhttps://github.com/NovaPlay-Games-Launcher/NovaPlayGamesLauncher/wiki/How-to-install-Ubisoft-Connect-on-Linux-and-Mac על מנת להתקין את זה ידנית.",
                 "title": "Ubisoft Connect"
             },
             "title": "שגיאה",
@@ -63,8 +63,8 @@
         },
         "yes": "כן",
         "cache-cleared": {
-            "message": "המטמון של HyperPlay נמחק.",
-            "title": "המטמון של HyperPlay נמחק"
+            "message": "המטמון של NovaPlay נמחק.",
+            "title": "המטמון של NovaPlay נמחק"
         },
         "warning": {
             "epic": {
@@ -87,7 +87,7 @@
             "title": "אזהרה",
             "rosetta": {
                 "title": "רוזטה לא נמצאה",
-                "message": "HyperPlay דורש רוזטה לרוץ נכון על macOS עם Apple Silicon השבבים. אנא להתקין אותו מטרמינל macOS באמצעות הפקודה הבאה: \"עדכון - התקנה מחדש\" ו- HyperPlay מחדש. "
+                "message": "NovaPlay דורש רוזטה לרוץ נכון על macOS עם Apple Silicon השבבים. אנא להתקין אותו מטרמינל macOS באמצעות הפקודה הבאה: \"עדכון - התקנה מחדש\" ו- NovaPlay מחדש. "
             }
         },
         "wineprefix": "בחרו תיקיית wine prefix",
@@ -109,10 +109,10 @@
                 "message": "קישורים להורדה ל- Visual C++ Runtimes נפתחו. נא להתקין את הגרסאות x86 ו- x64."
             }
         },
-        "reset-hyperplay": {
+        "reset-novaplay": {
             "question": {
-                "message": "האם אתה בטוח שברצונך לאפס את HyperPlay? פעולה זו תסיר את כל ההגדרות והמטמון, אך לא תסיר את המשחקים המותקנים שלך או את האישורים של Epic. גרסאות ניידות (AppImage, WinPortable,...) של HyperPlay צריכות להיות מופעלות מחדש באופן ידני לאחר מכן.",
-                "title": "איפוס HyperPlay"
+                "message": "האם אתה בטוח שברצונך לאפס את NovaPlay? פעולה זו תסיר את כל ההגדרות והמטמון, אך לא תסיר את המשחקים המותקנים שלך או את האישורים של Epic. גרסאות ניידות (AppImage, WinPortable,...) של NovaPlay צריכות להיות מופעלות מחדש באופן ידני לאחר מכן.",
+                "title": "איפוס NovaPlay"
             }
         },
         "protocol": {
@@ -127,9 +127,9 @@
                 "message": "יש גרסה חדשה זמינה!",
                 "changelog": "פתח רשימת שינויים",
                 "detail": "אתם רוצים להוריד את האפדייט ברקע?",
-                "message-finished": "רוצים לפתוח מחדש את HyperPlay עכשיו?",
-                "appUpdated": "HyperPlay עודכן",
-                "appUpdated-message": "HyperPlay עודכן. רוצים לעדכן ולהפעיל מחדש את HyperPlay עכשיו?"
+                "message-finished": "רוצים לפתוח מחדש את NovaPlay עכשיו?",
+                "appUpdated": "NovaPlay עודכן",
+                "appUpdated-message": "NovaPlay עודכן. רוצים לעדכן ולהפעיל מחדש את NovaPlay עכשיו?"
             }
         },
         "ok": "בסדר",
@@ -151,8 +151,8 @@
         },
         "reset-app": {
             "question": {
-                "title": "אפס את HyperPlay",
-                "message": "אתה בטוח שאתה רוצה לשחזר את HyperPlay? זה יסיר את כל ההגדרות ואת Caching אבל לא יסיר את המשחקים המותקנים שלך או את האישורים Epic שלך. גרסאות מותאמות (AppImage, WinPortable, ...) של HyperPlay צריך להתחיל מחדש באופן ידני לאחר מכן."
+                "title": "אפס את NovaPlay",
+                "message": "אתה בטוח שאתה רוצה לשחזר את NovaPlay? זה יסיר את כל ההגדרות ואת Caching אבל לא יסיר את המשחקים המותקנים שלך או את האישורים Epic שלך. גרסאות מותאמות (AppImage, WinPortable, ...) של NovaPlay צריך להתחיל מחדש באופן ידני לאחר מכן."
             }
         },
         "reset-extension": {
@@ -233,11 +233,11 @@
     },
     "info": {
         "version": "גרסת Wine",
-        "hyperplay": {
+        "novaplay": {
             "beta": "בטה",
             "newReleases": "עדכון זמין!",
             "stable": "יציב",
-            "version": "גרסת HyperPlay",
+            "version": "גרסת NovaPlay",
             "click-to-see-changelog": "לחצו כדי לראות רשימת שינויים"
         },
         "save-sync": {
@@ -309,7 +309,7 @@
         },
         "moved": "המעבר הסתיים",
         "moving": "מזיז את המשחק",
-        "new-hyperplay-version": "גרסה חדשה של HyperPlay הושקה!",
+        "new-novaplay-version": "גרסה חדשה של NovaPlay הושקה!",
         "refresh": {
             "error": "לא ניתן היה למצוא את רשימת הגרסאות ממעלה הזרם, אולי בגלל הגבלות של ה- Github API! נסו שוב מאוחר יותר."
         }
@@ -363,7 +363,7 @@
         "customWineProton": "מיקומי Wine/Proton מותאמים אישית",
         "darktray": "השתמש בtray icon כהה",
         "defaultWinePrefix": "הגדירו תיקיה עבור prefixים של Wine חדשים",
-        "disable_controller": "בטל ניווט של HyperPlay באמצעות קונטרולר",
+        "disable_controller": "בטל ניווט של NovaPlay באמצעות קונטרולר",
         "discordRPC": "הפעל Discord Rich Presence",
         "download-no-https": "הורד משחקים ללא HTTPS (שימושי עבור CDNים למשל LanCache)",
         "dxvkfpslimit": "הגבל קצב פריימים (FPS) (DX9, 10, ו-11)",
@@ -385,9 +385,9 @@
             "instructions": "הצטרפו לדיסקורד שלנו וחפשו את החלק בשם \"#-support\". קראו את ההודעה המוצמדת \"Read Me First | Frequently Asked Questions\" ופעלו לפי ההוראות כדי לשתף את הלוגים הללו וכל מידע רלוונטי על הבעיה שלכם.",
             "no-file": "לא נמצא קובץ לוג",
             "show-in-folder": "הצגת קובץ הלוג בתוך התיקייה שלה",
-            "instructions-part-01": "אם אתה נתקל בכל בעיה תוך שימוש ב- HyperPlay, יש לנו שני תחומים ייעודיים לדווח על הבעיות שלך ב-Autord Server שלנו. אם אתה שחקן, נא לדווח על בעיות על ידי ביקור ב-Forum. אם אתה משחק dev, נא לדווח על בעיות על ידי ביקור ב- dev-support-forum.",
+            "instructions-part-01": "אם אתה נתקל בכל בעיה תוך שימוש ב- NovaPlay, יש לנו שני תחומים ייעודיים לדווח על הבעיות שלך ב-Autord Server שלנו. אם אתה שחקן, נא לדווח על בעיות על ידי ביקור ב-Forum. אם אתה משחק dev, נא לדווח על בעיות על ידי ביקור ב- dev-support-forum.",
             "instructions-part-02": "כדי לעזור לנו לאבחן ולתקן את הבעיה במהירות האפשרית, אנא לספק כמה שיותר מידע, כולל עותק של יומניך. צוות התמיכה שלנו יעקוב אחר שני הערוצים ויעשה כמיטב יכולתם להגיב לסוגיה במהירות האפשרית. תודה על הסבלנות וההבנה שלך, בעוד אנו פועלים לפתור בעיות שעשויות להיתקל בהן.",
-            "join-hyperplay-discord": "הצטרפו ל-Distord"
+            "join-novaplay-discord": "הצטרפו ל-Distord"
         },
         "mangohud": "הפעל Mangohud (צריכה להיות התקנה של Mangohud)",
         "manualsync": {
@@ -431,20 +431,20 @@
         "autodxvknvapi": "התקן או עדכן DXVK-NVAPI בprefix אוטומטית",
         "change-target-exe": "בחרו EXE חלופי להרצה",
         "autoUpdateGames": "עדכן משחקים אוטומטית",
-        "checkForUpdatesOnStartup": "בדוק לעדכונים לHyperPlay בעת פתיחת התוכנה",
+        "checkForUpdatesOnStartup": "בדוק לעדכונים לNovaPlay בעת פתיחת התוכנה",
         "crossover-version": "גרסת Crossover/Wine",
         "default-install-path": "נתיב התקנה ברירת מחדל",
         "default-steam-path": "נתיב Steam ברירת מחדל",
         "disable_logs": "בטל לוגים",
         "gamemode": "להשתמש בGameMode (צריכה להיות התקנה של Feral Game Mode)",
-        "minimize-on-launch": "צמצם את HyperPlay לאחר הפעלת המשחק",
+        "minimize-on-launch": "צמצם את NovaPlay לאחר הפעלת המשחק",
         "showfps": "הצג FPS (קצב פריימים) (DX9, 10, ו-11)",
         "start-in-tray": "התחל מצומצם",
         "steamruntime": "השתמש בSteam Runtime",
         "winecrossoverbottle": "CrossOver Bottle",
         "wineprefix": "תיקיית WinePrefix",
         "msync": "הפעל Esync",
-        "autoLaunchHyperPlay": "Auto Launch Hyper Play Play",
+        "autoLaunchNovaPlay": "Auto Launch Hyper Play Play",
         "steamId": "Steam ID"
     },
     "status": {
@@ -509,11 +509,11 @@
         "sync": {
             "part3": "סנכרון ידני: בחרו \"הורד\" כדי להוריד את השמירות של המשחקים שנשמרים בענן. בחרו \"העלה\" על מנת להעלות את האלה הלוקאליים לענן. \"אלץ הורדה\" ו\"אלץ העלאה\" יתעלמו מהגרסה הלוקאלית או זאת שבענן בהתאמה.",
             "part4": "\"סנכרן שמירות\" אוטומטית יסנכרן את השמירות כל פעם שתתחילו ותסגרו משחק.",
-            "part1": "HyperPlay מנסה לנחש את תיקיית השמירה הנכונה, זה יעבוד ברוב המקרים. במקרים שבהם התיקייה שגויה, השתמשו בתיבת הoverride כדי לשנות אותה.",
-            "part2": "במקרה שתשנו את תיקיית הprefix עבור Wine או Proton, תצטרכו לבדוק שוב את הנתיב מכיוון ש-Proton משתמש בprefix שונה (/pfx) ובשם משתמש (steamuser) שונה. אז אתם יכולים פשוט למחוק את הנתיב הנוכחי לצאת מדף הגדרות הסנכרון ולחזור שוב כדי ש-HyperPlay ינחש את התיקייה פעם נוספת עם הprefix הנכונה."
+            "part1": "NovaPlay מנסה לנחש את תיקיית השמירה הנכונה, זה יעבוד ברוב המקרים. במקרים שבהם התיקייה שגויה, השתמשו בתיבת הoverride כדי לשנות אותה.",
+            "part2": "במקרה שתשנו את תיקיית הprefix עבור Wine או Proton, תצטרכו לבדוק שוב את הנתיב מכיוון ש-Proton משתמש בprefix שונה (/pfx) ובשם משתמש (steamuser) שונה. אז אתם יכולים פשוט למחוק את הנתיב הנוכחי לצאת מדף הגדרות הסנכרון ולחזור שוב כדי ש-NovaPlay ינחש את התיקייה פעם נוספת עם הprefix הנכונה."
         },
         "wine": {
-            "part1": "HyperPlay מחפש גרסאות של Wine, Proton, ו-CrossOver בתיקיות הבאות:",
+            "part1": "NovaPlay מחפש גרסאות של Wine, Proton, ו-CrossOver בתיקיות הבאות:",
             "part2": "בשביל מקומות אחרים, השתמשו בsymbolic link לאחד מהתיקיות האלה"
         },
         "custom_themes_wiki": "בדקו את הויקי לפרטים נוספים על הוספת ערכות נושא מותאמים אישית. לחצו כאן.",
@@ -522,7 +522,7 @@
         "esync": "מטרת Esync היא להפחית את השימוש במעבד של winesever במשחקים הקשים על המעבד. הדלקה יכולה לשפר את הביצועים.",
         "fsync": "מטרת Fsync היא להפחית את השימוש במעבד של winesever במשחקים הקשים על המעבד. הדלקה יכולה לשפר את הביצועים על הקרנלים של לינוקס הנתמכים.",
         "game_language": {
-            "fallback": "השאירו ריק להשתמש בשפה של HyperPlay.",
+            "fallback": "השאירו ריק להשתמש בשפה של NovaPlay.",
             "in_game_config": "לא כל המשחקים תומכים בתצורה זו, לחלקם יש הגדרת שפה בתוך המשחק.",
             "valid_codes": "קודי שפה חוקיים תלויים במשחק."
         },
@@ -532,7 +532,7 @@
         "preferSystemLibs": "גרסאות Wine מותאמות אישית (Wine-GE, Wine-Lutris) באות עם הספריות שלהן. על ידי הפעלת אפשרות זו, wine יתעלם מהספריות הנשלחות הללו, ויטען ספריות מערכת במקום זאת. אזהרה! בעיות עלולות להתרחש אם הספריות שיש בהן תלות לא קיימות.",
         "primerun": "השתמשו בכרטיס גרפי (מאיץ גרפי) ייעודי כדי לרנדר את המשחק במערכות עם כמה כרטיסים גרפיים. נחוץ רק במחשבים ניידים למשחקים או במחשבים שולחניים המשתמשים ב-GPU ללא ראש לעיבוד (NVIDIA Optimus, AMD CrossFire)",
         "steam_path": {
-            "info": "המיקום הזה נותן לHyperPlay לקבוע באיזה גרסת Proton משתמשת Steam, על מנת להוסיף משחקים שאינם מSteam לSteam."
+            "info": "המיקום הזה נותן לNovaPlay לקבוע באיזה גרסת Proton משתמשת Steam, על מנת להוסיף משחקים שאינם מSteam לSteam."
         },
         "steamruntime": "ספריות מותאמות אישית המסופקות על ידי Steam כדי לסייע בהפעלת משחקי Linux ו-Windows (Proton). הפעלה עשויה לשפר את התאימות.",
         "vkd3d": "VKD3D הוא שכבת תרגום מבוססת Vulkan עבור משחקי DirectX 12. הפעלה יכולה לשפר תאימות באופן משמעותי. אין השפעה על משחקי DirectX ישנים יותר.",
@@ -579,7 +579,7 @@
         "gogdl-version": "גרסת GOGDL: ",
         "legendary-version": "גרסת Legendary: ",
         "nile-version": "גרסת Nile: ",
-        "weblate": "עזרו לתרגם את HyperPlay."
+        "weblate": "עזרו לתרגם את NovaPlay."
     },
     "placeholder": {
         "alt-gogdl-bin": "משתמש בגרסה המובנה של GOGDL...",
@@ -593,7 +593,7 @@
     "progress": "התקדמות",
     "search": "חיפוש משחקים",
     "settings": {
-        "clear-cache": "מחק מטמון של HyperPlay",
+        "clear-cache": "מחק מטמון של NovaPlay",
         "copyToClipboard": "העתק את כל ההגדרות",
         "default_hint": "שינויים בסעיף זה חלים רק כערכי ברירת מחדל בעת התקנת משחקים. אם אתם רוצים לשנות את ההגדרות של משחק שכבר מותקן, השתמשו בלחצן ההגדרות בדף המשחק.",
         "eacRuntime": {
@@ -624,7 +624,7 @@
             "systemInformation": "פרטי המ_ערכת"
         },
         "open-config-file": "פתח את קובץ התצורה",
-        "reset-hyperplay": "אפס את HyperPlay",
+        "reset-novaplay": "אפס את NovaPlay",
         "battlEyeRuntime": {
             "installing": "מתקין BattlEye Runtime...",
             "name": "BattlEye AntiCheat Runtime"
@@ -760,7 +760,7 @@
     "please-wait": "נא לחכות...",
     "prime-gaming": "Prime Gaming",
     "gog-store": "חנות GOG",
-    "hyperplay": {
+    "novaplay": {
         "turnAnalyticsOff": "לכבות",
         "browserImport": {
             "profile": "פרופיל",
@@ -787,7 +787,7 @@
                         "learnMore": "למד עוד",
                         "orWord": "או",
                         "useRecoveryPhrase": "תגית: Secret Recovery",
-                        "useRecoveryPhraseInfo": "תכונה זו מומלצת למשתמשים מתקדמים ומפתחים. ביטוי ההתאוששות הסודי שלך מאוחסן באופן מקומי ב- MetaMask ומעולם לא משותף עם HyperPlay.",
+                        "useRecoveryPhraseInfo": "תכונה זו מומלצת למשתמשים מתקדמים ומפתחים. ביטוי ההתאוששות הסודי שלך מאוחסן באופן מקומי ב- MetaMask ומעולם לא משותף עם NovaPlay.",
                         "createNewWallet": "יצירת ארנק MM",
                         "title": "בחר את הדפדפן כדי לייבא",
                         "details": "הדפדפנים הבאים כבר מותקנים MetaMask. בחר את זה שהיית רוצה לייבא ממנו.",
@@ -808,7 +808,7 @@
                         "createWalletCTA": "צור ארנק"
                     },
                     "scan": {
-                        "details": "צור ערוץ תקשורת מוצפן. המפתחות שלך לעולם לא יהיו משותפים עם HyperPlay.",
+                        "details": "צור ערוץ תקשורת מוצפן. המפתחות שלך לעולם לא יהיו משותפים עם NovaPlay.",
                         "dontHaveWallet": "אין ארנק?",
                         "title": "סורק QR עם ",
                         "updateWarning": "יש בעיות? ודא כי MetaMask הוא עד היום.",
@@ -819,24 +819,24 @@
                 "pleaseConnect": "נא לחבר את הארנק שלך, או להוריד את ה- Metamask Mobile-app כדי לקבל\nהתחיל:"
             },
             "analytics": {
-                "hyperplayWill": "HyperPlay:",
+                "novaplayWill": "NovaPlay:",
                 "neverSellData": " למכור נתונים למטרות רווח אי פעם!",
-                "body": "HyperPlay רוצה לאסוף נתוני שימוש כדי להבין טוב יותר כיצד המשתמשים שלנו אינטראקציה עם היישום. מידע זה עוזר לנו להבין איך אתה משתמש באפליקציה ומאפשר לנו להפוך את HyperPlay אפילו טוב יותר עבורך.",
+                "body": "NovaPlay רוצה לאסוף נתוני שימוש כדי להבין טוב יותר כיצד המשתמשים שלנו אינטראקציה עם היישום. מידע זה עוזר לנו להבין איך אתה משתמש באפליקציה ומאפשר לנו להפוך את NovaPlay אפילו טוב יותר עבורך.",
                 "privacyPolicyHere": "מדיניות הפרטיות כאן.",
                 "anonymized": "שלח אנונימיות לחץ משחק אינטראקציה;",
                 "optOut": "תמיד לאפשר לך לבטל באמצעות הגדרות;",
-                "title": "עזרו לנו לשפר את HyperPlay!",
+                "title": "עזרו לנו לשפר את NovaPlay!",
                 "neverCollectIP": " לאסוף את כתובת ה-IP המלאה שלך;",
                 "privacyCaption": "נתונים אלה נאספים ולכן הם אנונימיים לצרכים של כללי הגנת נתונים (EU) 2016/679. לקבלת מידע נוסף ביחס לשיטות הפרטיות שלנו, אנא ראה אותנו ",
                 "neverCollectPersonal": " לאסוף מפתחות, כתובות, מאזן, חיס או כל מידע אישי;"
             },
             "welcome": {
                 "text": {
-                    "construction": "HyperPlay נמצאת בבנייה.",
+                    "construction": "NovaPlay נמצאת בבנייה.",
                     "communityCTA_2": "קהילה. בואו נעצב את העתיד של המשחקים!",
-                    "bugs": "אנא שימו לב כי HyperPlay הוא אלפא ציבורי. תכונות רבות עדיין\nבפיתוח, ויהיו באגים.",
+                    "bugs": "אנא שימו לב כי NovaPlay הוא אלפא ציבורי. תכונות רבות עדיין\nבפיתוח, ויהיו באגים.",
                     "communityCTA_1": "אנחנו נשמח את המשוב שלכם והצטרפו אלינו",
-                    "description": "HyperPlay הוא משגר משחקים ו-Game Store aggregator מהמשחק\nעתיד. עם HyperPlay, אתה יכול לשאת את הארנק שלך, אסימונים ונכסים\nלכל משחק. HyperPlay תומך בכל הספרייה של Epic\nחנות, GOG וחנות ה- HyperPlay שלנו. באמצעות HyperPlay, אתה מסכים\nלנו"
+                    "description": "NovaPlay הוא משגר משחקים ו-Game Store aggregator מהמשחק\nעתיד. עם NovaPlay, אתה יכול לשאת את הארנק שלך, אסימונים ונכסים\nלכל משחק. NovaPlay תומך בכל הספרייה של Epic\nחנות, GOG וחנות ה- NovaPlay שלנו. באמצעות NovaPlay, אתה מסכים\nלנו"
                 },
                 "title": "ברוכים הבאים להיפר שחקו ב-Early Access!"
             },
@@ -883,7 +883,7 @@
             }
         },
         "linkSteamAccountCta": "עקבו אחרי Steam Sign In",
-        "linkSteamAccountDescription": "היכנס ל-Steam כדי לקשר את חשבון HyperPlay שלך.",
+        "linkSteamAccountDescription": "היכנס ל-Steam כדי לקשר את חשבון NovaPlay שלך.",
         "linkSteamAccountTitle": "קישור לחשבון Steam",
         "analyticsOff": "Analytics כבוי",
         "changeWallet": "חשבון הארנק",
@@ -960,7 +960,7 @@
         }
     },
     "profile": "פרופיל",
-    "hyperplayOverlay": {
+    "novaplayOverlay": {
         "walletWatch": {
             "FAILED": "בקשה אישית בוטלה",
             "CONFIRMED": "המונחים:",
@@ -977,8 +977,8 @@
             "DESCRIPTION": "[x6X] + X כדי לראות את העסקה"
         },
         "greeting": {
-            "title": "HyperPlay Overlay",
-            "description": "HyperPlay Overlay מוכן! [x34x] + X כדי להראות או להסתיר את זה."
+            "title": "NovaPlay Overlay",
+            "description": "NovaPlay Overlay מוכן! [x34x] + X כדי להראות או להסתיר את זה."
         },
         "chainRequest": {
             "CONFIRMED": "רשת Custom",
@@ -1017,14 +1017,14 @@
     },
     "importGameErrorMessage": "לא תיקיית משחק תקפה, משחק יבוא אינו אפשרי",
     "overlay": {
-        "EXTERNAL_WALLET_CONNECTED": "אתה מחובר ל- HyperPlay עם ארנק חיצוני.",
-        "WALLET_DISCONNECTED": "אין לכם ארנק המחובר ל- HyperPlay."
+        "EXTERNAL_WALLET_CONNECTED": "אתה מחובר ל- NovaPlay עם ארנק חיצוני.",
+        "WALLET_DISCONNECTED": "אין לכם ארנק המחובר ל- NovaPlay."
     },
     "quests": {
         "playstreak": {
             "signInWarning": {
-                "client": "אתה לא מחובר כרגע, לשחק התקדמות streak לא יהיה לעקוב. אנא הכנסו ל- HyperPlay דרך הירידה הימנית העליונה כדי לעקוב אחר ההתקדמות.",
-                "overlay": "אתה לא מחובר כרגע, לשחק התקדמות streak לא יהיה לעקוב. אנא צא מהמשחק והכניסה ל- HyperPlay דרך הירידה הימנית העליונה כדי לעקוב אחר ההתקדמות."
+                "client": "אתה לא מחובר כרגע, לשחק התקדמות streak לא יהיה לעקוב. אנא הכנסו ל- NovaPlay דרך הירידה הימנית העליונה כדי לעקוב אחר ההתקדמות.",
+                "overlay": "אתה לא מחובר כרגע, לשחק התקדמות streak לא יהיה לעקוב. אנא צא מהמשחק והכניסה ל- NovaPlay דרך הירידה הימנית העליונה כדי לעקוב אחר ההתקדמות."
             }
         },
         "quests": "תוצאות חיפוש",
@@ -1034,7 +1034,7 @@
         },
         "g7CreditsModal": {
             "title": "10 נקודות זיכוי",
-            "description": "עקבו אחרי HyperPlay's Greatest Play Streak Challenges כל פעילות מעודדת אותך לעסוק במשחק אחר, להראות את הטוב ביותר של משחקי Web3. זמן המשחק שלך חשוב!"
+            "description": "עקבו אחרי NovaPlay's Greatest Play Streak Challenges כל פעילות מעודדת אותך לעסוק במשחק אחר, להראות את הטוב ביותר של משחקי Web3. זמן המשחק שלך חשוב!"
         }
     },
     "importGameErrorMessageExecutable": "משחק Game Game לוח לא נמצא, משחק יבוא אינו אפשרי",
