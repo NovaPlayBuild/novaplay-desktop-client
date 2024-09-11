@@ -78,7 +78,7 @@ export const launchApp = async () => {
     async function getPageTitle(page_i: Page) {
       try {
         const title = await withTimeout(15000, page_i.title())
-        if (title === 'HyperPlay' && page_i.url().includes('?view=App')) {
+        if (title === 'NovaPlay' && page_i.url().includes('?view=App')) {
           res(page_i)
           return true
         }
@@ -109,7 +109,7 @@ export const launchApp = async () => {
     }
   })
 
-  console.log('Waiting for HyperPlay window to open...')
+  console.log('Waiting for NovaPlay window to open...')
   hpPage = await hpPagePromise
   console.log('Waiting for electron app to be ready...')
   await electronApp.evaluate(async ({ app }) => {
@@ -120,7 +120,7 @@ export const launchApp = async () => {
 
 async function launchMockBackend() {
   try {
-    const mockBackend = await import('@hyperplay/mock-backend')
+    const mockBackend = await import('@novaplay/mock-backend')
     await mockBackend.connectedPromise
   } catch (err) {
     console.error(`Error launching mock backend for e2e test setup ${err}`)
