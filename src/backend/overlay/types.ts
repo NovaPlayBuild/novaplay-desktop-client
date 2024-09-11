@@ -1,5 +1,5 @@
-import { ToastKey } from '@hyperplay/utils'
-import { TransactionToastProps } from '@hyperplay/ui'
+import { ToastKey } from '@novaplay/utils'
+import { TransactionToastProps } from '@novaplay/ui'
 
 export interface Toast extends TransactionToastProps {
   isOpen: boolean
