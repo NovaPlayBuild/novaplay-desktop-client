@@ -30,12 +30,12 @@ export default observer(function StoreFilter() {
         </button>
         <button
           className={classNames('FormControl__button', {
-            active: category === 'hyperplay'
+            active: category === 'novaplay'
           })}
-          title={'HyperPlay'}
-          onClick={() => handleCategory('hyperplay')}
+          title={'NovaPlay'}
+          onClick={() => handleCategory('novaplay')}
         >
-          {t('HyperPlay')}
+          {t('NovaPlay')}
         </button>
         {isEpicLoggedin && (
           <button
