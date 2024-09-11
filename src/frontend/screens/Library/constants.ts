@@ -12,8 +12,8 @@ export function getLibraryTitle(
       return t('Epic Games', 'Epic Games')
     case 'gog':
       return t('GOG', 'GOG')
-    case 'hyperplay':
-      return 'HyperPlay'
+    case 'novaplay':
+      return 'NovaPlay'
     default:
       return t('Other', 'Other')
   }
@@ -51,16 +51,16 @@ export function getMessage(
   switch (status) {
     case 'distributables':
       return t(
-        'hyperplay.gamecard.distributables',
+        'novaplay.gamecard.distributables',
         'Installing Distributables...'
       )
     case 'extracting':
-      return t('hyperplay.gamecard.extracting', 'Extracting...')
+      return t('novaplay.gamecard.extracting', 'Extracting...')
     case 'paused':
-      return t('hyperplay.gamecard.paused', 'Paused')
+      return t('novaplay.gamecard.paused', 'Paused')
     case 'installing':
-      return t('hyperplay.gamecard.installing', 'Downloading...')
+      return t('novaplay.gamecard.installing', 'Downloading...')
     case 'installed':
-      return t('hyperplay.gamecard.installed', 'Ready to play')
+      return t('novaplay.gamecard.installed', 'Ready to play')
   }
 }
