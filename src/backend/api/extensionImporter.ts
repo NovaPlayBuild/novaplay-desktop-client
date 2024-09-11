@@ -1,5 +1,5 @@
 import { ipcRenderer } from 'electron'
-import { MetaMaskInitMethod, ImportableBrowser } from '@hyperplay/utils'
+import { MetaMaskInitMethod, ImportableBrowser } from '@novaplay/utils'
 import { MetamaskExtensionRequest } from 'common/types/proxy-types'
 import { WrapRendererCallback } from 'common/types'
 
