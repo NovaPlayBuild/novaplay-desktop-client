@@ -1,4 +1,4 @@
-import { wait } from '@hyperplay/utils'
+import { wait } from '@novaplay/utils'
 import { resetSessionStartedTime } from 'frontend/helpers/getPlaystreakArgsFromQuestData'
 import { useEffect } from 'react'
 
@@ -8,7 +8,7 @@ export function useSyncPlaySession(
 ) {
   useEffect(() => {
     const syncTimer = setInterval(async () => {
-      await window.api.syncPlaySession(projectId, 'hyperplay')
+      await window.api.syncPlaySession(projectId, 'novaplay')
       // allow for some time before read
       await wait(5000)
       await invalidateQuery()
