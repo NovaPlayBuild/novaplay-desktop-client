@@ -2,7 +2,7 @@
   "version": "0.2.0",
   "configurations": [
     {
-      "name": "Launch HyperPlay (HMR & HR)",
+      "name": "Launch NovaPlay (HMR & HR)",
       "type": "node",
       "request": "launch",
       "cwd": "${workspaceFolder}",
