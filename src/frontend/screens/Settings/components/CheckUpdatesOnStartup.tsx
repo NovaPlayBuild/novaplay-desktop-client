@@ -29,7 +29,7 @@ const CheckUpdatesOnStartup = () => {
       }
       title={t(
         'setting.checkForUpdatesOnStartup',
-        'Check for HyperPlay Updates on Startup'
+        'Check for NovaPlay Updates on Startup'
       )}
     />
   )
