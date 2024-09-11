@@ -26,7 +26,7 @@ autoUpdater.on('update-available', async (info) => {
   if (!isOnline() || !shouldCheckForUpdates) {
     return
   }
-  logInfo('A HyperPlay update is available, downloading it now')
+  logInfo('A NovaPlay update is available, downloading it now')
   logInfo(`Version: ${info.version}`)
   logInfo(`Release date: ${info.releaseDate}`)
   logInfo(`Release name: ${info.releaseName}`)
@@ -44,10 +44,10 @@ autoUpdater.on('download-progress', (progress) => {
 autoUpdater.on('update-downloaded', async () => {
   logInfo('App update is downloaded')
   const { response } = await dialog.showMessageBox({
-    title: t('box.info.update.appUpdated', 'HyperPlay was updated'),
+    title: t('box.info.update.appUpdated', 'NovaPlay was updated'),
     message: t(
       'box.info.update.appUpdated-message',
-      'HyperPlay was updated. Do you want to update and restart HyperPlay now?'
+      'NovaPlay was updated. Do you want to update and restart NovaPlay now?'
     ),
     buttons: [t('box.no'), t('box.yes')],
     icon: icon
@@ -67,7 +67,7 @@ autoUpdater.on('error', async (error) => {
     title: t('box.error.update.title', 'Error Updating'),
     message: t(
       'box.error.update.message',
-      `Something went wrong with the update after multiple attempts! Please manually uninstall and reinstall HyperPlay. error: ${JSON.stringify(
+      `Something went wrong with the update after multiple attempts! Please manually uninstall and reinstall NovaPlay. error: ${JSON.stringify(
         error
       )}`
     ),
@@ -76,6 +76,6 @@ autoUpdater.on('error', async (error) => {
   })
 
   if (response === 1) {
-    shell.openExternal('https://www.hyperplay.xyz/downloads')
+    shell.openExternal('https://www.novaplay.xyz/downloads')
   }
 })
