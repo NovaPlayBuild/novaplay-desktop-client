@@ -24,41 +24,6 @@
 - SteamOS (downloading using Discover only)
 - macOS 10.15 or higher
 
-## Installation
-
-### Linux
-
-#### Debian, Ubuntu and Derivatives
-
-Download the `novaplay.x.x.x_amd64.deb` from the Releases section
-
-```bash
-sudo dpkg -i novaplay.x.x.x_amd64.deb
-```
-
-#### Other Distributions (TAR.XZ)
-
-Since these two distribution formats don't have a form of dependency management, make sure the `curl` command is available. You might run into weird issues if it's not.
-
-For the tar.xz file, you need first to extract it somewhere, enter the folder and run:
-
-```bash
-chmod +x novaplay
-```
-
-To run it use:
-
-```bash
-./novaplay
-```
-
-### Windows
-
-Download NovaPlay_Setup.x.x.x.exe or the Portable NovaPlay-x.x.x.exe file and run it. It will install it to the start menu and desktop, use those to run it.
-
-### macOS
-
-Download NovaPlay-x.x.x.dmg and move the NovaPlay App to the Applications folder.
 
 ## Screenshots
 
