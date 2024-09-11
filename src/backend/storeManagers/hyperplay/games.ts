@@ -206,7 +206,7 @@ const getValidGameFolderPath = (
   return ''
 }
 
-type HyperPlayManifest = {
+type NovaPlayManifest = {
   manifest: InstalledInfo
 }
 
@@ -225,7 +225,7 @@ export async function importGame(
   if (!pathName) {
     logError(
       'Not a valid game folder, import not possible',
-      LogPrefix.HyperPlay
+      LogPrefix.NovaPlay
     )
 
     showDialogBoxModalAuto({
@@ -241,7 +241,7 @@ export async function importGame(
   }
 
   // read the json file and get the game info
-  const installInfo: HyperPlayManifest = JSON.parse(
+  const installInfo: NovaPlayManifest = JSON.parse(
     readFileSync(path.join(pathName, `${appName}.json`), 'utf8')
   )
 
@@ -252,7 +252,7 @@ export async function importGame(
   })
 
   if (gameInLibrary === undefined) {
-    logInfo('Cannot find game in library so cannot import', LogPrefix.HyperPlay)
+    logInfo('Cannot find game in library so cannot import', LogPrefix.NovaPlay)
     return { stderr: '', stdout: '' }
   }
 
@@ -267,7 +267,7 @@ export async function importGame(
   if (!platformData || !platformData.executable) {
     logError(
       `Platform data not found for ${appName} in importGame`,
-      LogPrefix.HyperPlay
+      LogPrefix.NovaPlay
     )
     return { stderr: '', stdout: '' }
   }
@@ -275,7 +275,7 @@ export async function importGame(
   const executable = path.join(pathName, mainExe)
 
   if (!existsSync(executable)) {
-    logError(`Executable ${executable} does not exist!`, LogPrefix.HyperPlay)
+    logError(`Executable ${executable} does not exist!`, LogPrefix.NovaPlay)
 
     showDialogBoxModalAuto({
       title: i18next.t('importGameErrorTitle', 'Import Game Error'),
@@ -343,7 +343,7 @@ const installDistributables = async ({ gamePath, appName }: DistArgs) => {
   sendFrontendMessage('gameStatusUpdate', {
     appName,
     status: 'distributables',
-    runner: 'hyperplay',
+    runner: 'novaplay',
     folder: gamePath
   })
 
@@ -357,10 +357,10 @@ const installDistributables = async ({ gamePath, appName }: DistArgs) => {
   }
 
   for await (const executable of executables) {
-    logInfo(`Installing distributable ${executable}`, LogPrefix.HyperPlay)
+    logInfo(`Installing distributable ${executable}`, LogPrefix.NovaPlay)
     // Not windows
     if (!isWindows && !isNative(appName)) {
-      return runWineCommandOnGame('hyperplay', appName, {
+      return runWineCommandOnGame('novaplay', appName, {
         commandParts: [executable, '/quiet'],
         protonVerb: 'run',
         startFolder: dirname(executable)
@@ -403,7 +403,7 @@ const findFolderAndExecutables = async (
 const findExecutables = async (folderPath: string): Promise<string[]> => {
   let executables: string[] = []
   const files = readdirSync(folderPath, { withFileTypes: true })
-  logInfo(`Searching for executables in ${folderPath}`, LogPrefix.HyperPlay)
+  logInfo(`Searching for executables in ${folderPath}`, LogPrefix.NovaPlay)
 
   for (const file of files) {
     if (file.isDirectory()) {
@@ -412,7 +412,7 @@ const findExecutables = async (folderPath: string): Promise<string[]> => {
       )
       executables = executables.concat(subFolderExecutables)
     } else if (file.name.endsWith('.exe')) {
-      logInfo(`Found distributable ${file.name}`, LogPrefix.HyperPlay)
+      logInfo(`Found distributable ${file.name}`, LogPrefix.NovaPlay)
       executables.push(path.join(folderPath, file.name))
     }
   }
@@ -466,7 +466,7 @@ async function downloadGame(
 
     logInfo(
       `Downloading zip file to directory ${directory} filename ${fileName}`,
-      LogPrefix.HyperPlay
+      LogPrefix.NovaPlay
     )
 
     // we might need a helper function to deal with the different platforms
@@ -482,7 +482,7 @@ async function downloadGame(
       throw `Download url is invalid. Value: ${downloadUrl}`
     }
 
-    logInfo(`Downloading from ${downloadUrl}`, LogPrefix.HyperPlay)
+    logInfo(`Downloading from ${downloadUrl}`, LogPrefix.NovaPlay)
 
     function handleProgess(
       downloadedBytes: number,
@@ -503,7 +503,7 @@ async function downloadGame(
         sendFrontendMessage('gameStatusUpdate', {
           appName,
           status: 'installing',
-          runner: 'hyperplay',
+          runner: 'novaplay',
           folder: destinationPath
         })
       }
@@ -511,7 +511,7 @@ async function downloadGame(
       window?.webContents.send(`progressUpdate-${appName}`, {
         appName,
         status: 'installing',
-        runner: 'hyperplay',
+        runner: 'novaplay',
         folder: destinationPath,
         progress: {
           folder: destinationPath,
@@ -642,8 +642,8 @@ async function getAccessCodeGatedPlatforms(
 
   //set platform info
   logInfo(
-    'Updating platform info with access code gated platform info in HyperPlay Game Manager',
-    LogPrefix.HyperPlay
+    'Updating platform info with access code gated platform info in NovaPlay Game Manager',
+    LogPrefix.NovaPlay
   )
   if (validateResult.platforms === undefined)
     throw 'Access code gated platforms returned by the validate url were undefined'
@@ -779,7 +779,7 @@ async function resumeIfPaused(
 export async function cancelExtraction(appName: string) {
   logInfo(
     `cancelExtraction: Extraction will be canceled and downloaded zip will be removed`,
-    LogPrefix.HyperPlay
+    LogPrefix.NovaPlay
   )
 
   try {
@@ -794,7 +794,7 @@ export async function cancelExtraction(appName: string) {
       `cancelExtraction: Error while canceling the operation ${
         (error as Error).message
       } `,
-      LogPrefix.HyperPlay
+      LogPrefix.NovaPlay
     )
   }
 }
@@ -896,7 +896,7 @@ export async function install(
       mkdirSync(dirpath, { recursive: true })
     }
 
-    logInfo(`Installing ${title} to ${dirpath}...`, LogPrefix.HyperPlay)
+    logInfo(`Installing ${title} to ${dirpath}...`, LogPrefix.NovaPlay)
     const zipPathInfo = getZipFileName(appName, platformInfo, destinationPath)
     directory = zipPathInfo.directory
     fileName = zipPathInfo.filename
@@ -909,7 +909,7 @@ export async function install(
     // Reset the download progress
     window.webContents.send(`progressUpdate-${appName}`, {
       appName,
-      runner: 'hyperplay',
+      runner: 'novaplay',
       folder: destinationPath,
       status: 'done',
       progress: {
@@ -937,7 +937,7 @@ export async function install(
     if (!platformInfo.executable) {
       return {
         status: 'error',
-        error: 'Executable not found during install in HyperPlay game manager'
+        error: 'Executable not found during install in NovaPlay game manager'
       }
     }
 
@@ -951,7 +951,7 @@ export async function install(
     })
 
     if (platformToInstall === 'Windows') {
-      logInfo(`Looking for  distributables for ${appName}`, LogPrefix.HyperPlay)
+      logInfo(`Looking for  distributables for ${appName}`, LogPrefix.NovaPlay)
       await installDistributables({
         gamePath: destinationPath,
         appName
@@ -963,7 +963,7 @@ export async function install(
 
     logInfo(
       `Error while downloading and extracting game: ${error}`,
-      LogPrefix.HyperPlay
+      LogPrefix.NovaPlay
     )
     if (!`${error}`.includes('Download stopped or paused')) {
       callAbortController(appName)
@@ -1020,7 +1020,7 @@ export async function extract(
     // Reset the download progress
     window.webContents.send(`progressUpdate-${appName}`, {
       appName,
-      runner: 'hyperplay',
+      runner: 'novaplay',
       folder: destinationPath,
       status: 'done',
       progress: {
@@ -1036,14 +1036,14 @@ export async function extract(
     if (!platformInfo.executable) {
       return {
         status: 'error',
-        error: 'Executable not found during install in HyperPlay game manager'
+        error: 'Executable not found during install in NovaPlay game manager'
       }
     }
 
     let executable = path.join(destinationPath, platformInfo.executable)
 
     const zipFile = path.join(directory, fileName)
-    logInfo(`Extracting ${zipFile} to ${destinationPath}`, LogPrefix.HyperPlay)
+    logInfo(`Extracting ${zipFile} to ${destinationPath}`, LogPrefix.NovaPlay)
 
     // disables electron's fs wrapper called when extracting .asar files
     // which is necessary to extract electron app/game zip files
@@ -1052,13 +1052,13 @@ export async function extract(
     sendFrontendMessage('gameStatusUpdate', {
       appName,
       status: 'extracting',
-      runner: 'hyperplay',
+      runner: 'novaplay',
       folder: destinationPath
     })
 
     window.webContents.send(`progressUpdate-${appName}`, {
       appName,
-      runner: 'hyperplay',
+      runner: 'novaplay',
       folder: destinationPath,
       status: 'extracting',
       progress: {
@@ -1086,7 +1086,7 @@ export async function extract(
         }: ExtractZipProgressResponse) => {
           logInfo(
             `Extracting Progress: ${progressPercentage}% Speed: ${speedInBytesPerSec} B/s | Total size ${totalSizeInBytes} and ${processedSizeInBytes}`,
-            LogPrefix.HyperPlay
+            LogPrefix.NovaPlay
           )
           const currentProgress = calculateProgress(
             processedSizeInBytes,
@@ -1098,7 +1098,7 @@ export async function extract(
 
           window.webContents.send(`progressUpdate-${appName}`, {
             appName,
-            runner: 'hyperplay',
+            runner: 'novaplay',
             folder: destinationPath,
             status: 'extracting',
             progress: {
@@ -1118,7 +1118,7 @@ export async function extract(
         }: ExtractZipProgressResponse) => {
           logInfo(
             `Extracting End: ${progressPercentage}% Speed: ${speedInBytesPerSec} B/s | Total size ${totalSizeInBytes} and ${processedSizeInBytes}`,
-            LogPrefix.HyperPlay
+            LogPrefix.NovaPlay
           )
 
           const currentProgress = calculateProgress(
@@ -1131,7 +1131,7 @@ export async function extract(
 
           window.webContents.send(`progressUpdate-${appName}`, {
             appName,
-            runner: 'hyperplay',
+            runner: 'novaplay',
             folder: destinationPath,
             status: 'extracting',
             progress: {
@@ -1142,7 +1142,7 @@ export async function extract(
 
           window.webContents.send('gameStatusUpdate', {
             appName,
-            runner: 'hyperplay',
+            runner: 'novaplay',
             folder: destinationPath,
             status: 'extracting'
           })
@@ -1176,7 +1176,7 @@ export async function extract(
 
           cleanUpDownload(appName, directory)
 
-          sendFrontendMessage('refreshLibrary', 'hyperplay')
+          sendFrontendMessage('refreshLibrary', 'novaplay')
 
           resolve({
             status: 'done'
@@ -1184,14 +1184,14 @@ export async function extract(
         }
       )
       extractService.once('error', (error: Error) => {
-        logError(`Extracting Error ${error.message}`, LogPrefix.HyperPlay)
+        logError(`Extracting Error ${error.message}`, LogPrefix.NovaPlay)
 
         cancelQueueExtraction()
         callAbortController(appName)
 
         cleanUpDownload(appName, directory)
 
-        sendFrontendMessage('refreshLibrary', 'hyperplay')
+        sendFrontendMessage('refreshLibrary', 'novaplay')
 
         resolve({
           status: 'error'
@@ -1200,7 +1200,7 @@ export async function extract(
       extractService.once('canceled', () => {
         logInfo(
           `Canceled Extracting: Cancellation completed on ${appName} - Destination ${destinationPath}`,
-          LogPrefix.HyperPlay
+          LogPrefix.NovaPlay
         )
 
         process.noAsar = false
@@ -1211,13 +1211,13 @@ export async function extract(
         sendFrontendMessage('gameStatusUpdate', {
           appName,
           status: 'done',
-          runner: 'hyperplay',
+          runner: 'novaplay',
           folder: destinationPath
         })
 
         window.webContents.send(`progressUpdate-${appName}`, {
           appName,
-          runner: 'hyperplay',
+          runner: 'novaplay',
           folder: destinationPath,
           status: 'done',
           progress: {
@@ -1237,7 +1237,7 @@ export async function extract(
 
         cleanUpDownload(appName, directory)
 
-        sendFrontendMessage('refreshLibrary', 'hyperplay')
+        sendFrontendMessage('refreshLibrary', 'novaplay')
 
         resolve({
           status: 'abort'
@@ -1249,11 +1249,11 @@ export async function extract(
   } catch (error: unknown) {
     process.noAsar = false
 
-    logInfo(`Error while extracting game ${error}`, LogPrefix.HyperPlay)
+    logInfo(`Error while extracting game ${error}`, LogPrefix.NovaPlay)
 
     window.webContents.send('gameStatusUpdate', {
       appName,
-      runner: 'hyperplay',
+      runner: 'novaplay',
       folder: destinationPath,
       status: 'done'
     })
@@ -1308,7 +1308,7 @@ export async function uninstall({
 
   if (appInfo.install.platform === 'web') {
     uninstallGame(appName)
-    sendFrontendMessage('refreshLibrary', 'hyperplay')
+    sendFrontendMessage('refreshLibrary', 'novaplay')
     return { stderr: '', stdout: '' }
   }
 
@@ -1320,7 +1320,7 @@ export async function uninstall({
 
   // remove game folder from install path
   const installPath = appInfo.install.install_path
-  logInfo(`Removing folder in uninstall: ${installPath}`, LogPrefix.HyperPlay)
+  logInfo(`Removing folder in uninstall: ${installPath}`, LogPrefix.NovaPlay)
   rmSync(installPath, { recursive: true, force: true })
 
   // change is_installed to false
@@ -1329,7 +1329,7 @@ export async function uninstall({
   if (shouldRemovePrefix) {
     const { winePrefix } = await getSettings(appName)
 
-    logInfo(`Removing prefix ${winePrefix}`, LogPrefix.HyperPlay)
+    logInfo(`Removing prefix ${winePrefix}`, LogPrefix.NovaPlay)
     if (existsSync(winePrefix)) {
       // remove prefix if exists
       rmSync(winePrefix, { recursive: true })
@@ -1337,7 +1337,7 @@ export async function uninstall({
   }
 
   setTimeout(() => {
-    sendFrontendMessage('refreshLibrary', 'hyperplay')
+    sendFrontendMessage('refreshLibrary', 'novaplay')
   })
   return { stderr: '', stdout: '' }
 }
@@ -1356,7 +1356,7 @@ export async function removeShortcuts(appName: string): Promise<void> {
 export async function getExtraInfo(appName: string): Promise<ExtraInfo> {
   const extraInfo = getGameInfo(appName).extra
   if (!extraInfo) {
-    logWarning(`No extra info found for ${appName}`, LogPrefix.HyperPlay)
+    logWarning(`No extra info found for ${appName}`, LogPrefix.NovaPlay)
     return {
       about: {
         description: '',
@@ -1392,7 +1392,7 @@ export async function launch(appName: string): Promise<boolean> {
     return false
   }
 
-  return launchGame(appName, getGameInfo(appName), 'hyperplay')
+  return launchGame(appName, getGameInfo(appName), 'novaplay')
 }
 
 // TODO: Refactor to only replace updated files
@@ -1408,7 +1408,7 @@ export async function update(
   if (gameInfo.install.platform === undefined) {
     logError(
       'Install platform was not found during game updated',
-      LogPrefix.HyperPlay
+      LogPrefix.NovaPlay
     )
     return { status: 'error' }
   }
@@ -1416,7 +1416,7 @@ export async function update(
   if (gameInfo.install.install_path === undefined) {
     logError(
       'Install path was not found during game updated',
-      LogPrefix.HyperPlay
+      LogPrefix.NovaPlay
     )
     return { status: 'error' }
   }
@@ -1441,7 +1441,7 @@ export function onInstallOrUpdateOutput(
   totalDownloadSize: number
 ) {
   logWarning(
-    `onInstallOrUpdateOutput not implemented on HyperPlay Game Manager. called for appName = ${appName}`
+    `onInstallOrUpdateOutput not implemented on NovaPlay Game Manager. called for appName = ${appName}`
   )
 }
 
@@ -1450,14 +1450,14 @@ export async function moveInstall(
   newInstallPath: string
 ): Promise<InstallResult> {
   logWarning(
-    `moveInstall not implemented on HyperPlay Game Manager. called for appName = ${appName}`
+    `moveInstall not implemented on NovaPlay Game Manager. called for appName = ${appName}`
   )
   return { status: 'error' }
 }
 
 export async function repair(appName: string): Promise<ExecResult> {
   logWarning(
-    `repair not implemented on HyperPlay Game Manager. called for appName = ${appName}`
+    `repair not implemented on NovaPlay Game Manager. called for appName = ${appName}`
   )
   return { stderr: '', stdout: '' }
 }
@@ -1469,7 +1469,7 @@ export async function syncSaves(
   gogSaves?: GOGCloudSavesLocation[]
 ): Promise<string> {
   logWarning(
-    `syncSaves not implemented on HyperPlay Game Manager. called for appName = ${appName}`
+    `syncSaves not implemented on NovaPlay Game Manager. called for appName = ${appName}`
   )
   return ''
 }
