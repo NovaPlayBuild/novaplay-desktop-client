@@ -1,6 +1,6 @@
 import { createConfig, http } from 'wagmi'
 import { Chain, hardhat, mainnet, polygon } from 'wagmi/chains'
-import { chainMap, parseChainMetadataToViemChain } from '@hyperplay/chains'
+import { chainMap, parseChainMetadataToViemChain } from '@novaplay/chains'
 
 let chainsToSupport: Chain[] = []
 const transports: { [key: number]: unknown } = {}
