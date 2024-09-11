@@ -2,7 +2,7 @@ import {
   ImportableBrowser,
   MetaMaskImportOptions,
   MetaMaskInitMethod
-} from '@hyperplay/utils'
+} from '@novaplay/utils'
 
 export interface ImportProps {
   importOptions: MetaMaskImportOptions
