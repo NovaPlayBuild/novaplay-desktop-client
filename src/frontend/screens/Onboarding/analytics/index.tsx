@@ -1,7 +1,7 @@
 import React from 'react'
 import { ONBOARDING_SCREEN } from '../types'
 import { t } from 'i18next'
-import { Button, Images } from '@hyperplay/ui'
+import { Button, Images } from '@novaplay/ui'
 import AnalyticsStyle from './index.module.scss'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCheck, faX } from '@fortawesome/free-solid-svg-icons'
@@ -52,7 +52,7 @@ const XBulletPoint = ({ text }: BulletPointWrapperProps) => {
     <BulletPoint
       icon={faX}
       color={'var(--color-status-error)'}
-      firstWord={t('hyperplay.misc', 'Never')}
+      firstWord={t('novaplay.misc', 'Never')}
       text={text}
     />
   )
@@ -65,53 +65,53 @@ interface AnalyticsProps {
 const Analytics: React.FC<AnalyticsProps> = function (props) {
   return (
     <>
-      <Images.HyperPlayLogoColored className={OnboardingStyles.hpLogo} />
+      <Images.NovaPlayLogoColored className={OnboardingStyles.hpLogo} />
       <h5>
         {t(
-          'hyperplay.onboarding.analytics.title',
-          `Help Us improve HyperPlay!`
+          'novaplay.onboarding.analytics.title',
+          `Help Us improve NovaPlay!`
         )}
       </h5>
       <div
         className={`body ${AnalyticsStyle.infoText} ${AnalyticsStyle.marginBottomLg}`}
       >
         {t(
-          'hyperplay.onboarding.analytics.body',
-          `HyperPlay would like to gather usage data to better understand how our users interact with the application. This information helps us understand how you use the app and lets us make HyperPlay even better for you.`
+          'novaplay.onboarding.analytics.body',
+          `NovaPlay would like to gather usage data to better understand how our users interact with the application. This information helps us understand how you use the app and lets us make NovaPlay even better for you.`
         )}
       </div>
       <div
         className={`body ${AnalyticsStyle.infoText} ${AnalyticsStyle.marginBottomSm}`}
       >
-        {t('hyperplay.onboarding.analytics.hyperplayWill', `HyperPlay will:`)}
+        {t('novaplay.onboarding.analytics.novaplayWill', `NovaPlay will:`)}
       </div>
       <CheckBulletPoint
         text={t(
-          'hyperplay.onboarding.analytics.optOut',
+          'novaplay.onboarding.analytics.optOut',
           'Always allow you to opt-out via Settings;'
         )}
       />
       <CheckBulletPoint
         text={t(
-          'hyperplay.onboarding.analytics.anonymized',
+          'novaplay.onboarding.analytics.anonymized',
           'Send anonymized click & game interaction;'
         )}
       />
       <XBulletPoint
         text={t(
-          'hyperplay.onboarding.analytics.neverCollectPersonal',
+          'novaplay.onboarding.analytics.neverCollectPersonal',
           ' collect keys, addresses, balances, hashes, or any personal information;'
         )}
       />
       <XBulletPoint
         text={t(
-          'hyperplay.onboarding.analytics.neverCollectIP',
+          'novaplay.onboarding.analytics.neverCollectIP',
           ' collect your full IP address;'
         )}
       />
       <XBulletPoint
         text={t(
-          'hyperplay.onboarding.analytics.neverSellData',
+          'novaplay.onboarding.analytics.neverSellData',
           ' sell data for profit. Ever!'
         )}
       />
@@ -124,7 +124,7 @@ const Analytics: React.FC<AnalyticsProps> = function (props) {
             props.setScreen(ONBOARDING_SCREEN.WALLET_SELECTION)
           }}
         >
-          {t('hyperplay.buttons.noThanks', `No Thanks`)}
+          {t('novaplay.buttons.noThanks', `No Thanks`)}
         </Button>
         <Button
           onClick={() => {
@@ -133,24 +133,24 @@ const Analytics: React.FC<AnalyticsProps> = function (props) {
             props.setScreen(ONBOARDING_SCREEN.WALLET_SELECTION)
           }}
         >
-          {t('hyperplay.buttons.agree', `I agree`)}
+          {t('novaplay.buttons.agree', `I agree`)}
         </Button>
       </div>
       <div className={`caption-sm ${AnalyticsStyle.privacyCaption}`}>
         {t(
-          'hyperplay.onboarding.analytics.privacyCaption',
+          'novaplay.onboarding.analytics.privacyCaption',
           `This data is aggregated and is therefore anonymous for the purposes of General Data Protection Regulation (EU) 2016/679. For more information in relation to our privacy practices, please see our `
         )}
         <a
           onClick={() =>
             window.api.openExternalUrl(
-              'https://www.hyperplay.xyz/privacy-policy'
+              'https://www.novaplay.xyz/privacy-policy'
             )
           }
           className="button-sm"
         >
           {t(
-            'hyperplay.onboarding.analytics.privacyPolicyHere',
+            'novaplay.onboarding.analytics.privacyPolicyHere',
             `Privacy Policy here.`
           )}
         </a>
