@@ -5,7 +5,7 @@ import {
   UpdatesSubscriptionModal,
   Images,
   Button
-} from '@hyperplay/ui'
+} from '@novaplay/ui'
 import { observer } from 'mobx-react-lite'
 import emailSubscriptionState from '../../../state/EmailSubscriptionState'
 import { useFlags } from 'launchdarkly-react-client-sdk'
