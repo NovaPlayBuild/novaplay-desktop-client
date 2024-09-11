@@ -2,7 +2,7 @@ import React, { ReactNode } from 'react'
 import { observer } from 'mobx-react-lite'
 import styles from './index.module.scss'
 import useAuthSession from '../../../hooks/useAuthSession'
-import { AccountAvatar, Images } from '@hyperplay/ui'
+import { AccountAvatar, Images } from '@novaplay/ui'
 import { PROVIDERS } from 'common/types/proxy-types'
 import walletState from '../../../state/WalletState'
 
