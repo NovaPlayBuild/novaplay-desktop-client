@@ -4,7 +4,7 @@ import {
   Runner,
   GameSettings,
   InstallPlatform,
-  HyperPlayInstallInfo
+  NovaPlayInstallInfo
 } from 'common/types'
 import { LegendaryInstallInfo } from 'common/types/legendary'
 import { GogInstallInfo } from 'common/types/gog'
@@ -67,9 +67,9 @@ const getInstallInfo = async (
   installPlatform: InstallPlatform,
   channelNameToInstall?: string
 ): Promise<
-  LegendaryInstallInfo | GogInstallInfo | HyperPlayInstallInfo | null
+  LegendaryInstallInfo | GogInstallInfo | NovaPlayInstallInfo | null
 > => {
-  if (runner === 'hyperplay') {
+  if (runner === 'novaplay') {
     installPlatform = handleRunnersPlatforms(installPlatform, runner)
   }
   return window.api.getInstallInfo(
@@ -84,7 +84,7 @@ function handleRunnersPlatforms(
   platform: InstallPlatform,
   runner: Runner
 ): InstallPlatform {
-  if (runner === 'legendary' || runner === 'hyperplay') {
+  if (runner === 'legendary' || runner === 'novaplay') {
     return platform
   }
 
