@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { t } from 'i18next'
 import ImportScreenStyles from './index.module.scss'
-import { ImportableBrowser } from '@hyperplay/utils'
+import { ImportableBrowser } from '@novaplay/utils'
 import { ImportProps } from './types'
 import ImportAndCreateOptions from './components/ImportAndCreateOptions'
 import { BrowsersAndManualImportOptions } from './components/BrowsersAndManualImportOptions'
@@ -41,13 +41,13 @@ const WalletImportScreen = ({
     <>
       <div className={`title ${ImportScreenStyles.title}`}>
         {t(
-          'hyperplay.onboarding.walletSelection.screens.import.title',
+          'novaplay.onboarding.walletSelection.screens.import.title',
           `Select a browser to import from`
         )}
       </div>
       <div className={`body ${ImportScreenStyles.description}`}>
         {t(
-          'hyperplay.onboarding.walletSelection.screens.import.details',
+          'novaplay.onboarding.walletSelection.screens.import.details',
           `The browsers below already have MetaMask installed. Choose the one you’d like to import from.`
         )}
       </div>
