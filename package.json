@@ -1,5 +1,5 @@
 {
-  "name": "hyperplay",
+  "name": "novaplay",
   "version": "0.18.2",
   "private": true,
   "main": "build/main/main.js",
@@ -8,15 +8,15 @@
   "description": "An Open Source Launcher for Web3, GOG and Epic Games",
   "repository": {
     "type": "Github",
-    "url": "https://github.com/HyperPlay-Gaming/hyperplay-desktop-client"
+    "url": "https://github.com/NovaPlay-Gaming/novaplay-desktop-client"
   },
   "author": {
-    "name": "HyperPlay",
-    "email": "hyperplay@hyperplay.gg"
+    "name": "NovaPlay",
+    "email": "novaplay@novaplay.gg"
   },
   "build": {
-    "appId": "gg.hyperplay.HyperPlay",
-    "productName": "HyperPlay",
+    "appId": "gg.novaplay.NovaPlay",
+    "productName": "NovaPlay",
     "files": [
       "build/**/*",
       "node_modules/**/*",
@@ -33,15 +33,15 @@
       "build/trayIconLight24x24.png",
       "build/trayIconDark24x24.png",
       "build/extensions",
-      "build/hyperplay_store_preload.js",
+      "build/novaplay_store_preload.js",
       "build/transparent_body_preload.js",
       "build/webviewPreload.js"
     ],
     "protocols": [
       {
-        "name": "hyperplay",
+        "name": "novaplay",
         "schemes": [
-          "hyperplay"
+          "novaplay"
         ]
       }
     ],
@@ -114,7 +114,7 @@
       "category": "Game",
       "description": "An Open Source Launcher for Web3, GOG and Epic Games",
       "desktop": {
-        "Name": "HyperPlay",
+        "Name": "NovaPlay",
         "Comment[de]": "Ein Open Source Spielelauncher for Web3, GOG und Epic Games"
       },
       "asarUnpack": [
@@ -148,12 +148,12 @@
     "snap": {
       "allowNativeWayland": true,
       "category": "Games",
-      "synopsis": "HyperPlay allows players to carry their MetaMask or WalletConnect wallet overlaid on top of every desktop game. Game developers can request transactions or signatures with a simple REST API call that supports every wallet to manage wallet interactions seamlessly.",
-      "description": "HyperPlay allows players to carry their MetaMask or WalletConnect wallet overlaid on top of every desktop game. Game developers can request transactions or signatures with a simple REST API call that supports every wallet to manage wallet interactions seamlessly. \n You can also access your Epic and GOG games and play them using Proton or Wine that can be downloaded directly from the interface. DXVK, VKD3D and Winetricks are also included to play Windows Games.",
+      "synopsis": "NovaPlay allows players to carry their MetaMask or WalletConnect wallet overlaid on top of every desktop game. Game developers can request transactions or signatures with a simple REST API call that supports every wallet to manage wallet interactions seamlessly.",
+      "description": "NovaPlay allows players to carry their MetaMask or WalletConnect wallet overlaid on top of every desktop game. Game developers can request transactions or signatures with a simple REST API call that supports every wallet to manage wallet interactions seamlessly. \n You can also access your Epic and GOG games and play them using Proton or Wine that can be downloaded directly from the interface. DXVK, VKD3D and Winetricks are also included to play Windows Games.",
       "publish": {
         "provider": "snapStore",
         "channels": "stable",
-        "repo": "hyperplay"
+        "repo": "novaplay"
       }
     }
   },
@@ -167,10 +167,10 @@
     "@fortawesome/free-regular-svg-icons": "^6.6.0",
     "@fortawesome/free-solid-svg-icons": "^6.6.0",
     "@fortawesome/react-fontawesome": "^0.2.2",
-    "@hyperplay/chains": "^0.3.0",
-    "@hyperplay/check-disk-space": "^3.5.2",
-    "@hyperplay/ui": "1.7.6",
-    "@hyperplay/utils": "^0.0.16",
+    "@novaplay/chains": "^0.3.0",
+    "@novaplay/check-disk-space": "^3.5.2",
+    "@novaplay/ui": "1.7.6",
+    "@novaplay/utils": "^0.0.16",
     "@mantine/carousel": "^7.12.0",
     "@mantine/core": "^7.12.0",
     "@mantine/dropzone": "^7.12.0",
@@ -277,10 +277,10 @@
     "dist:mac:x64": "yarn pkgResetExtension:x64:mac && yarn dist:mac:base --x64 --publish=never",
     "dist:mac:arm64": "yarn pkgResetExtension:arm64:mac && yarn dist:mac:base --arm64 --publish=never",
     "dist:win": "yarn pkgResetExtension:x64:win && cross-env NODE_ENV_ELECTRON_VITE=production electron-vite build && electron-builder --win nsis --publish=never",
-    "build-signed:win": "electron-vite build && electron-builder --win -c.win.certificateSubjectName=\"HyperPlay Labs Inc.\"",
+    "build-signed:win": "electron-vite build && electron-builder --win -c.win.certificateSubjectName=\"NovaPlay Labs Inc.\"",
     "lint": "eslint --cache -c .eslintrc --ext .tsx,ts ./src",
     "lint-fix": "eslint --fix -c .eslintrc --ext .tsx,ts ./src",
-    "flatpak:build": "cd flatpak-build && flatpak-builder build xyz.hyperplay.HyperPlay.yml --install --force-clean --user",
+    "flatpak:build": "cd flatpak-build && flatpak-builder build xyz.novaplay.NovaPlay.yml --install --force-clean --user",
     "flatpak:prepare": "node ./flatpak/prepareFlatpak.js",
     "flatpak:prepare-release": "node ./flatpak/prepareFlatpak.js release",
     "i18n": "i18next",
@@ -359,12 +359,12 @@
     "vite-plugin-svgr": "^2.2.2"
   },
   "optionalDependencies": {
-    "@hyperplay/extension-importer": "^0.0.4",
-    "@hyperplay/extension-provider": "^0.0.6",
-    "@hyperplay/mock-backend": "^0.0.1",
-    "@hyperplay/overlay": "^0.0.6",
-    "@hyperplay/providers": "^0.0.5",
-    "@hyperplay/proxy-server": "^0.0.11"
+    "@novaplay/extension-importer": "^0.0.4",
+    "@novaplay/extension-provider": "^0.0.6",
+    "@novaplay/mock-backend": "^0.0.1",
+    "@novaplay/overlay": "^0.0.6",
+    "@novaplay/providers": "^0.0.5",
+    "@novaplay/proxy-server": "^0.0.11"
   },
   "packageManager": "yarn@1.22.19",
   "lavamoat": {
@@ -392,7 +392,7 @@
       "wagmi>@wagmi/connectors>cbw-sdk>keccak": true,
       "viem>ws>bufferutil": true,
       "viem>ws>utf-8-validate": true,
-      "@hyperplay/extension-importer>classic-level": true,
+      "@novaplay/extension-importer>classic-level": true,
       "classic-level": false,
       "i18next-parser>esbuild": false,
       "wagmi>@wagmi/connectors>@metamask/sdk>@metamask/sdk-communication-layer>utf-8-validate": false
