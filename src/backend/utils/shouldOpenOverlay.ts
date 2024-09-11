@@ -1,8 +1,8 @@
-import { getHyperPlayNameToReleaseMap } from 'backend/storeManagers/hyperplay/utils'
+import { getNovaPlayNameToReleaseMap } from 'backend/storeManagers/novaplay/utils'
 import { GameInfo } from 'common/types'
 
-export async function gameIsEpicForwarderOnHyperPlay(gameInfo: GameInfo) {
-  const gameNameMap = await getHyperPlayNameToReleaseMap()
+export async function gameIsEpicForwarderOnNovaPlay(gameInfo: GameInfo) {
+  const gameNameMap = await getNovaPlayNameToReleaseMap()
   let hyperPlayListing = undefined
   const gameInfoTitle = gameInfo.title.toLowerCase()
   const gameIsEpicForwarderOnHP =
@@ -18,13 +18,13 @@ export async function launchingGameShouldOpenOverlay(gameInfo?: GameInfo) {
     return { shouldOpenOverlay: false }
   }
   const { hyperPlayListing, gameIsEpicForwarderOnHP } =
-    await gameIsEpicForwarderOnHyperPlay(gameInfo)
-  const gameIsDirectOnHyperPlay = gameInfo.runner === 'hyperplay'
+    await gameIsEpicForwarderOnNovaPlay(gameInfo)
+  const gameIsDirectOnNovaPlay = gameInfo.runner === 'novaplay'
   const gameIsSideloadedWithWeb3 =
     gameInfo.runner === 'sideload' && !!gameInfo.web3?.supported
   return {
     shouldOpenOverlay:
-      gameIsDirectOnHyperPlay ||
+      gameIsDirectOnNovaPlay ||
       gameIsSideloadedWithWeb3 ||
       gameIsEpicForwarderOnHP,
     hyperPlayListing
