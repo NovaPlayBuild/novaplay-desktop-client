@@ -6,7 +6,7 @@ import {
   DialogHeader
 } from 'frontend/components/UI/Dialog'
 import { useTranslation } from 'react-i18next'
-import { Button, Checkbox } from '@hyperplay/ui'
+import { Button, Checkbox } from '@novaplay/ui'
 import { GameInfo, InstallProgress } from 'common/types'
 const storage: Storage = window.localStorage
 
