@@ -18,6 +18,6 @@ const prodWriteKey = '2L0e8tI45DDRWKEWTmaGqFsilfv'
 export const rudderstack = new Analytics(
   app.isPackaged ? prodWriteKey : devWriteKey,
   {
-    dataPlaneUrl: 'https://hyperplayvc.dataplane.rudderstack.com'
+    dataPlaneUrl: 'https://novaplayvc.dataplane.rudderstack.com'
   }
 )
