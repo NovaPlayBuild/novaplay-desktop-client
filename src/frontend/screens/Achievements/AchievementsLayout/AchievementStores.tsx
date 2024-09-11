@@ -6,7 +6,7 @@ import {
   LinkAccountDialog,
   ModalAnimation,
   StoreRow
-} from '@hyperplay/ui'
+} from '@novaplay/ui'
 import { Flex } from '@mantine/core'
 
 import styles from './index.module.css'
@@ -61,15 +61,15 @@ export const AchievementStores = observer(() => {
           <LinkAccountDialog
             i18n={{
               connectTitle: t(
-                'hyperplay.linkSteamAccountTitle',
+                'novaplay.linkSteamAccountTitle',
                 'Link Steam Account'
               ),
               connectSubtitle: t(
-                'hyperplay.linkSteamAccountDescription',
-                'Sign in to Steam to link your HyperPlay account.'
+                'novaplay.linkSteamAccountDescription',
+                'Sign in to Steam to link your NovaPlay account.'
               ),
               callToActionText: t(
-                'hyperplay.linkSteamAccountCta',
+                'novaplay.linkSteamAccountCta',
                 'Go to Steam sign in'
               )
             }}
@@ -99,7 +99,7 @@ export const AchievementStores = observer(() => {
               {AchievementState.syncing ? (
                 <div className={styles.syncingContainer}>
                   <div className="body">
-                    {t('hyperplay.syncing', 'Syncing...')}
+                    {t('novaplay.syncing', 'Syncing...')}
                   </div>
                   <Images.Refresh
                     className={
@@ -113,7 +113,7 @@ export const AchievementStores = observer(() => {
                   size={'small'}
                   onClick={async () => syncAchievements('STEAM')}
                 >
-                  {t('hyperplay.Sync', 'Sync')}
+                  {t('novaplay.Sync', 'Sync')}
                 </Button>
               )}
             </div>
