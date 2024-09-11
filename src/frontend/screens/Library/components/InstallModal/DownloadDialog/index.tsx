@@ -11,7 +11,7 @@ import {
   AvailablePlatforms,
   GameInfo,
   GameStatus,
-  HyperPlayInstallInfo,
+  NovaPlayInstallInfo,
   InstallPlatform,
   Runner,
   WineInstallation
@@ -37,7 +37,7 @@ import React, {
 } from 'react'
 import { useTranslation } from 'react-i18next'
 import { configStore } from 'frontend/helpers/electronStores'
-import { AlertCard, Button, Images } from '@hyperplay/ui'
+import { AlertCard, Button, Images } from '@novaplay/ui'
 import DLCDownloadListing from './DLCDownloadListing'
 import { useEstimatedUncompressedSize } from 'frontend/hooks/useEstimatedUncompressedSize'
 import { signSiweMessage } from 'frontend/helpers/library'
@@ -99,7 +99,7 @@ function getUniqueKey(sdl: SelectiveDownload) {
 const userHome = configStore.get('userHome', '')
 
 function getDefaultInstallPath() {
-  const { defaultInstallPath = `${userHome}/Games/HyperPlay` } = {
+  const { defaultInstallPath = `${userHome}/Games/NovaPlay` } = {
     ...configStore.get_nodefault('settings')
   }
   return defaultInstallPath
@@ -134,7 +134,7 @@ export default function DownloadDialog({
   const isBrowserGame = platformToInstall === 'Browser'
 
   const [gameInstallInfo, setGameInstallInfo] = useState<
-    LegendaryInstallInfo | GogInstallInfo | HyperPlayInstallInfo | null
+    LegendaryInstallInfo | GogInstallInfo | NovaPlayInstallInfo | null
   >(null)
   const [installLanguages, setInstallLanguages] = useState(Array<string>())
   const [installLanguage, setInstallLanguage] = useState('')
@@ -422,7 +422,7 @@ export default function DownloadDialog({
     isWebGame || nativeGameIsReadyToInstall || requiresToken
 
   const showRemainingProgress =
-    (runner === 'hyperplay' && previousProgress.percent) ||
+    (runner === 'novaplay' && previousProgress.percent) ||
     previousProgress.folder === installPath
   const showDlcSelector =
     runner === 'legendary' && DLCList && DLCList?.length > 0
