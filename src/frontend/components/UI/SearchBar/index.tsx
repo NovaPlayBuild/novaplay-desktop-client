@@ -5,7 +5,7 @@ import './index.css'
 import { faXmark } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { GameInfo } from '../../../../common/types'
-import { Images } from '@hyperplay/ui'
+import { Images } from '@novaplay/ui'
 import TopNavBarStyles from '../TopNavBar/index.module.scss'
 import { observer } from 'mobx-react-lite'
 import libraryState from 'frontend/state/libraryState'
@@ -18,7 +18,7 @@ function fixFilter(text: string) {
 const RUNNER_TO_STORE = {
   legendary: 'Epic',
   gog: 'GOG',
-  hyperplay: 'HyperPlay',
+  novaplay: 'NovaPlay',
   sideloaded: 'Other'
 }
 
