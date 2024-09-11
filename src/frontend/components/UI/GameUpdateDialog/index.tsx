@@ -3,7 +3,7 @@ import { Dialog } from 'frontend/components/UI/Dialog'
 import TextInputField from '../TextInputField'
 import { useTranslation } from 'react-i18next'
 import styles from './index.module.scss'
-import { Button } from '@hyperplay/ui'
+import { Button } from '@novaplay/ui'
 import gameUpdateState from 'frontend/state/GameUpdateState'
 import gameRequiresAccessCodes from 'frontend/helpers/gameRequiresAccessCodes'
 
@@ -24,7 +24,7 @@ export default function GameUpdateDialog({ onClose }: { onClose: () => void }) {
   useEffect(() => {
     async function validateAccessCode() {
       if (selectedChannel?.channel_id !== undefined) {
-        const result = await window.api.checkHyperPlayAccessCode(
+        const result = await window.api.checkNovaPlayAccessCode(
           selectedChannel?.license_config.id,
           accessCode
         )
@@ -35,7 +35,7 @@ export default function GameUpdateDialog({ onClose }: { onClose: () => void }) {
           setErrorText('')
           setSuccessText(
             t(
-              'hyperplay.accesscodes.success.validation',
+              'novaplay.accesscodes.success.validation',
               'Success! Access code is valid'
             )
           )
@@ -43,7 +43,7 @@ export default function GameUpdateDialog({ onClose }: { onClose: () => void }) {
           setSuccessText('')
           setErrorText(
             t(
-              'hyperplay.accesscodes.error.validation',
+              'novaplay.accesscodes.error.validation',
               'Access code is invalid'
             )
           )
@@ -76,7 +76,7 @@ export default function GameUpdateDialog({ onClose }: { onClose: () => void }) {
     <Dialog showCloseButton onClose={onClose} className={styles.dialog}>
       <div className="title">
         {t(
-          'hyperplay.accesscodes.requirescode',
+          'novaplay.accesscodes.requirescode',
           'This game update requires an access code.'
         )}
       </div>
