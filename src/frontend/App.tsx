@@ -44,7 +44,7 @@ function App() {
   const { sidebarCollapsed, isSettingsModalOpen, connectivity } =
     useContext(ContextProvider)
   const isOffline = connectivity.status !== 'online'
-  const firstDestination = isOffline ? '/library' : '/hyperplaystore'
+  const firstDestination = isOffline ? '/library' : '/novaplaystore'
 
   return (
     <div className={classNames('App', { collapsed: sidebarCollapsed })}>
@@ -90,8 +90,8 @@ function App() {
             </Route>
             <Route path="login" element={<Login />} />
             <Route
-              path="hyperplaystore"
-              element={<WebView key="hyperplaystore" />}
+              path="novaplaystore"
+              element={<WebView key="novaplaystore" />}
             />
             <Route path="epicstore" element={<WebView key="epicstore" />} />
             <Route path="gogstore" element={<WebView key="gogstore" />} />
