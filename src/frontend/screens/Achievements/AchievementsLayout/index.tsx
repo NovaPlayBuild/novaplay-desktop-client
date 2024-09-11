@@ -1,6 +1,6 @@
 import React, { PropsWithChildren } from 'react'
 
-import { Background } from '@hyperplay/ui'
+import { Background } from '@novaplay/ui'
 import { Flex, Grid } from '@mantine/core'
 
 import styles from './index.module.css'
@@ -14,7 +14,7 @@ export default React.memo(function AchievementsLayout({
 }: PropsWithChildren): JSX.Element {
   const contextValues = useSettingsContext({
     appName: 'default',
-    runner: 'hyperplay',
+    runner: 'novaplay',
     gameInfo: null
   })
 
