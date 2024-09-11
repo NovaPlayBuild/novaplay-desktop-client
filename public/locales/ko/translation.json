@@ -19,7 +19,7 @@
     },
     "box": {
         "cache-cleared": {
-            "message": "HyperPlay 캐시 삭제됨.",
+            "message": "NovaPlay 캐시 삭제됨.",
             "title": "캐시 삭제됨"
         },
         "choose": "선택",
@@ -67,7 +67,7 @@
             },
             "update": {
                 "title": "Update Error",
-                "message": "뭔가 업데이트로 잘못되었습니다! HyperPlay를 제거하고 다시 설치하십시오."
+                "message": "뭔가 업데이트로 잘못되었습니다! NovaPlay를 제거하고 다시 설치하십시오."
             },
             "wine-not-found": {
                 "invalid": "The selected wine version was not found. Install it or select a different version in the game's settings{{newline}}Version: {{version}}{{newline}}Path: {{path}}",
@@ -89,11 +89,11 @@
                 "changelog": "변경 로그 열기",
                 "detail": "백그라운드에서 업데이트를 다운로드하시겠습니까?",
                 "message": "사용 가능한 새 버전이 있습니다!",
-                "message-finished": "지금 HyperPlay을 다시 시작하시겠습니까?",
-                "title": "HyperPlay Games Launcher",
+                "message-finished": "지금 NovaPlay을 다시 시작하시겠습니까?",
+                "title": "NovaPlay Games Launcher",
                 "title-finished": "업데이트 완료",
-                "appUpdated": "HyperPlay 업데이트",
-                "appUpdated-message": "HyperPlay가 업데이트되었습니다. 지금 HyperPlay를 업데이트하고 재시작하시겠습니까?"
+                "appUpdated": "NovaPlay 업데이트",
+                "appUpdated-message": "NovaPlay가 업데이트되었습니다. 지금 NovaPlay를 업데이트하고 재시작하시겠습니까?"
             }
         },
         "no": "아니오",
@@ -109,8 +109,8 @@
         },
         "reset-app": {
             "question": {
-                "message": "Are you sure you want to reset HyperPlay? This will remove all Settings and Caching but won't remove your Installed games or your Epic credentials. Portable versions (AppImage, WinPortable, ...) of HyperPlay needs to be restarted manually afterwards.",
-                "title": "Reset HyperPlay"
+                "message": "Are you sure you want to reset NovaPlay? This will remove all Settings and Caching but won't remove your Installed games or your Epic credentials. Portable versions (AppImage, WinPortable, ...) of NovaPlay needs to be restarted manually afterwards.",
+                "title": "Reset NovaPlay"
             }
         },
         "runexe": {
@@ -156,7 +156,7 @@
             },
             "rosetta": {
                 "title": "Rosetta 찾을 수 없음",
-                "message": "하이퍼플레이는 Rosetta는 Apple 실리콘 칩으로 macOS에서 올바르게 실행합니다. 다음 명령을 사용하여 macOS 터미널에서 설치하십시오. \"softwareupdate --install-rosetta\"와 HyperPlay를 다시 시작합니다. "
+                "message": "하이퍼플레이는 Rosetta는 Apple 실리콘 칩으로 macOS에서 올바르게 실행합니다. 다음 명령을 사용하여 macOS 터미널에서 설치하십시오. \"softwareupdate --install-rosetta\"와 NovaPlay를 다시 시작합니다. "
             }
         },
         "wineprefix": "WinePrefix 폴더 선택",
@@ -263,7 +263,7 @@
         "esync": "Esync aims to reduce wineserver overhead in CPU-intensive games. Enabling may improve performance.",
         "fsync": "Fsync aims to reduce wineserver overhead in CPU-intensive games. Enabling may improve performance on supported Linux kernels.",
         "game_language": {
-            "fallback": "Leave blank to use HyperPlay's language.",
+            "fallback": "Leave blank to use NovaPlay's language.",
             "in_game_config": "Not all games support this configuration, some have in-game language setting.",
             "valid_codes": "Valid language codes are game-dependant."
         },
@@ -279,12 +279,12 @@
         "preferSystemLibs": "Custom Wine versions (Wine-GE, Wine-Lutris) are shipped with their library dependencies. By enabling this option, these shipped libraries will be ignored and Wine will load system libraries instead. Warning! Issues may occur if dependencies are not met.",
         "primerun": "Use dedicated graphics card to render game on multi-GPU systems. Only needed on gaming laptops or desktops that use a headless GPU for rendering (NVIDIA Optimus, AMD CrossFire)",
         "steam_path": {
-            "info": "This path lets HyperPlay determine what version of Proton Steam uses, for adding non-Steam games to Steam."
+            "info": "This path lets NovaPlay determine what version of Proton Steam uses, for adding non-Steam games to Steam."
         },
         "steamruntime": "Custom libraries provided by Steam to help run Linux and Windows (Proton) games. Enabling might improve compatibility.",
         "sync": {
-            "part1": "HyperPlay은 올바른 저장 폴더를 찾으려고 시도하며 대부분의 경우에 작동합니다. 폴더가 잘못된 경우 재정의 상자를 사용하여 변경하세요.",
-            "part2": "Wine 또는 Proton의 접두사 폴더를 변경하면 Proton은 다른 접두사(/pfx)와 사용자 이름(steamuser)을 사용하므로 경로를 다시 확인해야 합니다. 따라서 현재 경로를 지우고 동기화 설정 페이지에서 나갔다 돌아오면 HyperPlay이 올바른 접두사로 폴더를 다시 찾을 수 있습니다.",
+            "part1": "NovaPlay은 올바른 저장 폴더를 찾으려고 시도하며 대부분의 경우에 작동합니다. 폴더가 잘못된 경우 재정의 상자를 사용하여 변경하세요.",
+            "part2": "Wine 또는 Proton의 접두사 폴더를 변경하면 Proton은 다른 접두사(/pfx)와 사용자 이름(steamuser)을 사용하므로 경로를 다시 확인해야 합니다. 따라서 현재 경로를 지우고 동기화 설정 페이지에서 나갔다 돌아오면 NovaPlay이 올바른 접두사로 폴더를 다시 찾을 수 있습니다.",
             "part3": "수동 동기화: 다운로드를 선택하여 클라우드에 저장된 게임 세이브을 다운로드합니다. 로컬 항목을 클라우드에 업로드하려면 업로드를 선택합니다. 강제 다운로드 및 강제 업로드는 로컬 또는 클라우드에 있는 버전을 무시합니다.",
             "part4": "세이브 동기화는 게임을 시작하거나 종료할 때 마다 자동으로 동기화 합니다."
         },
@@ -299,12 +299,12 @@
         "dxvknvapi": "DXVK-NVAPI는 DXVK와 리눅스 네이티브 NVAPI의 상단에 내장된 NVAPI의 구현으로 Nvidia GPU에서 DLSS의 사용을 허용합니다."
     },
     "info": {
-        "hyperplay": {
+        "novaplay": {
             "beta": "Beta",
             "click-to-see-changelog": "Click to see changelog",
             "newReleases": "Update Available!",
             "stable": "Stable",
-            "version": "HyperPlay Version"
+            "version": "NovaPlay Version"
         },
         "save-sync": {
             "searching": "Trying to detect the correct save folder (click to cancel)"
@@ -391,7 +391,7 @@
         },
         "moved": "이동 완료됨",
         "moving": "Moving Game",
-        "new-hyperplay-version": "A new HyperPlay version was released!",
+        "new-novaplay-version": "A new NovaPlay version was released!",
         "refresh": {
             "error": "Couldn't fetch releases from upstream, maybe because of Github API restrictions! Try again later."
         },
@@ -491,7 +491,7 @@
         "autosync": "세이브 자동 동기화",
         "autovkd3d": "접두사에서 VKD3D 자동 설치/업데이트",
         "change-target-exe": "대체하여 실행할 EXE 선택",
-        "checkForUpdatesOnStartup": "Check for HyperPlay Updates on Startup",
+        "checkForUpdatesOnStartup": "Check for NovaPlay Updates on Startup",
         "crossover-version": "Crossover/Wine Version",
         "custom_themes_path": "Custom Themes Path",
         "customWineProton": "커스텀 Wine/Proton 경로",
@@ -499,7 +499,7 @@
         "default-install-path": "기본 설치 경로",
         "default-steam-path": "Default Steam path",
         "defaultWinePrefix": "새로운 Wine 접두사를 위한 폴더 설정",
-        "disable_controller": "컨트롤러를 이용한 HyperPlay 탐색 비활성화",
+        "disable_controller": "컨트롤러를 이용한 NovaPlay 탐색 비활성화",
         "discordRPC": "Discord Rich Presence 활성화",
         "download-no-https": "Download games without HTTPS (useful for CDNs e.g. LanCache)",
         "egs-sync": "설치된 Epic Games와 동기화",
@@ -540,14 +540,14 @@
         "log": {
             "copy-to-clipboard": "로그 내용을 클립보드에 복사",
             "current-log": "현재 로그",
-            "instructions": "If you encounter any issues while using HyperPlay, we have two designated areas to report your issues in our Discord Server. If you're a player, please report any problems by visiting the player-support-forum. If you are a game dev, please report any problems by visiting the dev-support-forum.{{newLine}} {{newLine}} To help us diagnose and fix the problem as quickly as possible, please provide as much information as possible, including a copy of your logs. Our support team will monitor both channels and do their best to respond to your issue as quickly as possible. Thank you for your patience and understanding while we work to resolve any problems you may encounter.{{newLine}}",
+            "instructions": "If you encounter any issues while using NovaPlay, we have two designated areas to report your issues in our Discord Server. If you're a player, please report any problems by visiting the player-support-forum. If you are a game dev, please report any problems by visiting the dev-support-forum.{{newLine}} {{newLine}} To help us diagnose and fix the problem as quickly as possible, please provide as much information as possible, including a copy of your logs. Our support team will monitor both channels and do their best to respond to your issue as quickly as possible. Thank you for your patience and understanding while we work to resolve any problems you may encounter.{{newLine}}",
             "instructions_title": "How to report a problem?",
             "last-log": "마지막 로그",
             "no-file": "로그 파일을 찾을 수 없습니다",
             "show-in-folder": "폴더에 있는 로그 파일 표시",
-            "instructions-part-01": "HyperPlay를 사용하는 동안 어떤 문제가 발생하면 Discord Server에서 문제를 보고할 수 있는 두 개의 지정된 영역이 있습니다. 플레이어가 있다면, 플레이어 지원-포럼을 방문해서 문제를 신고하십시오. 게임 개발자인 경우, dev-support-forum을 방문해서 문제를 신고하십시오.",
+            "instructions-part-01": "NovaPlay를 사용하는 동안 어떤 문제가 발생하면 Discord Server에서 문제를 보고할 수 있는 두 개의 지정된 영역이 있습니다. 플레이어가 있다면, 플레이어 지원-포럼을 방문해서 문제를 신고하십시오. 게임 개발자인 경우, dev-support-forum을 방문해서 문제를 신고하십시오.",
             "instructions-part-02": "진단을 돕고 가능한 한 빨리 문제를 해결하기 위해 로그의 사본을 포함하여 가능한 한 많은 정보를 제공하십시오. 우리의 지원 팀은 둘 다 수로를 감시하고 가능한 빨리 당신의 문제점에 응답하기 위하여 최선을 다할 것입니다. 우리는 당신이 직면 할 수있는 모든 문제를 해결하는 동안 당신의 인내 및 이해에 감사드립니다.",
-            "join-hyperplay-discord": "우리의 Discord에 가입"
+            "join-novaplay-discord": "우리의 Discord에 가입"
         },
         "mangohud": "Mangohud 활성화 (Mangohud가 설치 되어있어야 함)",
         "manualsync": {
@@ -561,7 +561,7 @@
         },
         "maxRecentGames": "표시할 최근 플레이한 게임",
         "maxworkers": "다운로드할 때 최대 워커 개수",
-        "minimize-on-launch": "게임 실행 후 HyperPlay 최소화",
+        "minimize-on-launch": "게임 실행 후 NovaPlay 최소화",
         "offlinemode": "게임 오프라인으로 실행",
         "prefered_language": "Prefered Language (Language Code)",
         "preferSystemLibs": "Prefer system libraries",
@@ -595,7 +595,7 @@
         "showMetalOverlay": "통계 오버레이 표시",
         "alt-nile-bin": "대체 Nile 바이너리 선택",
         "autodxvknvapi": "Prefix에 자동 설치/업데이트 DXVK-NVAPI",
-        "autoLaunchHyperPlay": "자동차 출시 하이퍼 뚱 베어",
+        "autoLaunchNovaPlay": "자동차 출시 하이퍼 뚱 베어",
         "dxvkfpslimit": "제한 FPS (DX9, 10 및 11)",
         "steamId": "증기 ID",
         "msync": "Esync 활성화"
@@ -605,7 +605,7 @@
             "installing": "Installing BattlEye Runtime...",
             "name": "BattlEye AntiCheat Runtime"
         },
-        "clear-cache": "HyperPlay 캐시 삭제",
+        "clear-cache": "NovaPlay 캐시 삭제",
         "copiedToClipboard": "클립보드에 복사되었습니다!",
         "copyToClipboard": "모든 설정을 클립보드에 복사",
         "default_hint": "Changes in this section only apply as default values when installing games. If you want to change the settings of an already installed game, use the Settings button in the game page.",
@@ -638,7 +638,7 @@
             "accounts": "장부"
         },
         "open-config-file": "Open Config File",
-        "reset-hyperplay": "Reset HyperPlay",
+        "reset-novaplay": "Reset NovaPlay",
         "saves": {
             "label": "Save Location:",
             "warning": "Cloud Saves feature is in Beta, please backup your saves before syncing (in case something goes wrong)"
@@ -763,7 +763,7 @@
         },
         "title": "Game 업데이트 가능"
     },
-    "hyperplay": {
+    "novaplay": {
         "accesscodes": {
             "error": {
                 "validation": "액세스 코드는 잘못된"
@@ -784,19 +784,19 @@
                 "privacyPolicyHere": "개인정보 보호정책.",
                 "neverSellData": " 수익의 데이터 판매. 더 보기!",
                 "optOut": "항상 설정을 통해 옵트 아웃을 허용;",
-                "title": "HyperPlay를 개선하는 데 도움이됩니다!",
-                "body": "HyperPlay는 사용 데이터를 수집하고, 사용자가 애플리케이션과 상호 작용하는 방법을 더 잘 이해합니다. 이 정보는 앱을 사용하는 방법을 이해하고 HyperPlay를 더 잘 만들 수 있습니다.",
+                "title": "NovaPlay를 개선하는 데 도움이됩니다!",
+                "body": "NovaPlay는 사용 데이터를 수집하고, 사용자가 애플리케이션과 상호 작용하는 방법을 더 잘 이해합니다. 이 정보는 앱을 사용하는 방법을 이해하고 NovaPlay를 더 잘 만들 수 있습니다.",
                 "privacyCaption": "이 데이터는 집계되고 일반 데이터 보호 규정 (EU) 2016/679의 목적으로 익명입니다. 우리의 개인 정보 보호 관행과 관련하여 더 많은 정보를 원하시면, please see our ",
                 "anonymized": "익명화 클릭 & 게임 상호 작용;",
-                "hyperplayWill": "하이퍼플레이는:"
+                "novaplayWill": "하이퍼플레이는:"
             },
             "connectAgain": "다시 연결",
             "welcome": {
                 "text": {
-                    "construction": "HyperPlay는 건설 중입니다.",
+                    "construction": "NovaPlay는 건설 중입니다.",
                     "communityCTA_1": "우리는 당신의 의견을 사랑하고 당신이 우리의 것에 가입해야",
-                    "bugs": "HyperPlay는 공개 알파입니다. 많은 특징은 아직도 있습니다\n개발, 버그가 있습니다.",
-                    "description": "HyperPlay는 게임 발사기 및 게임 상점 집계입니다.\n현재 위치 HyperPlay를 사용하면 지갑, 토큰 및 자산을 운반할 수 있습니다.\n모든 게임으로. HyperPlay는 Epic의 전체 라이브러리를 지원합니다.\n상점, GOG, 그리고 우리의 자신의 HyperPlay 상점. HyperPlay를 사용함으로써 귀하는 동의한다.\n제품 정보",
+                    "bugs": "NovaPlay는 공개 알파입니다. 많은 특징은 아직도 있습니다\n개발, 버그가 있습니다.",
+                    "description": "NovaPlay는 게임 발사기 및 게임 상점 집계입니다.\n현재 위치 NovaPlay를 사용하면 지갑, 토큰 및 자산을 운반할 수 있습니다.\n모든 게임으로. NovaPlay는 Epic의 전체 라이브러리를 지원합니다.\n상점, GOG, 그리고 우리의 자신의 NovaPlay 상점. NovaPlay를 사용함으로써 귀하는 동의한다.\n제품 정보",
                     "communityCTA_2": "커뮤니티 함께, 게임의 미래를 형성하자!"
                 },
                 "title": "Hyper에 오신 것을 환영합니다 초기 액세스!"
@@ -805,7 +805,7 @@
                 "screens": {
                     "scan": {
                         "updateWarning": "문제가 있습니까? MetaMask가 현재까지 확인할 수 있습니다.",
-                        "details": "암호화 통신 채널을 만듭니다. 당신의 열쇠는 HyperPlay와 결코 공유되지 않을 것입니다.",
+                        "details": "암호화 통신 채널을 만듭니다. 당신의 열쇠는 NovaPlay와 결코 공유되지 않을 것입니다.",
                         "dontHaveWallet": "지갑이 없나요?",
                         "getMetamask": "MetaMask 받기",
                         "title": "QR 스캔 "
@@ -830,7 +830,7 @@
                         "cantFindProfile": "브라우저 프로파일을 찾을 수 없습니다?",
                         "createNewWallet": "새로운 MM 확장 지갑 만들기",
                         "useRecoveryPhrase": "비밀번호 복구",
-                        "useRecoveryPhraseInfo": "이 기능은 고급 사용자 및 개발자에게 추천합니다. 비밀 복구 구문은 MetaMask에서 로컬로 저장되며 HyperPlay와 결코 공유되지 않습니다.",
+                        "useRecoveryPhraseInfo": "이 기능은 고급 사용자 및 개발자에게 추천합니다. 비밀 복구 구문은 MetaMask에서 로컬로 저장되며 NovaPlay와 결코 공유되지 않습니다.",
                         "details": "아래 브라우저에는 MetaMask가 설치되어 있습니다. 가져오기와 같은 것을 선택하세요.",
                         "learnMore": "더 알아보기"
                     }
@@ -864,7 +864,7 @@
             "distributables": "분산형 설치",
             "paused": "일시중지됨"
         },
-        "linkSteamAccountDescription": "HyperPlay 계정을 연결하기 위해 Steam에 로그인하십시오.",
+        "linkSteamAccountDescription": "NovaPlay 계정을 연결하기 위해 Steam에 로그인하십시오.",
         "linkSteamAccountTitle": "링크 증기 계정",
         "syncing": "동기화 ...",
         "connectWallet": "지갑 연결",
@@ -894,7 +894,7 @@
     },
     "importGameErrorMessage": "유효한 게임 폴더가 아닙니다, 수입 게임은 불가능합니다",
     "exit_game": "출구 Game",
-    "hyperplayOverlay": {
+    "novaplayOverlay": {
         "extensionNotification": {
             "DESCRIPTION": "프레스 {{overlayKeyMod}} + X이 거래를 볼",
             "TITLE": "거래 요청"
@@ -927,8 +927,8 @@
             "FAILED": "사용자 정의 네트워크 취소"
         },
         "greeting": {
-            "title": "HyperPlay 오버레이",
-            "description": "HyperPlay 오버레이가 준비되어 있습니다! 프레스 {{overlayKeyMod}} + X를 표시하거나 숨기십시오."
+            "title": "NovaPlay 오버레이",
+            "description": "NovaPlay 오버레이가 준비되어 있습니다! 프레스 {{overlayKeyMod}} + X를 표시하거나 숨기십시오."
         }
     },
     "dlcs": {
@@ -987,8 +987,8 @@
     "quests": {
         "playstreak": {
             "signInWarning": {
-                "client": "현재 로그인되지 않습니다, streak 진행 상황을 추적하지 않습니다. 진행 상황을 추적하기 위해 top-right dropdown을 통해 HyperPlay에 로그인하십시오.",
-                "overlay": "현재 로그인되지 않습니다, streak 진행 상황을 추적하지 않습니다. 게임을 종료하고 HyperPlay에 로그인하십시오."
+                "client": "현재 로그인되지 않습니다, streak 진행 상황을 추적하지 않습니다. 진행 상황을 추적하기 위해 top-right dropdown을 통해 NovaPlay에 로그인하십시오.",
+                "overlay": "현재 로그인되지 않습니다, streak 진행 상황을 추적하지 않습니다. 게임을 종료하고 NovaPlay에 로그인하십시오."
             }
         },
         "quests": "퀘스트",
@@ -997,14 +997,14 @@
             "title": "퀘스트 없음."
         },
         "g7CreditsModal": {
-            "description": "HyperPlay의 최고 게임으로 흥미 진진한 Play Streak Challenges. 각 활동은 당신이 다른 게임과 참여하는 것을 격려, web3 게임의 베스트를 보여. 당신의 playtime 사정!",
+            "description": "NovaPlay의 최고 게임으로 흥미 진진한 Play Streak Challenges. 각 활동은 당신이 다른 게임과 참여하는 것을 격려, web3 게임의 베스트를 보여. 당신의 playtime 사정!",
             "title": "Game7 크레딧 획득"
         }
     },
     "accounts": "계정 만들기",
     "overlay": {
-        "EXTERNAL_WALLET_CONNECTED": "HyperPlay와 외부 지갑에 연결됩니다.",
-        "WALLET_DISCONNECTED": "HyperPlay에 연결된 지갑이 없습니다."
+        "EXTERNAL_WALLET_CONNECTED": "NovaPlay와 외부 지갑에 연결됩니다.",
+        "WALLET_DISCONNECTED": "NovaPlay에 연결된 지갑이 없습니다."
     },
     "importGameErrorMessageExecutable": "(한국어) 실행할 수 없습니다, 수입 게임 가능",
     "back_to_game": "게임으로 돌아가기",
