@@ -87,7 +87,7 @@ metricsStore.onDidChange('metricsOptInStatus', (newValue) => {
 const METRICS_PARTICIPATION_EVENTS = ['Metrics Opt-in', 'Metrics Opt-out']
 
 /**
- * We will send the version of HyperPlay with all events for the ability to
+ * We will send the version of NovaPlay with all events for the ability to
  * track improvements in experiences overtime.
  */
 
@@ -125,7 +125,7 @@ async function _trackEventPrivate(
     },
     context: {
       app: {
-        name: 'HyperPlay',
+        name: 'NovaPlay',
         version: getAppVersion()
       }
     }
@@ -171,7 +171,7 @@ export const trackScreen = async (name: string, properties?: apiObject) => {
       },
       context: {
         app: {
-          name: 'HyperPlay',
+          name: 'NovaPlay',
           version: getAppVersion()
         }
       }
