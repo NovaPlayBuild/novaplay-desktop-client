@@ -24,7 +24,7 @@ const useSettingsContext = ({ appName, gameInfo, runner }: Props) => {
   const isLinuxNative =
     isLinux && (gameInfo?.install.platform === 'linux' || false)
 
-  // Load hyperplay's or game's config, only if not loaded already
+  // Load novaplay's or game's config, only if not loaded already
   useEffect(() => {
     const getSettings = async () => {
       const config = isDefault
