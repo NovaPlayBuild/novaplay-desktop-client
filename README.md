@@ -25,14 +25,6 @@
 - macOS 10.15 or higher
 
 
-## Screenshots
-
-[//]: # 'Easy way to upload screenshots: https://stackoverflow.com/a/26601810'
-
-<img width="1840" alt="Hyperplay main page" src="https://github.com/NovaPlay-Gaming/novaplay-desktop-client/assets/38574891/18c94466-8511-4f47-8de7-e74bc9b54ddf">
-<img width="1840" alt="Hyperplay wallet signature during game" src="https://github.com/NovaPlay-Gaming/novaplay-desktop-client/assets/38574891/a56d34c6-f1a8-46dc-9a18-5e0c6035e468">
-<img width="1840" alt="Hyperplay game detail page" src="https://github.com/NovaPlay-Gaming/novaplay-desktop-client/assets/38574891/a4a2ffe9-2e2a-4f88-be34-8903d900385b">
-
 ### Local Development
 
 This projects uses optional NPM packages.
