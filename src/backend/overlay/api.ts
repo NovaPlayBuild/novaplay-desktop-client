@@ -3,7 +3,7 @@ import {
   OverlayRenderState,
   OverlayMode,
   ToastKey
-} from '@hyperplay/utils'
+} from '@novaplay/utils'
 import { Toast } from './types'
 import { ipcRenderer } from 'electron'
 
