@@ -122,7 +122,7 @@ export const isGameAvailable = async (args: {
   runner: Runner
 }) => ipcRenderer.invoke('isGameAvailable', args)
 
-export const getHyperPlayListings = async () =>
-  ipcRenderer.invoke('getHyperPlayListings')
+export const getNovaPlayListings = async () =>
+  ipcRenderer.invoke('getNovaPlayListings')
 
 export const otp = async (otp: string) => ipcRenderer.send('otp', otp)
