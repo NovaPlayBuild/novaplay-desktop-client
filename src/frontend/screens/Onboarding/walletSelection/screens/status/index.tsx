@@ -1,7 +1,7 @@
 import React from 'react'
-import { RejectedIcon, SuccessIcon } from 'frontend/assets/hyperplay'
+import { RejectedIcon, SuccessIcon } from 'frontend/assets/novaplay'
 import StatusStyles from './index.module.scss'
-import { Button } from '@hyperplay/ui'
+import { Button } from '@novaplay/ui'
 
 export enum CONNECTION_STATUS {
   PENDING = 'PENDING',
