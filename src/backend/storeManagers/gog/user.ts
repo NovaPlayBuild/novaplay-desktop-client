@@ -66,7 +66,7 @@ export class GOGUser {
 
   public static async getUserDetails() {
     if (!isOnline()) {
-      logError('Unable to login information, HyperPlay offline', LogPrefix.Gog)
+      logError('Unable to login information, NovaPlay offline', LogPrefix.Gog)
       return
     }
     if (!this.isLoggedIn()) {
