@@ -1,7 +1,7 @@
 import React from 'react'
 import { ONBOARDING_SCREEN } from '../types'
 import { t } from 'i18next'
-import { Button, Images } from '@hyperplay/ui'
+import { Button, Images } from '@novaplay/ui'
 import { LanguageSelector } from 'frontend/components/UI'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons'
@@ -17,60 +17,60 @@ interface WelcomeProps {
 const Welcome: React.FC<WelcomeProps> = function (props) {
   return (
     <>
-      <Images.HyperPlayLogoColored className={OnboardingStyles.hpLogo} />
+      <Images.NovaPlayLogoColored className={OnboardingStyles.hpLogo} />
       <h5>
         {t(
-          'hyperplay.onboarding.welcome.title',
-          'Welcome to HyperPlay Early Access!'
+          'novaplay.onboarding.welcome.title',
+          'Welcome to NovaPlay Early Access!'
         )}
       </h5>
       <div className={`body ${WelcomeStyles.welcomeBodyTextContainer}`}>
         <div className={WelcomeStyles.boldText}>
           {t(
-            'hyperplay.onboarding.welcome.text.construction',
-            `HyperPlay is under construction.`
+            'novaplay.onboarding.welcome.text.construction',
+            `NovaPlay is under construction.`
           )}
         </div>
         <div>
           {t(
-            'hyperplay.onboarding.welcome.text.description',
-            `HyperPlay is a game launcher and game store aggregator from the
-          future. With HyperPlay, you can carry your wallet, tokens, and assets
-          into every game. HyperPlay supports the entire library of the Epic
-          Store, GOG, and our own HyperPlay store. By using HyperPlay, you agree
+            'novaplay.onboarding.welcome.text.description',
+            `NovaPlay is a game launcher and game store aggregator from the
+          future. With NovaPlay, you can carry your wallet, tokens, and assets
+          into every game. NovaPlay supports the entire library of the Epic
+          Store, GOG, and our own NovaPlay store. By using NovaPlay, you agree
           to our`
           )}{' '}
           <a
             onClick={() =>
               window.api.openExternalUrl(
-                `https://www.hyperplay.xyz/terms-of-service`
+                `https://www.novaplay.xyz/terms-of-service`
               )
             }
           >
-            {t('hyperplay.onboarding.terms', `Terms of Service.`)}
+            {t('novaplay.onboarding.terms', `Terms of Service.`)}
           </a>
         </div>
         <div>
           {t(
-            'hyperplay.onboarding.welcome.text.bugs',
-            `Please note that HyperPlay is a public alpha. Many features are still
+            'novaplay.onboarding.welcome.text.bugs',
+            `Please note that NovaPlay is a public alpha. Many features are still
           in development, and there will be bugs.`
           )}
         </div>
         <div>
           {t(
-            'hyperplay.onboarding.welcome.text.communityCTA_1',
+            'novaplay.onboarding.welcome.text.communityCTA_1',
             `We'd love your feedback and to have you join us in our`
           )}{' '}
           <a
             onClick={() =>
-              window.api.openExternalUrl(`https://discord.gg/hyperplay`)
+              window.api.openExternalUrl(`https://discord.gg/novaplay`)
             }
           >
-            {t('hyperplay.discordApp', `Discord`)}
+            {t('novaplay.discordApp', `Discord`)}
           </a>{' '}
           {t(
-            'hyperplay.onboarding.welcome.text.communityCTA_2',
+            'novaplay.onboarding.welcome.text.communityCTA_2',
             `community. Together, let's shape the future of gaming!`
           )}
         </div>
