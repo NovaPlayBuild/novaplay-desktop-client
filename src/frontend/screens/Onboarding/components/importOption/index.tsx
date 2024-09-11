@@ -1,8 +1,8 @@
 import ImportOptionStyles from './index.module.scss'
 import React, { useEffect, useState } from 'react'
 import cn from 'classnames'
-import { ImportableBrowser } from '@hyperplay/utils'
-import { Images } from '@hyperplay/ui'
+import { ImportableBrowser } from '@novaplay/utils'
+import { Images } from '@novaplay/ui'
 
 interface WalletOptionProps {
   title: ImportableBrowser
