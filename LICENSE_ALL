@@ -4,8 +4,8 @@ This repository incorporates material as listed below or described in the code.
 
 ---
 
-hyperplay-desktop-client
-https://github.com/HyperPlay-Gaming/hyperplay-desktop-client
+novaplay-desktop-client
+https://github.com/NovaPlay-Gaming/novaplay-desktop-client
 
                     GNU GENERAL PUBLIC LICENSE
                        Version 3, 29 June 2007
@@ -684,35 +684,35 @@ Public License instead of this License. But first, please read
 
 ---
 
-@hyperplay/hyperplay-proxy-server
-https://github.com/HyperPlay-Gaming/hyperplay-proxy-server
+@novaplay/novaplay-proxy-server
+https://github.com/NovaPlay-Gaming/novaplay-proxy-server
 
-© 2022 - 2023 HyperPlay Labs, Inc. - All Rights Reserved.
-
----
-
-@hyperplay/hyperplay-extension-helper
-https://github.com/HyperPlay-Gaming/hyperplay-extension-helper
-
-© 2022 - 2023 HyperPlay Labs, Inc. - All Rights Reserved.
+© 2022 - 2023 NovaPlay Labs, Inc. - All Rights Reserved.
 
 ---
 
-@hyperplay/hyperplay-overlay
-https://github.com/HyperPlay-Gaming/hyperplay-overlay
+@novaplay/novaplay-extension-helper
+https://github.com/NovaPlay-Gaming/novaplay-extension-helper
 
-© 2022 - 2023 HyperPlay Labs, Inc. - All Rights Reserved.
-
----
-
-@hyperplay/hyperplay-mock-backend
-https://github.com/HyperPlay-Gaming/hyperplay-mock-backend
-
-© 2022 - 2023 HyperPlay Labs, Inc. - All Rights Reserved.
+© 2022 - 2023 NovaPlay Labs, Inc. - All Rights Reserved.
 
 ---
 
-@hyperplay/hyperplay-ui
-https://github.com/HyperPlay-Gaming/hyperplay-ui
+@novaplay/novaplay-overlay
+https://github.com/NovaPlay-Gaming/novaplay-overlay
 
-© 2022 - 2023 HyperPlay Labs, Inc. - All Rights Reserved.
+© 2022 - 2023 NovaPlay Labs, Inc. - All Rights Reserved.
+
+---
+
+@novaplay/novaplay-mock-backend
+https://github.com/NovaPlay-Gaming/novaplay-mock-backend
+
+© 2022 - 2023 NovaPlay Labs, Inc. - All Rights Reserved.
+
+---
+
+@novaplay/novaplay-ui
+https://github.com/NovaPlay-Gaming/novaplay-ui
+
+© 2022 - 2023 NovaPlay Labs, Inc. - All Rights Reserved.
