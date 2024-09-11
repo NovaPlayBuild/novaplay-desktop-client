@@ -47,18 +47,18 @@ const currentGlobalConfigVersion: GlobalConfigVersion = 'v0'
 
 const flatPakHome = env.XDG_DATA_HOME?.replace('/data', '') || homedir()
 const userHome = homedir()
-const appFolder = join(configFolder, 'hyperplay')
+const appFolder = join(configFolder, 'novaplay')
 const legendaryConfigPath = join(appFolder, 'legendaryConfig', 'legendary')
 const configPath = join(appConfigFolder, 'config.json')
 const gamesConfigPath = join(appConfigFolder, 'GamesConfig')
 
 const toolsPath = join(appConfigFolder, 'tools')
 const iconsFolder = join(appConfigFolder, 'icons')
-const installPath = join(homedir(), 'Games', 'HyperPlay')
+const installPath = join(homedir(), 'Games', 'NovaPlay')
 const defaultWinePrefix = join(
   homedir(),
   'Games',
-  'HyperPlay',
+  'NovaPlay',
   'Prefixes',
   'default'
 )
@@ -87,15 +87,15 @@ const fallBackImage = 'fallback'
 const epicLoginUrl = 'https://legendary.gl/epiclogin'
 const sidInfoUrl =
   'https://github.com/Heroic-Games-Launcher/HeroicGamesLauncher/wiki/How-To:-Epic-Alternative-Login'
-const githubURL = 'https://github.com/G7DAO/HyperPlay/releases/latest'
-const GITHUB_API = 'https://api.github.com/repos/G7DAO/HyperPlay/releases'
-const supportURL = 'https://github.com/G7DAO/HyperPlay/blob/main/Support.md'
-const discordLink = 'https://discord.gg/hyperplay'
-const twitterLink = 'https://twitter.com/HyperPlayGaming'
-const wikiLink = 'https://github.com/G7DAO/HyperPlay/wiki'
-const weblateUrl = 'https://hosted.weblate.org/projects/hyperplay-client/'
+const githubURL = 'https://github.com/G7DAO/NovaPlay/releases/latest'
+const GITHUB_API = 'https://api.github.com/repos/G7DAO/NovaPlay/releases'
+const supportURL = 'https://github.com/G7DAO/NovaPlay/blob/main/Support.md'
+const discordLink = 'https://discord.gg/novaplay'
+const twitterLink = 'https://twitter.com/NovaPlayGaming'
+const wikiLink = 'https://github.com/G7DAO/NovaPlay/wiki'
+const weblateUrl = 'https://hosted.weblate.org/projects/novaplay-client/'
 const wineprefixFAQ = 'https://wiki.winehq.org/FAQ#Wineprefixes'
-const hyperplaySite = 'https://docs.hyperplay.xyz/faq'
+const novaplaySite = 'https://docs.novaplay.xyz/faq'
 const customThemesWikiLink =
   'https://github.com/Heroic-Games-Launcher/HeroicGamesLauncher/wiki/Custom-Themes'
 const eventsToCloseMetaMaskPopupOn = [
@@ -104,7 +104,7 @@ const eventsToCloseMetaMaskPopupOn = [
   'mouseDown',
   'mouseUp'
 ]
-const valistListingsApiUrl = 'https://developers.hyperplay.xyz/api/v1/listings'
+const valistListingsApiUrl = 'https://developers.novaplay.xyz/api/v1/listings'
 const mainReleaseChannelName = 'main'
 export let qaToken = ''
 
@@ -129,7 +129,7 @@ export function getValidateLicenseKeysApiUrl() {
  * @returns unix: $SHELL or /usr/bin/bash
  */
 function getShell() {
-  // Dont change this logic since HyperPlay will break when using SH or FISH
+  // Dont change this logic since NovaPlay will break when using SH or FISH
   switch (process.platform) {
     case 'win32':
       return 'powershell.exe'
@@ -275,7 +275,7 @@ export {
   GITHUB_API,
   gogdlAuthConfig,
   wineprefixFAQ,
-  hyperplaySite,
+  novaplaySite,
   customThemesWikiLink,
   onboardLocalStore,
   eventsToCloseMetaMaskPopupOn,
