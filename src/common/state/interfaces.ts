@@ -12,13 +12,13 @@ export interface TransactionStateInterface {
 }
 
 export type OverlayMode =
-  | 'HyperPlay Extension'
-  | 'HyperPlay Exit Game'
-  | 'HyperPlay Toasts'
-  | 'HyperPlay Hint Text'
-  | 'HyperPlay Browser Game'
-  | 'HyperPlay Extension Overlay'
-  | 'HyperPlay Web Game'
+  | 'NovaPlay Extension'
+  | 'NovaPlay Exit Game'
+  | 'NovaPlay Toasts'
+  | 'NovaPlay Hint Text'
+  | 'NovaPlay Browser Game'
+  | 'NovaPlay Extension Overlay'
+  | 'NovaPlay Web Game'
 
 export interface OverlayStateInterface {
   renderState: OverlayRenderState
