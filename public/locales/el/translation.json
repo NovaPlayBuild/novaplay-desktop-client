@@ -19,7 +19,7 @@
     },
     "box": {
         "cache-cleared": {
-            "message": "Η προσωρινή μνήμη HyperPlay καθαρίστηκε.",
+            "message": "Η προσωρινή μνήμη NovaPlay καθαρίστηκε.",
             "title": "Προσωρινή Μνήμη Καθαρίστηκε"
         },
         "choose": "Επιλογή",
@@ -89,11 +89,11 @@
                 "changelog": "Άνοιγμα αρχείου καταγραφής αλλαγών",
                 "detail": "Θέλετε να κάνετε λήψη της ενημέρωσης στο παρασκήνιο;",
                 "message": "Υπάρχει μια νέα έκδοση διαθέσιμη!",
-                "message-finished": "Θέλετε να επανεκκινήσετε το HyperPlay τώρα;",
-                "title": "HyperPlay Games Launcher",
+                "message-finished": "Θέλετε να επανεκκινήσετε το NovaPlay τώρα;",
+                "title": "NovaPlay Games Launcher",
                 "title-finished": "Η ενημέρωση ολοκληρώθηκε",
-                "appUpdated": "HyperPlay ενημερώθηκε",
-                "appUpdated-message": "HyperPlay ενημερώθηκε. Θέλετε να ενημερώσετε και να επανεκκινήσετε το HyperPlay τώρα?"
+                "appUpdated": "NovaPlay ενημερώθηκε",
+                "appUpdated-message": "NovaPlay ενημερώθηκε. Θέλετε να ενημερώσετε και να επανεκκινήσετε το NovaPlay τώρα?"
             }
         },
         "no": "ΟΧΙ",
@@ -109,8 +109,8 @@
         },
         "reset-app": {
             "question": {
-                "message": "Are you sure you want to reset HyperPlay? This will remove all Settings and Caching but won't remove your Installed games or your Epic credentials. Portable versions (AppImage, WinPortable, ...) of HyperPlay needs to be restarted manually afterwards.",
-                "title": "Reset HyperPlay"
+                "message": "Are you sure you want to reset NovaPlay? This will remove all Settings and Caching but won't remove your Installed games or your Epic credentials. Portable versions (AppImage, WinPortable, ...) of NovaPlay needs to be restarted manually afterwards.",
+                "title": "Reset NovaPlay"
             }
         },
         "runexe": {
@@ -150,7 +150,7 @@
             "title": "Προειδοποίηση",
             "rosetta": {
                 "title": "Rosetta δεν βρέθηκε",
-                "message": "HyperPlay απαιτεί Rosetta για να τρέξει σωστά στο macOS με Apple Silicon chips. Παρακαλούμε να το εγκαταστήσετε από το τερματικό macOS χρησιμοποιώντας την παρακάτω εντολή: \"softwareupdate --install-rosetta\" και επανεκκίνηση HyperPlay. "
+                "message": "NovaPlay απαιτεί Rosetta για να τρέξει σωστά στο macOS με Apple Silicon chips. Παρακαλούμε να το εγκαταστήσετε από το τερματικό macOS χρησιμοποιώντας την παρακάτω εντολή: \"softwareupdate --install-rosetta\" και επανεκκίνηση NovaPlay. "
             },
             "wine-change": {
                 "title": "Το κρασί δεν βρέθηκε!",
@@ -263,7 +263,7 @@
         "esync": "Το Esync στοχεύει να μειώσει το κόστος του wineserver σε παιχνίδια που χρησιμοποιούν εντατικά τη CPU. Η ενεργοποίηση μπορεί να βελτιώσει την απόδοση.",
         "fsync": "Το Fsync στοχεύει να μειώσει το κόστος του wineserver σε παιχνίδια που χρησιμοποιούν εντατικά τη CPU. Η ενεργοποίηση μπορεί να βελτιώσει την απόδοση σε υποστηριζόμενους πυρήνες Linux.",
         "game_language": {
-            "fallback": "Αφήστε το κενό για να χρησιμοποιήσετε τη γλώσσα του HyperPlay.",
+            "fallback": "Αφήστε το κενό για να χρησιμοποιήσετε τη γλώσσα του NovaPlay.",
             "in_game_config": "Δεν υποστηρίζουν όλα τα παιχνίδια αυτήν τη διαμόρφωση, ορισμένα έχουν ρύθμιση γλώσσας εντός του παιχνιδιού.",
             "valid_codes": "Οι έγκυροι κωδικοί γλώσσας εξαρτώνται από το παιχνίδι."
         },
@@ -279,18 +279,18 @@
         "preferSystemLibs": "Οι προσαρμοσμένες εκδόσεις Wine (Wine-GE, Wine-Lutris) αποστέλλονται με τις εξαρτήσεις της βιβλιοθήκης τους. Με την ενεργοποίηση αυτής της επιλογής, αυτές οι αποσταλμένες βιβλιοθήκες θα αγνοηθούν και το Wine θα φορτώσει τις βιβλιοθήκες του συστήματος. Προειδοποίηση! Ενδέχεται να προκύψουν προβλήματα εάν δεν ικανοποιηθούν οι εξαρτήσεις.",
         "primerun": "Use dedicated graphics card to render game on multi-GPU systems. Only needed on gaming laptops or desktops that use a headless GPU for rendering (NVIDIA Optimus, AMD CrossFire)",
         "steam_path": {
-            "info": "This path lets HyperPlay determine what version of Proton Steam uses, for adding non-Steam games to Steam."
+            "info": "This path lets NovaPlay determine what version of Proton Steam uses, for adding non-Steam games to Steam."
         },
         "steamruntime": "Custom libraries provided by Steam to help run Linux and Windows (Proton) games. Enabling might improve compatibility.",
         "sync": {
-            "part1": "Το HyperPlay προσπαθεί να μαντέψει τον σωστό φάκελο αποθήκευσης και αυτό θα δουλέψει στην πλειοψηφία των περιπτώσεων. Αν ο φάκελος είναι λάθος, χρησιμοποιήστε το κουτί κατίσχυσης για να τον αλλάξετε.",
-            "part2": "Αν αλλάξετε τον φάκελο προθημάτων Wine ή Proton, θα χρειαστεί να επανελέγξετε την διαδρομή, καθώς το Proton χρησιμοποιεί διαφορετικό πρόθημα (/pfx) και όνομα χρήστη (steamuser). Έτσι, μπορείτε απλά να διαγράψετε την παρούσα διαδρομή, να βγείτε έξω από την σελίδα επιλογών συγχρονισμού και να επιστρέψετε για να μαντέψει το HyperPlay μία ακόμη φορά τον φάκελο χρησιμοποιώντας το σωστό πρόθημα.",
+            "part1": "Το NovaPlay προσπαθεί να μαντέψει τον σωστό φάκελο αποθήκευσης και αυτό θα δουλέψει στην πλειοψηφία των περιπτώσεων. Αν ο φάκελος είναι λάθος, χρησιμοποιήστε το κουτί κατίσχυσης για να τον αλλάξετε.",
+            "part2": "Αν αλλάξετε τον φάκελο προθημάτων Wine ή Proton, θα χρειαστεί να επανελέγξετε την διαδρομή, καθώς το Proton χρησιμοποιεί διαφορετικό πρόθημα (/pfx) και όνομα χρήστη (steamuser). Έτσι, μπορείτε απλά να διαγράψετε την παρούσα διαδρομή, να βγείτε έξω από την σελίδα επιλογών συγχρονισμού και να επιστρέψετε για να μαντέψει το NovaPlay μία ακόμη φορά τον φάκελο χρησιμοποιώντας το σωστό πρόθημα.",
             "part3": "Χειροκίνητος Συγχρονισμός: Επιλέξτε Λήψη για να κατεβάσετε τα δεδομένα παιχνιδιού αποθηκευμένα στο Νέφος. Μεταφόρτωση για να ανεβάσετε τα τοπικά στο Νέφος. Επιβολή Λήψης και Επιβολή Μεταφόρτωσης θα αγνοήσει την τοπική ή στο Νέφος έκδοση.",
             "part4": "Ο Αυτόματος Συγχρονισμός Δεδομένων θα συγχρονίσει τα δεδομένα παιχνιδιού κάθε φορά που ξεκινάτε ένα παιχνίδι και αφού το κλείσετε."
         },
         "vkd3d": "Το VKD3D είναι ένα πρόγραμμα μετάφρασης που βασίζεται σε Vulkan για παιχνίδια DirectX 12. Η ενεργοποίηση μπορεί να βελτιώσει σημαντικά τη συμβατότητα. Δεν έχει καμία επίδραση σε παλαιότερα παιχνίδια DirectX.",
         "wine": {
-            "part1": "Το HyperPlay αναζητά εκδόσεις Wine, Proton και CrossOver στους ακόλουθους φακέλους:",
+            "part1": "Το NovaPlay αναζητά εκδόσεις Wine, Proton και CrossOver στους ακόλουθους φακέλους:",
             "part2": "Για άλλες τοποθεσίες, χρησιμοποιήστε έναν συμβολικό σύνδεσμο σε έναν απ' αυτούς τους φακέλους"
         },
         "disable_logs": "Περιφέρετε αυτό το checkbox για να απενεργοποιήσετε τα περισσότερα από τα γραπτά για αρχεία καταγραφής (κρίσιμες πληροφορίες είναι πάντα συνδεδεμένες). Φροντίστε να ενεργοποιήσετε την προσφορά αυτή πριν αναφέρετε οποιοδήποτε θέμα.",
@@ -299,12 +299,12 @@
         "msync": "Το Msync έχει ως στόχο να μειώσει το wine Server overhead σε παιχνίδια έντασης CPU. Το Enabling μπορεί να βελτιώσει την απόδοση σε διάφορα παιχνίδια."
     },
     "info": {
-        "hyperplay": {
+        "novaplay": {
             "beta": "Beta",
             "click-to-see-changelog": "Click to see changelog",
             "newReleases": "Ενημέρωση διαθέσιμη!",
             "stable": "Σταθερή",
-            "version": "Έκδοση HyperPlay"
+            "version": "Έκδοση NovaPlay"
         },
         "save-sync": {
             "searching": "Trying to detect the correct save folder (click to cancel)"
@@ -391,7 +391,7 @@
         },
         "moved": "Η μετακίνηση ολοκληρώθηκε",
         "moving": "Μετακίνηση παιχνιδιού",
-        "new-hyperplay-version": "Μια νέα έκδοση του HyperPlay κυκλοφόρησε!",
+        "new-novaplay-version": "Μια νέα έκδοση του NovaPlay κυκλοφόρησε!",
         "refresh": {
             "error": "Δεν ήταν δυνατή η ανάκτηση εκδόσεων από το upstream, ίσως λόγω περιορισμών στο Github API! Προσπαθήστε ξανά αργότερα."
         },
@@ -446,7 +446,7 @@
     "other": {
         "gogdl-version": "Έκδοση GOGDL: ",
         "legendary-version": "Έκδοση Legendary: ",
-        "weblate": "Βοηθήστε να μεταφραστεί το HyperPlay.",
+        "weblate": "Βοηθήστε να μεταφραστεί το NovaPlay.",
         "nile-version": "Έκδοση Nile: "
     },
     "Other": "Other",
@@ -491,7 +491,7 @@
         "autosync": "Αυτόματος συγχρονισμός δεδομένων",
         "autovkd3d": "Αυτόματη Εγκατάσταση/Ενημέρωση VKD3D με Πρόθημα",
         "change-target-exe": "Επιλέξτε ένα εναλλακτικό αρχείο EXE προς εκτέλεση",
-        "checkForUpdatesOnStartup": "Check for HyperPlay Updates on Startup",
+        "checkForUpdatesOnStartup": "Check for NovaPlay Updates on Startup",
         "crossover-version": "Crossover/Wine Version",
         "custom_themes_path": "Custom Themes Path",
         "customWineProton": "Ειδικές διαδρομές Wine/Proton",
@@ -499,7 +499,7 @@
         "default-install-path": "Προεπιλεγμένη Διαδρομή Εγκατάστασης",
         "default-steam-path": "Προεπιλεγμένη διαδρομή Steam",
         "defaultWinePrefix": "Καθορισμός Φακέλου για νέα Προθήματα Wine",
-        "disable_controller": "Απενεργοποίηση πλοήγησης με χρήση χειριστηρίου στο HyperPlay",
+        "disable_controller": "Απενεργοποίηση πλοήγησης με χρήση χειριστηρίου στο NovaPlay",
         "discordRPC": "Ενεργοποίηση Discord Rich Presence",
         "download-no-https": "Λήψη παιχνιδιών χωρίς HTTPS (χρήσιμο για CDN π.χ. LanCache)",
         "egs-sync": "Συγχρονισμός με εγκατεστημένο Epic Games",
@@ -540,13 +540,13 @@
         "log": {
             "copy-to-clipboard": "Αντιγραφή αρχείου καταγραφής στο πρόχειρο",
             "current-log": "Τρέχων Αρχείο Καταγραφής",
-            "instructions": "If you encounter any issues while using HyperPlay, we have two designated areas to report your issues in our Discord Server. If you're a player, please report any problems by visiting the player-support-forum. If you are a game dev, please report any problems by visiting the dev-support-forum.{{newLine}} {{newLine}} To help us diagnose and fix the problem as quickly as possible, please provide as much information as possible, including a copy of your logs. Our support team will monitor both channels and do their best to respond to your issue as quickly as possible. Thank you for your patience and understanding while we work to resolve any problems you may encounter.{{newLine}}",
+            "instructions": "If you encounter any issues while using NovaPlay, we have two designated areas to report your issues in our Discord Server. If you're a player, please report any problems by visiting the player-support-forum. If you are a game dev, please report any problems by visiting the dev-support-forum.{{newLine}} {{newLine}} To help us diagnose and fix the problem as quickly as possible, please provide as much information as possible, including a copy of your logs. Our support team will monitor both channels and do their best to respond to your issue as quickly as possible. Thank you for your patience and understanding while we work to resolve any problems you may encounter.{{newLine}}",
             "instructions_title": "How to report a problem?",
             "last-log": "Τελευταίο Αρχείο Καταγραφής",
             "no-file": "Δεν βρέθηκε αρχείο σύνδεσης",
             "show-in-folder": "Εμφάνιση αρχείου καταγραφής στον φάκελο",
-            "join-hyperplay-discord": "Ελάτε στο Discord μας",
-            "instructions-part-01": "Αν αντιμετωπίσετε οποιαδήποτε ζητήματα, ενώ χρησιμοποιείτε HyperPlay, έχουμε δύο καθορισμένες περιοχές για να αναφέρουμε τα προβλήματά σας στο Discord Server μας. Εάν είστε παίκτης, παρακαλούμε να αναφέρετε τυχόν προβλήματα με την επίσκεψη στο γράφημα υποστήριξης παίκτη. Εάν είστε ένα παιχνίδι dev, παρακαλούμε να αναφέρετε τυχόν προβλήματα με την επίσκεψη στο διάδρομο υποστήριξης του dev.",
+            "join-novaplay-discord": "Ελάτε στο Discord μας",
+            "instructions-part-01": "Αν αντιμετωπίσετε οποιαδήποτε ζητήματα, ενώ χρησιμοποιείτε NovaPlay, έχουμε δύο καθορισμένες περιοχές για να αναφέρουμε τα προβλήματά σας στο Discord Server μας. Εάν είστε παίκτης, παρακαλούμε να αναφέρετε τυχόν προβλήματα με την επίσκεψη στο γράφημα υποστήριξης παίκτη. Εάν είστε ένα παιχνίδι dev, παρακαλούμε να αναφέρετε τυχόν προβλήματα με την επίσκεψη στο διάδρομο υποστήριξης του dev.",
             "instructions-part-02": "Για να μας βοηθήσετε να διαγνώσουμε και να διορθώσετε το πρόβλημα όσο το δυνατόν γρηγορότερα, παρακαλούμε να παρέχετε όσο το δυνατόν περισσότερες πληροφορίες, συμπεριλαμβανομένου ενός αντιγράφου των καλωδίων σας. Η ομάδα υποστήριξης μας θα παρακολουθεί και τα δύο κανάλια και θα κάνει το καλύτερο δυνατό για να ανταποκριθεί στο πρόβλημά σας όσο το δυνατόν γρηγορότερα. Σας ευχαριστούμε για την υπομονή και την κατανόησή σας, ενώ εργαζόμαστε για την επίλυση τυχόν προβλημάτων που μπορεί να αντιμετωπίσετε."
         },
         "mangohud": "Ενεργοποίηση Mangohud (απαραίτητη η εγκατάσταση του Mangohud)",
@@ -561,7 +561,7 @@
         },
         "maxRecentGames": "Παίχτηκε Πρόσφατα για Προβολή",
         "maxworkers": "Μέγιστος αριθμός εργατών κατά την λήψη",
-        "minimize-on-launch": "Ελαχιστοποίηση HyperPlay Μετά Την 'Εναρξη",
+        "minimize-on-launch": "Ελαχιστοποίηση NovaPlay Μετά Την 'Εναρξη",
         "offlinemode": "Εκτέλεση Παιχνιδιού Εκτός Δικτύου",
         "prefered_language": "Προτιμώμενη γλώσσα (Κωδικός γλώσσας)",
         "preferSystemLibs": "Προτίμηση βιβλιοθηκών συστήματος",
@@ -594,7 +594,7 @@
         "addgamestoapplications": "Προσθέστε αυτόματα παιχνίδια στις Εφαρμογές",
         "showMetalOverlay": "Εμφάνιση επικάλυψης στατιστικών",
         "alt-nile-bin": "Επιλέξτε ένα εναλλακτικό δυαδικό αρχείο Nile",
-        "autoLaunchHyperPlay": "Auto Launch Hyper Παίξτε Play Play",
+        "autoLaunchNovaPlay": "Auto Launch Hyper Παίξτε Play Play",
         "dxvkfpslimit": "Περιορισμός FPS (DX9, 10 και 11)",
         "autodxvknvapi": "Auto Install/Update DXVK-NVAPI on Prefix",
         "steamId": "Steam ID",
@@ -605,7 +605,7 @@
             "installing": "Installing BattlEye Runtime...",
             "name": "BattlEye AntiCheat Runtime"
         },
-        "clear-cache": "Εκκαθάριση κρυφής μνήμης HyperPlay",
+        "clear-cache": "Εκκαθάριση κρυφής μνήμης NovaPlay",
         "copiedToClipboard": "Αντιγράφηκε στο πρόχειρο!",
         "copyToClipboard": "Αντιγραφή όλων των ρυθμίσεων στο Πρόχειρο",
         "default_hint": "Changes in this section only apply as default values when installing games. If you want to change the settings of an already installed game, use the Settings button in the game page.",
@@ -638,7 +638,7 @@
             "systemInformation": "Πληροφορίες συστήματος"
         },
         "open-config-file": "Άνοιγμα αρχείου παραμετροποίησης",
-        "reset-hyperplay": "Επαναφορά HyperPlay",
+        "reset-novaplay": "Επαναφορά NovaPlay",
         "saves": {
             "label": "Save Location:",
             "warning": "Η λειτουργία Cloud Saves είναι σε Beta, δημιουργήστε αντίγραφα ασφαλείας των αποθηκευμένων παιχνιδιών σας πριν από τον συγχρονισμό (σε περίπτωση που κάτι πάει στραβά)"
@@ -756,19 +756,19 @@
     "amazon": "Αμαζόνα",
     "Amazon Games": "Παιχνίδια Amazon",
     "prime-gaming": "Prime Gaming",
-    "hyperplay": {
+    "novaplay": {
         "onboarding": {
             "analytics": {
                 "privacyPolicyHere": "Πολιτική απορρήτου εδώ.",
-                "hyperplayWill": "HyperPlay θα:",
+                "novaplayWill": "NovaPlay θα:",
                 "neverCollectIP": " συλλέξτε την πλήρη διεύθυνση IP σας;",
                 "privacyCaption": "Τα δεδομένα αυτά συγκεντρώνονται και επομένως είναι ανώνυμα για τους σκοπούς του γενικού κανονισμού προστασίας δεδομένων (ΕΕ) 2016/679. Για περισσότερες πληροφορίες σχετικά με τις πρακτικές απορρήτου μας, παρακαλούμε δείτε τις πρακτικές μας ",
                 "anonymized": "Στείλτε ανώνυμα κλικ και αλληλεπίδραση παιχνιδιού;",
                 "optOut": "Επιτρέψτε πάντα να εξαιρεθείτε μέσω ρυθμίσεων·;",
                 "neverCollectPersonal": " συλλέγουν κλειδιά, διευθύνσεις, ισορροπίες, hashes ή οποιεσδήποτε προσωπικές πληροφορίες;",
                 "neverSellData": " πωλούν δεδομένα για κέρδος. Ποτέ!",
-                "body": "Το HyperPlay θα ήθελε να συλλέξει δεδομένα χρήσης για να καταλάβει καλύτερα πώς οι χρήστες μας αλληλεπιδρούν με την εφαρμογή. Αυτές οι πληροφορίες μας βοηθούν να καταλάβουμε πώς χρησιμοποιείτε την εφαρμογή και μας επιτρέπουν να κάνουμε HyperPlay ακόμα καλύτερα για εσάς.",
-                "title": "Βοηθήστε μας να βελτιώσουμε το HyperPlay!"
+                "body": "Το NovaPlay θα ήθελε να συλλέξει δεδομένα χρήσης για να καταλάβει καλύτερα πώς οι χρήστες μας αλληλεπιδρούν με την εφαρμογή. Αυτές οι πληροφορίες μας βοηθούν να καταλάβουμε πώς χρησιμοποιείτε την εφαρμογή και μας επιτρέπουν να κάνουμε NovaPlay ακόμα καλύτερα για εσάς.",
+                "title": "Βοηθήστε μας να βελτιώσουμε το NovaPlay!"
             },
             "connectionConnected": {
                 "description": "Το πορτοφόλι σας είναι συνδεδεμένο. Είστε έτοιμοι να παίξετε.",
@@ -779,7 +779,7 @@
                     "import": {
                         "details": "Τα προγράμματα περιήγησης κάτω έχουν ήδη εγκαταστήσει το MetaMask. Επιλέξτε αυτό που θέλετε να εισαγάγετε από.",
                         "useRecoveryPhrase": "Εφαρμογή μυστικής φράσης αποκατάστασης",
-                        "useRecoveryPhraseInfo": "Αυτό το χαρακτηριστικό συνιστάται για προχωρημένους χρήστες και προγραμματιστές. Η μυστική φράση ανάκτησης σας αποθηκεύεται σε τοπικό επίπεδο στο MetaMask και ποτέ δεν μοιράζεται με το HyperPlay.",
+                        "useRecoveryPhraseInfo": "Αυτό το χαρακτηριστικό συνιστάται για προχωρημένους χρήστες και προγραμματιστές. Η μυστική φράση ανάκτησης σας αποθηκεύεται σε τοπικό επίπεδο στο MetaMask και ποτέ δεν μοιράζεται με το NovaPlay.",
                         "title": "Επιλέξτε το πρόγραμμα περιήγησης για εισαγωγή από",
                         "cantFindProfile": "Δεν μπορείτε να βρείτε το προφίλ περιήγησης σας?",
                         "createNewWallet": "Δημιουργήστε νέο πορτοφόλι επέκτασης MM",
@@ -803,7 +803,7 @@
                     "scan": {
                         "updateWarning": "Έχοντας ζητήματα; Βεβαιωθείτε ότι το MetaMask είναι μέχρι σήμερα.",
                         "dontHaveWallet": "Μην έχετε πορτοφόλι?",
-                        "details": "Δημιουργήστε ένα κρυπτογραφημένο κανάλι επικοινωνίας. Τα κλειδιά σας δεν θα μοιραστούν ποτέ με το HyperPlay.",
+                        "details": "Δημιουργήστε ένα κρυπτογραφημένο κανάλι επικοινωνίας. Τα κλειδιά σας δεν θα μοιραστούν ποτέ με το NovaPlay.",
                         "getMetamask": "Get MetaMask",
                         "title": "Scan QR με "
                     }
@@ -814,11 +814,11 @@
             "welcome": {
                 "title": "Καλώς ήρθατε στο Hyper Παίξτε Early Access!",
                 "text": {
-                    "bugs": "Παρακαλούμε σημειώστε ότι το HyperPlay είναι ένα δημόσιο άλφα. Πολλά χαρακτηριστικά είναι ακόμα\nστην ανάπτυξη και θα υπάρχουν σφάλματα.",
+                    "bugs": "Παρακαλούμε σημειώστε ότι το NovaPlay είναι ένα δημόσιο άλφα. Πολλά χαρακτηριστικά είναι ακόμα\nστην ανάπτυξη και θα υπάρχουν σφάλματα.",
                     "communityCTA_1": "Θα θέλαμε την ανάρρωσή σας και θα σας έχουμε ενταχθεί σε εμάς",
                     "communityCTA_2": "κοινότητα. Μαζί, ας διαμορφώσουμε το μέλλον του παιχνιδιού!",
-                    "construction": "HyperPlay είναι υπό κατασκευή.",
-                    "description": "HyperPlay είναι ένα game Launcher και game store aggregator από το\nμέλλον. Με HyperPlay, μπορείτε να μεταφέρετε το πορτοφόλι σας, tokens και περιουσιακά στοιχεία\nσε κάθε παιχνίδι. HyperPlay υποστηρίζει ολόκληρη τη βιβλιοθήκη της Epic\nStore, GOG και το δικό μας κατάστημα HyperPlay. Χρησιμοποιώντας HyperPlay, συμφωνείτε\nμας"
+                    "construction": "NovaPlay είναι υπό κατασκευή.",
+                    "description": "NovaPlay είναι ένα game Launcher και game store aggregator από το\nμέλλον. Με NovaPlay, μπορείτε να μεταφέρετε το πορτοφόλι σας, tokens και περιουσιακά στοιχεία\nσε κάθε παιχνίδι. NovaPlay υποστηρίζει ολόκληρη τη βιβλιοθήκη της Epic\nStore, GOG και το δικό μας κατάστημα NovaPlay. Χρησιμοποιώντας NovaPlay, συμφωνείτε\nμας"
                 }
             },
             "connectAgain": "Σύνδεση ξανά",
@@ -870,7 +870,7 @@
         "viewPortfolio": "Δείτε χαρτοφυλάκιο χαρτοφυλακίου",
         "otp": "Ένα Time Passcode",
         "linkSteamAccountCta": "Go to Steam sign in",
-        "linkSteamAccountDescription": "Εγγραφείτε στο Steam για να συνδέσετε το λογαριασμό HyperPlay σας.",
+        "linkSteamAccountDescription": "Εγγραφείτε στο Steam για να συνδέσετε το λογαριασμό NovaPlay σας.",
         "linkSteamAccountTitle": "Link λογαριασμό λογαριασμού Steam",
         "syncing": "Σύνθεση...",
         "viewItem": "Δείτε {{item}}",
@@ -885,15 +885,15 @@
         "Sync": "Συγχρονισμός",
         "viewFullscreen": "Δείτε πλήρη οθόνη"
     },
-    "hyperplayOverlay": {
+    "novaplayOverlay": {
         "signatureRequest": {
             "FAILED": "Η υπογραφή διέκοψε",
             "INITIATED": "Αίτηση υπογραφής εκκρεμών",
             "CONFIRMED": "Υπογραφή"
         },
         "greeting": {
-            "description": "HyperPlay Overlay είναι έτοιμο! Τύπος {{overlayKeyMod}} + X για να το δείξει ή να το κρύψει.",
-            "title": "HyperPlay Overlay"
+            "description": "NovaPlay Overlay είναι έτοιμο! Τύπος {{overlayKeyMod}} + X για να το δείξει ή να το κρύψει.",
+            "title": "NovaPlay Overlay"
         },
         "walletWatch": {
             "INITIATED": "Προσθέστε προσαρμοσμένη αίτηση εγγραφής εν αναμονή",
@@ -982,8 +982,8 @@
     "quests": {
         "playstreak": {
             "signInWarning": {
-                "overlay": "Επί του παρόντος δεν είστε συνδεδεμένοι, η πρόοδος του παιχνιδιού δεν θα εντοπιστεί. Παρακαλούμε βγείτε από το παιχνίδι και συνδεθείτε στο HyperPlay μέσω της κορυφαίας κατάρρευσης για να παρακολουθήσετε την πρόοδο.",
-                "client": "Επί του παρόντος δεν είστε συνδεδεμένοι, η πρόοδος του παιχνιδιού δεν θα εντοπιστεί. Επικοινωνήστε με το HyperPlay μέσω της κορυφαίας κατάρρευσης για να παρακολουθήσετε την πρόοδο."
+                "overlay": "Επί του παρόντος δεν είστε συνδεδεμένοι, η πρόοδος του παιχνιδιού δεν θα εντοπιστεί. Παρακαλούμε βγείτε από το παιχνίδι και συνδεθείτε στο NovaPlay μέσω της κορυφαίας κατάρρευσης για να παρακολουθήσετε την πρόοδο.",
+                "client": "Επί του παρόντος δεν είστε συνδεδεμένοι, η πρόοδος του παιχνιδιού δεν θα εντοπιστεί. Επικοινωνήστε με το NovaPlay μέσω της κορυφαίας κατάρρευσης για να παρακολουθήσετε την πρόοδο."
             }
         },
         "quests": "Quests",
@@ -993,7 +993,7 @@
         },
         "g7CreditsModal": {
             "title": "Κερδίστε Game7 Credits",
-            "description": "Αποκτήστε τα κορυφαία παιχνίδια του HyperPlay με συναρπαστικές προκλήσεις Play Streak. Κάθε δραστηριότητα σας ενθαρρύνει να συνεργαστείτε με ένα διαφορετικό παιχνίδι, δείχνοντας το καλύτερο παιχνίδι web3. Το playtime σας έχει σημασία!"
+            "description": "Αποκτήστε τα κορυφαία παιχνίδια του NovaPlay με συναρπαστικές προκλήσεις Play Streak. Κάθε δραστηριότητα σας ενθαρρύνει να συνεργαστείτε με ένα διαφορετικό παιχνίδι, δείχνοντας το καλύτερο παιχνίδι web3. Το playtime σας έχει σημασία!"
         }
     },
     "back_to_game": "Επιστροφή στο παιχνίδι",
@@ -1028,8 +1028,8 @@
         }
     },
     "overlay": {
-        "EXTERNAL_WALLET_CONNECTED": "Είστε συνδεδεμένοι με το HyperPlay με ένα εξωτερικό πορτοφόλι.",
-        "WALLET_DISCONNECTED": "Δεν έχετε πορτοφόλι συνδεδεμένο με HyperPlay."
+        "EXTERNAL_WALLET_CONNECTED": "Είστε συνδεδεμένοι με το NovaPlay με ένα εξωτερικό πορτοφόλι.",
+        "WALLET_DISCONNECTED": "Δεν έχετε πορτοφόλι συνδεδεμένο με NovaPlay."
     },
     "importGameErrorMessageExecutable": "Game Game Game Δεν είναι εφικτό, το παιχνίδι εισαγωγής δεν είναι εφικτό",
     "profile": "Προφίλ",
