@@ -43,15 +43,15 @@ describe('logger/logfile.ts', () => {
     logfile.createNewLogFileAndClearOldOnes()
 
     expect(spyOpenSync).toBeCalledWith(
-      expect.stringContaining('invalid/hyperplay-'),
+      expect.stringContaining('invalid/novaplay-'),
       'w'
     )
     expect(spyAppGetPath).toBeCalledWith('logs')
     expect(logError).toBeCalledWith(
       [
-        expect.stringContaining(`Open invalid/hyperplay-`),
+        expect.stringContaining(`Open invalid/novaplay-`),
         expect.objectContaining(
-          Error("ENOENT: no such file or directory, open 'invalid/hyperplay-")
+          Error("ENOENT: no such file or directory, open 'invalid/novaplay-")
         )
       ],
       { prefix: 'Backend', skipLogToFile: true }
@@ -81,7 +81,7 @@ describe('logger/logfile.ts', () => {
   })
 
   test('getLogFile all possible values', () => {
-    expect(logfile.getLogFile('hyperplay')).toMatch(/hyperplay.*\.log$/)
+    expect(logfile.getLogFile('novaplay')).toMatch(/novaplay.*\.log$/)
     expect(logfile.getLogFile('legendary')).toMatch(/legendary.*\.log$/)
     expect(logfile.getLogFile('gogdl')).toMatch(/gogdl.*\.log$/)
     // get game log
