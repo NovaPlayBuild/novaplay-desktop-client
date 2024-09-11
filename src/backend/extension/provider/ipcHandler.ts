@@ -28,7 +28,7 @@ ipcMain.on('errorExtensionRequest', (e: any, id: number, value: any) => {
 })
 
 ipcMain.prependListener('reloadApp', async () => {
-  const extensionProvider = await import('@hyperplay/extension-provider')
+  const extensionProvider = await import('@novaplay/extension-provider')
   if (extensionProvider.extensionProvider !== undefined) {
     extensionProvider.extensionProvider.connectionPromise = undefined
   }
