@@ -39,17 +39,17 @@
   display: none;
 }
 
-.hyperplaySidebarLogoContainer {
+.novaplaySidebarLogoContainer {
   margin: 0 auto var(--sidebar-vertical-padding);
   text-align: center;
 }
 
-.Sidebar.collapsed .hyperplaySidebarLogoContainer {
+.Sidebar.collapsed .novaplaySidebarLogoContainer {
   margin: 0 auto;
   padding: var(--space-xs) 0;
 }
 
-.hyperplaySidebarLogo {
+.novaplaySidebarLogo {
   width: var(--hp-logo-sidebar-width);
 }
 
