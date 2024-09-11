@@ -19,7 +19,7 @@
     },
     "box": {
         "cache-cleared": {
-            "message": "Caché de HyperPlay borrada.",
+            "message": "Caché de NovaPlay borrada.",
             "title": "Caché borrado"
         },
         "choose": "Elegir",
@@ -67,7 +67,7 @@
             },
             "update": {
                 "title": "Error al actualizar",
-                "message": "¡Algo ha ido mal con la actualización!. Por favor, desinstala manualmente y vuelve a instalar HyperPlay."
+                "message": "¡Algo ha ido mal con la actualización!. Por favor, desinstala manualmente y vuelve a instalar NovaPlay."
             },
             "wine-not-found": {
                 "invalid": "The selected wine version was not found. Install it or select a different version in the game's settings{{newline}}Version: {{version}}{{newline}}Path: {{path}}",
@@ -89,11 +89,11 @@
                 "changelog": "Abrir registro de cambios",
                 "detail": "¿Quiere descargar la actualización en segundo plano?",
                 "message": "¡Hay una nueva versión disponible!",
-                "message-finished": "¿Quieres reiniciar HyperPlay ahora?",
-                "title": "Iniciador de juegos HyperPlay",
+                "message-finished": "¿Quieres reiniciar NovaPlay ahora?",
+                "title": "Iniciador de juegos NovaPlay",
                 "title-finished": "Actualización finalizada",
-                "appUpdated": "HyperPlay fue actualizado",
-                "appUpdated-message": "HyperPlay fue actualizado. ¿Quieres actualizar y reiniciar HyperPlay ahora?"
+                "appUpdated": "NovaPlay fue actualizado",
+                "appUpdated-message": "NovaPlay fue actualizado. ¿Quieres actualizar y reiniciar NovaPlay ahora?"
             }
         },
         "no": "NO",
@@ -109,8 +109,8 @@
         },
         "reset-app": {
             "question": {
-                "message": "¿Estás seguro de que quieres reiniciar HyperPlay? Esto eliminará todos los ajustes y el caché, pero no eliminará los juegos instalados ni las credenciales de Epic. Las versiones portables (AppImage, WinPortable, ...) de HyperPlay necesitan ser reiniciadas manualmente después.",
-                "title": "Reset HyperPlay"
+                "message": "¿Estás seguro de que quieres reiniciar NovaPlay? Esto eliminará todos los ajustes y el caché, pero no eliminará los juegos instalados ni las credenciales de Epic. Las versiones portables (AppImage, WinPortable, ...) de NovaPlay necesitan ser reiniciadas manualmente después.",
+                "title": "Reset NovaPlay"
             }
         },
         "runexe": {
@@ -156,7 +156,7 @@
             },
             "rosetta": {
                 "title": "No se ha encontrado Rosetta",
-                "message": "HyperPlay requiere Rosetta para funcionar correctamente en macOS con chips Apple Silicon. Por favor, instálelo desde el terminal de macOS usando el siguiente comando: \"softwareupdate --install-rosetta\" y reinicie HyperPlay. "
+                "message": "NovaPlay requiere Rosetta para funcionar correctamente en macOS con chips Apple Silicon. Por favor, instálelo desde el terminal de macOS usando el siguiente comando: \"softwareupdate --install-rosetta\" y reinicie NovaPlay. "
             }
         },
         "wineprefix": "Elige la ruta del prefijo de Wine",
@@ -263,7 +263,7 @@
         "esync": "Esync intenta reducir la sobrecarga de wineserver en juegos con intenso uso de CPU. Activarlo puede mejorar el rendimiento.",
         "fsync": "Fsync intenta reducir la sobrecarga de wineserver en juegos con uso intensivo de CPU. Activarlo puede mejorar el rendimiento en kernels de Linux que lo soporten.",
         "game_language": {
-            "fallback": "Dejar en blanco para utilizar el idioma de HyperPlay.",
+            "fallback": "Dejar en blanco para utilizar el idioma de NovaPlay.",
             "in_game_config": "No todos los juegos soportan esta configuración, algunos tienen configuración del lenguage dentro del juego.",
             "valid_codes": "Códigos de lenguaje válidos varian dependiendo del juego."
         },
@@ -279,18 +279,18 @@
         "preferSystemLibs": "Versiones custom de Wine (Wine-GE, Wine-Lutris) incluyen sus propias librerías para sus dependencias. Al activar esta opción, esa librarías son ignoradas y Wine cargará las librarías del sistema en su lugar. Advertencia! Pueden ocurrir errores si las dependencias no se cumplen.",
         "primerun": "Utiliza una tarjeta gráfica dedicada para renderizar el juego en sistemas multi-GPU. Solo es necesario en portátiles o equipos de sobremesa para juegos que utilicen una GPU headless para el renderizado (NVIDIA Optimus, AMD CrossFire)",
         "steam_path": {
-            "info": "Esta ruta permite a HyperPlay determinar qué versión de Proton utiliza Steam, para añadir juegos que no sean de Steam a Steam."
+            "info": "Esta ruta permite a NovaPlay determinar qué versión de Proton utiliza Steam, para añadir juegos que no sean de Steam a Steam."
         },
         "steamruntime": "Librerías provistas por Steam para ayudar a ejecutar juegos de Linux y Windows (Proton). Activarlas puede mejorar la compatibilidad.",
         "sync": {
-            "part1": "HyperPlay intenta adivinar la carpeta de guardado correcta y esto funcionará en la mayoría de los casos. En caso de que la carpeta sea incorrecta, utilice la casilla de anulación para cambiarla.",
-            "part2": "En caso de que cambies el prefijo de la carpeta para Wine o Proton, necesitarás comprobar la ruta de nuevo ya que Proton usa un prefijo (/pfx) y nombre de usuario (steamuser) diferentes. Así que puedes simplemente borrar la ruta actual salir de la página de configuración de sincronización y volver de nuevo para que HyperPlay adivine la carpeta una vez más con el prefijo correcto.",
+            "part1": "NovaPlay intenta adivinar la carpeta de guardado correcta y esto funcionará en la mayoría de los casos. En caso de que la carpeta sea incorrecta, utilice la casilla de anulación para cambiarla.",
+            "part2": "En caso de que cambies el prefijo de la carpeta para Wine o Proton, necesitarás comprobar la ruta de nuevo ya que Proton usa un prefijo (/pfx) y nombre de usuario (steamuser) diferentes. Así que puedes simplemente borrar la ruta actual salir de la página de configuración de sincronización y volver de nuevo para que NovaPlay adivine la carpeta una vez más con el prefijo correcto.",
             "part3": "Sincronización manual: elija Descargar para descargar los juegos guardados en la nube. Subir para subir los locales a la nube. Forzar descarga y Carga forzada ignorarán la versión local o en la nube.",
             "part4": "Sincronizar guardados automáticamente sincronizará los guardados cada vez que inicie un juego y después de terminar de jugar."
         },
         "vkd3d": "VKD3D una capa de traducción basada en Vulkan para juegos que usan DirectX 12. Activarla puede mejorar el rendimiento significativamente. No tiene efecto en juegos viejos que usen DirectX.",
         "wine": {
-            "part1": "HyperPlay busca versiones de Wine, Proton y CrossOver en las siguientes carpetas:",
+            "part1": "NovaPlay busca versiones de Wine, Proton y CrossOver en las siguientes carpetas:",
             "part2": "Para otros lugares, use un enlace simbólico a una de estas carpetas"
         },
         "disable_logs": "Active esta casilla de verificación para desactivar la mayoría de las escrituras en los archivos de registro (la información crítica siempre se registra). Asegúrese de DESACTIVAR esta configuración antes de informar cualquier problema.",
@@ -299,12 +299,12 @@
         "msync": "El objetivo de Msync es reducir la sobrecarga del servidor de vinos en los juegos que consumen mucha CPU. Activarlo puede mejorar el rendimiento en varios juegos."
     },
     "info": {
-        "hyperplay": {
+        "novaplay": {
             "beta": "Beta",
             "click-to-see-changelog": "Click to see changelog",
             "newReleases": "¡Actualización disponible!",
             "stable": "Estable",
-            "version": "Versión de HyperPlay"
+            "version": "Versión de NovaPlay"
         },
         "save-sync": {
             "searching": "Trying to detect the correct save folder"
@@ -391,7 +391,7 @@
         },
         "moved": "Movimiento terminado",
         "moving": "Moviendo juego",
-        "new-hyperplay-version": "¡Una nueva versión de HyperPlay fue publicada!",
+        "new-novaplay-version": "¡Una nueva versión de NovaPlay fue publicada!",
         "refresh": {
             "error": "No se pudieron recuperar las versiones anteriores, ¡quizás debido a las restricciones de la API de Github! Vuelve a intentarlo más tarde."
         },
@@ -446,7 +446,7 @@
     "other": {
         "gogdl-version": "Versión de GOGDL: ",
         "legendary-version": "Versión de Legendary: ",
-        "weblate": "Ayuda a traducir HyperPlay.",
+        "weblate": "Ayuda a traducir NovaPlay.",
         "nile-version": "Versión del Nilo: "
     },
     "Other": "Other",
@@ -491,7 +491,7 @@
         "autosync": "Autosincronizar guardados",
         "autovkd3d": "Instalación/actualización automática de VKD3D en el prefijo",
         "change-target-exe": "Seleccione un EXE alternativo para ejecutar",
-        "checkForUpdatesOnStartup": "Buscar actualizaciones de HyperPlay al iniciar",
+        "checkForUpdatesOnStartup": "Buscar actualizaciones de NovaPlay al iniciar",
         "crossover-version": "Versión de Crossover",
         "custom_themes_path": "Ruta de los temas personalizados",
         "customWineProton": "Rutas personalizadas de Wine o Proton",
@@ -499,7 +499,7 @@
         "default-install-path": "Ruta de instalación predeterminada",
         "default-steam-path": "Ruta de Steam por defecto",
         "defaultWinePrefix": "Establecer carpeta para nuevos prefijos de Wine",
-        "disable_controller": "Desactivar la navegación de HyperPlay con el mando",
+        "disable_controller": "Desactivar la navegación de NovaPlay con el mando",
         "discordRPC": "Activar Discord Rich Presence",
         "download-no-https": "Descargar juegos sin HTTPS (útil para CDNs, ej: LanCache)",
         "egs-sync": "Sincronizar con juegos EGS",
@@ -546,8 +546,8 @@
             "no-file": "No se ha encontrado ningún archivo de registro",
             "show-in-folder": "Mostrar el archivo de registro en la carpeta",
             "instructions-part-02": "Para ayudarnos a diagnosticar y solucionar el problema lo antes posible, facilítenos toda la información posible, incluida una copia de sus registros. Nuestro equipo de soporte supervisará ambos canales y hará todo lo posible para responder a su problema lo antes posible. Gracias por su paciencia y comprensión mientras trabajamos para resolver cualquier problema que pueda encontrar.",
-            "instructions-part-01": "Si encuentras algún problema mientras usas HyperPlay, tenemos dos áreas designadas para informar de tus problemas en nuestro servidor de Discord. Si eres un jugador, por favor reporta cualquier problema visitando el foro de soporte al jugador. Si eres un desarrollador de juegos, por favor informa de cualquier problema visitando el foro de soporte para desarrolladores.",
-            "join-hyperplay-discord": "Únase a nuestro Discord"
+            "instructions-part-01": "Si encuentras algún problema mientras usas NovaPlay, tenemos dos áreas designadas para informar de tus problemas en nuestro servidor de Discord. Si eres un jugador, por favor reporta cualquier problema visitando el foro de soporte al jugador. Si eres un desarrollador de juegos, por favor informa de cualquier problema visitando el foro de soporte para desarrolladores.",
+            "join-novaplay-discord": "Únase a nuestro Discord"
         },
         "mangohud": "Habilitar Mangohud (es necesario instalar Mangohud)",
         "manualsync": {
@@ -561,7 +561,7 @@
         },
         "maxRecentGames": "Cantidad de jugados recientemente a mostrar",
         "maxworkers": "Número máximo de procesos al descargar",
-        "minimize-on-launch": "Minimizar HyperPlay tras el inicio del juego",
+        "minimize-on-launch": "Minimizar NovaPlay tras el inicio del juego",
         "offlinemode": "Ejecutar juego sin conexión",
         "prefered_language": "Lenguaje preferido (Código de Lenguage)",
         "preferSystemLibs": "Preferir librerías del sistema",
@@ -600,7 +600,7 @@
         },
         "dxvkfpslimit": "Limitar los FPS (DX9, 10 y 11)",
         "steamId": "ID de Steam",
-        "autoLaunchHyperPlay": "Inicio automático de HyperPlay",
+        "autoLaunchNovaPlay": "Inicio automático de NovaPlay",
         "msync": "Activar Msync"
     },
     "settings": {
@@ -608,7 +608,7 @@
             "installing": "Instalando runtime de BattlEye...",
             "name": "Tiempo de ejecución del sistema antitrampas en BattlEye"
         },
-        "clear-cache": "Borrar la caché de HyperPlay",
+        "clear-cache": "Borrar la caché de NovaPlay",
         "copiedToClipboard": "¡Copiado en el portapapeles!",
         "copyToClipboard": "Copiar todas las configuraciones al portapapeles",
         "default_hint": "Los cambios de esta sección sólo se aplican como valores por defecto al instalar juegos. Si quieres cambiar los ajustes de un juego ya instalado, utiliza el botón Ajustes de la página del juego.",
@@ -641,7 +641,7 @@
             "systemInformation": "Información del sistema"
         },
         "open-config-file": "Abrir archivo de configuración",
-        "reset-hyperplay": "Restablecer HyperPlay",
+        "reset-novaplay": "Restablecer NovaPlay",
         "saves": {
             "label": "Ubicación de guardados:",
             "warning": "La funcionalidad Cloud Saves es Beta, por favor, respalda tus guardados antes de sincronizar (en caso de que algo salga mal)"
@@ -766,7 +766,7 @@
     "wiki_info": {
         "not_found": "No pudimos encontrar información adicional."
     },
-    "hyperplay": {
+    "novaplay": {
         "onboarding": {
             "walletSelection": {
                 "screens": {
@@ -776,14 +776,14 @@
                         "cantFindProfile": "¿No encuentra el perfil de su navegador?",
                         "title": "Seleccione el navegador desde el que desea importar",
                         "createNewWallet": "Crear un nuevo monedero con la extensión MM",
-                        "useRecoveryPhraseInfo": "Esta función está recomendada para usuarios avanzados y desarrolladores. Su frase secreta de recuperación se almacena localmente en MetaMask y nunca se comparte con HyperPlay.",
+                        "useRecoveryPhraseInfo": "Esta función está recomendada para usuarios avanzados y desarrolladores. Su frase secreta de recuperación se almacena localmente en MetaMask y nunca se comparte con NovaPlay.",
                         "learnMore": "Más información.",
                         "orWord": "O"
                     },
                     "scan": {
                         "title": "Escanea el código QR con ",
                         "getMetamask": "Obtener MetaMask",
-                        "details": "Crea un canal de comunicación encriptado. Tus claves nunca se compartirán con HyperPlay.",
+                        "details": "Crea un canal de comunicación encriptado. Tus claves nunca se compartirán con NovaPlay.",
                         "dontHaveWallet": "¿No tienes una cartera?",
                         "updateWarning": "¿Tienes problemas? Asegúrate de que MetaMask está actualizado."
                     },
@@ -808,24 +808,24 @@
             "analytics": {
                 "privacyCaption": "Estos datos son agregados y, por tanto, anónimos a efectos del Reglamento General de Protección de Datos (UE) 2016/679. Para obtener más información en relación con nuestras prácticas de privacidad, consulte nuestro ",
                 "anonymized": "Envíe de forma anónima la interacción de los clics y los juegos;",
-                "title": "¡Ayúdenos a mejorar HyperPlay!",
+                "title": "¡Ayúdenos a mejorar NovaPlay!",
                 "neverCollectIP": " recoger su dirección IP completa;",
                 "neverSellData": " vender los datos con fines lucrativos. ¡Nunca!",
                 "privacyPolicyHere": "Política de privacidad aquí.",
                 "optOut": "Permitirle siempre darse de baja a través de la configuración;",
-                "hyperplayWill": "HyperPlay hará:",
+                "novaplayWill": "NovaPlay hará:",
                 "neverCollectPersonal": " recopilar claves, direcciones, saldos, hashes o cualquier información personal;",
-                "body": "HyperPlay desea recopilar datos de uso para comprender mejor cómo interactúan nuestros usuarios con la aplicación. Esta información nos ayuda a entender cómo utiliza la aplicación y nos permite hacer HyperPlay aún mejor para usted."
+                "body": "NovaPlay desea recopilar datos de uso para comprender mejor cómo interactúan nuestros usuarios con la aplicación. Esta información nos ayuda a entender cómo utiliza la aplicación y nos permite hacer NovaPlay aún mejor para usted."
             },
             "welcome": {
-                "title": "¡Bienvenido a HyperPlay Early Access!",
+                "title": "¡Bienvenido a NovaPlay Early Access!",
                 "text": {
-                    "bugs": "Por favor, tenga en cuenta que HyperPlay es una versión alfa pública. Muchas características todavía están\n          Muchas funciones aún están en desarrollo y es posible que se produzcan errores.",
-                    "description": "HyperPlay es un lanzador de juegos y un agregador de tiendas de juegos para el\n          futuro. Con HyperPlay, puedes llevar tu cartera, tokens y activos\n          en cada juego. HyperPlay es compatible con toda la biblioteca de Epic\n          Store, GOG y nuestra propia tienda HyperPlay. Al utilizar HyperPlay, aceptas\n          para nuestro",
-                    "construction": "HyperPlay está en fase de desarrollo.",
+                    "bugs": "Por favor, tenga en cuenta que NovaPlay es una versión alfa pública. Muchas características todavía están\n          Muchas funciones aún están en desarrollo y es posible que se produzcan errores.",
+                    "description": "NovaPlay es un lanzador de juegos y un agregador de tiendas de juegos para el\n          futuro. Con NovaPlay, puedes llevar tu cartera, tokens y activos\n          en cada juego. NovaPlay es compatible con toda la biblioteca de Epic\n          Store, GOG y nuestra propia tienda NovaPlay. Al utilizar NovaPlay, aceptas\n          para nuestro",
+                    "construction": "NovaPlay está en fase de desarrollo.",
                     "communityCTA_2": "comunidad. Juntos, ¡demos forma al futuro de los juegos!",
                     "communityCTA_1": "Nos encantaría recibir sus comentarios y que se uniera a nosotros a nuestra",
-                    "beta": "Por favor, tenga en cuenta que HyperPlay se encuentra en fase Beta. Muchas funciones están aún\n          en desarrollo, y se esperan errores."
+                    "beta": "Por favor, tenga en cuenta que NovaPlay se encuentra en fase Beta. Muchas funciones están aún\n          en desarrollo, y se esperan errores."
                 }
             },
             "terms": "Condiciones del servicio.",
@@ -896,12 +896,12 @@
         "syncing": "Sincronizando...",
         "linkSteamAccountTitle": "Vincular cuenta de Steam",
         "linkSteamAccountCta": "Iniciar sesión en Steam",
-        "linkSteamAccountDescription": "Inicia sesión en Steam para vincular tu cuenta HyperPlay.",
+        "linkSteamAccountDescription": "Inicia sesión en Steam para vincular tu cuenta NovaPlay.",
         "viewMyAccount": "Consultar mi cuenta",
         "logOut": "Cerrar sesión",
         "publicBeta": "Versión beta pública"
     },
-    "hyperplayOverlay": {
+    "novaplayOverlay": {
         "chainRequest": {
             "INITIATED": "Requisitos de una red personalizada",
             "FAILED": "Red personalizada cancelada",
@@ -923,8 +923,8 @@
             "TITLE": "Transacción solicitada"
         },
         "greeting": {
-            "title": "Superposición de HyperPlay",
-            "description": "¡La superposición de HyperPlay está lista! Pulsa {{overlayKeyMod}} + X para mostrarla u ocultarla."
+            "title": "Superposición de NovaPlay",
+            "description": "¡La superposición de NovaPlay está lista! Pulsa {{overlayKeyMod}} + X para mostrarla u ocultarla."
         },
         "txnRequest": {
             "INITIATED": "Solicitud de la transacción pendiente",
@@ -940,8 +940,8 @@
         "closeOverlay": "Pulsa {{overlayKeyMod}} + X para cerrar la superposición"
     },
     "overlay": {
-        "EXTERNAL_WALLET_CONNECTED": "Estás conectado a HyperPlay con un monedero externo.",
-        "WALLET_DISCONNECTED": "Usted no tiene una cartera conectada a HyperPlay."
+        "EXTERNAL_WALLET_CONNECTED": "Estás conectado a NovaPlay con un monedero externo.",
+        "WALLET_DISCONNECTED": "Usted no tiene una cartera conectada a NovaPlay."
     },
     "sideload": {
         "warningTitle": "Importante",
@@ -1037,8 +1037,8 @@
         "quests": "Misiones",
         "playstreak": {
             "signInWarning": {
-                "overlay": "Actualmente no has iniciado sesión, no se hará un seguimiento del progreso de la racha de juego. Por favor, sal del juego e inicia sesión en HyperPlay a través del menú desplegable superior derecho para realizar un seguimiento del progreso.",
-                "client": "Actualmente no has iniciado sesión. No se hará un seguimiento del progreso de la racha del juego. Inicia sesión en HyperPlay a través del menú desplegable superior derecho para realizar un seguimiento del progreso."
+                "overlay": "Actualmente no has iniciado sesión, no se hará un seguimiento del progreso de la racha de juego. Por favor, sal del juego e inicia sesión en NovaPlay a través del menú desplegable superior derecho para realizar un seguimiento del progreso.",
+                "client": "Actualmente no has iniciado sesión. No se hará un seguimiento del progreso de la racha del juego. Inicia sesión en NovaPlay a través del menú desplegable superior derecho para realizar un seguimiento del progreso."
             }
         },
         "noneFound": {
@@ -1046,7 +1046,7 @@
             "title": "No hay búsquedas."
         },
         "g7CreditsModal": {
-            "description": "Sumérgete en los mejores juegos de HyperPlay con emocionantes Desafíos de Play Streak. Cada actividad le anima a participar con un juego diferente, mostrando lo mejor de los juegos web3. ¡Tu tiempo de juego importa!",
+            "description": "Sumérgete en los mejores juegos de NovaPlay con emocionantes Desafíos de Play Streak. Cada actividad le anima a participar con un juego diferente, mostrando lo mejor de los juegos web3. ¡Tu tiempo de juego importa!",
             "title": "Ganar Game7 Créditos"
         }
     }
