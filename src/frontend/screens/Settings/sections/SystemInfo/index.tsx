@@ -14,7 +14,7 @@ import SoftwareInfo from './software'
 import './index.scss'
 
 import type { SystemInformation } from 'backend/utils/systeminfo'
-import { Button, LoadingSpinner } from '@hyperplay/ui'
+import { Button, LoadingSpinner } from '@novaplay/ui'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCopy } from '@fortawesome/free-solid-svg-icons'
 import styles from './index.module.scss'
