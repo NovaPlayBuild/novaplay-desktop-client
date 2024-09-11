@@ -4,7 +4,7 @@ import { DMQueueElement, DownloadManagerState } from 'common/types'
 import { UpdateComponent } from 'frontend/components/UI'
 import ProgressHeader from './components/ProgressHeader'
 import { DMQueue } from 'frontend/types'
-import { Background, Tabs, getTabsClassNames } from '@hyperplay/ui'
+import { Background, Tabs, getTabsClassNames } from '@novaplay/ui'
 import styles from './index.module.scss'
 import { DownloadTable } from './components/DownloadTable'
 
