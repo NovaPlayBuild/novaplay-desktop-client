@@ -33,7 +33,7 @@ const createLogFile = (filePath: string) => {
 }
 
 /**
- * Creates a new log file in hyperplay config path under folder Logs.
+ * Creates a new log file in novaplay config path under folder Logs.
  * It also removes old logs every new month.
  * @returns path to current log file
  */
@@ -44,7 +44,7 @@ export function createNewLogFileAndClearOldOnes(): createLogFileReturn {
   const date = new Date()
   const logDir = app.getPath('logs')
   const fmtDate = date.toISOString().replaceAll(':', '_')
-  const newLogFile = join(logDir, `hyperplay-${fmtDate}.log`)
+  const newLogFile = join(logDir, `novaplay-${fmtDate}.log`)
   const newLegendaryLogFile = join(logDir, `legendary-${fmtDate}.log`)
   const newGogdlLogFile = join(logDir, `gogdl-${fmtDate}.log`)
 
@@ -65,9 +65,9 @@ export function createNewLogFileAndClearOldOnes(): createLogFileReturn {
         .map((dirent) => dirent.name)
 
       logs.forEach((log) => {
-        if (log.match(/(hyperplay|legendary|gogdl)-/)) {
+        if (log.match(/(novaplay|legendary|gogdl)-/)) {
           const dateString = log
-            .replace(/(hyperplay|legendary|gogdl)-/, '')
+            .replace(/(novaplay|legendary|gogdl)-/, '')
             .replace('.log', '')
             .replaceAll('_', ':')
           const logDate = new Date(dateString)
@@ -125,7 +125,7 @@ export function getLogFile(appNameOrRunner: string): string {
   })
 
   switch (appNameOrRunner) {
-    case 'hyperplay':
+    case 'novaplay':
       return logs.currentLogFile ?? logs.lastLogFile
     case 'legendary':
       return logs.legendaryLogFile
