@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { BrowsersAndManualImportOptionsProps } from '../../types'
 import { BrowserPackageManagerImportOption } from '../BrowserPackageManagerImportOptions'
-import { Button } from '@hyperplay/ui'
+import { Button } from '@novaplay/ui'
 import styles from './index.module.scss'
 import { useTranslation } from 'react-i18next'
 
@@ -13,14 +13,14 @@ export function BrowsersAndManualImportOptions({
 }: BrowsersAndManualImportOptionsProps) {
   const [showManualImport, setShowManualImport] = useState(false)
   const { t } = useTranslation()
-  const profileString = t('hyperplay.browserImport.profile', 'Profile')
-  const appIdString = t('hyperplay.browserImport.appId', 'App Id')
+  const profileString = t('novaplay.browserImport.profile', 'Profile')
+  const appIdString = t('novaplay.browserImport.appId', 'App Id')
   const [manualImportPath, setManualImportPath] = useState(
     `<${profileString}>/Local Extension Settings/<MetaMask ${appIdString}>`
   )
 
   const importSubtitle = `MetaMask "Local Extension Settings" ${t(
-    'hyperplay.folder',
+    'novaplay.folder',
     'Folder'
   )}`
 
@@ -76,7 +76,7 @@ export function BrowsersAndManualImportOptions({
         >
           <div className="button-sm">
             {t(
-              'hyperplay.onboarding.walletSelection.screens.import.cantFindProfile',
+              'novaplay.onboarding.walletSelection.screens.import.cantFindProfile',
               `Can't find your browser profile?`
             )}
           </div>
