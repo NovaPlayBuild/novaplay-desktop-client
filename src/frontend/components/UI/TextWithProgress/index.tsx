@@ -1,6 +1,6 @@
 import React from 'react'
 import './index.scss'
-import { LoadingSpinner } from '@hyperplay/ui'
+import { LoadingSpinner } from '@novaplay/ui'
 
 interface Props {
   text: string
