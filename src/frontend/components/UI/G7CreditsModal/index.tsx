@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Button, Modal } from '@hyperplay/ui'
+import { Button, Modal } from '@novaplay/ui'
 import screenshot from 'frontend/assets/g7PortalScreenshot.png'
 import styles from './index.module.scss'
 import { useTranslation } from 'react-i18next'
@@ -31,7 +31,7 @@ export function G7CreditsModal() {
       <div className="caption">
         {t(
           'quests.g7CreditsModal.description',
-          `Dive into HyperPlay's top games with exciting Play Streak Challenges. Each activity encourages you to engage with a different game, showcasing the best of web3 gaming. Your playtime matters!`
+          `Dive into NovaPlay's top games with exciting Play Streak Challenges. Each activity encourages you to engage with a different game, showcasing the best of web3 gaming. Your playtime matters!`
         )}
       </div>
       <img src={screenshot} />
