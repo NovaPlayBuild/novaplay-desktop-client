@@ -9,7 +9,7 @@ import { t } from 'i18next'
 import ExtensionManager from 'frontend/ExtensionManager'
 import TransactionState from 'frontend/state/TransactionState'
 import { BrowserGameProps } from '../types'
-import { Button } from '@hyperplay/ui'
+import { Button } from '@novaplay/ui'
 import { QuestsViewer } from 'frontend/components/UI/QuestsViewer'
 import { useFlags } from 'launchdarkly-react-client-sdk'
 import libraryState from 'frontend/state/libraryState'
@@ -20,7 +20,7 @@ export const Overlay = observer(function ({
 }: BrowserGameProps) {
   const flags = useFlags()
   const txnToastContainerStyle = {} as React.CSSProperties
-  if (OverlayState.title === 'HyperPlay Toasts') {
+  if (OverlayState.title === 'NovaPlay Toasts') {
     txnToastContainerStyle.bottom = 'unset'
     txnToastContainerStyle.right = 0
     txnToastContainerStyle.top = 0
@@ -106,14 +106,14 @@ export const Overlay = observer(function ({
       extensionManager = <ExtensionManager />
     } else if (
       OverlayState.renderState.showHintText &&
-      OverlayState.title !== 'HyperPlay Hint Text'
+      OverlayState.title !== 'NovaPlay Hint Text'
     ) {
       if (WalletState.provider === 'Unconnected') {
         extensionManager = (
           <div className={`${BrowserGameStyles.overlayToggleHint} title`}>
             {t(
               'overlay.WALLET_DISCONNECTED',
-              'You do not have a wallet connected to HyperPlay.'
+              'You do not have a wallet connected to NovaPlay.'
             )}
           </div>
         )
@@ -122,7 +122,7 @@ export const Overlay = observer(function ({
           <div className={`${BrowserGameStyles.overlayToggleHint} title`}>
             {t(
               'overlay.EXTERNAL_WALLET_CONNECTED',
-              'You are connected to HyperPlay with an external wallet.'
+              'You are connected to NovaPlay with an external wallet.'
             )}
           </div>
         )
