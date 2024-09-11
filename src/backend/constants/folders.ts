@@ -2,7 +2,7 @@ import { app } from 'electron'
 import { join, resolve } from 'path'
 
 export const configFolder = app.getPath('appData')
-export const appConfigFolder = join(configFolder, 'hyperplay')
+export const appConfigFolder = join(configFolder, 'novaplay')
 export const publicDir = resolve(
   __dirname,
   '..',
