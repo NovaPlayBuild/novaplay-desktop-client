@@ -3,15 +3,15 @@ import {
   CallRunnerOptions,
   ExecResult,
   GameInfo,
-  HyperPlayInstallInfo,
-  HyperPlayRelease,
+  NovaPlayInstallInfo,
+  NovaPlayRelease,
   InstallPlatform
 } from 'common/types'
 import axios from 'axios'
 import { logInfo, LogPrefix, logError, logWarning } from 'backend/logger/logger'
 import {
   getGameInfoFromHpRelease,
-  getHyperPlayReleaseMap,
+  getNovaPlayReleaseMap,
   handleArchAndPlatform,
   sanitizeVersion,
   refreshGameInfoFromHpRelease
@@ -39,7 +39,7 @@ export async function addGameToLibrary(projectId: string) {
 
   const getConfig =
     qaToken !== '' ? { headers: { Authorization: `Bearer ${qaToken}` } } : {}
-  const res = await axios.get<HyperPlayRelease>(listingUrl, getConfig)
+  const res = await axios.get<NovaPlayRelease>(listingUrl, getConfig)
 
   const data = res.data
   const gameInfo = getGameInfoFromHpRelease(data)
@@ -52,13 +52,13 @@ export const getInstallInfo = async (
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
   lang = 'en',
   channelNameToInstall?: string
-): Promise<HyperPlayInstallInfo | undefined> => {
+): Promise<NovaPlayInstallInfo | undefined> => {
   const gameInfo = getGamesGameInfo(appName)
 
   if (!channelNameToInstall) {
     logWarning(
       'channelNameToInstall is undefined in getInstallInfo, probably a false positive.',
-      LogPrefix.HyperPlay
+      LogPrefix.NovaPlay
     )
     return
   }
@@ -68,15 +68,15 @@ export const getInstallInfo = async (
     gameInfo.channels[channelNameToInstall].release_meta === undefined
   ) {
     logError(
-      'Channels or Release Meta were undefined in getInstallInfo for HyperPlay Library Manager',
-      LogPrefix.HyperPlay
+      'Channels or Release Meta were undefined in getInstallInfo for NovaPlay Library Manager',
+      LogPrefix.NovaPlay
     )
     return undefined
   }
 
   const releaseMeta = gameInfo.channels[channelNameToInstall].release_meta
 
-  logInfo(`Getting install info for ${gameInfo.title}`, LogPrefix.HyperPlay)
+  logInfo(`Getting install info for ${gameInfo.title}`, LogPrefix.NovaPlay)
 
   const requestedPlatform = handleArchAndPlatform(
     platformToInstall,
@@ -87,8 +87,8 @@ export const getInstallInfo = async (
 
   if (info === undefined) {
     logError(
-      'Info was undefined in getInstallInfo for HyperPlay Library Manager',
-      LogPrefix.HyperPlay
+      'Info was undefined in getInstallInfo for NovaPlay Library Manager',
+      LogPrefix.NovaPlay
     )
     return undefined
   }
@@ -96,7 +96,7 @@ export const getInstallInfo = async (
   if (!info) {
     logError(
       `No install info for ${appName} and ${requestedPlatform}`,
-      LogPrefix.HyperPlay
+      LogPrefix.NovaPlay
     )
     return undefined
   }
@@ -119,7 +119,7 @@ export const getInstallInfo = async (
 
 /* eslint-disable-next-line @typescript-eslint/no-unused-vars */
 export function installState(appName: string, state: boolean) {
-  logWarning(`installState not implemented on HyperPlay Library Manager`)
+  logWarning(`installState not implemented on NovaPlay Library Manager`)
 }
 
 /**
@@ -128,7 +128,7 @@ export function installState(appName: string, state: boolean) {
  * @param data the data used to update the GameInfo with
  * @returns void
  **/
-export function refreshHPGameInfo(appId: string, data: HyperPlayRelease) {
+export function refreshHPGameInfo(appId: string, data: NovaPlayRelease) {
   const currentLibrary = hpLibraryStore.get('games', []) as GameInfo[]
   const gameIndex = currentLibrary.findIndex((val) => val.app_name === appId)
   if (gameIndex === -1) {
@@ -159,7 +159,7 @@ export function getGameInfo(appName: string): GameInfo | undefined {
 export async function refresh() {
   const currentLibrary = hpLibraryStore.get('games', []) as GameInfo[]
   const currentLibraryIds = currentLibrary.map((val) => val.app_name)
-  const hpStoreGameMap = await getHyperPlayReleaseMap()
+  const hpStoreGameMap = await getNovaPlayReleaseMap()
 
   for (const gameId of currentLibraryIds) {
     try {
@@ -168,7 +168,7 @@ export async function refresh() {
       if (!gameData) {
         logWarning(
           `Could not find game with appId = ${gameId} in API, maybe this game was delisted`,
-          LogPrefix.HyperPlay
+          LogPrefix.NovaPlay
         )
         throw new Error('GameId not find in API')
       }
@@ -176,8 +176,8 @@ export async function refresh() {
       refreshHPGameInfo(gameId, gameData)
     } catch (err) {
       logError(
-        `Could not refresh HyperPlay Game with appId = ${gameId} due to ${err}}`,
-        LogPrefix.HyperPlay
+        `Could not refresh NovaPlay Game with appId = ${gameId} due to ${err}}`,
+        LogPrefix.NovaPlay
       )
     }
   }
@@ -193,8 +193,8 @@ export async function listUpdateableGames(): Promise<string[]> {
   const currentHpLibrary = hpLibraryStore.get('games', [])
 
   logInfo(
-    `Checking for updateable games in HyperPlay Library`,
-    LogPrefix.HyperPlay
+    `Checking for updateable games in NovaPlay Library`,
+    LogPrefix.NovaPlay
   )
 
   currentHpLibrary.map((val) => {
@@ -215,7 +215,7 @@ export async function listUpdateableGames(): Promise<string[]> {
         Cannot find installed channel name in channels. 
         The channel name may have been changed by the remote.
         To continue to receive game updates, uninstall and reinstall this game: ${val.title}`,
-          LogPrefix.HyperPlay
+          LogPrefix.NovaPlay
         )
         return
       }
@@ -241,8 +241,8 @@ export async function listUpdateableGames(): Promise<string[]> {
   }
 
   logInfo(
-    `Found ${updateableGames.length} updateable games in HyperPlay Library`,
-    LogPrefix.HyperPlay
+    `Found ${updateableGames.length} updateable games in NovaPlay Library`,
+    LogPrefix.NovaPlay
   )
 
   return updateableGames
@@ -262,7 +262,7 @@ export async function runRunnerCommand(
   abortController: AbortController,
   options?: CallRunnerOptions
 ): Promise<ExecResult> {
-  logWarning(`runRunnerCommand not implemented on HyperPlay Library Manager`)
+  logWarning(`runRunnerCommand not implemented on NovaPlay Library Manager`)
   return { stdout: '', stderr: '' }
 }
 
@@ -271,7 +271,7 @@ export async function changeGameInstallPath(
   newPath: string
 ): Promise<void> {
   logWarning(
-    `changeGameInstallPath not implemented on HyperPlay Library Manager`
+    `changeGameInstallPath not implemented on NovaPlay Library Manager`
   )
 }
 /* eslint-enable @typescript-eslint/no-unused-vars */
