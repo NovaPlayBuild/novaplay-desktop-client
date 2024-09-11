@@ -1,7 +1,7 @@
 import React, { useContext, useEffect, useState } from 'react'
 import styles from './index.module.scss'
-import { HyperPlayLogoWhite } from 'frontend/assets/hyperplay'
-import { Button, Images } from '@hyperplay/ui'
+import { NovaPlayLogoWhite } from 'frontend/assets/novaplay'
+import { Button, Images } from '@novaplay/ui'
 import SearchBar from '../SearchBar'
 import AccountDropdown from '../AccountDropdown'
 import extensionStore from 'frontend/state/ExtensionState'
@@ -53,28 +53,28 @@ const TopNavBar = observer(() => {
   return (
     <div className={styles.navBar}>
       <div>
-        <HyperPlayLogoWhite
+        <NovaPlayLogoWhite
           height="27px"
           width="27px"
           className={styles.hpLogo}
         />
-        <Images.HyperPlayTextLogo
+        <Images.NovaPlayTextLogo
           fill="var(--color-neutral-100)"
           className={styles.hpTextLogo}
         />
         <div className={styles.alphaBadge}>
           <div className={`caption ${styles.alphaCaption}`}>
-            {t(`hyperplay.publicAlpha`, `Public Alpha`)}
+            {t(`novaplay.publicAlpha`, `Public Alpha`)}
           </div>
         </div>
         <>
-          <NavLink to="/hyperplaystore">
+          <NavLink to="/novaplaystore">
             <Button
               type="link"
               size="small"
               style={getStoreTextStyle(HYPERPLAY_STORE_URL)}
             >
-              HyperPlay
+              NovaPlay
             </Button>
           </NavLink>
           <NavLink to="/epicstore">
