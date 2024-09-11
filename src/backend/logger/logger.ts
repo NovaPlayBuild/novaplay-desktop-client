@@ -29,7 +29,7 @@ export enum LogPrefix {
   Connection = 'Connection',
   DownloadManager = 'DownloadManager',
   ExtraGameInfo = 'ExtraGameInfo',
-  HyperPlay = 'HyperPlay',
+  NovaPlay = 'NovaPlay',
   Sideload = 'Sideload',
   Achievements = 'Achievements',
   Auth = 'Auth'
@@ -38,7 +38,7 @@ export enum LogPrefix {
 export const RunnerToLogPrefixMap = {
   legendary: LogPrefix.Legendary,
   gog: LogPrefix.Gog,
-  hyperplay: LogPrefix.HyperPlay,
+  novaplay: LogPrefix.NovaPlay,
   sideload: LogPrefix.Sideload
 }
 
