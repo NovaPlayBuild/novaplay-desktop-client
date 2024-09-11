@@ -29,7 +29,7 @@ import ContextProvider from 'frontend/state/ContextProvider'
 import { ReactComponent as BrowserIcon } from 'frontend/assets/browser-icon.svg'
 import classNames from 'classnames'
 import Warning from './Warning'
-import { Button } from '@hyperplay/ui'
+import { Button } from '@novaplay/ui'
 import axios from 'axios'
 import libraryState from 'frontend/state/libraryState'
 
