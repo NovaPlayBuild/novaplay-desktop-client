@@ -19,7 +19,7 @@
     },
     "box": {
         "cache-cleared": {
-            "message": "HyperPlay 缓存已清理。",
+            "message": "NovaPlay 缓存已清理。",
             "title": "缓存已清理"
         },
         "choose": "选择",
@@ -67,7 +67,7 @@
             },
             "update": {
                 "title": "更新错误",
-                "message": "更新出了问题！请手动卸载并重新安装 HyperPlay。"
+                "message": "更新出了问题！请手动卸载并重新安装 NovaPlay。"
             },
             "wine-not-found": {
                 "invalid": "The selected wine version was not found. Install it or select a different version in the game's settings{{newline}}Version: {{version}}{{newline}}Path: {{path}}",
@@ -89,8 +89,8 @@
                 "changelog": "打开更新日志",
                 "detail": "你想在后台下载更新吗？",
                 "message": "有新版本可用！",
-                "message-finished": "你想立即重启 HyperPlay 吗？",
-                "title": "HyperPlay 游戏启动器",
+                "message-finished": "你想立即重启 NovaPlay 吗？",
+                "title": "NovaPlay 游戏启动器",
                 "title-finished": "更新已完成",
                 "appUpdated": "更新了超Play",
                 "appUpdated-message": "对超Play进行了更新。 现在是否需要更新和重新启动超Play?"
@@ -109,8 +109,8 @@
         },
         "reset-app": {
             "question": {
-                "message": "您确定要重置 HyperPlay 吗？这将删除所有设置和缓存，但不会删除已安装的游戏或 Epic 认证。便携版（AppImage、WinPortable......）HyperPlay需要手动重启。",
-                "title": "重设 HyperPlay"
+                "message": "您确定要重置 NovaPlay 吗？这将删除所有设置和缓存，但不会删除已安装的游戏或 Epic 认证。便携版（AppImage、WinPortable......）NovaPlay需要手动重启。",
+                "title": "重设 NovaPlay"
             }
         },
         "runexe": {
@@ -263,7 +263,7 @@
         "esync": "Esync 的目标是在 CPU 消耗很大的游戏中减少 wineserver 的开销。启用可能会提高性能。",
         "fsync": "Fsync 的目标是在 CPU 开销很大的游戏中减少 wineserver 的开销。启用可能会提高受支持的 Linux 内核的性能。",
         "game_language": {
-            "fallback": "留空以使用 HyperPlay 的语言。",
+            "fallback": "留空以使用 NovaPlay 的语言。",
             "in_game_config": "不是所有游戏都支持此配置，一些有游戏内语言设置。",
             "valid_codes": "有效语言代码取决于游戏。"
         },
@@ -279,18 +279,18 @@
         "preferSystemLibs": "自定义 Wine 版本(Wine- ge、Wine- lutris)随它们的库依赖项一起发布。启用此选项，这些附带的库将被忽略，Wine 将加载系统库。警告！如果不满足依赖关系，可能会出现问题。",
         "primerun": "在多 GPU 系统上使用独立显卡渲染游戏。仅适用于使用无头 GPU 进行渲染的游戏笔记本或台式机 (NVIDIA Optimus, AMD CrossFire)",
         "steam_path": {
-            "info": "该路径可让 HyperPlay 确定 Steam 使用哪个版本的 Proton，以便将非 Steam 游戏添加到 Steam。"
+            "info": "该路径可让 NovaPlay 确定 Steam 使用哪个版本的 Proton，以便将非 Steam 游戏添加到 Steam。"
         },
         "steamruntime": "Steam 提供的用于帮助运行 Linux 和 Windows（Proton）游戏的自定义库。启用可能会提高兼容性。",
         "sync": {
-            "part1": "大多数情况下，HyperPlay 启动器会正确猜测的存档的位置。但如果位置是错误的，请使用覆盖框更改。",
-            "part2": "如果你改变了 Wine 或 Proton 的文件夹，你将需要再次检查路径，因为 Proton 使用不同的前置（/pfx）和用户名（steamuser）。很简单，你可以直接删除当前的路径，离开同步设置页面再回来，HyperPlay 会去重新猜测正确前置的文件夹。",
+            "part1": "大多数情况下，NovaPlay 启动器会正确猜测的存档的位置。但如果位置是错误的，请使用覆盖框更改。",
+            "part2": "如果你改变了 Wine 或 Proton 的文件夹，你将需要再次检查路径，因为 Proton 使用不同的前置（/pfx）和用户名（steamuser）。很简单，你可以直接删除当前的路径，离开同步设置页面再回来，NovaPlay 会去重新猜测正确前置的文件夹。",
             "part3": "手动同步：选择下载以下载存储在云端的存档。选择上传将会把本地存档上传到云端。强制下载将会忽略本地版本，强制上传将会忽略云端版本。",
             "part4": "自动同步将在你每次开始游戏时和结束游戏后同步存档。"
         },
         "vkd3d": "VKD3D 是一个基于 Vulkan 的转换层，用于 DirectX 12 游戏。启用可能会显著提高兼容性。对老的 DirectX 游戏没有效果。",
         "wine": {
-            "part1": "HyperPlay 启动器会在以下文件夹中查找现有的 Wine/Proton/CrossOver：",
+            "part1": "NovaPlay 启动器会在以下文件夹中查找现有的 Wine/Proton/CrossOver：",
             "part2": "如果在其它位置，请使用软链接连接到这些中的一个文件夹"
         },
         "disable_logs": "将此复选框切换为“开”可禁用对日志文件的大部分写入（始终记录关键信息）。请确保在报告任何问题之前关闭此设置。",
@@ -299,12 +299,12 @@
         "msync": "Msync旨在减少CPU密集型游戏中的 wine料。 增强能力可提高一些游戏的绩效."
     },
     "info": {
-        "hyperplay": {
+        "novaplay": {
             "beta": "Beta",
             "click-to-see-changelog": "单击查看变更日志",
             "newReleases": "更新可用！",
             "stable": "稳定版",
-            "version": "HyperPlay 版本"
+            "version": "NovaPlay 版本"
         },
         "save-sync": {
             "searching": "尝试检测正确的储存文件夹（点击取消）"
@@ -391,7 +391,7 @@
         },
         "moved": "移动完成",
         "moving": "移动游戏中",
-        "new-hyperplay-version": "新的 HyperPlay 版本发布了！",
+        "new-novaplay-version": "新的 NovaPlay 版本发布了！",
         "refresh": {
             "error": "不能从上游获取发布，可能是因为 Github API 的限制！请稍后再试。"
         },
@@ -446,7 +446,7 @@
     "other": {
         "gogdl-version": "GOGDL 版本： ",
         "legendary-version": "Legendary 版本： ",
-        "weblate": "帮助翻译 HyperPlay。",
+        "weblate": "帮助翻译 NovaPlay。",
         "nile-version": "尼罗河版本： "
     },
     "Other": "其他",
@@ -491,7 +491,7 @@
         "autosync": "自动同步存档",
         "autovkd3d": "自动在前置中安装/更新 VKD3D",
         "change-target-exe": "选择要运行的替代 EXE",
-        "checkForUpdatesOnStartup": "启动时检查 HyperPlay 更新",
+        "checkForUpdatesOnStartup": "启动时检查 NovaPlay 更新",
         "crossover-version": "Crossover 版本",
         "custom_themes_path": "自定义主题路径",
         "customWineProton": "自定义 Wine/Proton 路径",
@@ -499,7 +499,7 @@
         "default-install-path": "默认安装路径",
         "default-steam-path": "默认 Steam 路径",
         "defaultWinePrefix": "为新的 WinePrefix设置文件夹",
-        "disable_controller": "使用控制器禁止 HyperPlay 导航",
+        "disable_controller": "使用控制器禁止 NovaPlay 导航",
         "discordRPC": "启用Discord的Rich Presence（活动状态）",
         "download-no-https": "不使用 HTTPS 下载游戏 (对 LanCache 等 CDN 有用)",
         "egs-sync": "与已安装的 Epic 游戏同步",
@@ -546,9 +546,9 @@
             "last-log": "上一日志",
             "no-file": "未找到日志文件",
             "show-in-folder": "显示文件夹中的日志文件",
-            "instructions-part-01": "如果您在使用 HyperPlay 时遇到任何问题，我们在 Discord 服务器中有两个指定区域可以报告您的问题。如果您是玩家，请访问玩家支持论坛报告任何问题。如果您是游戏开发人员，请访问开发人员支持论坛报告任何问题。",
+            "instructions-part-01": "如果您在使用 NovaPlay 时遇到任何问题，我们在 Discord 服务器中有两个指定区域可以报告您的问题。如果您是玩家，请访问玩家支持论坛报告任何问题。如果您是游戏开发人员，请访问开发人员支持论坛报告任何问题。",
             "instructions-part-02": "为了帮助我们尽快诊断和解决问题，请提供尽可能多的信息，包括您的日志副本。我们的支持团队将监控这两个渠道，并尽最大努力尽快回复您的问题。在我们努力解决您可能遇到的任何问题时，感谢您的耐心和理解。",
-            "join-hyperplay-discord": "加入我们的分歧"
+            "join-novaplay-discord": "加入我们的分歧"
         },
         "mangohud": "启用 MangoHud（需要已安装 Mangohud）",
         "manualsync": {
@@ -562,7 +562,7 @@
         },
         "maxRecentGames": "要显示的最近玩过的游戏",
         "maxworkers": "下载时的最大线程数量",
-        "minimize-on-launch": "游戏启动后最小化 HyperPlay",
+        "minimize-on-launch": "游戏启动后最小化 NovaPlay",
         "offlinemode": "离线运行游戏",
         "prefered_language": "首选语言 (语言代码)",
         "preferSystemLibs": "首选系统库",
@@ -601,7 +601,7 @@
         "autoUpdateGames": "自动更新游戏",
         "msync": "启用 Esync",
         "dxvkfpslimit": "通行证(DX9、10和11)",
-        "autoLaunchHyperPlay": "自动发射 游乐",
+        "autoLaunchNovaPlay": "自动发射 游乐",
         "steamId": "热液"
     },
     "settings": {
@@ -609,7 +609,7 @@
             "installing": "安装 BattlEye 运行时中...",
             "name": "BattlEye 反作弊运行时"
         },
-        "clear-cache": "清理 HyperPlay 缓存",
+        "clear-cache": "清理 NovaPlay 缓存",
         "copiedToClipboard": "已复制到剪贴板！",
         "copyToClipboard": "复制所有设置到剪贴板",
         "default_hint": "本节中的更改仅在安装游戏时作为默认值应用。如果要更改已安装游戏的设置，请使用游戏页面中的 \"设置 \"按钮。",
@@ -642,7 +642,7 @@
             "systemInformation": "系统信息"
         },
         "open-config-file": "打开配置文件",
-        "reset-hyperplay": "重置 HyperPlay",
+        "reset-novaplay": "重置 NovaPlay",
         "saves": {
             "label": "存档位置：",
             "warning": "云存档功能处于测试期，请在同步前备份你的存档（以防出现问题）"
@@ -753,7 +753,7 @@
         "warningMessage": "侧载游戏是专为开发人员和有经验的高级用户提供的功能。侧载包含恶意软件的安装程序可能会危及你的电脑并导致资金被盗。",
         "warningTitle": "重要"
     },
-    "hyperplay": {
+    "novaplay": {
         "analyticsOff": "分析功能已关闭",
         "onboarding": {
             "connectionCanceled": {
@@ -761,26 +761,26 @@
                 "description": "请在手机钱包上确认连接请求，以便继续。"
             },
             "welcome": {
-                "title": "欢迎来到 HyperPlay 早期试玩！",
+                "title": "欢迎来到 NovaPlay 早期试玩！",
                 "text": {
-                    "bugs": "请注意，HyperPlay 是一个公开的 alpha 版本。许多功能仍\n          许多功能仍在开发中，可能会出现错误。",
+                    "bugs": "请注意，NovaPlay 是一个公开的 alpha 版本。许多功能仍\n          许多功能仍在开发中，可能会出现错误。",
                     "communityCTA_2": "社区。让我们一起塑造游戏的未来！",
-                    "description": "HyperPlay 是一款来自          未来的游戏启动器和游戏商店聚合器。\n有了 HyperPlay，你可以将自己的钱包、代币和资产\n          进入每款游戏。HyperPlay 支持 Epic\n          商店、GOG 和我们自己的 HyperPlay 商店的全部游戏库。使用HyperPlay，即表示您同意\n          我们的",
-                    "construction": "HyperPlay 正在建设中。",
+                    "description": "NovaPlay 是一款来自          未来的游戏启动器和游戏商店聚合器。\n有了 NovaPlay，你可以将自己的钱包、代币和资产\n          进入每款游戏。NovaPlay 支持 Epic\n          商店、GOG 和我们自己的 NovaPlay 商店的全部游戏库。使用NovaPlay，即表示您同意\n          我们的",
+                    "construction": "NovaPlay 正在建设中。",
                     "communityCTA_1": "我们希望您能提供反馈意见，并加入我们的"
                 }
             },
             "analytics": {
                 "neverCollectIP": " 收集您的完整 IP 地址;",
                 "anonymized": "发送匿名点击和游戏互动;",
-                "body": "HyperPlay希望收集使用数据，以便更好地了解我们的用户如何与应用程序互动。这些信息有助于我们了解您是如何使用应用程序的，并让我们为您提供更好的HyperPlay体验。",
+                "body": "NovaPlay希望收集使用数据，以便更好地了解我们的用户如何与应用程序互动。这些信息有助于我们了解您是如何使用应用程序的，并让我们为您提供更好的NovaPlay体验。",
                 "neverSellData": " 永远不会出售数据牟利!",
                 "optOut": "永远允许您通过设置选择退出;",
-                "hyperplayWill": "HyperPlay 将:",
+                "novaplayWill": "NovaPlay 将:",
                 "privacyCaption": "根据《一般数据保护条例》（欧盟）2016/679 的规定，这些数据是汇总数据，因此是匿名数据。如需了解更多有关我们隐私保护措施的信息，请参阅我们的 ",
                 "neverCollectPersonal": " 收集密钥、地址、余额、哈希值或任何个人信息;",
                 "privacyPolicyHere": "点击此处查看隐私政策。",
-                "title": "帮助我们改进 HyperPlay!"
+                "title": "帮助我们改进 NovaPlay!"
             },
             "terms": "服务条款。",
             "walletSelection": {
@@ -790,7 +790,7 @@
                         "useRecoveryPhrase": "使用秘密恢复短语进入",
                         "cantFindProfile": "找不到您的浏览器配置文件？",
                         "createNewWallet": "创建新的 MM 扩展钱包",
-                        "details": "通过导入，您的 MetaMask 安装和    设置将被导入 HyperPlay。",
+                        "details": "通过导入，您的 MetaMask 安装和    设置将被导入 NovaPlay。",
                         "learnMore": "了解更多",
                         "useRecoveryPhraseInfo": "建议先进用户和开发商使用这一特点。 你的秘密恢复短语在当地存放在Meta Mask,从未与超Play分享.",
                         "orWord": "页: 1"
@@ -811,7 +811,7 @@
                     },
                     "scan": {
                         "updateWarning": "有问题？确保 MetaMask 是最新版本。",
-                        "details": "创建加密通信通道。您的密钥绝不会与 HyperPlay 共享。",
+                        "details": "创建加密通信通道。您的密钥绝不会与 NovaPlay 共享。",
                         "dontHaveWallet": "没有钱包？",
                         "getMetamask": "获取Metamask",
                         "title": "以 扫描QR "
@@ -886,10 +886,10 @@
         "linkSteamAccountCta": "签字",
         "linkSteamAccountTitle": "联系船"
     },
-    "hyperplayOverlay": {
+    "novaplayOverlay": {
         "greeting": {
-            "title": "HyperPlay Overlay",
-            "description": "HyperPlay Overlay已准备就绪！按 Alt + X 键显示或隐藏。"
+            "title": "NovaPlay Overlay",
+            "description": "NovaPlay Overlay已准备就绪！按 Alt + X 键显示或隐藏。"
         },
         "chainRequest": {
             "CONFIRMED": "已添加自定义网络",
