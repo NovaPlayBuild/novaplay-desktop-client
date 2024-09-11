@@ -4,9 +4,9 @@ import {
   PhoneErrorIcon,
   PhoneCompletedIcon,
   PhoneWaitingConfimationSpinner
-} from 'frontend/assets/hyperplay'
+} from 'frontend/assets/novaplay'
 import Loading from './Loading'
-import { statusType } from '@hyperplay/ui/dist/components/TransactionToasts'
+import { statusType } from '@novaplay/ui/dist/components/TransactionToasts'
 
 interface PhoneIconProps {
   status: statusType
