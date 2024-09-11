@@ -106,7 +106,7 @@ class LibraryState {
         this.gogLibrary = newLibrary
       } else if (runner === 'sideload') {
         this.sideloadedLibrary = newLibrary
-      } else if (runner === 'hyperplay') {
+      } else if (runner === 'novaplay') {
         this.hyperPlayLibrary = newLibrary
       }
     })
@@ -114,7 +114,7 @@ class LibraryState {
 
   async refresh(library?: Runner | 'all', checkUpdates = true): Promise<void> {
     if (checkUpdates) {
-      const hpUpdates = await window.api.checkGameUpdates(['hyperplay'])
+      const hpUpdates = await window.api.checkGameUpdates(['novaplay'])
       /**
        * Need to clear the gameUpdates array on refresh or updated games will still show
        * as needing update after updating and entries will be added multiple times to the array
