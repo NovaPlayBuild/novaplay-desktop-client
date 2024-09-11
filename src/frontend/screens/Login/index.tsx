@@ -11,7 +11,7 @@ import { LanguageSelector, UpdateComponent } from '../../components/UI'
 import { FlagPosition } from '../../components/UI/LanguageSelector'
 import SIDLogin from './components/SIDLogin'
 import ContextProvider from '../../state/ContextProvider'
-import { Background, Images } from '@hyperplay/ui'
+import { Background, Images } from '@novaplay/ui'
 import libraryState from 'frontend/state/libraryState'
 import storeAuthState from 'frontend/state/storeAuthState'
 import { useAwaited } from '../../hooks/useAwaited'
@@ -94,9 +94,9 @@ export default React.memo(function NewLogin() {
       <div className="loginContentWrapper">
         <div className="runnerList">
           <div className="runnerHeader">
-            <Images.HyperPlayLogoColored className="runnerHeaderIcon" />
+            <Images.NovaPlayLogoColored className="runnerHeaderIcon" />
             <div className="runnerHeaderText">
-              <h1 className="title">HyperPlay</h1>
+              <h1 className="title">NovaPlay</h1>
               <h2 className="subtitle">Games Launcher</h2>
             </div>
 
