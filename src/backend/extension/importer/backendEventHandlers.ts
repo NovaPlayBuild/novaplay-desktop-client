@@ -5,7 +5,7 @@ import { PROVIDERS } from 'common/types/proxy-types'
 import { app } from 'electron'
 import store from './store'
 import { initExtension } from '.'
-import { hpApi } from 'backend/utils/hyperplay_api'
+import { hpApi } from 'backend/utils/novaplay_api'
 
 backendEvents.on('currentWeb3Provider', (provider: PROVIDERS) => {
   defaultProviderStore.set('currentWeb3Provider', provider)
