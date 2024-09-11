@@ -21,7 +21,7 @@ import {
   GameCard as HpGameCard,
   GameCardState,
   SettingsButtons
-} from '@hyperplay/ui'
+} from '@novaplay/ui'
 import classNames from 'classnames'
 import { useGetDownloadStatusText } from 'frontend/hooks/useGetDownloadStatusText'
 import libraryState from 'frontend/state/libraryState'
@@ -298,7 +298,7 @@ const GameCard = ({
       label: t('button.remove_from_library', 'Remove'),
       onClick: handleClickStopBubbling(onRemoveFromLibraryClick),
       show:
-        !isInstalled && !isUpdating && !isInstalling && runner === 'hyperplay'
+        !isInstalled && !isUpdating && !isInstalling && runner === 'novaplay'
     }
   ]
 
