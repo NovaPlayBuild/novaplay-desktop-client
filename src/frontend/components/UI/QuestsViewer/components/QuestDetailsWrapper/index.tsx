@@ -4,7 +4,7 @@ import {
   QuestDetails,
   QuestDetailsProps,
   QuestDetailsTranslations
-} from '@hyperplay/ui'
+} from '@novaplay/ui'
 import styles from './index.module.scss'
 import useGetQuest from 'frontend/hooks/useGetQuest'
 import useGetSteamGame from 'frontend/hooks/useGetSteamGame'
@@ -25,8 +25,8 @@ import { useFlags } from 'launchdarkly-react-client-sdk'
 import { getPlaystreakArgsFromQuestData } from 'frontend/helpers/getPlaystreakArgsFromQuestData'
 import { useGetRewards } from 'frontend/hooks/useGetRewards'
 import { createPublicClient } from 'viem'
-import { chainMap, parseChainMetadataToViemChain } from '@hyperplay/chains'
-import { InfoAlertProps } from '@hyperplay/ui/dist/components/AlertCard'
+import { chainMap, parseChainMetadataToViemChain } from '@novaplay/chains'
+import { InfoAlertProps } from '@novaplay/ui/dist/components/AlertCard'
 import { useSyncPlaySession } from 'frontend/hooks/useSyncInterval'
 import { useTrackQuestViewed } from 'frontend/hooks/useTrackQuestViewed'
 import { ConfirmClaimModal } from './components/ConfirmClaimModal'
