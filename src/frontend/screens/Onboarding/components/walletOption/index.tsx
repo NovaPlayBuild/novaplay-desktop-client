@@ -1,6 +1,6 @@
 import WalletOptionStyles from './index.module.scss'
 import React from 'react'
-import { ForwardArrow } from 'frontend/assets/hyperplay'
+import { ForwardArrow } from 'frontend/assets/novaplay'
 
 interface WalletOptionProps {
   title: string
