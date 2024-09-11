@@ -17,7 +17,7 @@ const MinimizeOnGameLaunch = () => {
       handleChange={() => setMinimizeOnGameLaunch(!minimizeOnGameLaunch)}
       title={t(
         'setting.minimize-on-launch',
-        'Minimize HyperPlay After Game Launch'
+        'Minimize NovaPlay After Game Launch'
       )}
     />
   )
