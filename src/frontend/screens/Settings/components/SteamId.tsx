@@ -2,7 +2,7 @@ import React from 'react'
 import { useTranslation } from 'react-i18next'
 import useSetting from 'frontend/hooks/useSetting'
 import { configStore } from 'frontend/helpers/electronStores'
-import { TextInput } from '@hyperplay/ui'
+import { TextInput } from '@novaplay/ui'
 
 /**
  * Used only for testing.
