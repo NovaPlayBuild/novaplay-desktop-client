@@ -8,31 +8,31 @@ import { XMLParser, XMLBuilder } from 'fast-xml-parser'
 async function main() {
   console.log('tag name: ', process.env.RELEASE_VERSION)
   const useTestRepo = false
-  const repoOrgName = useTestRepo ? 'BrettCleary' : 'HyperPlay-Gaming'
-  const repoName = repoOrgName + '/hyperplay-desktop-client'
+  const repoOrgName = useTestRepo ? 'BrettCleary' : 'NovaPlay-Gaming'
+  const repoName = repoOrgName + '/novaplay-desktop-client'
 
-  // update url in xyz.hyperplay.HyperPlay.yml
-  console.log('updating url in xyz.hyperplay.HyperPlay.yml')
-  const ymlFilePath = './xyz.hyperplay.HyperPlay/xyz.hyperplay.HyperPlay.yml'
+  // update url in xyz.novaplay.NovaPlay.yml
+  console.log('updating url in xyz.novaplay.NovaPlay.yml')
+  const ymlFilePath = './xyz.novaplay.NovaPlay/xyz.novaplay.NovaPlay.yml'
   let hpYml = fs.readFileSync(ymlFilePath).toString()
 
   const releaseString = `https://github.com/${repoName}/releases/download/${
     process.env.RELEASE_VERSION
-  }/hyperplay-${process.env.RELEASE_VERSION?.substring(1)}.tar.xz`
+  }/novaplay-${process.env.RELEASE_VERSION?.substring(1)}.tar.xz`
   hpYml = hpYml.replace(
-    /https:\/\/github.com\/HyperPlay-Gaming\/hyperplay-desktop-client\/releases\/download\/v.*..*..*\/hyperplay-.*..*..*.tar.xz/,
+    /https:\/\/github.com\/NovaPlay-Gaming\/novaplay-desktop-client\/releases\/download\/v.*..*..*\/novaplay-.*..*..*.tar.xz/,
     releaseString
   )
 
-  // update hash in xyz.hyperplay.HyperPlay.yml from latest .tar.xz release
-  console.log('updating hash in xyz.hyperplay.HyperPlay.yml')
+  // update hash in xyz.novaplay.NovaPlay.yml from latest .tar.xz release
+  console.log('updating hash in xyz.novaplay.NovaPlay.yml')
   const { data } = await axios.get(
     `https://api.github.com/repos/${repoName}/releases/latest`
   )
   const tarxz = data.assets.find((asset) =>
     asset.browser_download_url.includes('tar.xz')
   )
-  const outputFile = `${os.tmpdir()}/hyperplay.tar.xz`
+  const outputFile = `${os.tmpdir()}/novaplay.tar.xz`
   child_process.spawnSync('curl', [
     '-L',
     tarxz.browser_download_url,
@@ -50,12 +50,12 @@ async function main() {
 
   fs.writeFileSync(ymlFilePath, hpYml)
 
-  // update release version and date on xml tag in xyz.hyperplay.HyperPlay.metainfo.xml
+  // update release version and date on xml tag in xyz.novaplay.NovaPlay.metainfo.xml
   console.log(
-    'updating release version and date on xml tag in xyz.hyperplay.HyperPlay.metainfo.xml'
+    'updating release version and date on xml tag in xyz.novaplay.NovaPlay.metainfo.xml'
   )
   const xmlFilePath =
-    './xyz.hyperplay.HyperPlay/xyz.hyperplay.HyperPlay.metainfo.xml'
+    './xyz.novaplay.NovaPlay/xyz.novaplay.NovaPlay.metainfo.xml'
   let hpXml = fs.readFileSync(xmlFilePath).toString()
   const date = new Date()
   const isoDate = date.toISOString().slice(0, 10)
