@@ -1,5 +1,5 @@
 /**
- * @file Figures out system information (CPU, GPU, memory) and software versions (HyperPlay, Legendary, gogdl, etc.)
+ * @file Figures out system information (CPU, GPU, memory) and software versions (NovaPlay, Legendary, gogdl, etc.)
  */
 
 import os from 'os'
@@ -129,7 +129,7 @@ ${info.GPUs.map(
 OS: ${info.OS.name} ${info.OS.version} (${info.OS.platform})
 ${steamDeckAndFlatpakInfo}
 Software Versions:
-  HyperPlay: ${info.softwareInUse.appVersion}
+  NovaPlay: ${info.softwareInUse.appVersion}
   Legendary: ${info.softwareInUse.legendaryVersion}
   gogdl: ${info.softwareInUse.gogdlVersion}`
 }
