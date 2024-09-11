@@ -110,7 +110,7 @@ export const addNewApp = (args: GameInfo) => ipcRenderer.send('addNewApp', args)
 
 export const launchApp = async (
   appName: string,
-  runner: 'hyperplay' | 'sideload'
+  runner: 'novaplay' | 'sideload'
 ): Promise<boolean> => ipcRenderer.invoke('launchApp', appName, runner)
 
 export const onLibraryChange = async (
@@ -140,12 +140,12 @@ export const removeFromLibrary = async (appName: string) => {
   ipcRenderer.send('removeFromLibrary', appName)
 }
 
-export const checkHyperPlayAccessCode = async (
+export const checkNovaPlayAccessCode = async (
   licenseConfigId: number,
   accessCode: string
 ) => {
   return ipcRenderer.invoke(
-    'checkHyperPlayAccessCode',
+    'checkNovaPlayAccessCode',
     licenseConfigId,
     accessCode
   )
