@@ -6,7 +6,7 @@ import {
   DMQueueElement,
   DownloadManagerState,
   GameInfo,
-  HyperPlayInstallInfo
+  NovaPlayInstallInfo
 } from 'common/types'
 import { CachedImage, SvgButton } from 'frontend/components/UI'
 import {
@@ -24,7 +24,7 @@ import StopInstallationModal from 'frontend/components/UI/StopInstallationModal'
 import { observer } from 'mobx-react-lite'
 import libraryState from 'frontend/state/libraryState'
 import { hasStatus } from 'frontend/hooks/hasStatus'
-import { Images } from '@hyperplay/ui'
+import { Images } from '@novaplay/ui'
 import styles from './index.module.scss'
 const { PauseIcon, PlayIcon, XCircle, DownloadIcon } = Images
 
@@ -48,7 +48,7 @@ function convertToTime(time: number) {
 type InstallInfo =
   | GogInstallInfo
   | LegendaryInstallInfo
-  | HyperPlayInstallInfo
+  | NovaPlayInstallInfo
   | null
 
 const DownloadManagerItem = observer(({ element, current, state }: Props) => {
