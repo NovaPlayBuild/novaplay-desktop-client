@@ -334,7 +334,7 @@ export default function AdvancedSettings() {
               <FontAwesomeIcon icon={faPaintBrush} />
             </div>
             <span className="button-icon-text">
-              {t('settings.clear-cache', 'Clear HyperPlay Cache')}
+              {t('settings.clear-cache', 'Clear NovaPlay Cache')}
             </span>
           </div>
         </button>
@@ -348,7 +348,7 @@ export default function AdvancedSettings() {
               <FontAwesomeIcon icon={faX} />
             </div>
             <span className="button-icon-text">
-              {t('settings.reset-hyperplay', 'Reset HyperPlay')}
+              {t('settings.reset-novaplay', 'Reset NovaPlay')}
             </span>
           </div>
         </button>
