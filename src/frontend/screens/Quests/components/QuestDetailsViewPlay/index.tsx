@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { Game, QuestDetails, QuestDetailsTranslations } from '@hyperplay/ui'
+import { Game, QuestDetails, QuestDetailsTranslations } from '@novaplay/ui'
 import { useTranslation } from 'react-i18next'
 import useGetQuest from 'frontend/hooks/useGetQuest'
 import styles from './index.module.scss'
@@ -41,7 +41,7 @@ export function QuestDetailsViewPlayWrapper({
         appName
       )
 
-      let runner: Runner = 'hyperplay'
+      let runner: Runner = 'novaplay'
       let name = appName
       if (epicListingUrl) {
         runner = 'legendary'
@@ -62,12 +62,12 @@ export function QuestDetailsViewPlayWrapper({
           })
         })
         .catch(async () => {
-          // if hyperplay game, add to library and navigate to game page
-          if (runner === 'hyperplay') {
+          // if novaplay game, add to library and navigate to game page
+          if (runner === 'novaplay') {
             await window.api.addHyperplayGame(name)
             const gameInfo = await getGameInfo(name, runner)
 
-            return navigate(`/gamepage/hyperplay/${name}`, {
+            return navigate(`/gamepage/novaplay/${name}`, {
               state: { gameInfo, fromQuests: true }
             })
           }
