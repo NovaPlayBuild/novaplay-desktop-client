@@ -12,7 +12,7 @@ import {
   Menu,
   Tabs,
   getTabsClassNames
-} from '@hyperplay/ui'
+} from '@novaplay/ui'
 import { Category } from 'frontend/types'
 import { observer } from 'mobx-react-lite'
 import libraryState from '../../../../state/libraryState'
@@ -59,8 +59,8 @@ export const LibraryTopBar = observer(
           <Tabs.Tab value="all">
             <div className="menu">{t('ALL', 'ALL')}</div>
           </Tabs.Tab>
-          <Tabs.Tab value="hyperplay">
-            <div className="menu">{t('HyperPlay')}</div>
+          <Tabs.Tab value="novaplay">
+            <div className="menu">{t('NovaPlay')}</div>
           </Tabs.Tab>
           {isEpicLoggedin ? (
             <Tabs.Tab value="legendary">
