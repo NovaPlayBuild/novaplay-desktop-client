@@ -12,8 +12,8 @@ import {
   WalletConnectedType
 } from 'common/types/proxy-types'
 // import './index.css'
-import { MMTransparent, WCBlue } from 'frontend/assets/hyperplay'
-import { Images } from '@hyperplay/ui'
+import { MMTransparent, WCBlue } from 'frontend/assets/novaplay'
+import { Images } from '@novaplay/ui'
 import { t } from 'i18next'
 import WalletSelectionStyles from './index.module.scss'
 import OnboardingStyles from '../index.module.scss'
@@ -25,7 +25,7 @@ import {
   ImportableBrowser,
   MetaMaskImportOptions,
   MetaMaskInitMethod
-} from '@hyperplay/utils'
+} from '@novaplay/utils'
 import { toString, QRCodeToStringOptions } from 'qrcode'
 import { WalletOnboardCloseReason, WrapRendererCallback } from 'common/types'
 import StatusScreen, { CONNECTION_STATUS } from './screens/status'
@@ -213,15 +213,15 @@ const WalletSelection: React.FC<WalletSelectionProps> = function (props) {
           <StatusScreen
             status={CONNECTION_STATUS.REJECTED}
             title={t(
-              'hyperplay.onboarding.connectionCanceled.title',
+              'novaplay.onboarding.connectionCanceled.title',
               `Connection canceled!`
             )}
             description={t(
-              'hyperplay.onboarding.connectionCanceled.description',
+              'novaplay.onboarding.connectionCanceled.description',
               `Please confirm the connection request on your mobile wallet to proceed.`
             )}
             actionButtonText={t(
-              'hyperplay.onboarding.connectAgain',
+              'novaplay.onboarding.connectAgain',
               `Connect again`
             )}
             onActionButtonClick={async () =>
@@ -234,11 +234,11 @@ const WalletSelection: React.FC<WalletSelectionProps> = function (props) {
           <StatusScreen
             status={CONNECTION_STATUS.CONNECTED}
             title={t(
-              'hyperplay.onboarding.connectionConnected.title',
+              'novaplay.onboarding.connectionConnected.title',
               `Wallet connected!`
             )}
             description={t(
-              'hyperplay.onboarding.connectionConnected.description',
+              'novaplay.onboarding.connectionConnected.description',
               `Your wallet is connected. You are ready to game.`
             )}
           />
@@ -259,18 +259,18 @@ const WalletSelection: React.FC<WalletSelectionProps> = function (props) {
   return (
     <div className={WalletSelectionStyles.welcomeContainer}>
       <div className={WalletSelectionStyles.walletOptionsSection}>
-        <Images.HyperPlayLogoColored className={OnboardingStyles.hpLogo} />
+        <Images.NovaPlayLogoColored className={OnboardingStyles.hpLogo} />
         <div
           className={`title ${WalletSelectionStyles.walletConnectionsTitle}`}
         >
           {t(
-            'hyperplay.onboarding.walletSelection.title',
+            'novaplay.onboarding.walletSelection.title',
             `Wallet Connections`
           )}
         </div>
         <div className={`body ${WalletSelectionStyles.connectWalletText}`}>
           {t(
-            'hyperplay.onboarding.walletSelection.pleaseConnect',
+            'novaplay.onboarding.walletSelection.pleaseConnect',
             `Please connect your wallet, or download the Metamask mobile-app to get
         started:`
           )}
