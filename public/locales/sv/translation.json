@@ -19,7 +19,7 @@
     },
     "box": {
         "cache-cleared": {
-            "message": "HyperPlay cache rensades.",
+            "message": "NovaPlay cache rensades.",
             "title": "Cache rensades"
         },
         "choose": "Välj",
@@ -67,7 +67,7 @@
             },
             "update": {
                 "title": "Problem vid uppdatering",
-                "message": "Något gick fel med uppdateringen! Avinstallera och installera om HyperPlay manuellt."
+                "message": "Något gick fel med uppdateringen! Avinstallera och installera om NovaPlay manuellt."
             },
             "wine-not-found": {
                 "invalid": "Angiven Wine version hittades ej. Installera denna version eller välj något annat i spelets inställningar{{newline}}Version: {{version}}{{newline}}Sökväg: {{path}}",
@@ -89,11 +89,11 @@
                 "changelog": "Visa ändringsloggen",
                 "detail": "Vill du ladda ner uppdateringen i bakgrunden?",
                 "message": "Ny version tillgänglig!",
-                "message-finished": "Vill du starta om HyperPlay nu?",
-                "title": "HyperPlay Games Launcher",
+                "message-finished": "Vill du starta om NovaPlay nu?",
+                "title": "NovaPlay Games Launcher",
                 "title-finished": "Uppdatering slutförd",
-                "appUpdated": "HyperPlay uppdaterades",
-                "appUpdated-message": "HyperPlay uppdaterades. Vill du uppdatera och starta om HyperPlay nu?"
+                "appUpdated": "NovaPlay uppdaterades",
+                "appUpdated-message": "NovaPlay uppdaterades. Vill du uppdatera och starta om NovaPlay nu?"
             }
         },
         "no": "Nej",
@@ -109,8 +109,8 @@
         },
         "reset-app": {
             "question": {
-                "message": "Är du säker att du vill grundåterställa HyperPlay? Detta raderar alla inställningar och cachefiler men raderar inte installerade spel eller Epic inloggningsuppgifter. Portabla versioner (AppImage, WinPortable, ...) av HyperPlay måste startas om manuellt efteråt.",
-                "title": "Grundåterställ HyperPlay"
+                "message": "Är du säker att du vill grundåterställa NovaPlay? Detta raderar alla inställningar och cachefiler men raderar inte installerade spel eller Epic inloggningsuppgifter. Portabla versioner (AppImage, WinPortable, ...) av NovaPlay måste startas om manuellt efteråt.",
+                "title": "Grundåterställ NovaPlay"
             }
         },
         "runexe": {
@@ -149,7 +149,7 @@
             },
             "title": "Varning",
             "rosetta": {
-                "message": "HyperPlay kräver Rosetta körs korrekt på macOS med Apple Silicon chips. Installera den från macOS-terminalen med följande kommando: \"softwareupdate --install-rosetta\" och starta om HyperPlay. ",
+                "message": "NovaPlay kräver Rosetta körs korrekt på macOS med Apple Silicon chips. Installera den från macOS-terminalen med följande kommando: \"softwareupdate --install-rosetta\" och starta om NovaPlay. ",
                 "title": "Rosetta hittade inte"
             },
             "wine-change": {
@@ -263,7 +263,7 @@
         "esync": "Esync aims to reduce wineserver overhead in CPU-intensive games. Enabling may improve performance.",
         "fsync": "Fsync aims to reduce wineserver overhead in CPU-intensive games. Enabling may improve performance on supported Linux kernels.",
         "game_language": {
-            "fallback": "Leave blank to use HyperPlay's language.",
+            "fallback": "Leave blank to use NovaPlay's language.",
             "in_game_config": "Not all games support this configuration, some have in-game language setting.",
             "valid_codes": "Valid language codes are game-dependant."
         },
@@ -279,18 +279,18 @@
         "preferSystemLibs": "Custom Wine versions (Wine-GE, Wine-Lutris) are shipped with their library dependencies. By enabling this option, these shipped libraries will be ignored and Wine will load system libraries instead. Warning! Issues may occur if dependencies are not met.",
         "primerun": "Use dedicated graphics card to render game on multi-GPU systems. Only needed on gaming laptops or desktops that use a headless GPU for rendering (NVIDIA Optimus, AMD CrossFire)",
         "steam_path": {
-            "info": "This path lets HyperPlay determine what version of Proton Steam uses, for adding non-Steam games to Steam."
+            "info": "This path lets NovaPlay determine what version of Proton Steam uses, for adding non-Steam games to Steam."
         },
         "steamruntime": "Custom libraries provided by Steam to help run Linux and Windows (Proton) games. Enabling might improve compatibility.",
         "sync": {
-            "part1": "HyperPlay försöker gissa mapp för sparfiler vilket oftast fungerar. Om det blir fel, använd fältet för att ange korrekt sökväg.",
-            "part2": "Om du ändrar sökväg för Wine eller Proton prefix kommer du behöva kontrollera sökvägen igen. Proton använder annorlunda prefix (/pfx) och användarnamn (steamuser) jämfört med Wine. Du kan radera aktuell sökväg och lämna synkroniseringsinställningarna, öppna dem på nytt så försöker HyperPlay automatiskt hitta rätt prefix igen.",
+            "part1": "NovaPlay försöker gissa mapp för sparfiler vilket oftast fungerar. Om det blir fel, använd fältet för att ange korrekt sökväg.",
+            "part2": "Om du ändrar sökväg för Wine eller Proton prefix kommer du behöva kontrollera sökvägen igen. Proton använder annorlunda prefix (/pfx) och användarnamn (steamuser) jämfört med Wine. Du kan radera aktuell sökväg och lämna synkroniseringsinställningarna, öppna dem på nytt så försöker NovaPlay automatiskt hitta rätt prefix igen.",
             "part3": "Manuell synkronisering: Ladda ner sparfiler från molnlagring. Ladda upp lokala sparfiler till molnlagring. Tvingad nedladdning och tvingad uppladdning ignorerar versionskontroll både lokalt och i molnlagring.",
             "part4": "Synkronisera sparfiler automatiskt kommer synkronisera sparfiler varje gång ett spel startas samt avslutas."
         },
         "vkd3d": "VKD3D is a Vulkan-based translational layer for DirectX 12 games. Enabling may improve compatibility significantly. Has no effect on older DirectX games.",
         "wine": {
-            "part1": "HyperPlay söker efter Wine, Proton och CrossOver i dessa mappar:",
+            "part1": "NovaPlay söker efter Wine, Proton och CrossOver i dessa mappar:",
             "part2": "För övriga platser, använd symbolisk länk till en av dessa mappar"
         },
         "disable_logs": "Slå den här kryssrutan PÅ för att inaktivera de flesta skrivningar till loggfiler (kritisk information loggas alltid). Se till att stänga AV den här inställningen innan du rapporterar något problem.",
@@ -299,12 +299,12 @@
         "dxvkfpslimit": "Ställ en ramhastighet cap för DXVK spel"
     },
     "info": {
-        "hyperplay": {
+        "novaplay": {
             "beta": "Beta",
             "click-to-see-changelog": "Click to see changelog",
             "newReleases": "Update Available!",
             "stable": "Stable",
-            "version": "HyperPlay Version"
+            "version": "NovaPlay Version"
         },
         "save-sync": {
             "searching": "Trying to detect the correct save folder"
@@ -391,7 +391,7 @@
         },
         "moved": "Spelflytt slutförd",
         "moving": "Moving Game",
-        "new-hyperplay-version": "A new HyperPlay version was released!",
+        "new-novaplay-version": "A new NovaPlay version was released!",
         "refresh": {
             "error": "Couldn't fetch releases from upstream, maybe because of Github API restrictions! Try again later."
         },
@@ -446,7 +446,7 @@
     "other": {
         "gogdl-version": "GOGDL version: ",
         "legendary-version": "Legendary version: ",
-        "weblate": "Bidra till översättning av HyperPlay.",
+        "weblate": "Bidra till översättning av NovaPlay.",
         "nile-version": "Nile version: "
     },
     "Other": "Other",
@@ -491,7 +491,7 @@
         "autosync": "Synkronisera sparfiler automatiskt",
         "autovkd3d": "Installera/uppdatera VKD3D i prefix automatiskt",
         "change-target-exe": "Ange alternativ EXE-fil att köra",
-        "checkForUpdatesOnStartup": "Sök efter HyperPlay-uppdateringar vid uppstart",
+        "checkForUpdatesOnStartup": "Sök efter NovaPlay-uppdateringar vid uppstart",
         "crossover-version": "Crossover/Wine Version",
         "custom_themes_path": "Sökväg till anpassade teman",
         "customWineProton": "Anpassad Wine/Proton sökväg",
@@ -545,9 +545,9 @@
             "last-log": "Senaste logg",
             "no-file": "Ingen loggfil hittades",
             "show-in-folder": "Visa loggfiler i mapp",
-            "join-hyperplay-discord": "Gå med i vår Discord",
+            "join-novaplay-discord": "Gå med i vår Discord",
             "instructions-part-02": "För att hjälpa oss att diagnostisera och åtgärda problemet så snabbt som möjligt, vänligen ange så mycket information som möjligt, inklusive en kopia av dina loggar. Vårt supportteam kommer att övervaka båda kanalerna och göra sitt bästa för att svara på ditt problem så snabbt som möjligt. Tack för ditt tålamod och förståelse medan vi arbetar för att lösa eventuella problem du kan stöta på.",
-            "instructions-part-01": "Om du stöter på problem när du använder HyperPlay har vi två utsedda områden för att rapportera dina problem i vår Discord Server. Om du är en spelare, rapportera eventuella problem genom att besöka spelar-stöd-forumet. Om du är en game dev, vänligen rapportera eventuella problem genom att besöka dev-support-forumet."
+            "instructions-part-01": "Om du stöter på problem när du använder NovaPlay har vi två utsedda områden för att rapportera dina problem i vår Discord Server. Om du är en spelare, rapportera eventuella problem genom att besöka spelar-stöd-forumet. Om du är en game dev, vänligen rapportera eventuella problem genom att besöka dev-support-forumet."
         },
         "mangohud": "Aktivera Mangohud (Mangohud måste vara installerat)",
         "manualsync": {
@@ -561,7 +561,7 @@
         },
         "maxRecentGames": "Visa nyligen spelat",
         "maxworkers": "Maximalt antal samtida nedladdningar",
-        "minimize-on-launch": "Minimera HyperPlay efter spelstart",
+        "minimize-on-launch": "Minimera NovaPlay efter spelstart",
         "offlinemode": "Kör spelet offline",
         "prefered_language": "Prefered Language (Language Code)",
         "preferSystemLibs": "Prefer system libraries",
@@ -596,7 +596,7 @@
         "alt-nile-bin": "Välj en alternativ Nile Binär",
         "msync": "Aktivera Esync",
         "autodxvknvapi": "Auto Installera/Uppdatera DXVK-NVAPI på Prefix",
-        "autoLaunchHyperPlay": "Auto Launch Hyper Spela",
+        "autoLaunchNovaPlay": "Auto Launch Hyper Spela",
         "steamId": "Steam ID",
         "dxvkfpslimit": "Begränsa FPS (DX9, 10 och 11)"
     },
@@ -605,7 +605,7 @@
             "installing": "Installing BattlEye Runtime...",
             "name": "BattlEye AntiCheat Runtime"
         },
-        "clear-cache": "Rensa HyperPlay cache",
+        "clear-cache": "Rensa NovaPlay cache",
         "copiedToClipboard": "Kopierat till urklipp/klippbord!",
         "copyToClipboard": "Kopiera all inställningar till urklipp/klippbord",
         "default_hint": "Changes in this section only apply as default values when installing games. If you want to change the settings of an already installed game, use the Settings button in the game page.",
@@ -638,7 +638,7 @@
             "systemInformation": "System Information"
         },
         "open-config-file": "Open Config File",
-        "reset-hyperplay": "Grundinställ HyperPlay",
+        "reset-novaplay": "Grundinställ NovaPlay",
         "saves": {
             "label": "Save Location:",
             "warning": "Cloud Saves feature is in Beta, please backup your saves before syncing (in case something goes wrong)"
@@ -757,7 +757,7 @@
     "Amazon Games": "Amazon spel",
     "prime-gaming": "Prime Gaming",
     "profile": "Profil",
-    "hyperplay": {
+    "novaplay": {
         "browserImport": {
             "profile": "Profil",
             "appId": "App Id"
@@ -778,7 +778,7 @@
                         "orWord": "ELLER",
                         "details": "Webbläsarna nedan har redan MetaMask installerat. Välj den du vill importera från.",
                         "title": "Välj webbläsaren att importera från",
-                        "useRecoveryPhraseInfo": "Denna funktion rekommenderas för avancerade användare och utvecklare. Din hemliga återhämtningsfras lagras lokalt i MetaMask och delas aldrig med HyperPlay.",
+                        "useRecoveryPhraseInfo": "Denna funktion rekommenderas för avancerade användare och utvecklare. Din hemliga återhämtningsfras lagras lokalt i MetaMask och delas aldrig med NovaPlay.",
                         "useRecoveryPhrase": "Importera att använda Secret Recovery fras",
                         "cantFindProfile": "Kan inte hitta din webbläsarprofil?",
                         "createNewWallet": "Skapa ny MM förlängning plånbok"
@@ -799,7 +799,7 @@
                     },
                     "scan": {
                         "updateWarning": "Har du problem? Se till att MetaMask är uppdaterad.",
-                        "details": "Skapa en krypterad kommunikationskanal. Dina nycklar delas aldrig med HyperPlay.",
+                        "details": "Skapa en krypterad kommunikationskanal. Dina nycklar delas aldrig med NovaPlay.",
                         "getMetamask": "Få MetaMask",
                         "title": "Skanna QR med ",
                         "dontHaveWallet": "Har du ingen plånbok?"
@@ -819,10 +819,10 @@
                 "description": "Vänligen bekräfta anslutningsbegäran på din mobila plånbok för att fortsätta."
             },
             "analytics": {
-                "body": "HyperPlay vill samla användningsdata för att bättre förstå hur våra användare interagerar med programmet. Denna information hjälper oss att förstå hur du använder appen och låter oss göra HyperPlay ännu bättre för dig.",
-                "title": "Hjälp oss att förbättra HyperPlay!",
+                "body": "NovaPlay vill samla användningsdata för att bättre förstå hur våra användare interagerar med programmet. Denna information hjälper oss att förstå hur du använder appen och låter oss göra NovaPlay ännu bättre för dig.",
+                "title": "Hjälp oss att förbättra NovaPlay!",
                 "anonymized": "Skicka anonymiserad klick- och spelinteraktion;",
-                "hyperplayWill": "HyperPlay kommer:",
+                "novaplayWill": "NovaPlay kommer:",
                 "neverCollectIP": " samla din fullständiga IP-adress;",
                 "neverCollectPersonal": " samla in nycklar, adresser, balanser, hashes eller någon personlig information;",
                 "neverSellData": " sälja data för vinst. Någonsin!",
@@ -835,9 +835,9 @@
                 "text": {
                     "communityCTA_1": "Vi skulle älska din feedback och få dig att gå med oss i vår",
                     "communityCTA_2": "gemenskap. Låt oss forma framtiden för spel!",
-                    "construction": "HyperPlay är under konstruktion.",
-                    "description": "HyperPlay är en game launcher och game store aggregator från\nFramtiden. Med HyperPlay kan du bära din plånbok, tokens och tillgångar\ntill varje spel. HyperPlay stöder hela biblioteket i Epic\nStore, GOG och vår egen HyperPlay-butik. Genom att använda HyperPlay godkänner du\ntill vår",
-                    "bugs": "Observera att HyperPlay är en offentlig alfa. Många funktioner är fortfarande\ni utveckling, och det kommer att finnas buggar."
+                    "construction": "NovaPlay är under konstruktion.",
+                    "description": "NovaPlay är en game launcher och game store aggregator från\nFramtiden. Med NovaPlay kan du bära din plånbok, tokens och tillgångar\ntill varje spel. NovaPlay stöder hela biblioteket i Epic\nStore, GOG och vår egen NovaPlay-butik. Genom att använda NovaPlay godkänner du\ntill vår",
+                    "bugs": "Observera att NovaPlay är en offentlig alfa. Många funktioner är fortfarande\ni utveckling, och det kommer att finnas buggar."
                 }
             }
         },
@@ -882,7 +882,7 @@
         "connectWallet": "Anslut plånbok",
         "currentWallet": "Nuvarande plånbok",
         "linkSteamAccountCta": "Gå till Steam Sign in",
-        "linkSteamAccountDescription": "Logga in på Steam för att länka ditt HyperPlay-konto.",
+        "linkSteamAccountDescription": "Logga in på Steam för att länka ditt NovaPlay-konto.",
         "linkSteamAccountTitle": "Link Steam-konto",
         "viewFullscreen": "Visa fullscreen"
     },
@@ -941,7 +941,7 @@
     },
     "ALL": "ALLA",
     "analytics": "Analytics",
-    "hyperplayOverlay": {
+    "novaplayOverlay": {
         "txnRequest": {
             "FAILED": "Transaktion avbruten",
             "CONFIRMED": "Transaktion bekräftad",
@@ -960,8 +960,8 @@
             "FAILED": "Anpassat nätverk avbrutet"
         },
         "greeting": {
-            "description": "HyperPlay Overlay är redo! Tryck {{overlayKeyMod}} + X för att visa eller dölja det.",
-            "title": "HyperPlay Overlay"
+            "description": "NovaPlay Overlay är redo! Tryck {{overlayKeyMod}} + X för att visa eller dölja det.",
+            "title": "NovaPlay Overlay"
         },
         "extensionNotification": {
             "TITLE": "Transaktion begärd",
@@ -991,8 +991,8 @@
     "quests": {
         "playstreak": {
             "signInWarning": {
-                "client": "Du är för närvarande inte inloggad, spela framsteg kommer inte att spåras. Vänligen logga in på HyperPlay via den högra nedgången för att spåra framsteg.",
-                "overlay": "Du är för närvarande inte inloggad, spela framsteg kommer inte att spåras. Avsluta spelet och logga in på HyperPlay via den övre högra nedgången för att spåra framsteg."
+                "client": "Du är för närvarande inte inloggad, spela framsteg kommer inte att spåras. Vänligen logga in på NovaPlay via den högra nedgången för att spåra framsteg.",
+                "overlay": "Du är för närvarande inte inloggad, spela framsteg kommer inte att spåras. Avsluta spelet och logga in på NovaPlay via den övre högra nedgången för att spåra framsteg."
             }
         },
         "quests": "Quests",
@@ -1001,7 +1001,7 @@
             "title": "Inga Quests hittades."
         },
         "g7CreditsModal": {
-            "description": "Dyk in HyperPlays toppspel med spännande Play Streak Challenges. Varje aktivitet uppmuntrar dig att engagera dig i ett annat spel, visa det bästa av web3 spel. Din speltid spelar roll!",
+            "description": "Dyk in NovaPlays toppspel med spännande Play Streak Challenges. Varje aktivitet uppmuntrar dig att engagera dig i ett annat spel, visa det bästa av web3 spel. Din speltid spelar roll!",
             "title": "Tjäna Game7 Credits"
         }
     },
@@ -1019,8 +1019,8 @@
         }
     },
     "overlay": {
-        "EXTERNAL_WALLET_CONNECTED": "Du är ansluten till HyperPlay med en extern plånbok.",
-        "WALLET_DISCONNECTED": "Du har ingen plånbok ansluten till HyperPlay."
+        "EXTERNAL_WALLET_CONNECTED": "Du är ansluten till NovaPlay med en extern plånbok.",
+        "WALLET_DISCONNECTED": "Du har ingen plånbok ansluten till NovaPlay."
     },
     "email_subscription": {
         "title": "Tack för att du prenumererar!",
