@@ -19,7 +19,7 @@
     },
     "box": {
         "cache-cleared": {
-            "message": "HyperPlay快取已清理。",
+            "message": "NovaPlay快取已清理。",
             "title": "清理快取"
         },
         "choose": "請選擇",
@@ -67,7 +67,7 @@
             },
             "update": {
                 "title": "更新錯誤",
-                "message": "更新出了問題！請手動卸載並重新安裝 HyperPlay。"
+                "message": "更新出了問題！請手動卸載並重新安裝 NovaPlay。"
             },
             "wine-not-found": {
                 "invalid": "The selected wine version was not found. Install it or select a different version in the game's settings{{newline}}Version: {{version}}{{newline}}Path: {{path}}",
@@ -89,8 +89,8 @@
                 "changelog": "打開更新日誌",
                 "detail": "你想在後台下載更新嗎？",
                 "message": "目前有新版本可用！",
-                "message-finished": "你想立即重啟 HyperPlay 嗎？",
-                "title": "HyperPlay 遊戲啓動器",
+                "message-finished": "你想立即重啟 NovaPlay 嗎？",
+                "title": "NovaPlay 遊戲啓動器",
                 "title-finished": "更新完成",
                 "appUpdated": "更新了超Play",
                 "appUpdated-message": "对超Play进行了更新。 现在是否需要更新和重新启动超Play?"
@@ -109,8 +109,8 @@
         },
         "reset-app": {
             "question": {
-                "message": "您確定要重置 HyperPlay 嗎？這將刪除所有設置和緩存，但不會刪除已安裝的遊戲或 Epic 認證。便攜版的HyperPlay需要手動重啓。",
-                "title": "重設 HyperPlay"
+                "message": "您確定要重置 NovaPlay 嗎？這將刪除所有設置和緩存，但不會刪除已安裝的遊戲或 Epic 認證。便攜版的NovaPlay需要手動重啓。",
+                "title": "重設 NovaPlay"
             }
         },
         "runexe": {
@@ -263,7 +263,7 @@
         "esync": "Esync 的目標是在 CPU 消耗很大的遊戲中減少 wineserver 的開銷。啟用可能會提高性能。",
         "fsync": "Fsync 的目標是在 CPU 開銷很大的遊戲中減少 wineserver 的開銷。啟用可能會提高受支持的 Linux 內核的性能。",
         "game_language": {
-            "fallback": "留空表示使用 HyperPlay 語言。",
+            "fallback": "留空表示使用 NovaPlay 語言。",
             "in_game_config": "不是所有遊戲都支持此設定，一些遊戲有內部語言設定。",
             "valid_codes": "有效語言代碼取決於遊戲。"
         },
@@ -279,18 +279,18 @@
         "preferSystemLibs": "自定義 Wine 版本(Wine- ge、Wine- lutris)隨它們的庫依賴項一起發布。啟用此選項，這些附帶的庫將被忽略，Wine 將加載系統庫。警告！如果不滿足依賴關系，可能會出現問題。",
         "primerun": "在多 GPU 系統上使用專用顯卡渲染遊戲。只有使用無頭 GPU 進行渲染的遊戲筆記本或台式機才需要（NVIDIA Optimus、AMD CrossFire）",
         "steam_path": {
-            "info": "該路徑可讓 HyperPlay 確定 Steam 使用哪個版本的 Proton，以便將非 Steam 遊戲添加到 Steam。"
+            "info": "該路徑可讓 NovaPlay 確定 Steam 使用哪個版本的 Proton，以便將非 Steam 遊戲添加到 Steam。"
         },
         "steamruntime": "Steam 提供的用於幫助執行 Linux 和 Windows（Proton）遊戲的自定義庫。啟用可能會提高相容性。",
         "sync": {
-            "part1": "大多數情況下，HyperPlay啟動器會正確猜測的存檔的位置。但如果位置是錯誤的，請使用覆蓋框更改。",
-            "part2": "如果你改變了 Wine 或 Proton 的文件夾，你將需要再次檢查路徑，因為 Proton 使用不同的前綴（/pfx）和使用者名稱（steamuser）。很簡單，你可以直接刪除目前的路徑，離開同步設置頁面再回來，HyperPlay 會去重新猜測正確 Prefix 的文件夾。",
+            "part1": "大多數情況下，NovaPlay啟動器會正確猜測的存檔的位置。但如果位置是錯誤的，請使用覆蓋框更改。",
+            "part2": "如果你改變了 Wine 或 Proton 的文件夾，你將需要再次檢查路徑，因為 Proton 使用不同的前綴（/pfx）和使用者名稱（steamuser）。很簡單，你可以直接刪除目前的路徑，離開同步設置頁面再回來，NovaPlay 會去重新猜測正確 Prefix 的文件夾。",
             "part3": "手動同步：選擇下載以下載存儲在雲端的存檔。選擇上傳將會把本地存檔上傳到雲端。強制下載將會忽略本地版本，強制上傳將會忽略雲端版本。",
             "part4": "自動同步將在你每次開始遊戲時和結束遊戲後同步存檔。"
         },
         "vkd3d": "VKD3D 是一個基於 Vulkan 的轉換層，用於 DirectX 12 遊戲。啟用可能會顯著提高相容性。對老舊的 DirectX 遊戲沒有效果。",
         "wine": {
-            "part1": "HyperPlay啟動器會在以下資料夾中搜尋現有的Wine/Proton/CrossOver：",
+            "part1": "NovaPlay啟動器會在以下資料夾中搜尋現有的Wine/Proton/CrossOver：",
             "part2": "如果在其它位置，請使用軟鏈接連接到這些中的一個資料夾"
         },
         "disable_logs": "吸引这一检查箱,以解脱大部分的文字记录档案(关键信息总是贴上标签)。 确保在报告任何问题之前,将这种局面变为外国.",
@@ -299,12 +299,12 @@
         "dxvkfpslimit": "DXVK游戏设定了基准率上限"
     },
     "info": {
-        "hyperplay": {
+        "novaplay": {
             "beta": "Beta",
             "click-to-see-changelog": "Click to see changelog",
             "newReleases": "Update Available!",
             "stable": "Stable",
-            "version": "HyperPlay 版本"
+            "version": "NovaPlay 版本"
         },
         "save-sync": {
             "searching": "嘗試檢測正確的保存文件夾（點擊取消）"
@@ -391,7 +391,7 @@
         },
         "moved": "完成移動",
         "moving": "移動遊戲中",
-        "new-hyperplay-version": "發佈了新的 HyperPlay 版本!",
+        "new-novaplay-version": "發佈了新的 NovaPlay 版本!",
         "refresh": {
             "error": "無法從上游獲取版本，可能是因為 Github API 的限制！稍後再試。"
         },
@@ -446,7 +446,7 @@
     "other": {
         "gogdl-version": "GOGDL 版本: ",
         "legendary-version": "Legendary 版本: ",
-        "weblate": "請幫助翻譯HyperPlay啟動器。",
+        "weblate": "請幫助翻譯NovaPlay啟動器。",
         "nile-version": "尼羅河版本： "
     },
     "Other": "其他",
@@ -491,7 +491,7 @@
         "autosync": "自動同步存檔",
         "autovkd3d": "自動在 Prefix 中安裝/更新 VKD3D",
         "change-target-exe": "選擇要執行的替代 EXE",
-        "checkForUpdatesOnStartup": "啓動時檢查 HyperPlay 更新",
+        "checkForUpdatesOnStartup": "啓動時檢查 NovaPlay 更新",
         "crossover-version": "Crossover/Wine版本",
         "custom_themes_path": "自定義主題路徑",
         "customWineProton": "自定義Wine/Proton路徑",
@@ -499,7 +499,7 @@
         "default-install-path": "預設安裝路徑",
         "default-steam-path": "預設 Steam 路徑",
         "defaultWinePrefix": "為新的 Wine Prefix 設定資料夾",
-        "disable_controller": "禁止使用控制器操作 HyperPlay",
+        "disable_controller": "禁止使用控制器操作 NovaPlay",
         "discordRPC": "啟用Discord的Rich Presence（活動狀態）",
         "download-no-https": "不使用 HTTPS 下載遊戲 （對 LanCache 等 CDN 有用）",
         "egs-sync": "與已安裝的Epic Games同步",
@@ -529,7 +529,7 @@
         "FsrSharpnessStrenght": "FSR 銳利度",
         "fsync": "啟用 Fsync",
         "gamemode": "使用GameMode（需要已安裝Feral Game Mode）",
-        "language": "選擇 HyperPlay 語言",
+        "language": "選擇 NovaPlay 語言",
         "library_top_option": {
             "disabled": "已關閉",
             "favourites": "我的最愛",
@@ -545,9 +545,9 @@
             "last-log": "上一個日誌",
             "no-file": "未找到日誌檔案",
             "show-in-folder": "顯示日誌所在資料夾",
-            "instructions-part-01": "如果您在使用 HyperPlay 時遇到任何問題，我們在 Discord 服務器中有兩個指定區域可以報告您的問題。如果您是玩家，請訪問玩家支持論壇報告任何問題。如果您是遊戲開發人員，請訪問開發人員支持論壇報告任何問題。",
+            "instructions-part-01": "如果您在使用 NovaPlay 時遇到任何問題，我們在 Discord 服務器中有兩個指定區域可以報告您的問題。如果您是玩家，請訪問玩家支持論壇報告任何問題。如果您是遊戲開發人員，請訪問開發人員支持論壇報告任何問題。",
             "instructions-part-02": "為了幫助我們盡快診斷和解決問題，請提供盡可能多的信息，包括您的日誌副本。我們的支持團隊將監控這兩個渠道，並盡最大努力盡快回復您的問題。在我們努力解決您可能遇到的任何問題時，感謝您的耐心和理解。",
-            "join-hyperplay-discord": "加入我们的分歧"
+            "join-novaplay-discord": "加入我们的分歧"
         },
         "mangohud": "啟用MangoHud（需要已安裝Mangohud）",
         "manualsync": {
@@ -561,7 +561,7 @@
         },
         "maxRecentGames": "要顯示最近遊玩的遊戲",
         "maxworkers": "下載時的最大Worker數量",
-        "minimize-on-launch": "遊戲啟動後最小化 HyperPlay",
+        "minimize-on-launch": "遊戲啟動後最小化 NovaPlay",
         "offlinemode": "離線運行遊戲",
         "prefered_language": "首選語言（語言代碼）",
         "preferSystemLibs": "偏好系統庫",
@@ -597,7 +597,7 @@
         "msync": "啟用 Esync",
         "dxvkfpslimit": "通行证(DX9、10和11)",
         "steamId": "热液",
-        "autoLaunchHyperPlay": "自动发射 游乐",
+        "autoLaunchNovaPlay": "自动发射 游乐",
         "autodxvknvapi": "Auto Install/Update DXVK-NVAPI on Prefix"
     },
     "settings": {
@@ -605,7 +605,7 @@
             "installing": "安裝 BattlEye Runtime 中...",
             "name": "BattlEye AntiCheat 運行時"
         },
-        "clear-cache": "清除 HyperPlay 快取",
+        "clear-cache": "清除 NovaPlay 快取",
         "copiedToClipboard": "已複製到剪貼簿！",
         "copyToClipboard": "複製所有設定至剪貼簿",
         "default_hint": "本節中的更改僅在安裝遊戲時作為默認值應用。如果要更改已安裝遊戲的設置，請使用遊戲頁面中的 \"設置 \"按鈕。",
@@ -638,7 +638,7 @@
             "systemInformation": "系統資訊(_Y)"
         },
         "open-config-file": "開啟配置檔案",
-        "reset-hyperplay": "重設 HyperPlay",
+        "reset-novaplay": "重設 NovaPlay",
         "saves": {
             "label": "Save Location:",
             "warning": "雲端存檔功能處於測試階段，請在同步前備份你的存檔（以防出現問題）"
@@ -739,7 +739,7 @@
         "release": "發佈日期",
         "size": "大小"
     },
-    "hyperplay": {
+    "novaplay": {
         "onboarding": {
             "connectionConnected": {
                 "title": "錢包已連接!",
@@ -749,7 +749,7 @@
                 "screens": {
                     "scan": {
                         "updateWarning": "有問題？確保 MetaMask 是最新版本。",
-                        "details": "創建加密通訊通道。您的密鑰絕不會與 HyperPlay 共享。",
+                        "details": "創建加密通訊通道。您的密鑰絕不會與 NovaPlay 共享。",
                         "dontHaveWallet": "沒有錢包？",
                         "getMetamask": "獲取 Metamask",
                         "title": "以 "
@@ -772,7 +772,7 @@
                         "title": "選擇要從哪個瀏覽器導入",
                         "cantFindProfile": "找不到您的瀏覽器配置文件？",
                         "createNewWallet": "創建新的 MM 擴展錢包",
-                        "details": "通過導入，您的 MetaMask 安裝和  設置將被導入 HyperPlay。",
+                        "details": "通過導入，您的 MetaMask 安裝和  設置將被導入 NovaPlay。",
                         "useRecoveryPhrase": "使用秘密恢復短語訪問",
                         "learnMore": "了解更多",
                         "useRecoveryPhraseInfo": "建议先进用户和开发商使用这一特点。 你的秘密恢复短语在当地存放在Meta Mask,从未与超Play分享.",
@@ -783,26 +783,26 @@
                 "pleaseConnect": "請連接您的錢包，或下載 Metamask 移動應用程序開始使用\n        開始使用:"
             },
             "analytics": {
-                "title": "幫助我們改進 HyperPlay!",
+                "title": "幫助我們改進 NovaPlay!",
                 "privacyPolicyHere": "點擊此處查看隱私政策。",
                 "privacyCaption": "根據《一般數據保護條例》（歐盟）2016/679 的規定，這些數據是匯總數據，因此是匿名數據。如需瞭解更多有關我們隱私保護措施的信息，請參閱我們的 ",
                 "anonymized": "發送匿名點擊和遊戲互動;",
                 "neverSellData": " 出售數據牟利。永遠不會!",
                 "optOut": "總允許您通過設置選擇退出;",
-                "body": "HyperPlay希望收集使用數據，以便更好地瞭解我們的用戶如何與應用程序互動。這些信息有助於我們瞭解您是如何使用應用程序的，並讓我們為您提供更好的HyperPlay。",
-                "hyperplayWill": "HyperPlay 將:",
+                "body": "NovaPlay希望收集使用數據，以便更好地瞭解我們的用戶如何與應用程序互動。這些信息有助於我們瞭解您是如何使用應用程序的，並讓我們為您提供更好的NovaPlay。",
+                "novaplayWill": "NovaPlay 將:",
                 "neverCollectIP": " 收集您的完整 IP 地址;",
                 "neverCollectPersonal": " 收集密鑰、地址、餘額、哈希值或任何個人信息;"
             },
             "welcome": {
                 "text": {
-                    "description": "HyperPlay 是一款來自          未來的遊戲啓動器和遊戲商店聚合器。\n未來。有了 HyperPlay，你可以帶著錢包、代幣和資產\n          進入每款遊戲。HyperPlay 支持 Epic\n          商店、GOG 和我們自己的 HyperPlay 商店的全部遊戲庫。使用HyperPlay，即表示您同意\n          同意我們的",
+                    "description": "NovaPlay 是一款來自          未來的遊戲啓動器和遊戲商店聚合器。\n未來。有了 NovaPlay，你可以帶著錢包、代幣和資產\n          進入每款遊戲。NovaPlay 支持 Epic\n          商店、GOG 和我們自己的 NovaPlay 商店的全部遊戲庫。使用NovaPlay，即表示您同意\n          同意我們的",
                     "communityCTA_2": "社區。讓我們一起塑造遊戲的未來！",
-                    "bugs": "請注意，HyperPlay 是一個公開的 alpha 版本。許多功能仍\n          許多功能仍在開發中，可能會出現錯誤。",
+                    "bugs": "請注意，NovaPlay 是一個公開的 alpha 版本。許多功能仍\n          許多功能仍在開發中，可能會出現錯誤。",
                     "communityCTA_1": "我們希望您能提供反饋意見，並加入我們的",
-                    "construction": "HyperPlay 正在建設中。"
+                    "construction": "NovaPlay 正在建設中。"
                 },
-                "title": "歡迎來到 HyperPlay Early Access！"
+                "title": "歡迎來到 NovaPlay Early Access！"
             },
             "connectAgain": "再次連接",
             "connectionCanceled": {
@@ -872,7 +872,7 @@
         "viewMyAccount": "观点",
         "linkSteamAccountDescription": "为连接你的超Play账户而签字."
     },
-    "hyperplayOverlay": {
+    "novaplayOverlay": {
         "chainRequest": {
             "FAILED": "取消自定義網絡",
             "CONFIRMED": "添加自定義網絡",
@@ -905,8 +905,8 @@
             "FAILED": "交易中斷"
         },
         "greeting": {
-            "description": "HyperPlay Overlay已準備就緒！按 Alt + X 鍵顯示或隱藏。",
-            "title": "HyperPlay Overlay"
+            "description": "NovaPlay Overlay已準備就緒！按 Alt + X 鍵顯示或隱藏。",
+            "title": "NovaPlay Overlay"
         }
     },
     "externalLink": {
