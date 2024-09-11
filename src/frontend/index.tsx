@@ -1,4 +1,4 @@
-import { HyperPlayDesignProvider } from '@hyperplay/ui'
+import { NovaPlayDesignProvider } from '@novaplay/ui'
 import { I18nextProvider, initReactI18next } from 'react-i18next'
 import HttpApi from 'i18next-http-backend'
 import React, { Suspense } from 'react'
@@ -9,9 +9,9 @@ import { initGamepad } from './helpers/gamepad'
 import '@mantine/carousel/styles.css'
 import '@mantine/core/styles.css'
 
-// keep @hyperplay/ui/index.css before index.scss until after frontend design rework
-// import HyperPlay styles after mantine to override their defaults with our design system
-import '@hyperplay/ui/style.css'
+// keep @novaplay/ui/index.css before index.scss until after frontend design rework
+// import NovaPlay styles after mantine to override their defaults with our design system
+import '@novaplay/ui/style.css'
 import './index.scss'
 import Loading from './screens/Loading'
 import GlobalState from './state/GlobalState'
@@ -141,7 +141,7 @@ const renderApp = async () => {
       <WagmiProvider config={config}>
         <QueryClientProvider client={queryClient}>
           <LDProvider>
-            <HyperPlayDesignProvider forceColorScheme="dark">
+            <NovaPlayDesignProvider forceColorScheme="dark">
               <GlobalState>
                 <SentryHandler />
                 <I18nextProvider i18n={i18next}>
@@ -150,7 +150,7 @@ const renderApp = async () => {
                   </Suspense>
                 </I18nextProvider>
               </GlobalState>
-            </HyperPlayDesignProvider>
+            </NovaPlayDesignProvider>
           </LDProvider>
         </QueryClientProvider>
       </WagmiProvider>
