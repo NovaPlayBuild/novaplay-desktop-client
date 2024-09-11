@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { ReactComponent as HyperPlayIcon } from 'frontend/assets/hyperplay/hyperplay_logo_white.svg'
+import { ReactComponent as NovaPlayIcon } from 'frontend/assets/novaplay/novaplay_logo_white.svg'
 
 import type { SystemInformation } from 'backend/utils/systeminfo'
 import { useTranslation } from 'react-i18next'
@@ -16,10 +16,10 @@ function SoftwareInfo({ software }: Props) {
 
   return (
     <div>
-      <h6>HyperPlay</h6>
+      <h6>NovaPlay</h6>
       <div className="gridItemContainer">
         <div>
-          <HyperPlayIcon className="app-icon" />
+          <NovaPlayIcon className="app-icon" />
         </div>
         <div style={{ margin: 'auto', paddingLeft: 'var(--space-xs-fixed)' }}>
           {t('settings.systemInformation.version', 'Version: {{appVersion}}', {
