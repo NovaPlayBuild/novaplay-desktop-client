@@ -46,7 +46,7 @@ async function main() {
   const sha512 = hashSum.digest('hex')
   fs.rmSync(outputFile)
 
-  hpYml = hpYml.replace(/sha512: [0-9, a-f]{128}/, `sha512: ${sha512}`)
+  hpYml2 = hpYml.replace(/sha512: [0-9, a-f]{128}/, `sha512: ${sha512}`)
 
   fs.writeFileSync(ymlFilePath, hpYml)
 
