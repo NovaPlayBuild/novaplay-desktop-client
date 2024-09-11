@@ -71,7 +71,7 @@ async function downloadFile(
     .get(url, {
       ...options.axiosConfig,
       headers: {
-        'User-Agent': `HyperPlay/${app.getVersion()}`,
+        'User-Agent': `NovaPlay/${app.getVersion()}`,
         ...options.axiosConfig?.headers
       }
     })
