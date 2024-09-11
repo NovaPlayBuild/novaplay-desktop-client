@@ -32,25 +32,25 @@ jobs:
       - name: Install modules.
         run: yarn setup
       - name: Checkout flathub repository.
-        run: git clone https://github.com/flathub/xyz.hyperplay.HyperPlay.git
+        run: git clone https://github.com/flathub/xyz.novaplay.NovaPlay.git
       - name: Update flathub release
         run: export RELEASE_VERSION=${{ github.ref_name }} && yarn release:updateFlathub:ci
       - name: Branch flathub repo
         run: git checkout -b "${{ github.ref_name }}"
-        working-directory: ./xyz.hyperplay.HyperPlay
-      - name: Commit files to xyz.hyperplay.HyperPlay
+        working-directory: ./xyz.novaplay.NovaPlay
+      - name: Commit files to xyz.novaplay.NovaPlay
         run: |
           git config --local user.email "27568879+BrettCleary@users.noreply.github.com"
           git config --local user.name "BrettCleary"
           git commit -a -m "changes for ${{ github.ref_name }}"
-        working-directory: ./xyz.hyperplay.HyperPlay
+        working-directory: ./xyz.novaplay.NovaPlay
       - name: Push updated flathub branch
         uses: ad-m/github-push-action@master
         with:
           github_token: ${{ secrets.WORKFLOW_TOKEN }}
           branch: ${{ github.ref_name }}
-          directory: xyz.hyperplay.HyperPlay
-          repository: flathub/xyz.hyperplay.HyperPlay
+          directory: xyz.novaplay.NovaPlay
+          repository: flathub/xyz.novaplay.NovaPlay
       - name: PR to flathub repo
         run: sleep 5 && gh pr create --title ${{ github.ref_name }} --body ${{ github.ref_name }} --base master --head ${{ github.ref_name }}
-        working-directory: ./xyz.hyperplay.HyperPlay
+        working-directory: ./xyz.novaplay.NovaPlay
