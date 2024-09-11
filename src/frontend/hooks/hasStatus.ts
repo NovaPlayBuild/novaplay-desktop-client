@@ -25,7 +25,7 @@ export const hasStatus = (
   const {
     thirdPartyManagedApp = undefined,
     is_installed,
-    runner = 'hyperplay'
+    runner = 'novaplay'
   } = { ...gameInfo }
 
   React.useEffect(() => {
