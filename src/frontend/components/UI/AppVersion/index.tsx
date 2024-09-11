@@ -26,7 +26,7 @@ export default function AppVersion() {
         margin: 'var(--space-xl) 0px var(--space-md) 0px'
       }}
     >
-      {t('info.hyperplay.version', 'HyperPlay Version') + `: ${appVersion}`}
+      {t('info.novaplay.version', 'NovaPlay Version') + `: ${appVersion}`}
     </div>
   )
 }
