@@ -1,8 +1,8 @@
-# HyperPlay
+# NovaPlay
 
 ## Index
 
-- [HyperPlay](#hyperplay)
+- [NovaPlay](#novaplay)
   - [Index](#index)
   - [Supported Operating Systems](#supported-operating-systems)
   - [Installation](#installation)
@@ -20,7 +20,7 @@
   - Ubuntu 20.04LTS or newer
   - Fedora 33 or newer
   - Arch Linux (Manjaro and Garuda as well)
-  - HyperPlay will still work on most distros but we do not give official support for them. So do not open Issues here in these cases, instead, open a Discussion or try our Discord.
+  - NovaPlay will still work on most distros but we do not give official support for them. So do not open Issues here in these cases, instead, open a Discussion or try our Discord.
 - SteamOS (downloading using Discover only)
 - macOS 10.15 or higher
 
@@ -30,10 +30,10 @@
 
 #### Debian, Ubuntu and Derivatives
 
-Download the `hyperplay.x.x.x_amd64.deb` from the Releases section
+Download the `novaplay.x.x.x_amd64.deb` from the Releases section
 
 ```bash
-sudo dpkg -i hyperplay.x.x.x_amd64.deb
+sudo dpkg -i novaplay.x.x.x_amd64.deb
 ```
 
 #### Other Distributions (TAR.XZ)
@@ -43,30 +43,30 @@ Since these two distribution formats don't have a form of dependency management,
 For the tar.xz file, you need first to extract it somewhere, enter the folder and run:
 
 ```bash
-chmod +x hyperplay
+chmod +x novaplay
 ```
 
 To run it use:
 
 ```bash
-./hyperplay
+./novaplay
 ```
 
 ### Windows
 
-Download HyperPlay_Setup.x.x.x.exe or the Portable HyperPlay-x.x.x.exe file and run it. It will install it to the start menu and desktop, use those to run it.
+Download NovaPlay_Setup.x.x.x.exe or the Portable NovaPlay-x.x.x.exe file and run it. It will install it to the start menu and desktop, use those to run it.
 
 ### macOS
 
-Download HyperPlay-x.x.x.dmg and move the HyperPlay App to the Applications folder.
+Download NovaPlay-x.x.x.dmg and move the NovaPlay App to the Applications folder.
 
 ## Screenshots
 
 [//]: # 'Easy way to upload screenshots: https://stackoverflow.com/a/26601810'
 
-<img width="1840" alt="Hyperplay main page" src="https://github.com/HyperPlay-Gaming/hyperplay-desktop-client/assets/38574891/18c94466-8511-4f47-8de7-e74bc9b54ddf">
-<img width="1840" alt="Hyperplay wallet signature during game" src="https://github.com/HyperPlay-Gaming/hyperplay-desktop-client/assets/38574891/a56d34c6-f1a8-46dc-9a18-5e0c6035e468">
-<img width="1840" alt="Hyperplay game detail page" src="https://github.com/HyperPlay-Gaming/hyperplay-desktop-client/assets/38574891/a4a2ffe9-2e2a-4f88-be34-8903d900385b">
+<img width="1840" alt="Hyperplay main page" src="https://github.com/NovaPlay-Gaming/novaplay-desktop-client/assets/38574891/18c94466-8511-4f47-8de7-e74bc9b54ddf">
+<img width="1840" alt="Hyperplay wallet signature during game" src="https://github.com/NovaPlay-Gaming/novaplay-desktop-client/assets/38574891/a56d34c6-f1a8-46dc-9a18-5e0c6035e468">
+<img width="1840" alt="Hyperplay game detail page" src="https://github.com/NovaPlay-Gaming/novaplay-desktop-client/assets/38574891/a4a2ffe9-2e2a-4f88-be34-8903d900385b">
 
 ### Local Development
 
