@@ -224,9 +224,9 @@ function cancelCurrentDownload({ removeDownloaded = false }) {
     removeFromQueue(currentElement.params.appName)
 
     const { runner } = currentElement!.params
-    if (runner === 'hyperplay' && removeDownloaded) {
+    if (runner === 'novaplay' && removeDownloaded) {
       const { appName } = currentElement!.params
-      const tempfolder = join(configFolder, 'hyperplay', '.temp', appName)
+      const tempfolder = join(configFolder, 'novaplay', '.temp', appName)
       logInfo(`Removing ${tempfolder}...`, LogPrefix.DownloadManager)
       callAbortController(appName)
     }
