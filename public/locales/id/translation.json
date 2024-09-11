@@ -19,7 +19,7 @@
     },
     "box": {
         "cache-cleared": {
-            "message": "Tembolok HyperPlay telah dibersihkan.",
+            "message": "Tembolok NovaPlay telah dibersihkan.",
             "title": "Tembolok telah dibersihkan"
         },
         "choose": "Pilih",
@@ -67,7 +67,7 @@
             },
             "update": {
                 "title": "Update Error",
-                "message": "Sesuatu yang salah dengan update! Silakan uninstall secara manual dan menginstal ulang HyperPlay."
+                "message": "Sesuatu yang salah dengan update! Silakan uninstall secara manual dan menginstal ulang NovaPlay."
             },
             "wine-not-found": {
                 "invalid": "The selected wine version was not found. Install it or select a different version in the game's settings{{newline}}Version: {{version}}{{newline}}Path: {{path}}",
@@ -89,11 +89,11 @@
                 "changelog": "Buka log perubahan",
                 "detail": "Apakah Anda ingin mengunduh pembaruan di latar belakang?",
                 "message": "Ada Versi baru yang tersedia!",
-                "message-finished": "Apakah Anda ingin memulai ulang HyperPlay sekarang?",
-                "title": "HyperPlay Games Launcher",
+                "message-finished": "Apakah Anda ingin memulai ulang NovaPlay sekarang?",
+                "title": "NovaPlay Games Launcher",
                 "title-finished": "Pembaruan Selesai",
-                "appUpdated": "HyperPlay diperbarui",
-                "appUpdated-message": "HyperPlay diperbarui. Apakah Anda ingin memperbarui dan restart HyperPlay sekarang?"
+                "appUpdated": "NovaPlay diperbarui",
+                "appUpdated-message": "NovaPlay diperbarui. Apakah Anda ingin memperbarui dan restart NovaPlay sekarang?"
             }
         },
         "no": "TIDAK",
@@ -109,8 +109,8 @@
         },
         "reset-app": {
             "question": {
-                "message": "Are you sure you want to reset HyperPlay? This will remove all Settings and Caching but won't remove your Installed games or your Epic credentials. Portable versions (AppImage, WinPortable, ...) of HyperPlay needs to be restarted manually afterwards.",
-                "title": "Reset HyperPlay"
+                "message": "Are you sure you want to reset NovaPlay? This will remove all Settings and Caching but won't remove your Installed games or your Epic credentials. Portable versions (AppImage, WinPortable, ...) of NovaPlay needs to be restarted manually afterwards.",
+                "title": "Reset NovaPlay"
             }
         },
         "runexe": {
@@ -150,7 +150,7 @@
             "title": "Peringatan",
             "rosetta": {
                 "title": "Rosetta tidak ditemukan",
-                "message": "HyperPlay memerlukan Rosetta untuk berjalan dengan benar pada macOS dengan chip Apple Silicon. Silahkan instal dari terminal macOS menggunakan perintah berikut: \"perbarui perangkat lunak --install-rosetta\" dan restart HyperPlay. "
+                "message": "NovaPlay memerlukan Rosetta untuk berjalan dengan benar pada macOS dengan chip Apple Silicon. Silahkan instal dari terminal macOS menggunakan perintah berikut: \"perbarui perangkat lunak --install-rosetta\" dan restart NovaPlay. "
             },
             "wine-change": {
                 "message-gptk": "Untuk dapat menjalankan game menggunakan toolkit porting Apple Gaming Anda perlu meningkatkan macOS Anda ke 14 (Sonoma) atau lebih tinggi. {{newline}} Kami menemukan Wine di sistem Anda, apakah Anda ingin melanjutkan peluncuran menggunakan {{foundWine}}?",
@@ -263,7 +263,7 @@
         "esync": "Esync bertujuan untuk mengurangi overhead server Wine di gim dengan CPU yang intensif. Mengaktifkannya dapat meningkatkan kinerja.",
         "fsync": "Fsync bertujuan untuk mengurangi overhead server Wine di gim dengan CPU intensif. Mengaktifkannya dapat meningkatkan kinerja pada kernel Linux yang didukung.",
         "game_language": {
-            "fallback": "Biarkan kosong untuk menggunakan bahasa HyperPlay.",
+            "fallback": "Biarkan kosong untuk menggunakan bahasa NovaPlay.",
             "in_game_config": "Tidak semua gim mendukung konfigurasi ini, sebagian memiliki pengaturan bahasa dalam gim.",
             "valid_codes": "Kode bahasa yang valid bergantung pada gim."
         },
@@ -279,18 +279,18 @@
         "preferSystemLibs": "Versi Wine khusus (Wine-GE, Wine-Lutris) dikirimkan dengan dependensi pustakanya. Dengan mengaktifkan opsi ini, pustaka yang dikirimkan tersebut akan diabaikan dan Wine akan memuat pustaka sistem sebagai gantinya. Peringatan! Masalah dapat terjadi jika dependensi tidak terpenuhi.",
         "primerun": "Use dedicated graphics card to render game on multi-GPU systems. Only needed on gaming laptops or desktops that use a headless GPU for rendering (NVIDIA Optimus, AMD CrossFire)",
         "steam_path": {
-            "info": "This path lets HyperPlay determine what version of Proton Steam uses, for adding non-Steam games to Steam."
+            "info": "This path lets NovaPlay determine what version of Proton Steam uses, for adding non-Steam games to Steam."
         },
         "steamruntime": "Pustaka khusus disediakan oleh Steam untuk membantu menjalankan gim Linux dan Windows (Proton). Mengaktifkannya dapat meningkatkan kompatibilitas.",
         "sync": {
-            "part1": "HyperPlay mencoba untuk menebak folder penyimpanan yang tepat dan ini biasanya akan berhasil. Jika folder salah, gunakan kotak penimpaan untuk mengubahnya.",
-            "part2": "Jika Anda mengubah prefiks folder untuk Wine atau Proton, Anda perlu memeriksa lokasinya lagi karena Proton menggunakan prefiks (/pfx) dan nama pengguna (steamuser) yang berbeda. Jadi Anda dapat dengan mudah menghapus lokasi saat ini, keluar dari halaman pengaturan sinkronisasi, lalu kembali lagi dan biarkan HyperPlay menebak folder dengan prefiks yang tepat sekali lagi.",
+            "part1": "NovaPlay mencoba untuk menebak folder penyimpanan yang tepat dan ini biasanya akan berhasil. Jika folder salah, gunakan kotak penimpaan untuk mengubahnya.",
+            "part2": "Jika Anda mengubah prefiks folder untuk Wine atau Proton, Anda perlu memeriksa lokasinya lagi karena Proton menggunakan prefiks (/pfx) dan nama pengguna (steamuser) yang berbeda. Jadi Anda dapat dengan mudah menghapus lokasi saat ini, keluar dari halaman pengaturan sinkronisasi, lalu kembali lagi dan biarkan NovaPlay menebak folder dengan prefiks yang tepat sekali lagi.",
             "part3": "Sinkronisasi Manual: Pilih Unduh untuk mengunduh gim yang tersimpan di Awan. Unggah untuk mengunggah berkas lokal ke Awan. Unduh Paksa dan Unggah Paksa akan mengabaikan versi yang ada di penyimpanan lokal atau awan.",
             "part4": "Sinkroninasi Penyimpanan Secara Otomatis akan menyinkronkan penyimpanan setiap kali Anda Memulai Gim dan setelah Anda selesai bermain."
         },
         "vkd3d": "VKD3D adalah lapisan translasi berbasis Vulkan untuk gim dengan DirectX 12. Mengaktifkannya dapat meningkatkan kompatibilitas secara signifikan. Tidak berpengaruh pada gim dengan DirectX versi lama.",
         "wine": {
-            "part1": "HyperPlay mencari versi Wine, Proton, dan CrossOver di folder berikut ini:",
+            "part1": "NovaPlay mencari versi Wine, Proton, dan CrossOver di folder berikut ini:",
             "part2": "Untuk tempat lain, gunakan tautan simbolis ke salah satu folder ini"
         },
         "dxvkfpslimit": "Mengatur cap tingkat bingkai untuk game DXVK",
@@ -299,12 +299,12 @@
         "msync": "Msync bertujuan untuk mengurangi overhead wineserver dalam permainan intensif CPU. Mengaktifkan dapat meningkatkan kinerja pada beberapa game."
     },
     "info": {
-        "hyperplay": {
+        "novaplay": {
             "beta": "Beta",
             "click-to-see-changelog": "Click to see changelog",
             "newReleases": "Pembaruan Tersedia!",
             "stable": "Stabil",
-            "version": "Versi HyperPlay"
+            "version": "Versi NovaPlay"
         },
         "save-sync": {
             "searching": "Trying to detect the correct save folder"
@@ -391,7 +391,7 @@
         },
         "moved": "Selesai Memindahkan",
         "moving": "Memindahkan Gim",
-        "new-hyperplay-version": "A new HyperPlay version was released!",
+        "new-novaplay-version": "A new NovaPlay version was released!",
         "refresh": {
             "error": "Tidak dapat mengambil rilis dari sumber, ini mungkin karena pembatasan API Github! Coba lagi nanti."
         },
@@ -446,7 +446,7 @@
     "other": {
         "gogdl-version": "Versi GOGDL: ",
         "legendary-version": "Versi Legendary: ",
-        "weblate": "Bantu kami untuk menerjemahkan HyperPlay.",
+        "weblate": "Bantu kami untuk menerjemahkan NovaPlay.",
         "nile-version": "Versi Nil: "
     },
     "Other": "Other",
@@ -491,7 +491,7 @@
         "autosync": "Sinkronisasi Penyimpanan Otomatis",
         "autovkd3d": "Pemasangan/Pembaruan VKD3D Otomatis di Prefiks",
         "change-target-exe": "Pilih EXE alternatif untuk dijalankan",
-        "checkForUpdatesOnStartup": "Check for HyperPlay Updates on Startup",
+        "checkForUpdatesOnStartup": "Check for NovaPlay Updates on Startup",
         "crossover-version": "Crossover Version",
         "custom_themes_path": "Custom Themes Path",
         "customWineProton": "Lokasi Wine/Proton Khusus",
@@ -499,7 +499,7 @@
         "default-install-path": "Lokasi Pemasangan Bawaan",
         "default-steam-path": "Lokasi Steam bawaan",
         "defaultWinePrefix": "Atur Folder untuk Prefiks Wine baru",
-        "disable_controller": "Nonaktifkan navigasi HyperPlay menggunakan pengontrol",
+        "disable_controller": "Nonaktifkan navigasi NovaPlay menggunakan pengontrol",
         "discordRPC": "Aktifkan Discord Rich Presence",
         "download-no-https": "Unduh gim tanpa HTTPS (berguna untuk CDN misalnya LanCache)",
         "egs-sync": "Sinkronkan dengan Epic Games yang Terpasang",
@@ -545,8 +545,8 @@
             "last-log": "Log Terakhir",
             "no-file": "Tidak ditemukan berkas log",
             "show-in-folder": "Tampilkan berkas log di dalam folder",
-            "join-hyperplay-discord": "Sitemap",
-            "instructions-part-01": "Jika Anda mengalami masalah saat menggunakan HyperPlay, kami memiliki dua area yang ditunjuk untuk melaporkan masalah Anda di Server Diskord kami. Jika Anda seorang pemain, silakan laporkan masalah apa pun dengan mengunjungi forum pendukung pemain. Jika Anda adalah permainan yang mengabdikan, silakan laporkan masalah apa pun dengan mengunjungi dev-support-forum.",
+            "join-novaplay-discord": "Sitemap",
+            "instructions-part-01": "Jika Anda mengalami masalah saat menggunakan NovaPlay, kami memiliki dua area yang ditunjuk untuk melaporkan masalah Anda di Server Diskord kami. Jika Anda seorang pemain, silakan laporkan masalah apa pun dengan mengunjungi forum pendukung pemain. Jika Anda adalah permainan yang mengabdikan, silakan laporkan masalah apa pun dengan mengunjungi dev-support-forum.",
             "instructions-part-02": "Untuk membantu kami mendiagnosis dan memperbaiki masalah secepat mungkin, berikan informasi sebanyak mungkin, termasuk salinan log Anda. Tim dukungan kami akan memantau saluran dan melakukan yang terbaik untuk menanggapi masalah Anda secepat mungkin. Terima kasih atas kesabaran dan pemahaman Anda saat kami bekerja untuk menyelesaikan masalah yang mungkin Anda temui."
         },
         "mangohud": "Aktifkan Mangohud (Mangohud perlu dipasang)",
@@ -561,7 +561,7 @@
         },
         "maxRecentGames": "Gim yang Dimainkan Baru-Baru Ini",
         "maxworkers": "Jumlah Maksimum Worker saat mengunduh",
-        "minimize-on-launch": "Minimalkan Jendela HyperPlay Setelah Gim Diluncurkan",
+        "minimize-on-launch": "Minimalkan Jendela NovaPlay Setelah Gim Diluncurkan",
         "offlinemode": "Jalankan Game Secara Luring",
         "prefered_language": "Bahasa Pilihan (Kode Bahasa)",
         "preferSystemLibs": "Lebih memilih pustaka sistem",
@@ -594,7 +594,7 @@
         "addgamestoapplications": "Tambahkan gim ke Aplikasi secara otomatis",
         "showMetalOverlay": "Tampilkan Hamparan Statistik",
         "alt-nile-bin": "Pilih Biner Nil Alternatif",
-        "autoLaunchHyperPlay": "Auto Luncurkan Hyper Login",
+        "autoLaunchNovaPlay": "Auto Luncurkan Hyper Login",
         "autodxvknvapi": "Auto Install / Perbarui DXVK-NVAPI pada Prefix",
         "steamId": "ID uap",
         "dxvkfpslimit": "Batasi FPS (DX9, 10 dan 11)",
@@ -605,7 +605,7 @@
             "installing": "Installing BattlEye Runtime...",
             "name": "BattlEye AntiCheat Runtime"
         },
-        "clear-cache": "Hapus Tembolok HyperPlay",
+        "clear-cache": "Hapus Tembolok NovaPlay",
         "copiedToClipboard": "Disalin ke Papan Klip!",
         "copyToClipboard": "Salin Semua Pengaturan ke Papan Klip",
         "default_hint": "Changes in this section only apply as default values when installing games. If you want to change the settings of an already installed game, use the Settings button in the game page.",
@@ -638,7 +638,7 @@
             "accounts": "Kredit dan akun"
         },
         "open-config-file": "Buka Berkas Pengaturan",
-        "reset-hyperplay": "Reset HyperPlay",
+        "reset-novaplay": "Reset NovaPlay",
         "saves": {
             "label": "Save Location:",
             "warning": "Fitur Cloud Saves masih dalam versi Beta, harap buat rekam cadang penyimpanan Anda sebelum menyinkronkan (jaga-jaga bila terjadi kesalahan)"
@@ -760,7 +760,7 @@
     "Amazon": "Amazon",
     "ALL": "SEMUA",
     "analytics": "Analitik",
-    "hyperplay": {
+    "novaplay": {
         "accesscodes": {
             "success": {
                 "validation": "Sitemap Kode akses valid"
@@ -778,15 +778,15 @@
             },
             "analytics": {
                 "privacyPolicyHere": "Kebijakan Privasi disini.",
-                "hyperplayWill": "HyperPlay akan:",
+                "novaplayWill": "NovaPlay akan:",
                 "optOut": "Selalu biarkan Anda memilih-out melalui Pengaturan;",
                 "anonymized": "Mengirimkan interaksi klik & permainan anonim;",
-                "body": "HyperPlay ingin mengumpulkan data penggunaan untuk lebih memahami bagaimana pengguna kami berinteraksi dengan aplikasi. Informasi ini membantu kami memahami bagaimana Anda menggunakan aplikasi dan memungkinkan kami membuat HyperPlay lebih baik untuk Anda.",
+                "body": "NovaPlay ingin mengumpulkan data penggunaan untuk lebih memahami bagaimana pengguna kami berinteraksi dengan aplikasi. Informasi ini membantu kami memahami bagaimana Anda menggunakan aplikasi dan memungkinkan kami membuat NovaPlay lebih baik untuk Anda.",
                 "neverCollectPersonal": " mengumpulkan kunci, alamat, keseimbangan, hashes, atau informasi pribadi;",
                 "neverSellData": " jual data untuk keuntungan. Sitemap!",
                 "neverCollectIP": " mengumpulkan alamat IP penuh Anda;",
                 "privacyCaption": "Data ini dikumpulkan dan oleh karena itu anonim untuk tujuan Peraturan Perlindungan Data Umum (EU) 2016/679. Untuk informasi lebih lanjut terkait dengan praktik privasi kami, silakan lihat kami ",
-                "title": "Bantu Kami meningkatkan HyperPlay!"
+                "title": "Bantu Kami meningkatkan NovaPlay!"
             },
             "connectionCanceled": {
                 "description": "Harap konfirmasi permintaan koneksi pada dompet seluler Anda untuk melanjutkan.",
@@ -801,7 +801,7 @@
                         "title": "Pilih browser untuk impor dari",
                         "useRecoveryPhrase": "Impor Menggunakan frasa Pemulihan Rahasia",
                         "details": "Browser di bawah ini sudah memiliki instalasi MetaMask. Pilih salah satu yang ingin Anda impor.",
-                        "useRecoveryPhraseInfo": "Fitur ini direkomendasikan untuk pengguna dan pengembang canggih. Frase pemulihan rahasia Anda disimpan secara lokal di MetaMask dan tidak pernah dibagikan dengan HyperPlay.",
+                        "useRecoveryPhraseInfo": "Fitur ini direkomendasikan untuk pengguna dan pengembang canggih. Frase pemulihan rahasia Anda disimpan secara lokal di MetaMask dan tidak pernah dibagikan dengan NovaPlay.",
                         "learnMore": "Pelajari lebih lanjut"
                     },
                     "info": {
@@ -823,7 +823,7 @@
                         "updateWarning": "Memiliki masalah? Pastikan MetaMask sudah sampai saat ini.",
                         "getMetamask": "Dapatkan MetaMask",
                         "title": "Pindai QR dengan ",
-                        "details": "Buat saluran komunikasi terenkripsi. Kunci Anda tidak akan pernah dibagikan dengan HyperPlay."
+                        "details": "Buat saluran komunikasi terenkripsi. Kunci Anda tidak akan pernah dibagikan dengan NovaPlay."
                     }
                 },
                 "title": "Koneksi Wallet",
@@ -832,10 +832,10 @@
             "welcome": {
                 "text": {
                     "communityCTA_2": "sitemap Bersama-sama, bentuk masa depan game!",
-                    "description": "HyperPlay adalah game peluncur dan permainan toko agregator dari\nSitemap Dengan HyperPlay, Anda dapat membawa dompet, token, dan aset Anda\nke setiap permainan. HyperPlay mendukung seluruh perpustakaan Epic\nToko, GOG, dan toko HyperPlay kami sendiri. Dengan menggunakan HyperPlay, Anda setuju\nKami",
+                    "description": "NovaPlay adalah game peluncur dan permainan toko agregator dari\nSitemap Dengan NovaPlay, Anda dapat membawa dompet, token, dan aset Anda\nke setiap permainan. NovaPlay mendukung seluruh perpustakaan Epic\nToko, GOG, dan toko NovaPlay kami sendiri. Dengan menggunakan NovaPlay, Anda setuju\nKami",
                     "communityCTA_1": "Kami menyukai umpan balik Anda dan Anda telah bergabung dengan kami di kami",
-                    "construction": "HyperPlay di bawah konstruksi.",
-                    "bugs": "Harap dicatat bahwa HyperPlay adalah alfa publik. Banyak fitur masih\ndalam pengembangan, dan akan ada bug."
+                    "construction": "NovaPlay di bawah konstruksi.",
+                    "bugs": "Harap dicatat bahwa NovaPlay adalah alfa publik. Banyak fitur masih\ndalam pengembangan, dan akan ada bug."
                 },
                 "title": "Selamat Datang di Hyper Bermain Akses Awal!"
             },
@@ -872,7 +872,7 @@
             "installing": "Mengunduh...",
             "paused": "Dijeda"
         },
-        "linkSteamAccountDescription": "Masuk ke Steam untuk menghubungkan akun HyperPlay Anda.",
+        "linkSteamAccountDescription": "Masuk ke Steam untuk menghubungkan akun NovaPlay Anda.",
         "linkSteamAccountTitle": "Link Akun Uap",
         "syncing": "Login.",
         "viewItem": "Lihat {{item}}",
@@ -889,7 +889,7 @@
         "turnAnalyticsOff": "Matikan",
         "viewFullscreen": "Lihat layar penuh"
     },
-    "hyperplayOverlay": {
+    "novaplayOverlay": {
         "signatureRequest": {
             "INITIATED": "Pending permintaan tanda tangan",
             "CONFIRMED": "Pengenal",
@@ -902,7 +902,7 @@
             "CONFIRMED": "Transaksi dikonfirmasi"
         },
         "greeting": {
-            "description": "HyperPlay Overlay siap! Promo {{overlayKeyMod}} + X untuk menunjukkan atau menyembunyikannya.",
+            "description": "NovaPlay Overlay siap! Promo {{overlayKeyMod}} + X untuk menunjukkan atau menyembunyikannya.",
             "title": "Login"
         },
         "chainRequest": {
@@ -927,8 +927,8 @@
         }
     },
     "overlay": {
-        "EXTERNAL_WALLET_CONNECTED": "Anda terhubung ke HyperPlay dengan dompet eksternal.",
-        "WALLET_DISCONNECTED": "Anda tidak memiliki dompet yang terhubung ke HyperPlay."
+        "EXTERNAL_WALLET_CONNECTED": "Anda terhubung ke NovaPlay dengan dompet eksternal.",
+        "WALLET_DISCONNECTED": "Anda tidak memiliki dompet yang terhubung ke NovaPlay."
     },
     "dlcs": {
         "label": "Pilih DLC untuk menginstal:"
@@ -1016,8 +1016,8 @@
     "quests": {
         "playstreak": {
             "signInWarning": {
-                "client": "Anda saat ini tidak masuk, bermain streak kemajuan tidak akan dilacak. Silakan login ke HyperPlay melalui dropdown kanan atas untuk melacak kemajuan.",
-                "overlay": "Anda saat ini tidak masuk, bermain streak kemajuan tidak akan dilacak. Silakan keluarkan game dan login ke HyperPlay melalui dropdown kanan atas untuk melacak kemajuan."
+                "client": "Anda saat ini tidak masuk, bermain streak kemajuan tidak akan dilacak. Silakan login ke NovaPlay melalui dropdown kanan atas untuk melacak kemajuan.",
+                "overlay": "Anda saat ini tidak masuk, bermain streak kemajuan tidak akan dilacak. Silakan keluarkan game dan login ke NovaPlay melalui dropdown kanan atas untuk melacak kemajuan."
             }
         },
         "quests": "Pencarian",
@@ -1026,7 +1026,7 @@
             "title": "Tidak ada keputusan yang ditemukan."
         },
         "g7CreditsModal": {
-            "description": "Menyelam ke game top HyperPlay dengan Tantangan Streak Bermain yang menarik. Setiap aktivitas mendorong Anda untuk terlibat dengan permainan yang berbeda, menunjukkan yang terbaik dari game web3. Masalah bermain Anda!",
+            "description": "Menyelam ke game top NovaPlay dengan Tantangan Streak Bermain yang menarik. Setiap aktivitas mendorong Anda untuk terlibat dengan permainan yang berbeda, menunjukkan yang terbaik dari game web3. Masalah bermain Anda!",
             "title": "Dapatkan Kredit Game7"
         }
     },
