@@ -6,7 +6,7 @@ import {
   BackArrowOutlinedCircled,
   CyberDividerVertical,
   SettingsIcon
-} from 'frontend/assets/hyperplay/index'
+} from 'frontend/assets/novaplay/index'
 
 import {
   getGameInfo,
@@ -28,7 +28,7 @@ import {
   AppPlatforms,
   ExtraInfo,
   GameInfo,
-  HyperPlayInstallInfo,
+  NovaPlayInstallInfo,
   InstallProgress,
   Runner,
   WineInstallation
@@ -60,7 +60,7 @@ import {
 import StoreLogos from 'frontend/components/UI/StoreLogos'
 import { WikiGameInfo } from 'frontend/components/UI/WikiGameInfo'
 import { hasStatus } from 'frontend/hooks/hasStatus'
-import { Button } from '@hyperplay/ui'
+import { Button } from '@novaplay/ui'
 import StopInstallationModal from 'frontend/components/UI/StopInstallationModal'
 import DLCList from 'frontend/components/UI/DLCList'
 import { observer } from 'mobx-react-lite'
@@ -105,7 +105,7 @@ export default observer(function GamePage(): JSX.Element | null {
   const [extraInfo, setExtraInfo] = useState<ExtraInfo | null>(null)
   const [autoSyncSaves, setAutoSyncSaves] = useState(false)
   const [gameInstallInfo, setGameInstallInfo] = useState<
-    LegendaryInstallInfo | GogInstallInfo | HyperPlayInstallInfo | null
+    LegendaryInstallInfo | GogInstallInfo | NovaPlayInstallInfo | null
   >(null)
   const [launchArguments, setLaunchArguments] = useState('')
   const [hasError, setHasError] = useState<{
@@ -186,7 +186,7 @@ export default observer(function GamePage(): JSX.Element | null {
         const channelName = install.channelName ?? 'main'
 
         if (
-          runner === 'hyperplay' &&
+          runner === 'novaplay' &&
           (channels === undefined || !Object.hasOwn(channels, channelName))
         )
           throw 'Cannot get channels'
@@ -216,7 +216,7 @@ export default observer(function GamePage(): JSX.Element | null {
             : 'Windows')
 
         const installPlatform =
-          runner === 'hyperplay' ? hpPlatforms : othersPlatforms
+          runner === 'novaplay' ? hpPlatforms : othersPlatforms
 
         if (
           runner !== 'sideload' &&
@@ -233,7 +233,7 @@ export default observer(function GamePage(): JSX.Element | null {
             })
             .catch((error) => {
               const errorMessage = t('method.getInstallInfo.error', {
-                defaultValue: `Please contact the HyperPlay Team with this message: {{error}} - {{context}}.`,
+                defaultValue: `Please contact the NovaPlay Team with this message: {{error}} - {{context}}.`,
                 error: error,
                 context: `ProjectID: ${appName} | Runner: ${runner} | Install Platform: ${installPlatform} | Channel: ${channelName} | Screen: Game Page | Method: getInstallInfo`
               })
@@ -332,10 +332,10 @@ export default observer(function GamePage(): JSX.Element | null {
     const isLinuxNative = isLinux.includes(installPlatform ?? '')
     const isBrowserGame = gameInfo.browserUrl
     const isNative = isWin || isMacNative || isLinuxNative || isBrowserGame
-    const isHyperPlayGame = runner === 'hyperplay'
+    const isNovaPlayGame = runner === 'novaplay'
 
     const showCloudSaveInfo =
-      is_installed && !isBrowserGame && !isHyperPlayGame && !isSideloaded
+      is_installed && !isBrowserGame && !isNovaPlayGame && !isSideloaded
     const isCloudSaveSupported = cloud_save_enabled && !isLinuxNative
     const supportsWeb3 = gameInfo.web3?.supported
 
