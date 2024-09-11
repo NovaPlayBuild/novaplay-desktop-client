@@ -32,7 +32,7 @@ const buildDir = resolve(__dirname, '../../build')
 import { domainsAreEqual } from 'common/utils'
 import { PROVIDERS } from 'common/types/proxy-types'
 import { getExecutableAndArgs } from 'backend/utils'
-import { hpApi } from 'backend/utils/hyperplay_api'
+import { hpApi } from 'backend/utils/novaplay_api'
 import { getHpOverlay } from 'backend/overlay'
 import { launchingGameShouldOpenOverlay } from 'backend/utils/shouldOpenOverlay'
 
@@ -55,11 +55,11 @@ const openNewBrowserGameWindow = async (
   /* eslint-disable-next-line */
   let extensionImporter: any = undefined
   try {
-    const proxyServer = await import('@hyperplay/providers')
+    const proxyServer = await import('@novaplay/providers')
     connectedProvider = proxyServer.connectedProvider
-    extensionImporter = await import('@hyperplay/extension-importer')
+    extensionImporter = await import('@novaplay/extension-importer')
   } catch (err) {
-    logError(`Error importing proxy server ${err}`, LogPrefix.HyperPlay)
+    logError(`Error importing proxy server ${err}`, LogPrefix.NovaPlay)
   }
   const hpOverlay = await getHpOverlay()
   return new Promise((res) => {
@@ -181,7 +181,7 @@ const openNewBrowserGameWindow = async (
       hpOverlay?.initOverlayRenderState(
         browserGame.webContents.id,
         renderState,
-        'HyperPlay Web Game'
+        'NovaPlay Web Game'
       )
     })
 
@@ -308,7 +308,7 @@ export async function launchGame(
     if (isNative) {
       logInfo(
         `launching native ${
-          runner === 'hyperplay' ? 'HyperPlay' : 'Sideloaded'
+          runner === 'novaplay' ? 'NovaPlay' : 'Sideloaded'
         } Game: ${exeOnly} ${combinedArgs ?? ''}`,
         LogPrefix.Backend
       )
@@ -356,7 +356,7 @@ export async function launchGame(
 
     logInfo(
       `launching non-native ${
-        runner === 'hyperplay' ? 'HyperPlay' : 'Sideloaded'
+        runner === 'novaplay' ? 'NovaPlay' : 'Sideloaded'
       } Game: ${exeOnly}}`,
       LogPrefix.Backend
     )
