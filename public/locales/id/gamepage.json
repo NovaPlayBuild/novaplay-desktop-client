@@ -158,11 +158,11 @@
         "options": "Opsi Peluncuran…"
     },
     "not_logged_in": {
-        "epic": "You are not logged in with an Epic account in HyperPlay. Don't use the store page to login, click the following button instead:",
-        "gog": "You are not logged in with a GOG account in HyperPlay. Don't use the store page to login, click the following button instead:",
+        "epic": "You are not logged in with an Epic account in NovaPlay. Don't use the store page to login, click the following button instead:",
+        "gog": "You are not logged in with a GOG account in NovaPlay. Don't use the store page to login, click the following button instead:",
         "login": "Log in",
         "title": "Anda TIDAK masuk",
-        "amazon": "Anda tidak masuk dengan akun Epic di HyperPlay. Jangan gunakan halaman toko untuk masuk, klik tombol berikut sebagai gantinya:"
+        "amazon": "Anda tidak masuk dengan akun Epic di NovaPlay. Jangan gunakan halaman toko untuk masuk, klik tombol berikut sebagai gantinya:"
     },
     "report_problem": "Laporkan masalah yang terjadi saat memainkan gim ini",
     "sdl": {
