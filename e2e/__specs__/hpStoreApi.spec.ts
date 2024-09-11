@@ -50,7 +50,7 @@ test.describe('hp store api tests', function () {
       // This runs in the main Electron process
       return app.getPath('appData')
     })
-    tempFolder = join(configFolder, 'hyperplay', '.temp', appName)
+    tempFolder = join(configFolder, 'novaplay', '.temp', appName)
     console.log('tempfolder: ', tempFolder)
   })
 
@@ -139,7 +139,7 @@ test.describe('hp store api tests', function () {
 
         console.log('default install path = ' + defaultInstallPath)
 
-        const gameInfo = await window.api.getGameInfo(appName, 'hyperplay')
+        const gameInfo = await window.api.getGameInfo(appName, 'novaplay')
 
         const xMbDownloaded = (res, numberOfMb: number) => {
           return async (e, status: GameStatus) => {
@@ -196,7 +196,7 @@ test.describe('hp store api tests', function () {
         window.api.install({
           appName,
           gameInfo,
-          runner: 'hyperplay',
+          runner: 'novaplay',
           path: defaultInstallPath,
           platformToInstall: 'windows_amd64',
           channelName: 'main'
@@ -236,7 +236,7 @@ test.describe('hp store api tests', function () {
 
         console.log('default install path = ' + defaultInstallPath)
 
-        const gameInfo = await window.api.getGameInfo(appName, 'hyperplay')
+        const gameInfo = await window.api.getGameInfo(appName, 'novaplay')
 
         const gameIsDownloaded = async () => {
           return new Promise<GameStatus>((resolve) => {
@@ -257,7 +257,7 @@ test.describe('hp store api tests', function () {
         window.api.install({
           appName,
           gameInfo,
-          runner: 'hyperplay',
+          runner: 'novaplay',
           path: defaultInstallPath,
           platformToInstall: 'windows_amd64',
           channelName: 'main'
