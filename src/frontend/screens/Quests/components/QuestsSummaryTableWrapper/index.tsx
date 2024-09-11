@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from 'react'
-import { QuestsSummaryTable, QuestCard, QuestFilter } from '@hyperplay/ui'
+import { QuestsSummaryTable, QuestCard, QuestFilter } from '@novaplay/ui'
 import useGetQuests from 'frontend/hooks/useGetQuests'
 import { useTranslation } from 'react-i18next'
 import styles from './index.module.scss'
-import { itemType } from '@hyperplay/ui/dist/components/Dropdowns/Dropdown'
-import useGetHyperPlayListings from 'frontend/hooks/useGetHyperPlayListings'
+import { itemType } from '@novaplay/ui/dist/components/Dropdowns/Dropdown'
+import useGetNovaPlayListings from 'frontend/hooks/useGetNovaPlayListings'
 import { useLocation, useNavigate } from 'react-router-dom'
 import { Quest } from 'common/types'
 
@@ -18,8 +18,8 @@ export function QuestsSummaryTableWrapper({
   const { t } = useTranslation()
   const questsResults = useGetQuests()
   const quests = questsResults?.data?.data
-  const hyperplayListings = useGetHyperPlayListings()
-  const listings = hyperplayListings.data.data
+  const novaplayListings = useGetNovaPlayListings()
+  const listings = novaplayListings.data.data
   const navigate = useNavigate()
 
   const { search } = useLocation()
