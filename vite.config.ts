@@ -15,7 +15,7 @@ const srcAliases = ['backend', 'frontend', 'common'].map((aliasName) => {
   }
 })
 
-// only set alias if the proxy-server optional package was not added
+// set alias if the proxy-server optional package was not added
 try {
   statSync(join(__dirname, 'node_modules', '@novaplay', 'proxy-server'))
 } catch (err) {
