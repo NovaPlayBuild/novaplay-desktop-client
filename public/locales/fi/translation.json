@@ -19,7 +19,7 @@
     },
     "box": {
         "cache-cleared": {
-            "message": "HyperPlay:in välimuisti tyhjennettiin.",
+            "message": "NovaPlay:in välimuisti tyhjennettiin.",
             "title": "Välimuisti tyhjennetty"
         },
         "choose": "Valitse",
@@ -67,7 +67,7 @@
             },
             "update": {
                 "title": "Update Error",
-                "message": "Päivityksessä meni jotain vikaa! Ole hyvä, poista ja asenna HyperPlay uudelleen."
+                "message": "Päivityksessä meni jotain vikaa! Ole hyvä, poista ja asenna NovaPlay uudelleen."
             },
             "wine-not-found": {
                 "invalid": "The selected wine version was not found. Install it or select a different version in the game's settings{{newline}}Version: {{version}}{{newline}}Path: {{path}}",
@@ -89,11 +89,11 @@
                 "changelog": "Open changelog",
                 "detail": "Do you want to download the update in the background?",
                 "message": "There is a new Version available!",
-                "message-finished": "Do you want to restart HyperPlay now?",
-                "title": "HyperPlay Games Launcher",
+                "message-finished": "Do you want to restart NovaPlay now?",
+                "title": "NovaPlay Games Launcher",
                 "title-finished": "Update Finished",
-                "appUpdated": "HyperPlay päivitetty",
-                "appUpdated-message": "HyperPlay päivitettiin. Haluatko päivittää ja käynnistää HyperPlay uudelleen?"
+                "appUpdated": "NovaPlay päivitetty",
+                "appUpdated-message": "NovaPlay päivitettiin. Haluatko päivittää ja käynnistää NovaPlay uudelleen?"
             }
         },
         "no": "EI",
@@ -109,8 +109,8 @@
         },
         "reset-app": {
             "question": {
-                "message": "Are you sure you want to reset HyperPlay? This will remove all Settings and Caching but won't remove your Installed games or your Epic credentials. Portable versions (AppImage, WinPortable, ...) of HyperPlay needs to be restarted manually afterwards.",
-                "title": "Reset HyperPlay"
+                "message": "Are you sure you want to reset NovaPlay? This will remove all Settings and Caching but won't remove your Installed games or your Epic credentials. Portable versions (AppImage, WinPortable, ...) of NovaPlay needs to be restarted manually afterwards.",
+                "title": "Reset NovaPlay"
             }
         },
         "runexe": {
@@ -155,7 +155,7 @@
                 "message-gptk": "Jotta voit pelata pelejä Apple Gaming -portointityökalun avulla, sinun on päivitettävä macOS-tasosi 14 (Sonoma) tai korkeammalle. Löysimme viinin järjestelmästäsi, haluatko jatkaa laukaisua X202X:llä?"
             },
             "rosetta": {
-                "message": "HyperPlay vaatii Rosetta toimii oikein macOS: ssä Apple Silicon -sirujen kanssa. Asenna se macOS-terminaalista seuraavalla komennolla: ”Softwareupdate –install-rosetta” ja käynnistä HyperPlay uudelleen. ",
+                "message": "NovaPlay vaatii Rosetta toimii oikein macOS: ssä Apple Silicon -sirujen kanssa. Asenna se macOS-terminaalista seuraavalla komennolla: ”Softwareupdate –install-rosetta” ja käynnistä NovaPlay uudelleen. ",
                 "title": "Rosetta ei löytynyt"
             }
         },
@@ -263,7 +263,7 @@
         "esync": "Esync aims to reduce wineserver overhead in CPU-intensive games. Enabling may improve performance.",
         "fsync": "Fsync aims to reduce wineserver overhead in CPU-intensive games. Enabling may improve performance on supported Linux kernels.",
         "game_language": {
-            "fallback": "Leave blank to use HyperPlay's language.",
+            "fallback": "Leave blank to use NovaPlay's language.",
             "in_game_config": "Not all games support this configuration, some have in-game language setting.",
             "valid_codes": "Valid language codes are game-dependant."
         },
@@ -279,18 +279,18 @@
         "preferSystemLibs": "Custom Wine versions (Wine-GE, Wine-Lutris) are shipped with their library dependencies. By enabling this option, these shipped libraries will be ignored and Wine will load system libraries instead. Warning! Issues may occur if dependencies are not met.",
         "primerun": "Use dedicated graphics card to render game on multi-GPU systems. Only needed on gaming laptops or desktops that use a headless GPU for rendering (NVIDIA Optimus, AMD CrossFire)",
         "steam_path": {
-            "info": "This path lets HyperPlay determine what version of Proton Steam uses, for adding non-Steam games to Steam."
+            "info": "This path lets NovaPlay determine what version of Proton Steam uses, for adding non-Steam games to Steam."
         },
         "steamruntime": "Custom libraries provided by Steam to help run Linux and Windows (Proton) games. Enabling might improve compatibility.",
         "sync": {
-            "part1": "HyperPlay yrittää arvata oikean kansion tallenteita varten. Tämä toimii useimmissa tapauksissa. Jos kansio on väärä, vaihda se ohitusruudun avulla.",
-            "part2": "Jos aiot vaihtaa Winen tai Protonin prefix-kansiota, polku tulee tarkistaa uudelleen, koska Proton käyttää toista prefixiä (/pfx) ja käyttäjänimeä (steamuser). Voit poistaa nykyisen polun synkronointiasetuksista ja antaa HyperPlayin arvata kansio vielä kerran oikealla prefixillä.",
+            "part1": "NovaPlay yrittää arvata oikean kansion tallenteita varten. Tämä toimii useimmissa tapauksissa. Jos kansio on väärä, vaihda se ohitusruudun avulla.",
+            "part2": "Jos aiot vaihtaa Winen tai Protonin prefix-kansiota, polku tulee tarkistaa uudelleen, koska Proton käyttää toista prefixiä (/pfx) ja käyttäjänimeä (steamuser). Voit poistaa nykyisen polun synkronointiasetuksista ja antaa NovaPlayin arvata kansio vielä kerran oikealla prefixillä.",
             "part3": "Manuaalinen synkronointi: valitse \"Lataa\" lataaksesi pelien tallennukset pilvipalvelusta. Valitse \"Lähetä\" lähettääksesi paikalliset tallennukset pilvipalveluun. \"Pakota Lataus\" ja \"Pakota Lähetys\" jättävät huomiotta version, jota säilytetään joko paikallisesti tai pilvipalvelussa.",
             "part4": "\"Synkronoi tallennukset automaattisesti\" synkronoi tallennukset joka kerta kun käynnistät pelin ja suljet sen."
         },
         "vkd3d": "VKD3D is a Vulkan-based translational layer for DirectX 12 games. Enabling may improve compatibility significantly. Has no effect on older DirectX games.",
         "wine": {
-            "part1": "HyperPlay etsii Wine, Proton- ja CrossOver -versioita seuraavista kansioista:",
+            "part1": "NovaPlay etsii Wine, Proton- ja CrossOver -versioita seuraavista kansioista:",
             "part2": "Muille sijainneille käytä symbolista linkkiä kansioon"
         },
         "dxvkfpslimit": "Aseta kehyskorkeus DXVK-peleille",
@@ -299,12 +299,12 @@
         "dxvknvapi": "DXVK-NVAPI on NVAPI:n käyttöönotto, joka on rakennettu DXVK:n ja NVAPI:n yläpuolelle, mikä mahdollistaa DLSS:n käytön Nvidia GPU:issa."
     },
     "info": {
-        "hyperplay": {
+        "novaplay": {
             "beta": "Beta",
             "click-to-see-changelog": "Click to see changelog",
             "newReleases": "Update Available!",
             "stable": "Stable",
-            "version": "HyperPlay Version"
+            "version": "NovaPlay Version"
         },
         "save-sync": {
             "searching": "Trying to detect the correct save folder (click to cancel)"
@@ -391,7 +391,7 @@
         },
         "moved": "Siirto valmis",
         "moving": "Moving Game",
-        "new-hyperplay-version": "A new HyperPlay version was released!",
+        "new-novaplay-version": "A new NovaPlay version was released!",
         "refresh": {
             "error": "Couldn't fetch releases from upstream, maybe because of Github API restrictions! Try again later."
         },
@@ -446,7 +446,7 @@
     "other": {
         "gogdl-version": "GOGDL-versio: ",
         "legendary-version": "Legendaarinen versio: ",
-        "weblate": "Auta kääntämään HyperPlay.",
+        "weblate": "Auta kääntämään NovaPlay.",
         "nile-version": "Niilin versio: "
     },
     "Other": "Other",
@@ -491,7 +491,7 @@
         "autosync": "Automaattisesti synkronoi tallennukset",
         "autovkd3d": "VKD3D:n automaattinen asennus/päivitys prefixille",
         "change-target-exe": "Valitse vaihtoehtoinen EXE suoritettavaksi",
-        "checkForUpdatesOnStartup": "Check for HyperPlay Updates on Startup",
+        "checkForUpdatesOnStartup": "Check for NovaPlay Updates on Startup",
         "crossover-version": "Crossover/Wine Version",
         "custom_themes_path": "Custom Themes Path",
         "customWineProton": "Mukautetut Wine/Proton sijainnit",
@@ -499,7 +499,7 @@
         "default-install-path": "Oletus asennussijainti",
         "default-steam-path": "Default Steam path",
         "defaultWinePrefix": "Aseta kansio uusille Winen Prefixeille",
-        "disable_controller": "Disable HyperPlay navigation using controller",
+        "disable_controller": "Disable NovaPlay navigation using controller",
         "discordRPC": "Ota käyttöön Discord Rich Presence",
         "download-no-https": "Download games without HTTPS (useful for CDNs e.g. LanCache)",
         "egs-sync": "Synkronoi asennetun Epic Gamesin kanssa",
@@ -540,14 +540,14 @@
         "log": {
             "copy-to-clipboard": "Kopioi lokin sisältö leikepöydälle",
             "current-log": "Nykyinen loki",
-            "instructions": "If you encounter any issues while using HyperPlay, we have two designated areas to report your issues in our Discord Server. If you're a player, please report any problems by visiting the player-support-forum. If you are a game dev, please report any problems by visiting the dev-support-forum.{{newLine}} {{newLine}} To help us diagnose and fix the problem as quickly as possible, please provide as much information as possible, including a copy of your logs. Our support team will monitor both channels and do their best to respond to your issue as quickly as possible. Thank you for your patience and understanding while we work to resolve any problems you may encounter.{{newLine}}",
+            "instructions": "If you encounter any issues while using NovaPlay, we have two designated areas to report your issues in our Discord Server. If you're a player, please report any problems by visiting the player-support-forum. If you are a game dev, please report any problems by visiting the dev-support-forum.{{newLine}} {{newLine}} To help us diagnose and fix the problem as quickly as possible, please provide as much information as possible, including a copy of your logs. Our support team will monitor both channels and do their best to respond to your issue as quickly as possible. Thank you for your patience and understanding while we work to resolve any problems you may encounter.{{newLine}}",
             "instructions_title": "How to report a problem?",
             "last-log": "Viimeisin loki",
             "no-file": "Lokitiedostoja ei löytynyt",
             "show-in-folder": "Näytä lokitiedosto kansiossa",
             "instructions-part-02": "Jotta voimme diagnosoida ja korjata ongelman mahdollisimman nopeasti, anna mahdollisimman paljon tietoa, mukaan lukien kopio lokista. Tukitiimimme seuraa molempia kanavia ja tekee parhaansa vastatakseen ongelmaasi mahdollisimman nopeasti. Kiitos kärsivällisyydestäsi ja ymmärryksestäsi, kun pyrimme ratkaisemaan mahdolliset ongelmat.",
-            "instructions-part-01": "Jos kohtaat ongelmia, kun käytät HyperPlayta, meillä on kaksi nimettyä aluetta, jotka raportoivat ongelmasi Discord Serverissä. Jos olet pelaaja, ilmoita kaikista ongelmista vierailemalla pelaaja-tuki-foorumilla. Jos olet pelin dev, ilmoita mahdollisista ongelmista vierailemalla dev-support-foorumilla.",
-            "join-hyperplay-discord": "Liity riitaamme"
+            "instructions-part-01": "Jos kohtaat ongelmia, kun käytät NovaPlayta, meillä on kaksi nimettyä aluetta, jotka raportoivat ongelmasi Discord Serverissä. Jos olet pelaaja, ilmoita kaikista ongelmista vierailemalla pelaaja-tuki-foorumilla. Jos olet pelin dev, ilmoita mahdollisista ongelmista vierailemalla dev-support-foorumilla.",
+            "join-novaplay-discord": "Liity riitaamme"
         },
         "mangohud": "Ota Mangohud käyttöön (Mangohudin tulee olla asennettu)",
         "manualsync": {
@@ -561,7 +561,7 @@
         },
         "maxRecentGames": "Viimeksi pelatut näkyvillä",
         "maxworkers": "Työntekijöiden enimmäismäärä ladattaessa",
-        "minimize-on-launch": "Minimoi HyperPlay pelin käynnistämisen jälkeen",
+        "minimize-on-launch": "Minimoi NovaPlay pelin käynnistämisen jälkeen",
         "offlinemode": "Käynnistä peli offline-tilassa",
         "prefered_language": "Prefered Language (Language Code)",
         "preferSystemLibs": "Prefer system libraries",
@@ -596,7 +596,7 @@
         "alt-nile-bin": "Valitse vaihtoehtoinen Niilin binaari",
         "msync": "Ota Esync käyttöön",
         "autodxvknvapi": "Automaattinen asennus/Update DXVK-NVAPI prefixissä",
-        "autoLaunchHyperPlay": "Auto käynnistyy hyper Pelaa Play Play",
+        "autoLaunchNovaPlay": "Auto käynnistyy hyper Pelaa Play Play",
         "steamId": "Steam ID",
         "dxvkfpslimit": "FPS (DX9, 10 ja 11)"
     },
@@ -605,7 +605,7 @@
             "installing": "Installing BattlEye Runtime...",
             "name": "BattlEye AntiCheat Runtime"
         },
-        "clear-cache": "Tyhjennä HyperPlayin välimuisti",
+        "clear-cache": "Tyhjennä NovaPlayin välimuisti",
         "copiedToClipboard": "Kopioitu leikepöydälle!",
         "copyToClipboard": "Jäljennä kaikki asetukset leikepöydälle",
         "default_hint": "Changes in this section only apply as default values when installing games. If you want to change the settings of an already installed game, use the Settings button in the game page.",
@@ -638,7 +638,7 @@
             "systemInformation": "_Järjestelmän tiedot"
         },
         "open-config-file": "Open Config File",
-        "reset-hyperplay": "Reset HyperPlay",
+        "reset-novaplay": "Reset NovaPlay",
         "saves": {
             "label": "Save Location:",
             "warning": "Cloud Saves feature is in Beta, please backup your saves before syncing (in case something goes wrong)"
@@ -809,7 +809,7 @@
         "beta": "Beta",
         "prototype": "Prototyyppi"
     },
-    "hyperplay": {
+    "novaplay": {
         "buttons": {
             "noThanks": "Ei kiitos",
             "agree": "Olen samaa mieltä"
@@ -848,12 +848,12 @@
                         "title": "Valitse selain tuonnista",
                         "cantFindProfile": "Etkö löydä selainprofiiliasi?",
                         "createNewWallet": "Luo uusi MM-laajennuslompakko",
-                        "useRecoveryPhraseInfo": "Tätä ominaisuutta suositellaan edistyneille käyttäjille ja kehittäjille. Salainen toipumislause on tallennettu paikallisesti MetaMaskiin, eikä sitä ole koskaan jaettu HyperPlayn kanssa."
+                        "useRecoveryPhraseInfo": "Tätä ominaisuutta suositellaan edistyneille käyttäjille ja kehittäjille. Salainen toipumislause on tallennettu paikallisesti MetaMaskiin, eikä sitä ole koskaan jaettu NovaPlayn kanssa."
                     },
                     "scan": {
                         "dontHaveWallet": "Onko sinulla lompakkoa?",
                         "getMetamask": "MetaMask",
-                        "details": "Luo salattu viestintäkanava. Avaimia ei koskaan jaeta HyperPlayn kanssa.",
+                        "details": "Luo salattu viestintäkanava. Avaimia ei koskaan jaeta NovaPlayn kanssa.",
                         "title": "Scan QR:llä ",
                         "updateWarning": "Onko ongelmia? Varmista, että MetaMask on voimassa."
                     }
@@ -873,20 +873,20 @@
             "analytics": {
                 "neverSellData": " myy tietoja voitosta. koskaan!",
                 "privacyPolicyHere": "Yksityisyyspolitiikka täällä.",
-                "title": "Auta meitä parantamaan HyperPlaya!",
+                "title": "Auta meitä parantamaan NovaPlaya!",
                 "neverCollectPersonal": " kerätä avaimia, osoitteita, saldoja, hasheja tai henkilökohtaisia tietoja;",
-                "body": "HyperPlay haluaa kerätä käyttötietoja ymmärtääkseen paremmin, miten käyttäjämme ovat vuorovaikutuksessa sovelluksen kanssa. Nämä tiedot auttavat meitä ymmärtämään, miten käytät sovellusta ja voimme tehdä HyperPlaysta entistä paremman sinulle.",
+                "body": "NovaPlay haluaa kerätä käyttötietoja ymmärtääkseen paremmin, miten käyttäjämme ovat vuorovaikutuksessa sovelluksen kanssa. Nämä tiedot auttavat meitä ymmärtämään, miten käytät sovellusta ja voimme tehdä NovaPlaysta entistä paremman sinulle.",
                 "neverCollectIP": " koko IP-osoitteesi;",
                 "privacyCaption": "Nämä tiedot on koottu ja ne ovat siten nimettömiä yleisen tietosuoja-asetuksen (EU) 2016/679 soveltamiseksi. Lisätietoja tietosuojakäytännöistämme, katso meidän ",
                 "optOut": "Asetukset aina pois päältä;",
                 "anonymized": "Lähetä anonymisoitu klikkaus ja pelin vuorovaikutus;",
-                "hyperplayWill": "HyperPlay:"
+                "novaplayWill": "NovaPlay:"
             },
             "welcome": {
                 "text": {
-                    "description": "HyperPlay on pelin käynnistäjä ja pelikaupan aggregaattori.\nTulevaisuus. HyperPlaylla voit kuljettaa lompakkosi, merkkisi ja omaisuutesi.\njokaiseen peliin. HyperPlay tukee koko Epicin kirjastoa\nMyymälä, GOG ja oma HyperPlay-kauppa. Käyttämällä HyperPlay, olet samaa mieltä\nMeidän",
-                    "construction": "HyperPlay on rakenteilla.",
-                    "bugs": "HyperPlay on julkinen alfa. Monet ominaisuudet ovat edelleen\nkehityksessä, ja siellä on vikoja.",
+                    "description": "NovaPlay on pelin käynnistäjä ja pelikaupan aggregaattori.\nTulevaisuus. NovaPlaylla voit kuljettaa lompakkosi, merkkisi ja omaisuutesi.\njokaiseen peliin. NovaPlay tukee koko Epicin kirjastoa\nMyymälä, GOG ja oma NovaPlay-kauppa. Käyttämällä NovaPlay, olet samaa mieltä\nMeidän",
+                    "construction": "NovaPlay on rakenteilla.",
+                    "bugs": "NovaPlay on julkinen alfa. Monet ominaisuudet ovat edelleen\nkehityksessä, ja siellä on vikoja.",
                     "communityCTA_2": "yhteisö. Yhdessä muokataan pelien tulevaisuutta!",
                     "communityCTA_1": "Rakastamme palautettasi ja liityt meihin"
                 },
@@ -934,7 +934,7 @@
         "currentWallet": "Nykyinen lompakko",
         "viewPortfolio": "Näkymä portfolio",
         "publicAlpha": "Julkinen Alfa",
-        "linkSteamAccountDescription": "Kirjaudu Steamiin linkittääksesi HyperPlay-tilisi.",
+        "linkSteamAccountDescription": "Kirjaudu Steamiin linkittääksesi NovaPlay-tilisi.",
         "linkSteamAccountTitle": "Linkki Steam Tili",
         "viewFullscreen": "Näkymä Fullscreen"
     },
@@ -951,7 +951,7 @@
         }
     },
     "analytics": "Analytiikat",
-    "hyperplayOverlay": {
+    "novaplayOverlay": {
         "txnRequest": {
             "INITIATED": "Transaktiopyyntö vireillä",
             "CONFIRMED": "Transaktiot vahvistettu",
@@ -974,8 +974,8 @@
             "DESCRIPTION": "Lehdistö (X6X) X Nähdään tämä tapahtuma"
         },
         "greeting": {
-            "title": "HyperPlay Overlay",
-            "description": "HyperPlay on valmis! Lehdistö (X34X) X näyttää tai piilottaa."
+            "title": "NovaPlay Overlay",
+            "description": "NovaPlay on valmis! Lehdistö (X34X) X näyttää tai piilottaa."
         },
         "chainRequest": {
             "FAILED": "Tulliverkosto peruttu",
@@ -1000,8 +1000,8 @@
         "title": "Pelin päivitykset saatavilla"
     },
     "overlay": {
-        "EXTERNAL_WALLET_CONNECTED": "Olet yhteydessä HyperPlayyn ulkoisella lompakolla.",
-        "WALLET_DISCONNECTED": "Sinulla ei ole lompakkoa, joka on liitetty HyperPlayyn."
+        "EXTERNAL_WALLET_CONNECTED": "Olet yhteydessä NovaPlayyn ulkoisella lompakolla.",
+        "WALLET_DISCONNECTED": "Sinulla ei ole lompakkoa, joka on liitetty NovaPlayyn."
     },
     "accounts": "tilit",
     "exit_game": "Exit Game",
@@ -1021,8 +1021,8 @@
     "quests": {
         "playstreak": {
             "signInWarning": {
-                "client": "Et ole tällä hetkellä kirjautuneena sisään, pelin etenemistä ei seurata. Kirjaudu HyperPlayyn huippuoikeiston kautta edistyksen seuraamiseksi.",
-                "overlay": "Et ole tällä hetkellä kirjautuneena sisään, pelin etenemistä ei seurata. Poistu pelistä ja kirjaudu HyperPlayyn huippuoikeiston kautta edistyksen seuraamiseksi."
+                "client": "Et ole tällä hetkellä kirjautuneena sisään, pelin etenemistä ei seurata. Kirjaudu NovaPlayyn huippuoikeiston kautta edistyksen seuraamiseksi.",
+                "overlay": "Et ole tällä hetkellä kirjautuneena sisään, pelin etenemistä ei seurata. Poistu pelistä ja kirjaudu NovaPlayyn huippuoikeiston kautta edistyksen seuraamiseksi."
             }
         },
         "quests": "Quests",
@@ -1031,7 +1031,7 @@
             "message": "Etsintöjä ei löytynyt."
         },
         "g7CreditsModal": {
-            "description": "HyperPlayn parhaat pelit, joissa on jännittäviä Play Streak -haasteita. Jokainen aktiviteetti kannustaa sinua osallistumaan toiseen peliin ja esittelemään parhaan verkkopelin. Peliaikasi on tärkeää!",
+            "description": "NovaPlayn parhaat pelit, joissa on jännittäviä Play Streak -haasteita. Jokainen aktiviteetti kannustaa sinua osallistumaan toiseen peliin ja esittelemään parhaan verkkopelin. Peliaikasi on tärkeää!",
             "title": "Ansaitse Game7 -luottoja"
         }
     }
