@@ -18,7 +18,7 @@ import { SyncType } from 'frontend/types'
 import { ProgressDialog } from 'frontend/components/UI/ProgressDialog'
 import SettingsContext from '../../SettingsContext'
 import TextWithProgress from 'frontend/components/UI/TextWithProgress'
-import { Button } from '@hyperplay/ui'
+import { Button } from '@novaplay/ui'
 
 interface Props {
   autoSyncSaves: boolean
