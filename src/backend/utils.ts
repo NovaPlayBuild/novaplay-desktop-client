@@ -183,7 +183,7 @@ async function isEpicServiceOffline(
     title: `${type} ${t('epic.offline-notification-title', 'offline')}`,
     body: t(
       'epic.offline-notification-body',
-      'HyperPlay will probably not work!'
+      'NovaPlay will probably not work!'
     ),
     urgency: 'normal',
     timeoutType: 'default',
@@ -219,11 +219,11 @@ async function isEpicServiceOffline(
 
 const showAboutWindow = () => {
   app.setAboutPanelOptions({
-    applicationName: 'HyperPlay',
+    applicationName: 'NovaPlay',
     applicationVersion: getAppVersion(),
     copyright: 'GPL V3',
     iconPath: icon,
-    website: 'https://hyperplay.xyz'
+    website: 'https://novaplay.xyz'
   })
   return app.showAboutPanel()
 }
@@ -518,7 +518,7 @@ function constructAndUpdateRPC(gameName: string): RpcClient | undefined {
     largeImageKey: 'icon',
     large_text: gameName,
     startTimestamp: Date.now(),
-    state: 'via HyperPlay on ' + getFormattedOsName()
+    state: 'via NovaPlay on ' + getFormattedOsName()
   })
   return client
 }
@@ -822,12 +822,12 @@ export async function checkRosettaInstall() {
   )
 
   if (!result) {
-    // show a dialog saying that hyperplay wont run without rosetta and add information on how to install it
+    // show a dialog saying that novaplay wont run without rosetta and add information on how to install it
     await dialog.showMessageBox({
       title: i18next.t('box.warning.rosetta.title', 'Rosetta not found'),
       message: i18next.t(
         'box.warning.rosetta.message',
-        'HyperPlay requires Rosetta to run correctly on macOS with Apple Silicon chips. Please install it from the macOS terminal using the following command: "softwareupdate --install-rosetta" and restart HyperPlay. '
+        'NovaPlay requires Rosetta to run correctly on macOS with Apple Silicon chips. Please install it from the macOS terminal using the following command: "softwareupdate --install-rosetta" and restart NovaPlay. '
       ),
       buttons: ['OK'],
       icon: icon
@@ -1266,7 +1266,7 @@ export async function downloadFile(
         `Downloaded: ${bytesToSize(transferredBytes)} / ${bytesToSize(
           totalDownloadSizeInBytes
         )}  @${bytesToSize(writingSpeed)}/s (${percentage.toFixed(2)}%)`,
-        LogPrefix.HyperPlay
+        LogPrefix.NovaPlay
       )
 
       if (progressCallback) {
@@ -1465,13 +1465,13 @@ export const processIsClosed = async (pid: number) => {
 }
 
 type RunnerStore = {
-  [key in Runner]: 'Epic Games' | 'GOG' | 'HyperPlay' | 'Sideloaded'
+  [key in Runner]: 'Epic Games' | 'GOG' | 'NovaPlay' | 'Sideloaded'
 }
 
 const runnerStore: RunnerStore = {
   legendary: 'Epic Games',
   gog: 'GOG',
-  hyperplay: 'HyperPlay',
+  novaplay: 'NovaPlay',
   sideload: 'Sideloaded'
 }
 
