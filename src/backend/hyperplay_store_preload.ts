@@ -2,7 +2,7 @@ import { contextBridge, ipcRenderer } from 'electron'
 
 contextBridge.exposeInMainWorld('api', {
   getInfo: async (gameId: string) =>
-    ipcRenderer.invoke('getGameInfo', gameId, 'hyperplay'),
+    ipcRenderer.invoke('getGameInfo', gameId, 'novaplay'),
   // returns isInstalled and updateAvailable booleans
   install: async (projectName: string, accountName: string) =>
     ipcRenderer.invoke('addHyperplayGame', projectName, accountName),
@@ -17,7 +17,7 @@ contextBridge.exposeInMainWorld('api', {
     ipcRenderer.send('openGameInEpicStore', url),
   apiVersion: 1,
   appIsInLibrary: async (gameId: string) =>
-    ipcRenderer.invoke('appIsInLibrary', gameId, 'hyperplay'),
+    ipcRenderer.invoke('appIsInLibrary', gameId, 'novaplay'),
   goToGamePage: (gameId: string) => ipcRenderer.send('goToGamePage', gameId),
   navigate: (route: string) => ipcRenderer.send('navigate', route)
 })
