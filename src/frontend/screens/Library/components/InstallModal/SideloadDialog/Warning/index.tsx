@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { AlertCard, Typography, Images } from '@hyperplay/ui'
+import { AlertCard, Typography, Images } from '@novaplay/ui'
 
 import styles from './index.module.scss'
 import { t } from 'i18next'
