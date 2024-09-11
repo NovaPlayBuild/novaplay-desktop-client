@@ -1,4 +1,4 @@
-import { GameAchievements, DropdownItemType } from '@hyperplay/ui'
+import { GameAchievements, DropdownItemType } from '@novaplay/ui'
 import React, { useEffect } from 'react'
 import { useNavigate, useParams } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
