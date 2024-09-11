@@ -106,15 +106,15 @@ describe('libraryState.ts', () => {
   })
 
   // store selector
-  test('only show HyperPlay games', async () => {
+  test('only show NovaPlay games', async () => {
     // default filter is sort by alphabetical ascending
     libraryState.hyperPlayLibrary = [
-      getDummyGameInfo({ title: 'b', is_installed: true, runner: 'hyperplay' })
+      getDummyGameInfo({ title: 'b', is_installed: true, runner: 'novaplay' })
     ]
     libraryState.gogLibrary = [
       getDummyGameInfo({ title: 'a', is_installed: false, runner: 'gog' })
     ]
-    libraryState.category = 'hyperplay'
+    libraryState.category = 'novaplay'
 
     expect(libraryState.library.length).toBe(1)
     expect(libraryState.library[0].app_name).toBe('b')
