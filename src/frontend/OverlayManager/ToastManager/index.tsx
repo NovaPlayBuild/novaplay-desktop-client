@@ -1,6 +1,6 @@
 import React from 'react'
 import transactionState from 'frontend/state/TransactionState'
-import { TransactionToast } from '@hyperplay/ui'
+import { TransactionToast } from '@novaplay/ui'
 import { observer } from 'mobx-react-lite'
 
 const BrowserToastManager = function () {
