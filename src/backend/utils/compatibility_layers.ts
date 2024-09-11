@@ -208,7 +208,7 @@ export async function getWineOnMac(): Promise<Set<WineInstallation>> {
 
   const winePaths = new Set<string>()
 
-  // search for wine installed on $HOME/Library/Application Support/hyperplay/tools/wine
+  // search for wine installed on $HOME/Library/Application Support/novaplay/tools/wine
   const wineToolsPath = `${toolsPath}/wine/`
   if (existsSync(wineToolsPath)) {
     readdirSync(wineToolsPath).forEach((path) => {
