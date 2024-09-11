@@ -8,7 +8,7 @@ import {
   DefaultSteamPath,
   DisableController,
   EgsSettings,
-  HyperPlayAnalytics,
+  NovaPlayAnalytics,
   LibraryTopSection,
   MaxRecentGames,
   MaxWorkers,
@@ -19,7 +19,7 @@ import {
   WinePrefixesBasePath
 } from '../../components'
 import AppVersion from 'frontend/components/UI/AppVersion'
-import AutoLaunchHyperPlay from '../../components/AutoLaunchHyperPlay'
+import AutoLaunchNovaPlay from '../../components/AutoLaunchNovaPlay'
 
 export default function GeneralSettings() {
   const { t } = useTranslation()
@@ -42,7 +42,7 @@ export default function GeneralSettings() {
 
       <EgsSettings />
 
-      <AutoLaunchHyperPlay />
+      <AutoLaunchNovaPlay />
 
       <CheckUpdatesOnStartup />
 
@@ -58,7 +58,7 @@ export default function GeneralSettings() {
 
       <DisableController />
 
-      <HyperPlayAnalytics />
+      <NovaPlayAnalytics />
 
       <LibraryTopSection />
 
