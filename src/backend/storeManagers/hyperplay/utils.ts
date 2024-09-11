@@ -1,7 +1,7 @@
 import {
   AppPlatforms,
   GameInfo,
-  HyperPlayRelease,
+  NovaPlayRelease,
   ChannelReleaseMeta,
   InstallPlatform
 } from 'common/types'
@@ -18,21 +18,21 @@ import {
 } from '@valist/sdk/dist/typesShared'
 import { logError } from 'backend/api/misc'
 
-export async function getHyperPlayStoreRelease(
+export async function getNovaPlayStoreRelease(
   appName: string
-): Promise<HyperPlayRelease> {
+): Promise<NovaPlayRelease> {
   const gameIdUrl = getValistListingApiUrl(appName)
-  const res = await axios.get<HyperPlayRelease>(gameIdUrl)
+  const res = await axios.get<NovaPlayRelease>(gameIdUrl)
   const data = res.data
   return data
 }
 
-export async function getHyperPlayReleaseMap() {
+export async function getNovaPlayReleaseMap() {
   const hpStoreGameReleases = (
-    await axios.get<HyperPlayRelease[]>(valistListingsApiUrl)
+    await axios.get<NovaPlayRelease[]>(valistListingsApiUrl)
   ).data
 
-  const hpStoreGameMap = new Map<string, HyperPlayRelease>()
+  const hpStoreGameMap = new Map<string, NovaPlayRelease>()
 
   hpStoreGameReleases.forEach((val) => {
     hpStoreGameMap.set(val.project_id, val)
@@ -41,12 +41,12 @@ export async function getHyperPlayReleaseMap() {
   return hpStoreGameMap
 }
 
-export async function getHyperPlayNameToReleaseMap() {
+export async function getNovaPlayNameToReleaseMap() {
   const hpStoreGameReleases = (
-    await axios.get<HyperPlayRelease[]>(valistListingsApiUrl)
+    await axios.get<NovaPlayRelease[]>(valistListingsApiUrl)
   ).data
 
-  const hpStoreGameMap = new Map<string, HyperPlayRelease>()
+  const hpStoreGameMap = new Map<string, NovaPlayRelease>()
 
   hpStoreGameReleases.forEach((val) => {
     hpStoreGameMap.set(val.project_name.toLowerCase(), val)
@@ -58,11 +58,11 @@ export async function getHyperPlayNameToReleaseMap() {
 /**
  * @returns an object mapping project id key to listing value
  * necessary for stringifying over ipc to send to the frontend.
- * use getHyperPlayReleaseMap for backend/main process calls.
+ * use getNovaPlayReleaseMap for backend/main process calls.
  */
-export async function getHyperPlayReleaseObject() {
+export async function getNovaPlayReleaseObject() {
   const hpStoreGameReleases = (
-    await axios.get<HyperPlayRelease[]>(valistListingsApiUrl)
+    await axios.get<NovaPlayRelease[]>(valistListingsApiUrl)
   ).data
 
   const hpStoreGameMap = {}
@@ -153,7 +153,7 @@ export const linuxPlatforms = ['linux', 'linux_arm64', 'linux_amd64']
  */
 export function refreshGameInfoFromHpRelease(
   currentInfo: GameInfo,
-  data: HyperPlayRelease
+  data: NovaPlayRelease
 ): GameInfo {
   const channelsMap = {}
   data.channels.forEach(
@@ -199,7 +199,7 @@ export function refreshGameInfoFromHpRelease(
   const newArtCover = data.project_meta.main_capsule || currentInfo.art_cover
   return {
     ...currentInfo,
-    runner: 'hyperplay',
+    runner: 'novaplay',
     extra: {
       ...currentInfo.extra,
       about: {
@@ -217,7 +217,7 @@ export function refreshGameInfoFromHpRelease(
             : data.project_name
         }
       ],
-      storeUrl: `https://store.hyperplay.xyz/game/${data.project_name}`
+      storeUrl: `https://store.novaplay.xyz/game/${data.project_name}`
     },
     art_square: newArtSquare !== undefined ? newArtSquare : 'fallback',
     art_cover: newArtCover !== undefined ? newArtCover : 'fallback',
@@ -225,7 +225,7 @@ export function refreshGameInfoFromHpRelease(
     version: latestVersion,
     is_windows_native: hasWindowsNativeBuild,
     channels: channelsMap,
-    store_url: `https://store.hyperplay.xyz/game/${data.project_name}`,
+    store_url: `https://store.novaplay.xyz/game/${data.project_name}`,
     wineSupport: data.project_meta.wine_support,
     description: newDescription,
     v: '1',
@@ -252,7 +252,7 @@ const getBrowserUrl = (platforms: PlatformsMetaInterface) => {
 /**
  * This is called when adding game to library and not during refresh
  */
-export function getGameInfoFromHpRelease(data: HyperPlayRelease): GameInfo {
+export function getGameInfoFromHpRelease(data: NovaPlayRelease): GameInfo {
   // automatically "install" browser only games with 1 channel
   let isOnlyWeb = false
   const platforms = data.channels[0].release_meta.platforms
@@ -269,7 +269,7 @@ export function getGameInfoFromHpRelease(data: HyperPlayRelease): GameInfo {
   const gameInfo: GameInfo = refreshGameInfoFromHpRelease(
     {
       // only set on game add
-      runner: 'hyperplay',
+      runner: 'novaplay',
       app_name: data.project_id,
       thirdPartyManagedApp: undefined,
       is_installed: isOnlyWeb,
@@ -300,8 +300,8 @@ interface EpicToHpMap {
 }
 export const epicTitleToHpGameInfoMap: EpicToHpMap = {}
 
-export async function loadEpicHyperPlayGameInfoMap() {
-  const res = await axios.get<HyperPlayRelease[]>(valistListingsApiUrl)
+export async function loadEpicNovaPlayGameInfoMap() {
+  const res = await axios.get<NovaPlayRelease[]>(valistListingsApiUrl)
 
   for (const hpRelease of res.data) {
     if (!hpRelease.project_meta.epic_game_url) continue
@@ -330,7 +330,7 @@ export async function getEpicListingUrl(projectId: string): Promise<string> {
   try {
     const getConfig =
       qaToken !== '' ? { headers: { Authorization: `Bearer ${qaToken}` } } : {}
-    const res = await axios.get<HyperPlayRelease>(listingUrl, getConfig)
+    const res = await axios.get<NovaPlayRelease>(listingUrl, getConfig)
 
     if (res.status !== 200) {
       logError(`Error when trying to get listing info ${res}`)
