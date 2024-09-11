@@ -69,7 +69,7 @@ const WalletDropdown: React.FC = observer(() => {
       </Menu.Target>
       <Menu.Dropdown>
         <Menu.Label className={styles.menuLabel}>
-          {t('hyperplay.currentWallet', `Current wallet`)}
+          {t('novaplay.currentWallet', `Current wallet`)}
         </Menu.Label>
         <Menu.Item
           className={styles.menuItem}
@@ -77,19 +77,19 @@ const WalletDropdown: React.FC = observer(() => {
         >
           <div className={`body ${styles.itemContents}`}>
             {showWalletConnectedLinks
-              ? t('hyperplay.changeWallet', `Swap wallet account`)
-              : t('hyperplay.connectWallet', `Connect wallet`)}
+              ? t('novaplay.changeWallet', `Swap wallet account`)
+              : t('novaplay.connectWallet', `Connect wallet`)}
           </div>
         </Menu.Item>
         {showMetaMaskExtensionLinks && (
           <>
             <NavigationMenuItem
-              label={t('hyperplay.viewFullscreen', `View fullscreen`)}
+              label={t('novaplay.viewFullscreen', `View fullscreen`)}
               to={'/metamaskHome'}
               showMetaMaskExtensionLinks={showMetaMaskExtensionLinks}
             ></NavigationMenuItem>
             <NavigationMenuItem
-              label={t('hyperplay.viewItem', {
+              label={t('novaplay.viewItem', {
                 defaultValue: 'View {{item}}',
                 item: 'Snaps'
               })}
@@ -116,7 +116,7 @@ const WalletDropdown: React.FC = observer(() => {
               }
             >
               <div className={`body ${styles.itemContents}`}>
-                {t('hyperplay.viewPortfolio', `View portfolio`)}
+                {t('novaplay.viewPortfolio', `View portfolio`)}
               </div>
             </NavLink>
           </Menu.Item>
@@ -132,7 +132,7 @@ const WalletDropdown: React.FC = observer(() => {
         {isAuthEnabled && (
           <>
             <Divider className={styles.divider} />
-            <Menu.Label>HyperPlay {t('profile', `Profile`)}</Menu.Label>
+            <Menu.Label>NovaPlay {t('profile', `Profile`)}</Menu.Label>
             {isSignedIn ? (
               <>
                 <Menu.Item onClick={() => authState.openSignInModal()}>
@@ -149,7 +149,7 @@ const WalletDropdown: React.FC = observer(() => {
                   <div
                     className={`body ${styles.itemContents} ${styles.logOut}`}
                   >
-                    {t('hyperplay.logOut', `Log out`)}
+                    {t('novaplay.logOut', `Log out`)}
                   </div>
                 </Menu.Item>
               </>
