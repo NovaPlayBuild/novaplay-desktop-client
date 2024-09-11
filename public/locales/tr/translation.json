@@ -19,7 +19,7 @@
     },
     "box": {
         "cache-cleared": {
-            "message": "HyperPlay önbelleği temizlendi.",
+            "message": "NovaPlay önbelleği temizlendi.",
             "title": "Önbellek temizlendi"
         },
         "choose": "Seç",
@@ -67,7 +67,7 @@
             },
             "update": {
                 "title": "Update Error",
-                "message": "Bir şey güncelleme ile yanlış gitti! Lütfen manuel olarak yükleme ve yeniden yükleme HyperPlay."
+                "message": "Bir şey güncelleme ile yanlış gitti! Lütfen manuel olarak yükleme ve yeniden yükleme NovaPlay."
             },
             "wine-not-found": {
                 "invalid": "The selected wine version was not found. Install it or select a different version in the game's settings{{newline}}Version: {{version}}{{newline}}Path: {{path}}",
@@ -89,11 +89,11 @@
                 "changelog": "Değişiklik günlüğünü aç",
                 "detail": "Güncellemeyi arka planda indirmek istiyor musunuz?",
                 "message": "Yeni bir sürüm var!",
-                "message-finished": "HyperPlay'i şimdi yeniden başlatmak istiyor musunuz?",
-                "title": "HyperPlay Games Launcher",
+                "message-finished": "NovaPlay'i şimdi yeniden başlatmak istiyor musunuz?",
+                "title": "NovaPlay Games Launcher",
                 "title-finished": "Güncelleme Tamamlandı",
-                "appUpdated": "HyperPlay güncellendi",
-                "appUpdated-message": "HyperPlay güncellendi. Şimdi HyperPlay'i güncellemek ve yeniden başlatmak ister misiniz?"
+                "appUpdated": "NovaPlay güncellendi",
+                "appUpdated-message": "NovaPlay güncellendi. Şimdi NovaPlay'i güncellemek ve yeniden başlatmak ister misiniz?"
             }
         },
         "no": "HAYIR",
@@ -109,8 +109,8 @@
         },
         "reset-app": {
             "question": {
-                "message": "Are you sure you want to reset HyperPlay? This will remove all Settings and Caching but won't remove your Installed games or your Epic credentials. Portable versions (AppImage, WinPortable, ...) of HyperPlay needs to be restarted manually afterwards.",
-                "title": "Reset HyperPlay"
+                "message": "Are you sure you want to reset NovaPlay? This will remove all Settings and Caching but won't remove your Installed games or your Epic credentials. Portable versions (AppImage, WinPortable, ...) of NovaPlay needs to be restarted manually afterwards.",
+                "title": "Reset NovaPlay"
             }
         },
         "runexe": {
@@ -150,7 +150,7 @@
             "title": "Uyarı",
             "rosetta": {
                 "title": "Rosetta bulunamadı",
-                "message": "HyperPlay gerektirir Rosetta, Apple Silikon cipsiyle MacOS'ta doğru koşmak için. Please install it from theOS terminal using the following command: \"softwareupdate -install-rosetta\" ve yeniden HyperPlay. "
+                "message": "NovaPlay gerektirir Rosetta, Apple Silikon cipsiyle MacOS'ta doğru koşmak için. Please install it from theOS terminal using the following command: \"softwareupdate -install-rosetta\" ve yeniden NovaPlay. "
             },
             "wine-change": {
                 "message": "Bu unvanı başlatmak için seçilmiş şarap versiyonunu bulamadık ([X66X). {{newline}} Başka bir tane bulduk, {{foundWine}} kullanmaya devam etmek istiyor musunuz?",
@@ -263,7 +263,7 @@
         "esync": "Esync aims to reduce wineserver overhead in CPU-intensive games. Enabling may improve performance.",
         "fsync": "Fsync aims to reduce wineserver overhead in CPU-intensive games. Enabling may improve performance on supported Linux kernels.",
         "game_language": {
-            "fallback": "HyperPlay'in dilini kullanmak için boş bırakın.",
+            "fallback": "NovaPlay'in dilini kullanmak için boş bırakın.",
             "in_game_config": "Tüm oyunlar bu yapılandırmayı desteklemez, bazılarının oyun içi dil ayarı vardır.",
             "valid_codes": "Geçerli dil kodları oyuna bağlıdır."
         },
@@ -279,18 +279,18 @@
         "preferSystemLibs": "Custom Wine versions (Wine-GE, Wine-Lutris) are shipped with their library dependencies. By enabling this option, these shipped libraries will be ignored and Wine will load system libraries instead. Warning! Issues may occur if dependencies are not met.",
         "primerun": "Use dedicated graphics card to render game on multi-GPU systems. Only needed on gaming laptops or desktops that use a headless GPU for rendering (NVIDIA Optimus, AMD CrossFire)",
         "steam_path": {
-            "info": "This path lets HyperPlay determine what version of Proton Steam uses, for adding non-Steam games to Steam."
+            "info": "This path lets NovaPlay determine what version of Proton Steam uses, for adding non-Steam games to Steam."
         },
         "steamruntime": "Custom libraries provided by Steam to help run Linux and Windows (Proton) games. Enabling might improve compatibility.",
         "sync": {
-            "part1": "HyperPlay doğru kayıt klasörünü algılamaya çalışır ve bu çoğu zaman çalışıyor. Eğer klasör yanlışsa, değiştirmek için geçersiz kıl kutucuğunu kullan.",
-            "part2": "Wine ya da Proton klasörünü değiştirmek isterseniz, Proton farklı bir yol (/pfx) ve kullanıcı adı (steamuser) kullandığı için yolu tekrar gözden geçirmeniz gerekecek. HyperPlay'in doğru klasörü bir kez daha tahmin etmesi için basitçe eşzamanlama ayarlarından geçerli yolu silebilir ve tekrar geri dönebilirsiniz.",
+            "part1": "NovaPlay doğru kayıt klasörünü algılamaya çalışır ve bu çoğu zaman çalışıyor. Eğer klasör yanlışsa, değiştirmek için geçersiz kıl kutucuğunu kullan.",
+            "part2": "Wine ya da Proton klasörünü değiştirmek isterseniz, Proton farklı bir yol (/pfx) ve kullanıcı adı (steamuser) kullandığı için yolu tekrar gözden geçirmeniz gerekecek. NovaPlay'in doğru klasörü bir kez daha tahmin etmesi için basitçe eşzamanlama ayarlarından geçerli yolu silebilir ve tekrar geri dönebilirsiniz.",
             "part3": "Elle Eşzamanla: Bulutta depolanan oyun kayıtlarını indirmek için İndir seçeneğini seçin. Yerel kayıtları buluta yüklemek için Karşıya Yükle seçeneğini seçin. İndirmeye Zorla ve Karşıya Yüklemeye Zorla yerel veya buluttaki sürümü dikkate almayacaktır.",
             "part4": "Kayıtları Otomatik Eşzamanla, oyunu her başlattığınızda ve oynamayı bitirdiğinizde kayıtları eşzamanlayacak."
         },
         "vkd3d": "VKD3D is a Vulkan-based translational layer for DirectX 12 games. Enabling may improve compatibility significantly. Has no effect on older DirectX games.",
         "wine": {
-            "part1": "HyperPlay; Wine, Proton ve CrossOver sürümlerini şu klasörlerde arar:",
+            "part1": "NovaPlay; Wine, Proton ve CrossOver sürümlerini şu klasörlerde arar:",
             "part2": "Diğer yerler için bu klasörlerden birisine sembolik bağlantı kullanın"
         },
         "dxvknvapi": "DXVK-NVAPI, DXVK ve Linux yerli NVAPI'in üzerinde inşa edilen NVAPI'nın bir uygulamasıdır, DLSS'nin GPU Nvidias'daki kullanımına izin verir.",
@@ -299,12 +299,12 @@
         "dxvkfpslimit": "DXVK oyunları için bir çerçeve oranı kapağı ayarlar"
     },
     "info": {
-        "hyperplay": {
+        "novaplay": {
             "beta": "Beta",
             "click-to-see-changelog": "Click to see changelog",
             "newReleases": "Update Available!",
             "stable": "Stable",
-            "version": "HyperPlay Sürümü"
+            "version": "NovaPlay Sürümü"
         },
         "save-sync": {
             "searching": "Trying to detect the correct save folder (click to cancel)"
@@ -391,7 +391,7 @@
         },
         "moved": "Taşıma Tamamlandı",
         "moving": "Oyun Taşınıyor",
-        "new-hyperplay-version": "A new HyperPlay version was released!",
+        "new-novaplay-version": "A new NovaPlay version was released!",
         "refresh": {
             "error": "Belki de Github API kısıtlamaları nedeniyle yukarı akıştan sürümler getirilemedi! Daha sonra tekrar deneyin."
         },
@@ -446,7 +446,7 @@
     "other": {
         "gogdl-version": "GOGDL Sürümü: ",
         "legendary-version": "Legendary Sürüm: ",
-        "weblate": "HyperPlay'i çevirmeye yardımcı ol.",
+        "weblate": "NovaPlay'i çevirmeye yardımcı ol.",
         "nile-version": "Nil Sürümü: "
     },
     "Other": "Other",
@@ -491,7 +491,7 @@
         "autosync": "Kayıtları Otomatik Eşzamanla",
         "autovkd3d": "Prefix'te VKD3D'yi Otomatik Kur/Güncelle",
         "change-target-exe": "Çalıştırmak için alternatif bir EXE seçin",
-        "checkForUpdatesOnStartup": "Check for HyperPlay Updates on Startup",
+        "checkForUpdatesOnStartup": "Check for NovaPlay Updates on Startup",
         "crossover-version": "Crossover/Wine Version",
         "custom_themes_path": "Custom Themes Path",
         "customWineProton": "Özel Wine/Proton Yolları",
@@ -499,7 +499,7 @@
         "default-install-path": "Öntanımlı Kurulum Yeri",
         "default-steam-path": "Default Steam path",
         "defaultWinePrefix": "Yeni Wine Prefix'leri için Klasörü Ayarla",
-        "disable_controller": "Denetleyiciyi kullanarak HyperPlay gezinmesini devre dışı bırak",
+        "disable_controller": "Denetleyiciyi kullanarak NovaPlay gezinmesini devre dışı bırak",
         "discordRPC": "Discord Rich Presence'i Etkinleştir",
         "download-no-https": "Download games without HTTPS (useful for CDNs e.g. LanCache)",
         "egs-sync": "Kurulu Epic Games ile Eşzamanla",
@@ -545,8 +545,8 @@
             "last-log": "Son Günlük",
             "no-file": "Günlük dosyası bulunamadı",
             "show-in-folder": "Günlük dosyasını klasörde göster",
-            "join-hyperplay-discord": "Discordumuza katılın",
-            "instructions-part-01": "HyperPlay kullanırken herhangi bir sorunla karşılaşırsanız, Discord Server'daki sorunlarınızı rapor etmek için iki özel alana sahibiz. Bir oyuncuysanız lütfen oyuncu-support-forum ziyaret ederek herhangi bir sorunu rapor edin. Bir oyun varsa lütfen Dev-support-forum ziyaret ederek herhangi bir sorunu rapor edin.",
+            "join-novaplay-discord": "Discordumuza katılın",
+            "instructions-part-01": "NovaPlay kullanırken herhangi bir sorunla karşılaşırsanız, Discord Server'daki sorunlarınızı rapor etmek için iki özel alana sahibiz. Bir oyuncuysanız lütfen oyuncu-support-forum ziyaret ederek herhangi bir sorunu rapor edin. Bir oyun varsa lütfen Dev-support-forum ziyaret ederek herhangi bir sorunu rapor edin.",
             "instructions-part-02": "Problemi mümkün olduğunca çabuk teşhis etmemize ve düzeltmemize yardımcı olmak için lütfen loglarınızın bir kopyasını da içeren mümkün olduğunca fazla bilgi verin. Destek ekibimiz hem kanallarını izleyecek ve sorununıza mümkün olduğunca çabuk yanıt vermek için ellerinden geleni yapacaktır. İlginiz ve anlayışınız için teşekkür ederiz, karşılaşabileceğiniz herhangi bir sorunu çözmek için çalışıyoruz."
         },
         "mangohud": "Mangohud'u Etkinleştir (Mangohud kurulu olmalıdır)",
@@ -561,7 +561,7 @@
         },
         "maxRecentGames": "Gösterilecek Son Oynananlar",
         "maxworkers": "İndirirken azami işçi sayısı",
-        "minimize-on-launch": "Oyun Başlatıldıktan Sonra HyperPlay'i Simge Durumuna Küçült",
+        "minimize-on-launch": "Oyun Başlatıldıktan Sonra NovaPlay'i Simge Durumuna Küçült",
         "offlinemode": "Oyunu Çevrim Dışı Çalıştır",
         "prefered_language": "Tercih Edilen Dil (Dil Kodu)",
         "preferSystemLibs": "Prefer system libraries",
@@ -596,7 +596,7 @@
         "alt-nile-bin": "Alternatif Bir Nil İkilisi Seçin",
         "msync": "Esync'i Etkinleştir",
         "autodxvknvapi": "Autoload/Update DXVK-NVAPI, Prefix",
-        "autoLaunchHyperPlay": "Auto Start Hyper Play Play Play",
+        "autoLaunchNovaPlay": "Auto Start Hyper Play Play Play",
         "dxvkfpslimit": "Limit FPS (DX9, 10 ve 11)",
         "steamId": "Steam ID"
     },
@@ -605,7 +605,7 @@
             "installing": "Installing BattlEye Runtime...",
             "name": "BattlEye AntiCheat Runtime"
         },
-        "clear-cache": "HyperPlay Önbelleğini Temizle",
+        "clear-cache": "NovaPlay Önbelleğini Temizle",
         "copiedToClipboard": "Panoya kopyalandı!",
         "copyToClipboard": "Tüm Ayarları Panoya Kopyala",
         "default_hint": "Changes in this section only apply as default values when installing games. If you want to change the settings of an already installed game, use the Settings button in the game page.",
@@ -638,7 +638,7 @@
             "systemInformation": "Sistem bilgileri"
         },
         "open-config-file": "Yapılandırma Dosyasını Aç",
-        "reset-hyperplay": "HyperPlay'i Sıfırla",
+        "reset-novaplay": "NovaPlay'i Sıfırla",
         "saves": {
             "label": "Save Location:",
             "warning": "Cloud Saves feature is in Beta, please backup your saves before syncing (in case something goes wrong)"
@@ -756,7 +756,7 @@
     "amazon": "Amazon",
     "Amazon Games": "amazon oyunları",
     "prime-gaming": "Prime Oyun",
-    "hyperplay": {
+    "novaplay": {
         "logOut": "Oturumu kapat",
         "gamecard": {
             "installing": "İndiriliyor...",
@@ -777,7 +777,7 @@
                         "title": "Tarayıcıyı ithal etmek için seçin",
                         "useRecoveryPhrase": "Gizli Kurtarma cümlesini kullanarak",
                         "details": "Aşağıdaki tarayıcılar zaten MetaMask'u kurdu. ithal etmek istediğiniz kişiyi seçin.",
-                        "useRecoveryPhraseInfo": "Bu özellik gelişmiş kullanıcılar ve geliştiriciler için önerilir. Gizli kurtarma cümleniz MetaMask'ta yerel olarak depolanır ve asla HyperPlay ile paylaşılmaz.",
+                        "useRecoveryPhraseInfo": "Bu özellik gelişmiş kullanıcılar ve geliştiriciler için önerilir. Gizli kurtarma cümleniz MetaMask'ta yerel olarak depolanır ve asla NovaPlay ile paylaşılmaz.",
                         "cantFindProfile": "Tarayıcı profilinizi bulamadınız mı?"
                     },
                     "scan": {
@@ -785,7 +785,7 @@
                         "updateWarning": "Sorunlara sahip olmak? MetaMask'un tarihe kadar olduğundan emin olun.",
                         "dontHaveWallet": "Cüzdan yok mu?",
                         "getMetamask": "MetaMask",
-                        "details": "Şifreli bir iletişim kanalı oluşturun. Anahtarlarınız asla HyperPlay ile paylaşılmayacaktır."
+                        "details": "Şifreli bir iletişim kanalı oluşturun. Anahtarlarınız asla NovaPlay ile paylaşılmayacaktır."
                     },
                     "info": {
                         "digitalAssets": {
@@ -806,7 +806,7 @@
                 "pleaseConnect": "Please connect your cüzdan, or download the Metamask mobile-app to get\nbaşladı:"
             },
             "analytics": {
-                "hyperplayWill": "HyperPlay will:",
+                "novaplayWill": "NovaPlay will:",
                 "neverCollectPersonal": " anahtarlar, adresler, dengeler, ya da herhangi bir kişisel bilgi toplamak;",
                 "privacyPolicyHere": "Gizlilik Politikası burada.",
                 "anonymized": "Anonim tıklama ve oyun etkileşimi gönderin;",
@@ -814,7 +814,7 @@
                 "neverCollectIP": " tam IP adresinizi toplayın;",
                 "neverSellData": " kâr için veri satmak. Hiç!",
                 "title": "HiperPlay geliştirmemize yardımcı olun!",
-                "body": "HyperPlay, kullanıcılarımızın uygulama ile nasıl etkileşime girdiğini daha iyi anlamak için kullanım verilerini toplamak ister. Bu bilgiler uygulamayı nasıl kullandığınızı anlamamıza yardımcı olur ve HyperPlay'i sizin için daha iyi hale getirelim.",
+                "body": "NovaPlay, kullanıcılarımızın uygulama ile nasıl etkileşime girdiğini daha iyi anlamak için kullanım verilerini toplamak ister. Bu bilgiler uygulamayı nasıl kullandığınızı anlamamıza yardımcı olur ve NovaPlay'i sizin için daha iyi hale getirelim.",
                 "privacyCaption": "Bu veriler toplanır ve bu nedenle Genel Veri Koruma Yönetmeliği (EU) 2016/679 amaçları için anonimdir. Gizlilik uygulamalarımızla ilgili daha fazla bilgi için lütfen gizliliğimizi görün "
             },
             "connectionCanceled": {
@@ -829,9 +829,9 @@
                 "text": {
                     "communityCTA_1": "Geri bildirimlerinizi seviyoruz ve bize katılmanız için",
                     "communityCTA_2": "topluluk. Birlikte, oyun geleceği şekillendirelim!",
-                    "construction": "HyperPlay inşaat altında.",
-                    "bugs": "Lütfen HyperPlay'in halka açık bir alfa olduğunu unutmayın. Birçok özellik hala\nGeliştirmede ve böcekler olacak.",
-                    "description": "HyperPlay bir oyun başlatıcı ve oyun mağazası aggregator from the\nGelecek. HyperPlay ile cüzdanınızı, jetlerinizi ve varlıklarını taşıyabilirsiniz\nHer oyuna. HyperPlay, Epic'in tüm kütüphanesini destekler\nMağaza, GOG ve kendi HyperPlay mağazamız. HyperPlay kullanarak, aynı fikirdesiniz\nBizim için"
+                    "construction": "NovaPlay inşaat altında.",
+                    "bugs": "Lütfen NovaPlay'in halka açık bir alfa olduğunu unutmayın. Birçok özellik hala\nGeliştirmede ve böcekler olacak.",
+                    "description": "NovaPlay bir oyun başlatıcı ve oyun mağazası aggregator from the\nGelecek. NovaPlay ile cüzdanınızı, jetlerinizi ve varlıklarını taşıyabilirsiniz\nHer oyuna. NovaPlay, Epic'in tüm kütüphanesini destekler\nMağaza, GOG ve kendi NovaPlay mağazamız. NovaPlay kullanarak, aynı fikirdesiniz\nBizim için"
                 },
                 "title": "Hyper'e hoş geldiniz Play early Access!"
             },
@@ -873,7 +873,7 @@
         "analyticsOff": "Analytics kapalı",
         "linkSteamAccountTitle": "Link Steam Hesabı",
         "otp": "One Time Passcode",
-        "linkSteamAccountDescription": "HyperPlay hesabınızı bağlantı kurmak için Steam'e kaydolun.",
+        "linkSteamAccountDescription": "NovaPlay hesabınızı bağlantı kurmak için Steam'e kaydolun.",
         "changeWallet": "Swap cüzdan hesabı",
         "currentWallet": "Mevcut cüzdan",
         "analyticsOn": "Analytics döndü",
@@ -945,7 +945,7 @@
         "warningTitle": "Önemli",
         "warningMessage": "Bir oyun kurmak, geliştiriciler ve deneyimli güç kullanıcıları için tasarlanmış bir özelliktir. Bir yükleme yazılımı içeren bir yükleme bilgisayarınızı tehlikeye atabilir ve fonların hırsızlığına yol açabilir."
     },
-    "hyperplayOverlay": {
+    "novaplayOverlay": {
         "txnRequest": {
             "CONFIRMED": "İşlem Onaylandı",
             "PENDING": "İşlem sunuldu",
@@ -969,8 +969,8 @@
             "CONFIRMED": "İmzalandı"
         },
         "greeting": {
-            "title": "HyperPlay Overlay",
-            "description": "HyperPlay Overlay hazır! Basın {{overlayKeyMod}} + X göstermek veya gizlemek için."
+            "title": "NovaPlay Overlay",
+            "description": "NovaPlay Overlay hazır! Basın {{overlayKeyMod}} + X göstermek veya gizlemek için."
         },
         "extensionNotification": {
             "DESCRIPTION": "Press {{overlayKeyMod}} + X bu işlemi görmek için",
@@ -997,8 +997,8 @@
     "quests": {
         "playstreak": {
             "signInWarning": {
-                "client": "Şu anda giriş yapmıyorsunuz, oyun çizgisi ilerleme izlenecek. Lütfen ilerlemeyi takip etmek için üst sağ damla ile HyperPlay'e giriş yapın.",
-                "overlay": "Şu anda giriş yapmıyorsunuz, oyun çizgisi ilerleme izlenecek. Lütfen oyunu bırakın ve ilerlemeyi takip etmek için üst sağ damla ile HyperPlay'e giriş yapın."
+                "client": "Şu anda giriş yapmıyorsunuz, oyun çizgisi ilerleme izlenecek. Lütfen ilerlemeyi takip etmek için üst sağ damla ile NovaPlay'e giriş yapın.",
+                "overlay": "Şu anda giriş yapmıyorsunuz, oyun çizgisi ilerleme izlenecek. Lütfen oyunu bırakın ve ilerlemeyi takip etmek için üst sağ damla ile NovaPlay'e giriş yapın."
             }
         },
         "quests": "Quests",
@@ -1007,7 +1007,7 @@
             "title": "Hiçbir Quest bulunamadı."
         },
         "g7CreditsModal": {
-            "description": "HyperPlay'in en iyi oyunları heyecan verici Play Streak Challenges ile. Her aktivite sizi farklı bir oyunla meşgul etmeye teşvik eder, web3 oyununun en iyisini gösterir. Oyun zamanı önemlidir!",
+            "description": "NovaPlay'in en iyi oyunları heyecan verici Play Streak Challenges ile. Her aktivite sizi farklı bir oyunla meşgul etmeye teşvik eder, web3 oyununun en iyisini gösterir. Oyun zamanı önemlidir!",
             "title": "Game7 Credits"
         }
     },
@@ -1028,8 +1028,8 @@
     "exit_game": "Çıkış Oyunu",
     "back_to_game": "Oyuna Geri Dönüş",
     "overlay": {
-        "EXTERNAL_WALLET_CONNECTED": "Dış bir cüzdanla HyperPlay'e bağlanırsınız.",
-        "WALLET_DISCONNECTED": "HyperPlay ile bağlantılı bir cüzdana sahip değilsiniz."
+        "EXTERNAL_WALLET_CONNECTED": "Dış bir cüzdanla NovaPlay'e bağlanırsınız.",
+        "WALLET_DISCONNECTED": "NovaPlay ile bağlantılı bir cüzdana sahip değilsiniz."
     },
     "email_subscription": {
         "title": "Alt tarif için teşekkür ederiz!",
