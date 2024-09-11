@@ -1,4 +1,4 @@
-import { HyperPlayAPI } from '@hyperplay/utils'
+import { NovaPlayAPI } from '@novaplay/utils'
 import { captureException } from '@sentry/electron'
 import { backendEvents } from 'backend/backend_events'
 import {
@@ -31,14 +31,14 @@ function setMainWindowOnTop() {
   getMainWindow()?.moveTop()
 }
 
-export const hpApi: HyperPlayAPI = {
+export const hpApi: NovaPlayAPI = {
   backendEvents,
   updatePopupInOverlay: async (...args) => {
-    const hpOverlay = await import('@hyperplay/overlay')
+    const hpOverlay = await import('@novaplay/overlay')
     return hpOverlay?.updatePopupInOverlay(...args)
   },
-  logError: (msg: string) => logError(msg, LogPrefix.HyperPlay),
-  logInfo: (msg: string) => logInfo(msg, LogPrefix.HyperPlay),
+  logError: (msg: string) => logError(msg, LogPrefix.NovaPlay),
+  logInfo: (msg: string) => logInfo(msg, LogPrefix.NovaPlay),
   extensionProvider: undefined,
   getMainWindowId: () => getMainWindow()?.id ?? -1,
   /* eslint-disable-next-line */
@@ -70,18 +70,18 @@ export const hpApi: HyperPlayAPI = {
   errorExtensionRequestEvents,
   providerRequests,
   toggleOverlay: async (...args) => {
-    const hpOverlay = await import('@hyperplay/overlay')
+    const hpOverlay = await import('@novaplay/overlay')
     return hpOverlay?.toggleOverlay(...args)
   },
   removePopup: async () => {
     const mainWindow = getMainWindow()
     if (mainWindow) {
-      const hpOverlay = await import('@hyperplay/overlay')
+      const hpOverlay = await import('@novaplay/overlay')
       hpOverlay?.removePopup(mainWindow.id)
     }
   },
   getMetaMaskExtensionId: async () => {
-    const extensionImporter = await import('@hyperplay/extension-importer')
+    const extensionImporter = await import('@novaplay/extension-importer')
     return extensionImporter?.getExtensionId() ?? ''
   },
   getCurrentWeb3Provider: () => {
@@ -97,14 +97,14 @@ export const hpApi: HyperPlayAPI = {
   }
 }
 
-async function initHyperPlayAPI() {
+async function initNovaPlayAPI() {
   try {
-    const extensionProvPackage = await import('@hyperplay/extension-provider')
+    const extensionProvPackage = await import('@novaplay/extension-provider')
     hpApi.extensionProvider = extensionProvPackage.extensionProvider
-    logInfo('HyperPlayAPI initialized', LogPrefix.HyperPlay)
+    logInfo('NovaPlayAPI initialized', LogPrefix.NovaPlay)
   } catch (err) {
-    logError(`Error iniitalizing HyperPlayAPI ${err}`, LogPrefix.HyperPlay)
+    logError(`Error iniitalizing NovaPlayAPI ${err}`, LogPrefix.NovaPlay)
   }
 }
 
-initHyperPlayAPI()
+initNovaPlayAPI()
