@@ -1,10 +1,10 @@
-id: xyz.hyperplay.HyperPlay
+id: xyz.novaplay.NovaPlay
 sdk: org.freedesktop.Sdk
 runtime: org.freedesktop.Platform
 runtime-version: "23.08"
 base: org.electronjs.Electron2.BaseApp
 base-version: "23.08"
-command: hyperplay-run
+command: novaplay-run
 separate-locales: false
 
 cleanup:
@@ -19,13 +19,13 @@ finish-args:
   - --allow=devel
   - --allow=multiarch
   - --device=all
-  - --env=PATH=/app/bin:/app/utils/bin:/usr/bin:/usr/lib/extensions/vulkan/MangoHud/bin:/usr/lib/extensions/vulkan/gamescope/bin:/usr/lib/extensions/vulkan/OBSVkCapture/bin:/app/bin/hyperplay/resources/app.asar.unpacked/build/bin/linux
+  - --env=PATH=/app/bin:/app/utils/bin:/usr/bin:/usr/lib/extensions/vulkan/MangoHud/bin:/usr/lib/extensions/vulkan/gamescope/bin:/usr/lib/extensions/vulkan/OBSVkCapture/bin:/app/bin/novaplay/resources/app.asar.unpacked/build/bin/linux
   - --filesystem=~/.local/share/lutris:rw
   - --filesystem=~/.config/heroic:rw
   - --filesystem=~/.local/share/applications:rw
   - --filesystem=~/.local/share/Steam:rw
   - --filesystem=~/.steam/steam
-  - --filesystem=~/Games/HyperPlay:create
+  - --filesystem=~/Games/NovaPlay:create
   - --filesystem=~/.var/app/com.valvesoftware.Steam:rw
   - --filesystem=xdg-documents
   - --filesystem=xdg-desktop
@@ -159,24 +159,24 @@ modules:
           stable-only: true
           url-template: https://download.samba.org/pub/rsync/src/rsync-$version.tar.gz
 
-  # --- HyperPlay ---
-  - name: hyperplay
+  # --- NovaPlay ---
+  - name: novaplay
     buildsystem: simple
     build-commands:
-      - mkdir hyperplay
-      - tar -xJf hyperplay*.tar.xz -C hyperplay --strip-components=1
-      - mv hyperplay /app/bin/hyperplay
-      - install -D hyperplay-run -t /app/bin
+      - mkdir novaplay
+      - tar -xJf novaplay*.tar.xz -C novaplay --strip-components=1
+      - mv novaplay /app/bin/novaplay
+      - install -D novaplay-run -t /app/bin
     sources:
       - type: script
-        dest-filename: hyperplay-run
+        dest-filename: novaplay-run
         commands:
           - for i in {0..9}; do
           -   test -S $XDG_RUNTIME_DIR/discord-ipc-$i || ln -sf {app/com.discordapp.Discord,$XDG_RUNTIME_DIR}/discord-ipc-$i;
           - done
-          - zypak-wrapper /app/bin/hyperplay/hyperplay "$@"
+          - zypak-wrapper /app/bin/novaplay/novaplay "$@"
 
-      - ${hyperplay-tarxz}
+      - ${novaplay-tarxz}
       
   - name: platform-bootstrap
     buildsystem: simple
@@ -200,11 +200,11 @@ modules:
           /app/lib32
           /app/lib/i386-linux-gnu
       - type: file
-        path: xyz.hyperplay.HyperPlay.metainfo.xml
+        path: xyz.novaplay.NovaPlay.metainfo.xml
       - type: file
-        path: xyz.hyperplay.HyperPlay.png
+        path: xyz.novaplay.NovaPlay.png
       - type: file
-        path: xyz.hyperplay.HyperPlay.desktop
+        path: xyz.novaplay.NovaPlay.desktop
 
     #START --- Winetricks Deps ---
   - name: p7zip
