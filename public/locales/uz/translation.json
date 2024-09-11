@@ -44,7 +44,7 @@
             "launchAborted": "Ishga tushirish bekor qilindi",
             "moving": "O‘yinni ko‘chirishda xatolik {{error}}",
             "ubisoft-connect": {
-                "message": "O'yin prefiksida Ubisoft Connect-ni o'rnatib bo'lmadi. Uni qo'lda o'rnatish uchun https://github.com/HyperPlay-Games-Launcher/HeroicGamesLauncher/wiki/How-to-install-Ubisoft-Connect-on-Linux-and-Mac manzilidagi wiki sahifamizni tekshiring.",
+                "message": "O'yin prefiksida Ubisoft Connect-ni o'rnatib bo'lmadi. Uni qo'lda o'rnatish uchun https://github.com/NovaPlay-Games-Launcher/HeroicGamesLauncher/wiki/How-to-install-Ubisoft-Connect-on-Linux-and-Mac manzilidagi wiki sahifamizni tekshiring.",
                 "title": "Ubisoft Connect"
             },
             "uncaught-exception": {
@@ -82,7 +82,7 @@
                 "changelog": "O'zgarishlar jurnalini oching",
                 "detail": "Yangilanishni fonda yuklab olishni xohlaysizmi?",
                 "message": "Yangi versiya mavjud!",
-                "message-finished": "Endi HyperPlay-ni qayta ishga tushirmoqchimisiz?",
+                "message-finished": "Endi NovaPlay-ni qayta ishga tushirmoqchimisiz?",
                 "title": "Qahramonlik o'yinlari ishga tushirgich",
                 "title-finished": "Yangilash tugallandi"
             }
@@ -98,9 +98,9 @@
             "message": "Kutilayotgan operatsiyalar bor, ishonchingiz komilmi?",
             "title": "Chiqish"
         },
-        "reset-hyperplay": {
+        "reset-novaplay": {
             "question": {
-                "message": "Haqiqatan ham HyperPlay sozlamalarini asliga qaytarmoqchimisiz? Bu barcha Sozlamalar va keshlashni olib tashlaydi, lekin oʻrnatilgan oʻyinlaringizni yoki Epic hisob maʼlumotlarini olib tashlamaydi. HyperPlay-ning portativ versiyalari (AppImage, WinPortable, ...) keyin qo'lda qayta ishga tushirilishi kerak.",
+                "message": "Haqiqatan ham NovaPlay sozlamalarini asliga qaytarmoqchimisiz? Bu barcha Sozlamalar va keshlashni olib tashlaydi, lekin oʻrnatilgan oʻyinlaringizni yoki Epic hisob maʼlumotlarini olib tashlamaydi. NovaPlay-ning portativ versiyalari (AppImage, WinPortable, ...) keyin qo'lda qayta ishga tushirilishi kerak.",
                 "title": "Qahramonlikni tiklash"
             }
         },
@@ -304,7 +304,7 @@
         "esync": "Esync protsessor talab qiladigan o'yinlarda vinoserver yukini kamaytirishga qaratilgan. Yoqish unumdorlikni oshirishi mumkin.",
         "fsync": "Fsync protsessor talab qiladigan o'yinlarda vinoserver yukini kamaytirishga qaratilgan. Yoqish qoʻllab-quvvatlanadigan Linux yadrolarida ish faoliyatini yaxshilashi mumkin.",
         "game_language": {
-            "fallback": "HyperPlay tilidan foydalanish uchun bo'sh qoldiring.",
+            "fallback": "NovaPlay tilidan foydalanish uchun bo'sh qoldiring.",
             "in_game_config": "Barcha o'yinlar bu konfiguratsiyani qo'llab-quvvatlamaydi, ba'zilarida o'yin ichidagi til sozlamalari mavjud.",
             "valid_codes": "Yaroqli til kodlari o'yinga bog'liq."
         },
@@ -320,12 +320,12 @@
         "preferSystemLibs": "Maxsus Wine versiyalari (Wine-GE, Wine-Lutris) kutubxonaga bog'liqliklari bilan birga yuboriladi. Ushbu parametr yoqilsa, ushbu yuborilgan kutubxonalar e'tiborga olinmaydi va Wine o'rniga tizim kutubxonalarini yuklaydi. Ogohlantirish! Agar bog'liqliklar bajarilmasa, muammolar paydo bo'lishi mumkin.",
         "primerun": "Ko'p GPU tizimlarida o'yinni ko'rsatish uchun maxsus grafik kartadan foydalaning. Faqat renderlash uchun boshsiz GPU ishlatadigan o'yin noutbuklari yoki ish stollarida kerak (NVIDIA Optimus, AMD CrossFire)",
         "steam_path": {
-            "info": "Bu yo'l HyperPlay-ga Steam-ga Steam bo'lmagan o'yinlarni qo'shish uchun Proton Steam-ning qaysi versiyasidan foydalanishini aniqlash imkonini beradi."
+            "info": "Bu yo'l NovaPlay-ga Steam-ga Steam bo'lmagan o'yinlarni qo'shish uchun Proton Steam-ning qaysi versiyasidan foydalanishini aniqlash imkonini beradi."
         },
         "steamruntime": "Linux va Windows (Proton) o'yinlarini boshqarishga yordam berish uchun Steam tomonidan taqdim etilgan maxsus kutubxonalar. Yoqish moslikni yaxshilashi mumkin.",
         "sync": {
-            "part1": "HyperPlay to'g'ri saqlash papkasini topishga harakat qiladi va bu ko'pchilik hollarda ishlaydi. Jild noto'g'ri bo'lsa, uni o'zgartirish uchun bekor qilish qutisidan foydalaning.",
-            "part2": "Agar siz Wine yoki Proton uchun prefiks jildini o'zgartirsangiz, yo'lni qayta tekshirishingiz kerak bo'ladi, chunki Proton boshqa prefiks (/pfx) va foydalanuvchi nomidan (steamuzer) foydalanadi. Shunday qilib, joriy yo'lni oddiygina o'chirib tashlashingiz va sinxronlash sozlamalari sahifasidan chiqishingiz va HyperPlay uchun to'g'ri prefiks bilan papkani yana bir bor taxmin qilish uchun yana qaytib kelishingiz mumkin.",
+            "part1": "NovaPlay to'g'ri saqlash papkasini topishga harakat qiladi va bu ko'pchilik hollarda ishlaydi. Jild noto'g'ri bo'lsa, uni o'zgartirish uchun bekor qilish qutisidan foydalaning.",
+            "part2": "Agar siz Wine yoki Proton uchun prefiks jildini o'zgartirsangiz, yo'lni qayta tekshirishingiz kerak bo'ladi, chunki Proton boshqa prefiks (/pfx) va foydalanuvchi nomidan (steamuzer) foydalanadi. Shunday qilib, joriy yo'lni oddiygina o'chirib tashlashingiz va sinxronlash sozlamalari sahifasidan chiqishingiz va NovaPlay uchun to'g'ri prefiks bilan papkani yana bir bor taxmin qilish uchun yana qaytib kelishingiz mumkin.",
             "part3": "Qo'lda sinxronlash: Bulutda saqlangan o'yinlarni yuklab olish uchun Yuklab olish-ni tanlang. Mahalliylarni bulutga yuklash uchun yuklang. Majburiy yuklab olish va Majburiy yuklash mahalliy yoki bulutdagi versiyani e'tiborsiz qoldiradi.",
             "part4": "Saqlashlarni sinxronlash Avtomatik ravishda har safar oʻyinni boshlaganingizda va oʻyinni tugatganingizdan soʻng saqlaydi."
         },
@@ -338,7 +338,7 @@
         "msync": "Fsync protsessor talab qiladigan o'yinlarda vinoserver yukini kamaytirishga qaratilgan. Yoqish qoʻllab-quvvatlanadigan Linux yadrolarida ish faoliyatini yaxshilashi mumkin."
     },
     "info": {
-        "hyperplay": {
+        "novaplay": {
             "beta": "Beta",
             "click-to-see-changelog": "O'zgarishlar jurnalini ko'rish uchun bosing",
             "newReleases": "Yangilanish mavjud!",
@@ -431,7 +431,7 @@
         },
         "moved": "Ko‘chirish tugallandi",
         "moving": "Harakatlanuvchi o'yin",
-        "new-hyperplay-version": "Yangi HyperPlay versiyasi chiqdi!",
+        "new-novaplay-version": "Yangi NovaPlay versiyasi chiqdi!",
         "refresh": {
             "error": "Relizlarni yuqori oqimdan olib bo'lmadi, ehtimol Github API cheklovlari tufayli! Keyinroq qayta urinib ko‘ring."
         },
@@ -485,7 +485,7 @@
     "other": {
         "gogdl-version": "GOGDL versiyasi: ",
         "legendary-version": "Afsonaviy versiya: ",
-        "weblate": "HyperPlay tarjimasiga yordam bering.",
+        "weblate": "NovaPlay tarjimasiga yordam bering.",
         "nile-version": "Nil versiyasi: "
     },
     "Other": "Boshqa",
@@ -667,7 +667,7 @@
             "systemInformation": "_Tizim ma’lumoti"
         },
         "open-config-file": "Konfiguratsiya faylini oching",
-        "reset-hyperplay": "Qahramonlikni tiklash",
+        "reset-novaplay": "Qahramonlikni tiklash",
         "saves": {
             "warning": "Bulutli saqlash funksiyasi beta-versiyasida, sinxronlashdan oldin saqlangan maʼlumotlarning zaxira nusxasini yarating (agar biror narsa notoʻgʻri boʻlsa)"
         },
@@ -710,7 +710,7 @@
     "amazon": "Amazon",
     "Amazon Games": "Amazon o'yinlari",
     "prime-gaming": "Prime Gaming",
-    "hyperplay": {
+    "novaplay": {
         "folder": "Jild",
         "logOut": "Chiqish",
         "onboarding": {
