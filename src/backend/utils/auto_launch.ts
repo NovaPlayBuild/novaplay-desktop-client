@@ -4,7 +4,7 @@ import { isMac } from 'backend/constants'
 import { ipcMain } from 'electron'
 
 export const hyperPlayAutoLauncher = new AutoLaunch({
-  name: 'HyperPlay',
+  name: 'NovaPlay',
   path: process.execPath
 })
 
@@ -22,16 +22,16 @@ export async function hyperPlayAutoLaunchIsEnabled() {
 
 ipcMain.handle('updateAutoLaunch', async () => {
   const settings = GlobalConfig.get().getSettings()
-  const { autoLaunchHyperPlay } = settings
-  return updateAutoLaunch(autoLaunchHyperPlay)
+  const { autoLaunchNovaPlay } = settings
+  return updateAutoLaunch(autoLaunchNovaPlay)
 })
 
 const settings = GlobalConfig.get().getSettings()
-const { autoLaunchHyperPlay } = settings
+const { autoLaunchNovaPlay } = settings
 
 // default to true on fresh install. except for on Mac
-// see: https://github.com/HyperPlay-Gaming/hyperplay-desktop-client/issues/770
-if (autoLaunchHyperPlay === undefined && !isMac) {
+// see: https://github.com/NovaPlay-Gaming/novaplay-desktop-client/issues/770
+if (autoLaunchNovaPlay === undefined && !isMac) {
   updateAutoLaunch(true)
-  GlobalConfig.get().setSetting('autoLaunchHyperPlay', true)
+  GlobalConfig.get().setSetting('autoLaunchNovaPlay', true)
 }
