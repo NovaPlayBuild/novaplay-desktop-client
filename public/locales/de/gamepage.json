@@ -158,11 +158,11 @@
         "options": "Startoptionen..."
     },
     "not_logged_in": {
-        "epic": "Du bist mit keinem Epic-Konto in HyperPlay angemeldet. Verwende zum Anmelden nicht die Store-Seite, sondern klicke stattdessen auf die folgende Schaltfläche:",
-        "gog": "Du bist mit keinem GOG-Konto in HyperPlay angemeldet. Verwende zum Anmelden nicht die Store-Seite, sondern klicke stattdessen auf die folgende Schaltfläche:",
+        "epic": "Du bist mit keinem Epic-Konto in NovaPlay angemeldet. Verwende zum Anmelden nicht die Store-Seite, sondern klicke stattdessen auf die folgende Schaltfläche:",
+        "gog": "Du bist mit keinem GOG-Konto in NovaPlay angemeldet. Verwende zum Anmelden nicht die Store-Seite, sondern klicke stattdessen auf die folgende Schaltfläche:",
         "login": "Anmelden",
         "title": "Du bist NICHT angemeldet",
-        "amazon": "Du bist mit keinem Epic-Account in HyperPlay angemeldet. Verwende nicht die Store-Seite, um dich anzumelden, sondern klicke stattdessen auf die folgende Schaltfläche:"
+        "amazon": "Du bist mit keinem Epic-Account in NovaPlay angemeldet. Verwende nicht die Store-Seite, um dich anzumelden, sondern klicke stattdessen auf die folgende Schaltfläche:"
     },
     "report_problem": "Ein Problem bei der Ausführung dieses Spiels melden",
     "sdl": {
