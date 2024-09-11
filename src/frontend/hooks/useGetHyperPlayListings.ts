@@ -1,13 +1,13 @@
-import { HyperPlayRelease } from 'common/types'
+import { NovaPlayRelease } from 'common/types'
 import { useQuery, useQueryClient } from '@tanstack/react-query'
 
-export default function useGetHyperPlayListings() {
+export default function useGetNovaPlayListings() {
   const queryClient = useQueryClient()
-  const queryKey = `getHyperPlayListings`
-  const query = useQuery<Record<string, HyperPlayRelease> | null>({
+  const queryKey = `getNovaPlayListings`
+  const query = useQuery<Record<string, NovaPlayRelease> | null>({
     queryKey: [queryKey],
     queryFn: async () => {
-      const response = await window.api.getHyperPlayListings()
+      const response = await window.api.getNovaPlayListings()
       if (!response) return null
       return response
     },
