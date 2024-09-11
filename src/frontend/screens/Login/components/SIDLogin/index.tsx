@@ -2,7 +2,7 @@ import React, { useContext, useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import './index.css'
 import ContextProvider from 'frontend/state/ContextProvider'
-import { Button } from '@hyperplay/ui'
+import { Button } from '@novaplay/ui'
 import { faInfo, faRefresh } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
