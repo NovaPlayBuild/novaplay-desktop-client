@@ -32,7 +32,7 @@ import { getGameInfo } from 'frontend/helpers'
 
 function urlIsHpUrl(url: string) {
   const urlToTest = new URL(url)
-  return urlToTest.hostname === 'store.hyperplay.xyz'
+  return urlToTest.hostname === 'store.novaplay.xyz'
 }
 
 function shouldInjectProvider(url: string) {
@@ -59,7 +59,7 @@ function WebView() {
     lang = 'pt-BR'
   }
 
-  const hyperplayStore =
+  const novaplayStore =
     HYPERPLAY_STORE_URL +
     (authState.authToken !== '' ? '&qamode=' + authState.authToken : '')
 
@@ -70,7 +70,7 @@ function WebView() {
   const { runner } = useParams() as { runner: Runner }
 
   const urls: { [pathname: string]: string } = {
-    '/hyperplaystore': hyperplayStore,
+    '/novaplaystore': novaplayStore,
     '/epicstore': epicStore,
     '/gogstore': GOG_STORE_URL,
     '/wiki': WIKI_URL,
@@ -132,8 +132,8 @@ function WebView() {
 
     const removeHandleGoToGamePage = window.api.handleGoToGamePage(
       async (_, gameId) => {
-        const gameInfo = await getGameInfo(gameId, 'hyperplay')
-        navigate(`/gamepage/hyperplay/${gameId}`, {
+        const gameInfo = await getGameInfo(gameId, 'novaplay')
+        navigate(`/gamepage/novaplay/${gameId}`, {
           state: { gameInfo, fromDM: false }
         })
       }
@@ -261,7 +261,7 @@ function WebView() {
 
   let partitionForWebview = 'persist:epicstore'
 
-  if (urlIsHpUrl(startUrl)) partitionForWebview = 'persist:hyperplaystore'
+  if (urlIsHpUrl(startUrl)) partitionForWebview = 'persist:novaplaystore'
   else if (shouldInjectProvider(startUrl))
     partitionForWebview = 'persist:InPageWindowEthereumExternalWallet'
 
