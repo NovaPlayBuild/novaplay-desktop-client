@@ -52,7 +52,7 @@ import { dirname, join } from 'path'
 import { isOnline } from '../../online_monitor'
 import { update } from './games'
 import axios from 'axios'
-import { epicTitleToHpGameInfoMap } from '../hyperplay/utils'
+import { epicTitleToHpGameInfoMap } from '../novaplay/utils'
 import { app } from 'electron'
 import { copySync } from 'fs-extra'
 import { LegendaryCommand } from './commands'
@@ -599,7 +599,7 @@ function loadFile(fileName: string): boolean {
         is_installed: false,
         title: '',
         canRunOffline: false,
-        runner: 'hyperplay'
+        runner: 'novaplay'
       }
   /* eslint-enable @typescript-eslint/no-unused-vars*/
 
@@ -689,7 +689,7 @@ export async function runRunnerCommand(
 ): Promise<ExecResult> {
   const { dir, bin } = getLegendaryBin()
 
-  // Set XDG_CONFIG_HOME to a custom, HyperPlay-specific location so user-made
+  // Set XDG_CONFIG_HOME to a custom, NovaPlay-specific location so user-made
   // changes to Legendary's main config file don't affect us
   if (!options) {
     options = {}
