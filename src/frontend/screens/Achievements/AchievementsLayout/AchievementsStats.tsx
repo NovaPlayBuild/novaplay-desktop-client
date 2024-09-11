@@ -1,4 +1,4 @@
-import { AchievementsInfo } from '@hyperplay/ui'
+import { AchievementsInfo } from '@novaplay/ui'
 import React from 'react'
 import { observer } from 'mobx-react-lite'
 import AchievementState from 'frontend/state/AchievementState'
