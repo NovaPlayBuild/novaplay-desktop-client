@@ -2,8 +2,8 @@ import React from 'react'
 import { t } from 'i18next'
 import QrCodeGradientBorder from '../../../components/qrCodeGradientBorder'
 import ScanScreenStyles from './index.module.scss'
-import { WarningIcon } from 'frontend/assets/hyperplay'
-import { Button } from '@hyperplay/ui'
+import { WarningIcon } from 'frontend/assets/novaplay'
+import { Button } from '@novaplay/ui'
 import walletStore from 'frontend/state/WalletState'
 import { observer } from 'mobx-react-lite'
 
@@ -21,21 +21,21 @@ const ScanScreen = (props: ScanScreenProps) => {
     <>
       <div className={`title ${ScanScreenStyles.title}`}>
         {t(
-          'hyperplay.onboarding.walletSelection.screens.scan.title',
+          'novaplay.onboarding.walletSelection.screens.scan.title',
           `Scan QR with `
         )}
         {props.providerName}
       </div>
       <div className={`body ${ScanScreenStyles.caption}`}>
         {t(
-          'hyperplay.onboarding.walletSelection.screens.scan.details',
-          `Create an encrypted communication channel. Your keys will never be shared with HyperPlay.`
+          'novaplay.onboarding.walletSelection.screens.scan.details',
+          `Create an encrypted communication channel. Your keys will never be shared with NovaPlay.`
         )}
       </div>
       <QrCodeGradientBorder qrUrl={url} imageMargin="-14px" />
       <div className={`body-sm ${ScanScreenStyles.getWalletText}`}>
         {t(
-          'hyperplay.onboarding.walletSelection.screens.scan.dontHaveWallet',
+          'novaplay.onboarding.walletSelection.screens.scan.dontHaveWallet',
           `Don’t have a wallet?`
         )}{' '}
         <a
@@ -45,7 +45,7 @@ const ScanScreen = (props: ScanScreenProps) => {
           className="button-sm"
         >
           {t(
-            'hyperplay.onboarding.walletSelection.screens.scan.getMetamask',
+            'novaplay.onboarding.walletSelection.screens.scan.getMetamask',
             `Get MetaMask`
           )}
         </a>
@@ -57,21 +57,21 @@ const ScanScreen = (props: ScanScreenProps) => {
           style={{ width: '200px', margin: '0px auto var(--space-xs) auto' }}
           onClick={() => window.api.copyWalletConnectBaseURIToClipboard()}
         >
-          {t('hyperplay.copyUrl', 'Copy URL')}
+          {t('novaplay.copyUrl', 'Copy URL')}
         </Button>
       ) : null}
 
       {props.providerName.toLowerCase().includes('metamask') &&
       oneTimePasscode !== '' ? (
         <div className={`body-sm  ${ScanScreenStyles.otp}`}>
-          {t('hyperplay.otp', 'One Time Passcode')}: {oneTimePasscode}
+          {t('novaplay.otp', 'One Time Passcode')}: {oneTimePasscode}
         </div>
       ) : null}
       <div className={`body-sm ${ScanScreenStyles.walletWarning}`}>
         <WarningIcon height={15} fill={'var(--color-status-alert)'} />
         <div>
           {t(
-            'hyperplay.onboarding.walletSelection.screens.scan.updateWarning',
+            'novaplay.onboarding.walletSelection.screens.scan.updateWarning',
             'Having issues? Make sure MetaMask is up to date.'
           )}
         </div>
