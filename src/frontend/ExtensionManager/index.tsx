@@ -14,11 +14,11 @@ const ExtensionManager = function () {
   const mmContainerStyle = {} as React.CSSProperties
 
   const isOverlay =
-    OverlayState.title === 'HyperPlay Extension Overlay' ||
-    OverlayState.title === 'HyperPlay Browser Game' ||
-    OverlayState.title === 'HyperPlay Web Game'
+    OverlayState.title === 'NovaPlay Extension Overlay' ||
+    OverlayState.title === 'NovaPlay Browser Game' ||
+    OverlayState.title === 'NovaPlay Web Game'
 
-  if (OverlayState.title === 'HyperPlay Extension') {
+  if (OverlayState.title === 'NovaPlay Extension') {
     mmContainerStyle.left = 0
     mmContainerStyle.right = 'unset'
     mmContainerStyle.top = 0
