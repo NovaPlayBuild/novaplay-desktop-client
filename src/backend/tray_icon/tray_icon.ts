@@ -23,7 +23,7 @@ export const initTrayIcon = async (mainWindow: BrowserWindow) => {
   }
   await loadContextMenu()
 
-  appIcon.setToolTip('HyperPlay')
+  appIcon.setToolTip('NovaPlay')
 
   // event listeners
   appIcon.on('double-click', () => {
@@ -87,7 +87,7 @@ const contextMenu = (
   const recentsMenu = recentGames.map((game) => {
     return {
       click: function () {
-        handleProtocol([`hyperplay://launch/${game.appName}`])
+        handleProtocol([`novaplay://launch/${game.appName}`])
       },
       label: game.title
     }
