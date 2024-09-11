@@ -1,4 +1,4 @@
-import { PlayStreakEligibility } from '@hyperplay/ui'
+import { PlayStreakEligibility } from '@novaplay/ui'
 import { Quest, UserPlayStreak } from 'common/types'
 
 // this is initialized when the overlay is started for this game
