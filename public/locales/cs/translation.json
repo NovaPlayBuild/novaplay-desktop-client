@@ -19,7 +19,7 @@
     },
     "box": {
         "cache-cleared": {
-            "message": "Mezipaměť HyperPlay vymazána.",
+            "message": "Mezipaměť NovaPlay vymazána.",
             "title": "Mezipaměť vymazána"
         },
         "choose": "Vybrat",
@@ -67,7 +67,7 @@
             },
             "update": {
                 "title": "Chyba aktualizace",
-                "message": "Něco pokazilo s aktualizací! ručně odinstalovat a přeinstalovat HyperPlay."
+                "message": "Něco pokazilo s aktualizací! ručně odinstalovat a přeinstalovat NovaPlay."
             },
             "wine-not-found": {
                 "invalid": "The selected wine version was not found. Install it or select a different version in the game's settings{{newline}}Version: {{version}}{{newline}}Path: {{path}}",
@@ -89,11 +89,11 @@
                 "changelog": "Otevřít seznam změn",
                 "detail": "Chcete stáhnout aktualizaci na pozadí?",
                 "message": "K dispozici je nová verze!",
-                "message-finished": "Chcete restartovat HyperPlay nyní?",
-                "title": "HyperPlay Games Launcher",
+                "message-finished": "Chcete restartovat NovaPlay nyní?",
+                "title": "NovaPlay Games Launcher",
                 "title-finished": "Aktualizace dokončena",
-                "appUpdated": "HyperPlay byl aktualizován",
-                "appUpdated-message": "HyperPlay byl aktualizován. Chcete aktualizovat a restartovat HyperPlay nyní?"
+                "appUpdated": "NovaPlay byl aktualizován",
+                "appUpdated-message": "NovaPlay byl aktualizován. Chcete aktualizovat a restartovat NovaPlay nyní?"
             }
         },
         "no": "NE",
@@ -109,8 +109,8 @@
         },
         "reset-app": {
             "question": {
-                "message": "Jste si jistí, že chcete resetovat HyperPlay? Tím se odstraní všechna nastavení a mezipaměť, ale neodstraní se nainstalované hry ani přihlašovací údaje Epic. Přenosné verze (AppImage, WinPortable, ...) je poté nutné restartovat ručně.",
-                "title": "Resetovat HyperPlay"
+                "message": "Jste si jistí, že chcete resetovat NovaPlay? Tím se odstraní všechna nastavení a mezipaměť, ale neodstraní se nainstalované hry ani přihlašovací údaje Epic. Přenosné verze (AppImage, WinPortable, ...) je poté nutné restartovat ručně.",
+                "title": "Resetovat NovaPlay"
             }
         },
         "runexe": {
@@ -155,7 +155,7 @@
                 "message-gptk": "Chcete-li spustit hry pomocí nástroje Apple Gaming porting Toolkit, musíte upgradovat svůj MacOS na 14 (Sonoma) nebo vyšší. {{newline}} Na vašem systému jsme našli víno, chcete pokračovat v spuštění pomocí {{foundWine}} ?"
             },
             "rosetta": {
-                "message": "HyperPlay vyžaduje Rosetta správně běžet na macOS s čipy Apple Silicon. Nainstalujte jej z terminálu macOS pomocí následujícího příkazu: \"softwareupdate --install-rosetta\" a restartujte HyperPlay. ",
+                "message": "NovaPlay vyžaduje Rosetta správně běžet na macOS s čipy Apple Silicon. Nainstalujte jej z terminálu macOS pomocí následujícího příkazu: \"softwareupdate --install-rosetta\" a restartujte NovaPlay. ",
                 "title": "Rosetta nebyl nalezen"
             }
         },
@@ -263,7 +263,7 @@
         "esync": "Cílem Esync je snížit režii wineserveru ve hrách náročných na výkon procesoru. Povolení může zlepšit výkon.",
         "fsync": "Cílem Fsync je snížit režii wineserveru ve hrách náročných na výkon procesoru. Povolení může zlepšit výkon na podporovaných jádrech Linuxu.",
         "game_language": {
-            "fallback": "Ponechte prázdné pro použití jazyk HyperPlay.",
+            "fallback": "Ponechte prázdné pro použití jazyk NovaPlay.",
             "in_game_config": "Ne všechny hry tuto konfiguraci podporují, některé mají nastavení jazyka ve hře.",
             "valid_codes": "Platné kódy jazyků jsou závislé na hře."
         },
@@ -279,18 +279,18 @@
         "preferSystemLibs": "Vlastní verze Wine (Wine-GE, Wine-Lutris) jsou dodávány se závislostmi knihovnami. Povolením této možnosti budou tyto dodávané knihovny ignorovány a Wine místo nich načte systémové knihovny. Pozor! Při nedodržení závislostí může dojít k problémům.",
         "primerun": "Použijte vyhrazenou grafickou kartu k vykreslení hry na systémech s více grafickými kartami. Potřebné pouze na herních noteboocích nebo stolních počítačích, které používají \"headless\" GPU pro vykreslování (NVIDIA Optimus, AMD CrossFire)",
         "steam_path": {
-            "info": "This path lets HyperPlay determine what version of Proton Steam uses, for adding non-Steam games to Steam."
+            "info": "This path lets NovaPlay determine what version of Proton Steam uses, for adding non-Steam games to Steam."
         },
         "steamruntime": "Vlastní knihovny poskytované službou Steam, které pomáhají spouštět hry pro Linux a Windows (Proton). Jejich povolení může zlepšit kompatibilitu.",
         "sync": {
-            "part1": "HyperPlay se pokusí uhodnout správnou složku pro ukládání, což bude ve většině případů fungovat. V případě, že je složka špatně, změňte ji pomocí pole přepsání.",
-            "part2": "V případě, že změníte složku prefixu pro Wine nebo Proton, budete muset cestu znovu zkontrolovat, protože Proton používá jiný prefix (/pfx) a uživatelské jméno (steamuser). Můžete tedy jednoduše vymazat aktuální cestu, dostat se ze stránky nastavení synchronizace a vrátit se zpět, aby HyperPlay mohl uhodnout složku se správným prefixem.",
+            "part1": "NovaPlay se pokusí uhodnout správnou složku pro ukládání, což bude ve většině případů fungovat. V případě, že je složka špatně, změňte ji pomocí pole přepsání.",
+            "part2": "V případě, že změníte složku prefixu pro Wine nebo Proton, budete muset cestu znovu zkontrolovat, protože Proton používá jiný prefix (/pfx) a uživatelské jméno (steamuser). Můžete tedy jednoduše vymazat aktuální cestu, dostat se ze stránky nastavení synchronizace a vrátit se zpět, aby NovaPlay mohl uhodnout složku se správným prefixem.",
             "part3": "Ruční synchronizace: Vyberte Stáhnout pro stažení uložených souborů hry z cloudu. Nahrát pro nahrání místních souborů do cloudu. Vynutit stahování a Vynutit nahrávání bude ignorovat verzi, která je místní nebo v cloudu.",
             "part4": "Automatická synchronizace uložených souborů synchronizuje uložené soubory při každém spuštění hry a po dokončení hraní."
         },
         "vkd3d": "VKD3D je překladová vrstva založená na Vulkanu pro hry DirectX 12. Povolení může výrazně zlepšit kompatibilitu. Nemá žádný vliv na starší DirectX hry.",
         "wine": {
-            "part1": "HyperPlay hledá verze Wine, Proton a CrossOver v následujících složkách:",
+            "part1": "NovaPlay hledá verze Wine, Proton a CrossOver v následujících složkách:",
             "part2": "Pro jiná místa použijte symbolický odkaz na jednu z těchto složek"
         },
         "disable_logs": "Zapnutím tohoto políčka zakážete většinu zápisů do souborů protokolu (kritické informace jsou vždy protokolovány). Před nahlášením jakéhokoli problému nezapomeňte toto nastavení vypnout.",
@@ -299,12 +299,12 @@
         "msync": "Společnost Msync je zaměřena na snížení nadpisu v podtitulových hrách CPU. Enabling může zlepšit výkon na několika hrách."
     },
     "info": {
-        "hyperplay": {
+        "novaplay": {
             "beta": "Beta",
             "click-to-see-changelog": "Kliknutím zobrazíte seznam změn",
             "newReleases": "K dispozici je nová aktualizace!",
             "stable": "Stabilní",
-            "version": "Verze HyperPlay"
+            "version": "Verze NovaPlay"
         },
         "save-sync": {
             "searching": "Trying to detect the correct save folder"
@@ -391,7 +391,7 @@
         },
         "moved": "Přesun dokončen",
         "moving": "Přesouvám hru",
-        "new-hyperplay-version": "Byla vydána nová verze HyperPlay!",
+        "new-novaplay-version": "Byla vydána nová verze NovaPlay!",
         "refresh": {
             "error": "Nepodařilo se načíst vydání z upstreamu, možná kvůli omezením Github API! Zkuste to později."
         },
@@ -446,7 +446,7 @@
     "other": {
         "gogdl-version": "Verze GOGDL: ",
         "legendary-version": "Verze Legenary: ",
-        "weblate": "Pomozte s překladem HyperPlay.",
+        "weblate": "Pomozte s překladem NovaPlay.",
         "nile-version": "Verze Nile: "
     },
     "Other": "Other",
@@ -491,7 +491,7 @@
         "autosync": "Automaticky synchronizovat uložené soubory",
         "autovkd3d": "Automaticky Installovat/aktualizovat VKD3D na Prefixu",
         "change-target-exe": "Vyberte alternativní EXE ke spuštění",
-        "checkForUpdatesOnStartup": "Kontrolovat aktualizace HyperPlay při spuštění",
+        "checkForUpdatesOnStartup": "Kontrolovat aktualizace NovaPlay při spuštění",
         "crossover-version": "Verze Crossover",
         "custom_themes_path": "Vlastní cesta k motivům",
         "customWineProton": "Vlastní cesty pro Wine/Proton",
@@ -499,7 +499,7 @@
         "default-install-path": "Výchozí cesta pro instalaci",
         "default-steam-path": "Výchozí cesta služby Steam",
         "defaultWinePrefix": "Nastavit složku pro nové Prefixy Wine",
-        "disable_controller": "Zakázat navigaci v HyperPlay pomocí ovladače",
+        "disable_controller": "Zakázat navigaci v NovaPlay pomocí ovladače",
         "discordRPC": "Povolit Discord Rich Presence",
         "download-no-https": "Stahovat hry bez HTTPS (užitečné pro CDN, např. LanCache)",
         "egs-sync": "Synchronizovat s nainstalovanými Epic Games",
@@ -541,14 +541,14 @@
         "log": {
             "copy-to-clipboard": "Copy log content to clipboard.",
             "current-log": "Current log",
-            "instructions": "If you encounter any issues while using HyperPlay, we have two designated areas to report your issues in our Discord Server. If you're a player, please report any problems by visiting the player-support-forum. If you are a game dev, please report any problems by visiting the dev-support-forum.{{newLine}} {{newLine}} To help us diagnose and fix the problem as quickly as possible, please provide as much information as possible, including a copy of your logs. Our support team will monitor both channels and do their best to respond to your issue as quickly as possible. Thank you for your patience and understanding while we work to resolve any problems you may encounter.{{newLine}}",
+            "instructions": "If you encounter any issues while using NovaPlay, we have two designated areas to report your issues in our Discord Server. If you're a player, please report any problems by visiting the player-support-forum. If you are a game dev, please report any problems by visiting the dev-support-forum.{{newLine}} {{newLine}} To help us diagnose and fix the problem as quickly as possible, please provide as much information as possible, including a copy of your logs. Our support team will monitor both channels and do their best to respond to your issue as quickly as possible. Thank you for your patience and understanding while we work to resolve any problems you may encounter.{{newLine}}",
             "instructions_title": "How to report a problem?",
             "last-log": "Last Log",
             "no-file": "No log file found.",
             "show-in-folder": "Show log file in folder",
             "instructions-part-02": "Chcete-li nám pomoci diagnostikovat a opravit problém co nejrychleji, uveďte prosím co nejvíce informací, včetně kopie Vašich protokolů. Náš tým podpory bude sledovat jak kanály, tak jak rychle reagovat na vaše problémy. Děkujeme Vám za trpělivost a pochopení, když pracujeme na řešení problémů, které se můžete setkat.",
-            "instructions-part-01": "Pokud se při používání HyperPlay setkáte s nějakými problémy, máme dvě určené oblasti, abychom mohli reportovat vaše problémy v našem Discord Serveru. Pokud jste hráč, informujte prosím jakékoli problémy tím, že navštívíte hráč-support-forum. Pokud jste hra, podělte se o jakékoli problémy tím, že navštívíte dev-support-forum.",
-            "join-hyperplay-discord": "Připojte se k našemu Discordu"
+            "instructions-part-01": "Pokud se při používání NovaPlay setkáte s nějakými problémy, máme dvě určené oblasti, abychom mohli reportovat vaše problémy v našem Discord Serveru. Pokud jste hráč, informujte prosím jakékoli problémy tím, že navštívíte hráč-support-forum. Pokud jste hra, podělte se o jakékoli problémy tím, že navštívíte dev-support-forum.",
+            "join-novaplay-discord": "Připojte se k našemu Discordu"
         },
         "mangohud": "Povolit Mangohud (Mangohud je třeba nainstalovat)",
         "manualsync": {
@@ -562,7 +562,7 @@
         },
         "maxRecentGames": "Recent Games to Show",
         "maxworkers": "Maximální počet pracovníků při stahování",
-        "minimize-on-launch": "Minimize HyperPlay After Game Launch",
+        "minimize-on-launch": "Minimize NovaPlay After Game Launch",
         "offlinemode": "Spustit hru Offline",
         "prefered_language": "Prefered Language (Language Code)",
         "preferSystemLibs": "Prefer system libraries",
@@ -599,7 +599,7 @@
         "experimental_features": {
             "enableNewShinyFeature": "Nová skvělá funkce"
         },
-        "autoLaunchHyperPlay": "Auto Spustit Hyper Čeština",
+        "autoLaunchNovaPlay": "Auto Spustit Hyper Čeština",
         "steamId": "Parní ID",
         "dxvkfpslimit": "Limit FPS (DX9, 10 a 11)",
         "msync": "Povolit Esync"
@@ -609,7 +609,7 @@
             "installing": "Installing BattlEye Runtime...",
             "name": "BattlEye AntiCheat Runtime"
         },
-        "clear-cache": "Clear HyperPlay Cache",
+        "clear-cache": "Clear NovaPlay Cache",
         "copiedToClipboard": "Copied to Clipboard!",
         "copyToClipboard": "Copy All Settings to Clipboard",
         "eacRuntime": {
@@ -641,7 +641,7 @@
             "accounts": "Účty"
         },
         "open-config-file": "Open Config File",
-        "reset-hyperplay": "Reset HyperPlay",
+        "reset-novaplay": "Reset NovaPlay",
         "saves": {
             "label": "Umístění pro ukládání:",
             "warning": "Funkce Cloud Saves je v Beta verzi, před synchronizací si prosím uložená data zálohujte (pro případ, že by se něco pokazilo)"
@@ -763,7 +763,7 @@
     "amazon": "Amazonka",
     "prime-gaming": "Prime Gaming",
     "Amazon Games": "Amazon hry",
-    "hyperplayOverlay": {
+    "novaplayOverlay": {
         "txnRequest": {
             "CONFIRMED": "Transakce potvrzená",
             "FAILED": "Transakce přerušena",
@@ -791,8 +791,8 @@
             "DESCRIPTION": "Tisk {{overlayKeyMod}} + X vidět tuto transakci"
         },
         "greeting": {
-            "title": "HyperPlay překrytí",
-            "description": "HyperPlay Overlay je připraven! Tisk {{overlayKeyMod}} + X ukázat nebo skrýt."
+            "title": "NovaPlay překrytí",
+            "description": "NovaPlay Overlay je připraven! Tisk {{overlayKeyMod}} + X ukázat nebo skrýt."
         },
         "signatureRequest": {
             "CONFIRMED": "Podepsáno",
@@ -800,7 +800,7 @@
             "INITIATED": "Žádost o podpis"
         }
     },
-    "hyperplay": {
+    "novaplay": {
         "onboarding": {
             "walletSelection": {
                 "screens": {
@@ -822,14 +822,14 @@
                         "details": "Níže jsou nainstalovány prohlížeče MetaMask. Vyberte si ten, který chcete importovat.",
                         "orWord": "NEBO",
                         "useRecoveryPhrase": "Import pomocí tajné obnovení fráze",
-                        "useRecoveryPhraseInfo": "Tato funkce se doporučuje pro pokročilé uživatele a vývojáře. Vaše tajné obnovení fráze je uložena lokálně v MetaMask a nikdy nesdíleno s HyperPlay.",
+                        "useRecoveryPhraseInfo": "Tato funkce se doporučuje pro pokročilé uživatele a vývojáře. Vaše tajné obnovení fráze je uložena lokálně v MetaMask a nikdy nesdíleno s NovaPlay.",
                         "createNewWallet": "Vytvořit novou prodlužovací peněženku MM",
                         "title": "Vyberte prohlížeč import z",
                         "cantFindProfile": "Nelze najít profil prohlížeče?",
                         "learnMore": "Zjistěte více."
                     },
                     "scan": {
-                        "details": "Vytvořte šifrované komunikační kanál. Vaše klíče nikdy nebudou sdíleny s HyperPlay.",
+                        "details": "Vytvořte šifrované komunikační kanál. Vaše klíče nikdy nebudou sdíleny s NovaPlay.",
                         "title": "Skenovací QR s ",
                         "updateWarning": "Mít problémy? Ujistěte se, že MetaMask je aktuální.",
                         "getMetamask": "Získejte MetaMask",
@@ -840,10 +840,10 @@
                 "pleaseConnect": "Prosím připojte peněženku, nebo stáhnout mobilní aplikaci Metamask, abyste získali\nstart:"
             },
             "analytics": {
-                "body": "HyperPlay by chtěl shromažďovat data o používání, aby lépe pochopili, jak naši uživatelé interagují s aplikací. Tyto informace nám pomáhají pochopit, jak používáte aplikaci a umožňuje vám HyperPlay ještě lepší.",
-                "hyperplayWill": "HyperPlay bude:",
+                "body": "NovaPlay by chtěl shromažďovat data o používání, aby lépe pochopili, jak naši uživatelé interagují s aplikací. Tyto informace nám pomáhají pochopit, jak používáte aplikaci a umožňuje vám NovaPlay ještě lepší.",
+                "novaplayWill": "NovaPlay bude:",
                 "neverCollectIP": " shromažďujte plnou IP adresu;",
-                "title": "Pomozte nám zlepšit HyperPlay!",
+                "title": "Pomozte nám zlepšit NovaPlay!",
                 "privacyPolicyHere": "Zásady ochrany osobních údajů zde.",
                 "anonymized": "Odeslat anonymizované kliknutí & herní interakce;",
                 "neverCollectPersonal": " shromažďovat klíče, adresy, rovnováhy, hashes, nebo jakékoliv osobní údaje;",
@@ -865,9 +865,9 @@
                 "text": {
                     "communityCTA_2": "komunita. Společně tvoříme budoucnost hraní!",
                     "communityCTA_1": "Jsme rádi, že jste se připojili k nám",
-                    "bugs": "Upozorňujeme, že HyperPlay je veřejný alfa. Mnoho funkcí je stále více\nve vývoji, a tam budou chyby.",
-                    "construction": "HyperPlay je pod konstrukcí.",
-                    "description": "HyperPlay je hra spouštěč a herní obchod agregátor z\nbudoucnost. S HyperPlay můžete nést peněženku, tokeny a aktiva\ndo každé hry. HyperPlay podporuje celou knihovnu Epic\nObchod, GOG a vlastní prodej HyperPlay. Pomocí HyperPlay souhlasíte\nNaše služby"
+                    "bugs": "Upozorňujeme, že NovaPlay je veřejný alfa. Mnoho funkcí je stále více\nve vývoji, a tam budou chyby.",
+                    "construction": "NovaPlay je pod konstrukcí.",
+                    "description": "NovaPlay je hra spouštěč a herní obchod agregátor z\nbudoucnost. S NovaPlay můžete nést peněženku, tokeny a aktiva\ndo každé hry. NovaPlay podporuje celou knihovnu Epic\nObchod, GOG a vlastní prodej NovaPlay. Pomocí NovaPlay souhlasíte\nNaše služby"
                 }
             },
             "terms": "Podmínky používání"
@@ -916,7 +916,7 @@
         },
         "publicAlpha": "Veřejné Alpha",
         "linkSteamAccountCta": "Přejděte na Steam přihlášení do Steamu",
-        "linkSteamAccountDescription": "Přihlaste se k Steamu a připojte svůj účet HyperPlay.",
+        "linkSteamAccountDescription": "Přihlaste se k Steamu a připojte svůj účet NovaPlay.",
         "linkSteamAccountTitle": "Link Steam účet",
         "syncing": "Synchronizace...",
         "logOut": "Odhlásit se",
@@ -985,8 +985,8 @@
     "quests": {
         "playstreak": {
             "signInWarning": {
-                "overlay": "V současné době nejste přihlášeni, nebude sledována hra streak. Prosím, ukončete hru a přihlaste se k HyperPlay pomocí top-rightdown, abyste sledovali pokrok.",
-                "client": "V současné době nejste přihlášeni, nebude sledována hra streak. Přihlaste se k HyperPlay prostřednictvím pravého rozevíracího procesu."
+                "overlay": "V současné době nejste přihlášeni, nebude sledována hra streak. Prosím, ukončete hru a přihlaste se k NovaPlay pomocí top-rightdown, abyste sledovali pokrok.",
+                "client": "V současné době nejste přihlášeni, nebude sledována hra streak. Přihlaste se k NovaPlay prostřednictvím pravého rozevíracího procesu."
             }
         },
         "quests": "Úkoly",
@@ -996,7 +996,7 @@
         },
         "g7CreditsModal": {
             "title": "Získejte hry7 kredity",
-            "description": "Dive to HyperPlay’s top hry s vzrušující Play Streak Challenges. Každá aktivita vás povzbuzuje, abyste se zapojili s jinou hrou, což ukazuje nejlepší ze hry na webu3. Vaše herní otázky!"
+            "description": "Dive to NovaPlay’s top hry s vzrušující Play Streak Challenges. Každá aktivita vás povzbuzuje, abyste se zapojili s jinou hrou, což ukazuje nejlepší ze hry na webu3. Vaše herní otázky!"
         }
     },
     "accounts": "účty",
@@ -1024,8 +1024,8 @@
         "warningTitle": "Důležitý"
     },
     "overlay": {
-        "EXTERNAL_WALLET_CONNECTED": "Jste připojeni do HyperPlay s externí peněženky.",
-        "WALLET_DISCONNECTED": "Nemáte peněženku připojenou k HyperPlay."
+        "EXTERNAL_WALLET_CONNECTED": "Jste připojeni do NovaPlay s externí peněženky.",
+        "WALLET_DISCONNECTED": "Nemáte peněženku připojenou k NovaPlay."
     },
     "gameRelease": {
         "prototype": "Čeština",
